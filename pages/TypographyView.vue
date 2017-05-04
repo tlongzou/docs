@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="view" id="typography-view")
+  doc-view(id="typography-view")
     div
       section-def
         dt(slot="title") {{ doc.title }}

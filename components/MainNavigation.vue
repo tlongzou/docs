@@ -79,28 +79,28 @@
             ]
           },
           { href: '/motion', title: 'Motion', action: 'slow_motion_video' },
-          // {
-          //   title: 'Style',
-          //   action: 'style',
-          //   group: 'style',
-          //   items: [
-          //     { href: '/style/colors', title: 'Colors' },
-          //     { href: '/style/theme', title: 'Theme' },
-          //     { href: '/style/typography', title: 'Typography' },
-          //     { href: '/style/content', title: 'Content' }
-          //   ]
-          // },
+          {
+            title: 'Style',
+            action: 'style',
+            group: 'style',
+            items: [
+              { href: '/style/colors', title: 'Colors' },
+              { href: '/style/theme', title: 'Theme' },
+              { href: '/style/typography', title: 'Typography' },
+              { href: '/style/content', title: 'Content' }
+            ]
+          },
           {
             title: 'Layout',
             action: 'devices',
             group: 'layout',
             items: [
               { href: '/layout/pre-defined', title: 'Pre-defined' },
-          //     { href: '/layout/grid', title: 'Grid' },
-          //     { href: '/layout/spacing', title: 'Spacing' },
-          //     { href: '/layout/alignment', title: 'Alignment' },
-          //     { href: '/layout/display', title: 'Display' },
-          //     { href: '/layout/elevation', title: 'Elevation' }
+              { href: '/layout/grid', title: 'Grid' },
+              { href: '/layout/spacing', title: 'Spacing' },
+              { href: '/layout/alignment', title: 'Alignment' },
+              { href: '/layout/display', title: 'Display' },
+              { href: '/layout/elevation', title: 'Elevation' }
             ]
           },
           {

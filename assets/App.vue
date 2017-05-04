@@ -48,8 +48,8 @@
           color = 'darken-3 pink'
         } else if (this.match(path, /quick-start/)) {
           // color = 'teal'
-        } else if (this.match(path, /server-side-rendering/)) {
-          // color = 'cyan'
+        } else if (this.match(path, /style/)) {
+          color = 'cyan'
         } else if (this.match(path, /directives/)) {
           color = 'orange'
         }

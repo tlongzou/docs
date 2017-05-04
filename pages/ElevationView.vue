@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="view" id="elevation-view")
+  doc-view(id="elevation-view")
     div
       section-def
         dt(slot="title") Elevation

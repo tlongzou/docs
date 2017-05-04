@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="view" id="spacing-view")
+  doc-view(id="spacing-view")
     div
       section-def
         dt(slot="title") Spacing

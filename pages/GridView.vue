@@ -1,55 +1,56 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="grid-view")
-    section(slot="documentation" class='documentation-slot')
-      v-card
-        v-table-overflow
-          table.table
-            caption Viewport breakpoints
-            thead
-              tr
-                th Device
-                th Types
-                th Range
-            tbody
-              tr
-                td
-                  v-icon.mr-3 phone_iphone
-                  span Extra small
-                td small to large handset
-                td &lt; 600px
-              tr
-                td
-                  v-icon.mr-3 tablet
-                  span Small
-                td small to medium tablet
-                td 600px &gt; &lt; 1024px
-              tr
-                td
-                  v-icon.mr-3 laptop
-                  span Medium
-                td large tablet to laptop
-                td 1024px &gt; &lt; 1440px
-              tr
-                td
-                  v-icon.mr-3 desktop_windows
-                  span Large
-                td desktop
-                td 1440px &gt; &lt; 1920px
-              tr
-                td
-                  v-icon.mr-3 tv
-                  span Extra large
-                td 4k and ultra-wides
-                td &gt; 1920px
+  doc-view(id="grid-view")
+    section-def
+      dt(slot="title") {{ doc.title }}
+      dd(slot="desc") {{ doc.desc }}
+    v-card.mb-5
+      v-table-overflow
+        table.table
+          caption Viewport breakpoints
+          thead
+            tr
+              th Device
+              th Types
+              th Range
+          tbody
+            tr
+              td
+                v-icon(light).mr-3 phone_iphone
+                span Extra small
+              td small to large handset
+              td &lt; 600px
+            tr
+              td
+                v-icon(light).mr-3 tablet
+                span Small
+              td small to medium tablet
+              td 600px &gt; &lt; 1024px
+            tr
+              td
+                v-icon(light).mr-3 laptop
+                span Medium
+              td large tablet to laptop
+              td 1024px &gt; &lt; 1440px
+            tr
+              td
+                v-icon(light).mr-3 desktop_windows
+                span Large
+              td desktop
+              td 1440px &gt; &lt; 1920px
+            tr
+              td
+                v-icon(light).mr-3 tv
+                span Extra large
+              td 4k and ultra-wides
+              td &gt; 1920px
 
-    component-example(header="Grid" file="grid/1").mb-5
-      section-text(slot="details") The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-col</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-col</strong>.
-    component-example(header="Offset" file="grid/2").mb-5
-      section-text(slot="details") Offsets are useful for compensating for elements that may not be visible yet, or control the position of content. Just as with breakpoints, you can set an offset for any available sizes.
-    component-example(header="Order" file="grid/3")
-    component-example(header="Direction and Align" file="grid/4")
-    component-example(header="Row and column based on breakpoint" file="grid/5")
-    component-example(header="Equal heights and scrollable content" file="grid/6")
+    component-example(
+      v-for="(example, i) in doc.examples"
+      v-bind:key="example"
+      v-bind:header="`#${i + 1} ${example.header}`"
+      v-bind:file="example.file"
+    )
+      div(slot="desc" v-html="example.desc" v-if="example.desc")
 </template>
 
 <script>
@@ -59,7 +60,14 @@
         doc: {
           title: 'Grid',
           desc: 'Vuetify.js uses a 12 point grid system. The grid is used to layout an applications content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.',
-          props: {
+          examples: [
+            { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-col</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-col</strong>.` },
+            { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },
+            { header: 'Order', file: 'grid/3', desc: '' },
+            { header: 'Direction and Align', file: 'grid/4', desc: '' },
+            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: '' }
+          ],
+          props2: {
             'v-container': {
               params: [
                 [
@@ -201,18 +209,13 @@
 <style lang="stylus">
   #grid-view
     .component-example
-      .card
-        color: #fff
-        text-align: center
-        padding: 1rem 0
-        margin: .5rem 0
+      .card__text
+        .card
+          color: #fff
+          text-align: center
+          padding: 1rem 0
+          margin: .5rem 0
 
-        &__text
-          padding: 0
-
-  .icon
-    vertical-align: middle
-
-  .documentation-slot
-    margin-bottom: 2rem
+          &__text
+            padding: 0
 </style>

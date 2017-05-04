@@ -5,7 +5,7 @@
         dt(slot="title") Alignment
         dd(slot="desc") Layouts can change when screen resolutions change. The alignment classes help you position your text based on viewport size.
     section
-      component-example(file="alignment/1")
+      component-example(header="Examples" file="alignment/1")
         v-card
           v-card-text
             p(class="text-lg-right") Right align on large viewport sizes
