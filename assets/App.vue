@@ -24,8 +24,14 @@
       if (process.env.VUE_ENV === 'client') return
 
       const metaData = meta[this.$route.path] || {}
+      const section = this.$route.path.split('/')
+      let h1 = metaData.h1
 
-      this.$store.commit('vuetify/H1', metaData.h1)
+      if (section[1]) {
+        h1 = `${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp; ${h1}`
+      }
+
+      this.$store.commit('vuetify/H1', h1)
       this.$ssrContext.title = `${metaData.title} | Vuetify.js`
       this.$ssrContext.description = metaData.description
       this.$ssrContext.keywords = metaData.keywords
@@ -55,11 +61,18 @@
         if (typeof document === 'undefined') return
 
         const metaData = meta[this.$route.path] || {}
+        const section = this.$route.path.split('/')
+        let h1 = metaData.h1
 
         document.title = `${metaData.title} | Vuetify.js`
         document.querySelector('meta[name="description"]').setAttribute('content', metaData.description)
         document.querySelector('meta[name="keywords"]').setAttribute('content', metaData.keywords)
-        this.$store.commit('vuetify/H1', metaData.h1)
+
+        if (section[1]) {
+          h1 = `${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp; ${h1}`
+        }
+
+        this.$store.commit('vuetify/H1', h1)
       },
       getColor (path) {
         let color = 'primary'

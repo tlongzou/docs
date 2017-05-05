@@ -3,8 +3,10 @@
     v-toolbar-side-icon(
       v-on:click.native.stop="$store.commit('vuetify/SIDEBAR', !$store.state.sidebar)"
     )
-
-    v-toolbar-title(v-text="title")
+    
+    transition(name="slide" mode="out-in")
+      div(style="position: relative" v-bind:key="title")
+        v-toolbar-title(v-html="title")
 </template>
 
 <script>
