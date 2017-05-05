@@ -150,7 +150,7 @@
 
         return {
           prop: 'v-model',
-          type: Array.isArray(model.type) > 1 ? model.type.join(', ') : model.type,
+          type: Array.isArray(model.type) ? model.type.join(', ') : model.type,
           default: model.default || '-',
           description: model.description ? model.description : 'Controls visibility'
         }
