@@ -67,26 +67,3 @@
 
       section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> in your browser.
 </template>
-
-<script>
-  export default {
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Quick Start | Vuetify.js',
-          h1: 'Quick Start',
-          description: 'Get started with Vue and Vuetify in no time.',
-          keywords: 'vuetify quick start, vuetify templates, server side rendering'
-        }
-      }
-    }
-  }
-</script>

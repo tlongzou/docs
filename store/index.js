@@ -6,9 +6,7 @@ Vue.use(Vuex)
 export function createStore () {
   return new Vuex.Store({
     state: {
-      title: null,
-      description: null,
-      keywords: null,
+      h1: null,
       sidebar: true,
       currentColor: 'transparent',
       previous: {
@@ -42,19 +40,8 @@ export function createStore () {
         state.sidebar = payload
       },
 
-      'vuetify/TITLE' (state, payload) {
-        state.title = payload
-        document.title = payload
-      },
-
-      'vuetify/DESCRIPTION' (state, payload) {
-        state.description = payload
-        document.head.querySelector('meta[name=description]').content = payload
-      },
-
-      'vuetify/KEYWORDS' (state, payload) {
-        state.keywords = payload
-        document.head.querySelector('meta[name=keywords]').content = payload
+      'vuetify/H1' (state, payload) {
+        state.h1 = payload
       }
     },
 

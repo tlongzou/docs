@@ -2,7 +2,7 @@
   <v-toolbar>
     <v-toolbar-logo>Logo</v-toolbar-logo>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-toolbar-item v-for="item in items">{{ item.text }}</v-toolbar-item>
+      <v-toolbar-item v-for="item in items" :key="item">{{ item.text }}</v-toolbar-item>
     </v-toolbar-items>
   </v-toolbar>
 </template>

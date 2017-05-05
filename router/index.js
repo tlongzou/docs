@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-function route (path, view, meta) {
+const meta = require('./meta.json')
+
+function route (path, view) {
   return {
     path: path,
-    meta: { name: view },
+    meta: meta[path],
     component: resolve => import(`pages/${view}View.vue`).then(resolve)
   }
 }

@@ -54,26 +54,6 @@ if (isProd) {
   })
 }
 
-function updateMeta (head, context) {
-  const title = context.title || false
-  const description = context.description || false
-  const keywords = context.keywords || false
-
-  if (title) {
-    head = head.replace(/(<title>)(.*?)(<\/title>)/, `$1${title}$3`)
-  }
-
-  if (description) {
-    head = head.replace(/(<meta name="description" content=")(.*?)(">)/, `$1${description}$3`)
-  }
-
-  if (keywords) {
-    head = head.replace(/(<meta name="keywords" content=")(.*?)(">)/, `$1${keywords}$3`)
-  }
-
-  return head
-}
-
 const serve = (path, cache) => express.static(resolve(path), {
   maxAge: cache && isProd ? 60 * 60 * 24 * 30 : 0
 })
@@ -133,7 +113,7 @@ app.get('*', (req, res) => {
   }
 
   const context = {
-    title: 'Vue HN 2.0', // default title
+    title: 'Vuetify', // default title
     url: req.url
   }
   renderer.renderToString(context, (err, html) => {

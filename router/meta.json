@@ -1,0 +1,15 @@
+{
+  "/": {},
+  "/vuetify/quick-start": {
+    "h1": "Quick Start",
+    "title": "Quick Start",
+    "description": "Get started with Vue and Vuetify in no time.",
+    "keywords": "vuetify quick start, vuetify templates, server side rendering"
+  },
+  "/components/alerts": {
+    "h1": "Alerts",
+    "title": "Alert Component",
+    "description": "The v-alert component is used to convey information to the user. Designed to stand out, the alerts come in four contextual styles, success, info, warning, and error.","keywords": "alerts, components",
+    "keywords": "alerts, components"
+  }
+}

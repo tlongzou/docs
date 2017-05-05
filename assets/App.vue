@@ -6,6 +6,8 @@
 </template>
 
 <script>
+  const meta = require('../router/meta.json')
+
   export default {
     components: {
       default: () => import('layouts/Default'),
@@ -18,6 +20,17 @@
       }
     },
 
+    created () {
+      if (process.env.VUE_ENV === 'client') return
+
+      const metaData = meta[this.$route.path] || {}
+
+      this.$store.commit('vuetify/H1', metaData.h1)
+      this.$ssrContext.title = `${metaData.title} | Vuetify.js`
+      this.$ssrContext.description = metaData.description
+      this.$ssrContext.keywords = metaData.keywords
+    },
+
     computed: {
       component () {
         return this.$route.path === '/' ? 'home' : 'default'
@@ -26,6 +39,7 @@
 
     watch: {
       '$route' () {
+        this.setMeta()
         this.$store.commit('vuetify/COLOR', this.getColor(this.$route.path))
         this.getPrevNext()
       }
@@ -37,6 +51,16 @@
     },
 
     methods: {
+      setMeta () {
+        if (typeof document === 'undefined') return
+
+        const metaData = meta[this.$route.path] || {}
+
+        document.title = `${metaData.title} | Vuetify.js`
+        document.querySelector('meta[name="description"]').setAttribute('content', metaData.description)
+        document.querySelector('meta[name="keywords"]').setAttribute('content', metaData.keywords)
+        this.$store.commit('vuetify/H1', metaData.h1)
+      },
       getColor (path) {
         let color = 'primary'
 
@@ -64,13 +88,13 @@
           : null
 
         this.$store.commit('vuetify/NEXT', {
-          name: next ? next.meta.name : null,
+          name: next ? next.meta && next.meta.h1 : null,
           color: next ? this.getColor(next.path) : null,
           route: next ? next.path : null
         })
 
         this.$store.commit('vuetify/PREVIOUS', {
-          name: previous ? previous.meta.name : null,
+          name: previous ? previous.meta && previous.meta.h1 : null,
           color: previous ? this.getColor(previous.path) : null,
           route: previous ? previous.path : null
         })

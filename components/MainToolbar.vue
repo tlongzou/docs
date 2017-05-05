@@ -9,11 +9,12 @@
 
 <script>
   export default {
-    props: ['title'],
-
     computed: {
       color () {
         return this.$store.state.currentColor
+      },
+      title () {
+        return this.$store.state.h1
       }
     }
   }
