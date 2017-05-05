@@ -27,7 +27,7 @@
       const section = this.$route.path.split('/')
       let h1 = metaData.h1
 
-      if (section[1]) {
+      if (section.length > 2) {
         h1 = `${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp; ${h1}`
       }
 
@@ -64,13 +64,13 @@
         const section = this.$route.path.split('/')
         let h1 = metaData.h1
 
+        if (section.length > 2) {
+          h1 = `${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp; ${h1}`
+        }
+
         document.title = `${metaData.title} | Vuetify.js`
         document.querySelector('meta[name="description"]').setAttribute('content', metaData.description)
         document.querySelector('meta[name="keywords"]').setAttribute('content', metaData.keywords)
-
-        if (section[1]) {
-          h1 = `${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp; ${h1}`
-        }
 
         this.$store.commit('vuetify/H1', h1)
       },
@@ -83,8 +83,6 @@
           color = 'purple'
         } else if (this.match(path, /layout/)) {
           color = 'darken-3 pink'
-        } else if (this.match(path, /quick-start/)) {
-          // color = 'teal'
         } else if (this.match(path, /style/)) {
           color = 'cyan'
         } else if (this.match(path, /directives/)) {
@@ -106,10 +104,11 @@
           route: next ? next.path : null
         })
 
+        console.log(next)
         this.$store.commit('vuetify/PREVIOUS', {
           name: previous ? previous.meta && previous.meta.h1 : null,
           color: previous ? this.getColor(previous.path) : null,
-          route: previous ? previous.path : null
+          route: previous && previous.path !== '/' ? previous.path : null
         })
       },
       match (path, regex) {

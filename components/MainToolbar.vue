@@ -23,13 +23,9 @@
 </script>
 
 <style lang="stylus">
-  .toolbar
-    &__logo
-      text-transform: uppercase
 
   #main-toolbar .toolbar
     &__logo, &__title
-      text-transform: uppercase
       white-space: nowrap
       min-width: 0
       overflow: hidden

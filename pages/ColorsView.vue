@@ -64,25 +64,6 @@
           'darken', 'lighten', 'accent'
         ]
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Colors | Vuetify.js',
-          h1: 'Colors',
-          description: 'Colors for the Vuetify Framework',
-          keywords: 'vuetify, colors'
-        }
-      }
     }
   }
 </script>

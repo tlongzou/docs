@@ -186,22 +186,6 @@
           }
         }
       }
-    },
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-    preFetch () {
-      return this.methods.meta()
-    },
-    methods: {
-      meta () {
-        return {
-          title: 'Grid | Vuetify.js',
-          h1: 'Grid',
-          description: 'Grid for the Vuetify Framework',
-          keywords: 'vuetify, grid'
-        }
-      }
     }
   }
 </script>

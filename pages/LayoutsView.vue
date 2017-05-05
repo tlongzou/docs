@@ -8,7 +8,6 @@
       return {
         doc: {
           title: 'Layouts',
-          id: 'layout-view',
           edit: 'LayoutsView',
           component: 'app',
           desc: 'The layout system is the heart of every application. Below are the officially supported examples, ranging from desktop to mobile applications.',
@@ -84,7 +83,7 @@
   @import '../node_modules/vuetify/src/stylus/settings/_colors'
   @import '../node_modules/vuetify/src/stylus/tools/_elevations'
 
-  #layout-view
+  #layouts-view
     #example-8
       .card
         background: #424242

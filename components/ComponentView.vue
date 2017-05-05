@@ -42,6 +42,7 @@
       v-bind:file="example.file"
     )
       div(slot="desc" v-html="example.desc" v-if="example.desc")
+    slot
     section-header.mt-5 API
     v-tabs.elevation-1
       template(v-for="(a, i) in ['Props', 'Slots', 'Events']" v-if="model[a].length")

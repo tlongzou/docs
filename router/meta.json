@@ -1,5 +1,47 @@
 {
   "/": {},
+  "/motion": {
+    "h1": "Motion",
+    "title": "Motion / Transitions",
+    "description": "Make an amazing application with smooth built in animations",
+    "keywords": "motion transitions"
+  },
+  "/style/colors": {
+    "h1": "Colors",
+    "title": "Material color pallete",
+    "description": "Easily apply any color from the material design pallete.",
+    "keywords": "colors"
+  },
+  "/style/theme": {
+    "h1": "Theme",
+    "title": "Application theming",
+    "description": "Setup your custom application theme.",
+    "keywords": "themes"
+  },
+  "/style/typography": {
+    "h1": "Typography",
+    "title": "Application typography",
+    "description": "View the various typography styles.",
+    "keywords": "typography"
+  },
+  "/style/content": {
+    "h1": "Content",
+    "title": "Content styles",
+    "description": "Vuetify has custom styling for default html markup",
+    "keywords": "Content"
+  },
+  "/layout/pre-defined": {
+    "h1": "Pre-defined",
+    "title": "Application layouts",
+    "description": "Select from a multitude of official material design layouts.",
+    "keywords": "pre-defined material design layouts"
+  },
+  "/layout/grid": {
+    "h1": "Grid",
+    "title": "Layout grid system",
+    "description": "Vuetify supports the material design 12 point grid for laying out your application.",
+    "keywords": "grid layout"
+  },
   "/vuetify/quick-start": {
     "h1": "Quick Start",
     "title": "Quick Start",

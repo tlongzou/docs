@@ -206,6 +206,8 @@
           hue = 480
         } else if (color === 'indigo') {
           hue = 370
+        } else if (color === 'cyan') {
+          hue = 337
         }
 
         return {
