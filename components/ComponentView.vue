@@ -84,10 +84,10 @@
       return {
         propsSearch: '',
         headers: {
-          Props: [{ text: 'Option', value: 'option', left: true },
+          Props: [{ text: 'Option', value: 'prop', left: true },
           { text: 'Type(s)', value: 'type', left: true },
           { text: 'Default', value: 'default', left: true },
-          { text: 'Description', value: 'description', left: true }],
+          { text: 'Description', value: 'desc', left: true }],
           Slots: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }],
           Events: []
         },
@@ -150,7 +150,7 @@
 
         return {
           prop: 'v-model',
-          type: model.type.length > 1 ? model.types.join(', ') : model.type,
+          type: Array.isArray(model.type) > 1 ? model.type.join(', ') : model.type,
           default: model.default || '-',
           description: model.description ? model.description : 'Controls visibility'
         }
