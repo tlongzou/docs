@@ -1,158 +1,121 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="sliders-view")
-    component-example(header="Continuous" file="sliders/1" v-bind:data="$data")
-      span(class="subheading" slot="details") Light Theme
-    component-example(file="sliders/2" v-bind:data="$data")
-      span(class="subheading" slot="details") Dark Theme
-    component-example(header="Icons" file="sliders/3" v-bind:data="$data")
-    component-example(header="With an editable numeric value" file="sliders/4" v-bind:data="$data")
-    component-example(header="Discrete" file="sliders/5" v-bind:data="$data")
-      span(class="subheading" slot="details") Light Theme
-    component-example(file="sliders/6" v-bind:data="$data")
-      span(class="subheading" slot="details") Dark Theme
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
   export default {
     data () {
       return {
-        e1: 0,
-        e2: 50,
-        e3: 100,
-        e4: 50,
-        media: 20,
-        alarm: 50,
-        ring: 65,
-        r: 255,
-        g: 50,
-        b: 30,
         doc: {
+          component: 'slider',
+          edit: 'SliderView',
           title: 'Slider',
           desc: 'The <code>v-slider</code> component is a better visualization of the number input. It is used for gathering numerical user data.',
-          props: {
-            'v-slider': {
-              params: [
-                [
-                  'append-icon',
-                  'String',
-                  '-',
-                  'Append material icon'
-                ],
-                [
-                  'prepend-icon',
-                  'String',
-                  '-',
-                  'Prepend material icon'
-                ],
-                [
-                  'light',
-                  'Boolean',
-                  'True',
-                  'Applies the light theme'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'False',
-                  'Applies the dark theme'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'Disables the checkbox'
-                ],
-                [
-                  'hint',
-                  'String',
-                  '-',
-                  'Hint text'
-                ],
-                [
-                  'persistent-hint',
-                  'Boolean',
-                  'False',
-                  'Forces hint visible'
-                ],
-                [
-                  'label',
-                  'String',
-                  '-',
-                  'Adds label to slider'
-                ],
-                [
-                  'min',
-                  'Number',
-                  '0',
-                  'Sets minimum value'
-                ],
-                [
-                  'max',
-                  'Number',
-                  '100',
-                  'Sets maximum value'
-                ],
-                [
-                  'required',
-                  'Boolean',
-                  'False',
-                  'Designates the input as required'
-                ],
-                [
-                  'rules',
-                  'Array',
-                  '[]',
-                  "Array of cb fn's that return either True or a String with an error message"
-                ],
-                [
-                  'thumb-label',
-                  'Boolean',
-                  'False',
-                  'Show thumb label'
-                ],
-                [
-                  'step',
-                  'Number',
-                  '-',
-                  'If greater than 0, sets step interval for ticks'
-                ]
-              ]
-            }
-          },
-          events: {
-            'v-slider': {
-              events: [
-                ['input','Number, String', 'Selected value'],
-              ]
+          examples: [
+            { header: 'Continuous', file: 'sliders/1', desc: '' },
+            { header: 'Discrete', file: 'sliders/2', desc: '' },
+            { header: 'Icons', file: 'sliders/3', desc: 'You can add icons to the slider with the <code>append-icon</code> and <code>prepend-icon</code> props.' },
+            { header: 'With an editable numeric value', file: 'sliders/4', desc: '' },
+            { header: 'Dark theme', file: 'sliders/5', desc: '' },
+          ],
+          props: [
+            {
+              prop: 'append-icon',
+              type: 'String',
+              default: '-',
+              desc: 'Append material icon'
             },
-          }
+            {
+              prop: 'prepend-icon',
+              type: 'String',
+              default: '-',
+              desc: 'Prepend material icon'
+            },
+            {
+              prop: 'light',
+              type: 'Boolean',
+              default: 'True',
+              desc: 'Applies the light theme'
+            },
+            {
+              prop: 'dark',
+              type: 'Boolean',
+              default: 'False',
+              desc: 'Applies the dark theme'
+            },
+            {
+              prop: 'disabled',
+              type: 'Boolean',
+              default: 'False',
+              desc: 'Disables the checkbox'
+            },
+            {
+              prop: 'hint',
+              type: 'String',
+              default: '-',
+              desc: 'Hint text'
+            },
+            {
+              prop: 'persistent-hint',
+              type: 'Boolean',
+              default: 'False',
+              desc: 'Forces hint visible'
+            },
+            {
+              prop: 'label',
+              type: 'String',
+              default: '-',
+              desc: 'Adds label to slider'
+            },
+            {
+              prop: 'min',
+              type: 'Number',
+              default: '0',
+              desc: 'Sets minimum value'
+            },
+            {
+              prop: 'max',
+              type: 'Number',
+              default: '100',
+              desc: 'Sets maximum value'
+            },
+            {
+              prop: 'required',
+              type: 'Boolean',
+              default: 'False',
+              desc: 'Designates the input as required'
+            },
+            {
+              prop: 'rules',
+              type: 'Array',
+              default: '[]',
+              desc: "Array of cb fn's that return either True or a String with an error message"
+            },
+            {
+              prop: 'thumb-label',
+              type: 'Boolean',
+              default: 'False',
+              desc: 'Show thumb label'
+            },
+            {
+              prop: 'step',
+              type: 'Number',
+              default: '-',
+              desc: 'If greater than 0, sets step interval for ticks'
+            }
+          ],
+          events: [
+            {
+              event: 'input',
+              type: ['Number', 'String'],
+              desc: 'Selected value'
+            },
+          ]
         }
       }
     },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Slider Component | Vuetify.js',
-          h1: 'Sliders',
-          description: 'Slider component for Vuetify Framework',
-          keywords: 'vuetify, sliders, components'
-        }
-      }
-    }
   }
 </script>
 
 <style lang="stylus">
-  .e3, .e4
-    max-width: 350px
-    margin: 0 auto
 </style>

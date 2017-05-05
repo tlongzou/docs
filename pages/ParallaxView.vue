@@ -1,6 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="parallax-view")
-    component-example(file="parallax/1")
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -10,31 +9,28 @@
     data () {
       return {
         doc: {
+          component: 'parallax',
+          edit: 'ParallaxView',
           title: 'Parallax',
           desc: 'The <code>v-parallax</code> component creates a 3d effect that makes an image appear to scroll slower than the window.',
-          props: {
-            'v-parallax': {
-              params: [
-                [
-                  'src',
-                  'String',
-                  'Required',
-                  'The image to parallax'
-                ],
-                [
-                  'height',
-                  'Number',
-                  '500',
-                  'The height of the parallax container'
-                ]
-              ]
+          examples: [
+            { header: '', file: 'parallax/1', desc: '' }
+          ],
+          defaultSlot: true,
+          props: [
+            {
+              prop: 'height',
+              type: 'Number',
+              default: '500',
+              description: 'The height of the parallax container'
+            },
+            {
+              prop: 'src',
+              type: 'String',
+              default: 'Required',
+              description: 'The image to parallax'
             }
-          },
-          slots: {
-            'v-parallax': {
-              default: true
-            }
-          }
+          ]
         }
       }
     },
@@ -61,24 +57,4 @@
 </script>
 
 <style lang="stylus">
-  #parallax-view
-    .parallax
-      margin: 0 0 25rem
-
-    .parallax__content
-      h1
-        font-weight: 300
-        white-space: nowrap
-
-      p
-        font-weight: 100
-      h1
-        margin: 2rem 0
-
-      p
-        font-size: 1.2rem
-
-      .btn
-        border-radius: 0
-        margin: 4rem 2rem 0 0
 </style>

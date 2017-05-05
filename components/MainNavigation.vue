@@ -123,14 +123,14 @@
           //     { href: '/components/icons', title: 'Icons' },
           //     { href: '/components/lists', title: 'Lists' },
           //     { href: '/components/menus', title: 'Menus' },
-          //     { href: '/components/pagination', title: 'Pagination' },
-          //     { href: '/components/parallax', title: 'Parallax' },
+              { href: '/components/pagination', title: 'Pagination' },
+              { href: '/components/parallax', title: 'Parallax' },
               { href: '/components/pickers', title: 'Pickers', action: 'fiber_new' },
           //     { href: '/components/progress', title: 'Progress & activity' },
           //     { href: '/components/selects', title: 'Selects' },
           //     { href: '/components/selection-controls', title: 'Selection controls' },
           //     { href: '/components/sidebar', title: 'Sidebars' },
-          //     { href: '/components/sliders', title: 'Sliders' },
+              { href: '/components/sliders', title: 'Sliders' },
           //     { href: '/components/snackbars', title: 'Snackbars & toasts' },
           //     { href: '/components/steppers', title: 'Steppers' },
           //     { href: '/components/subheaders', title: 'Subheaders' },
@@ -139,16 +139,16 @@
           //     { href: '/components/toolbar', title: 'Toolbars' }
             ]
           },
-          // {
-          //   title: 'Directives',
-          //   action: 'polymer',
-          //   group: '/directives',
-          //   items: [
-          //     { href: '/directives/badges', title: 'Badges' },
-          //     { href: '/directives/ripples', title: 'Ripples' },
-          //     { href: '/directives/tooltips', title: 'Tooltips' }
-          //   ]
-          // },
+          {
+            title: 'Directives',
+            action: 'polymer',
+            group: '/directives',
+            items: [
+              // { href: '/directives/badges', title: 'Badges' },
+              // { href: '/directives/ripples', title: 'Ripples' },
+              { href: '/directives/tooltips', title: 'Tooltips' }
+            ]
+          },
           { divider: true },
           { header: 'Additional resources' },
           {

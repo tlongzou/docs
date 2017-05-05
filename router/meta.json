@@ -51,7 +51,25 @@
   "/components/alerts": {
     "h1": "Alerts",
     "title": "Alert Component",
-    "description": "The v-alert component is used to convey information to the user. Designed to stand out, the alerts come in four contextual styles, success, info, warning, and error.","keywords": "alerts, components",
+    "description": "The v-alert component is used to convey information to the user. Designed to stand out, the alerts come in four contextual styles, success, info, warning, and error.",
     "keywords": "alerts, components"
+  },
+  "/components/pagination": {
+    "h1": "Pagination",
+    "title": "Pagination Component",
+    "description": "The v-pagination component is used to separate long sets of data so that it is easier for a user to consume information.",
+    "keywords": "pagination, components"
+  },
+  "/components/parallax": {
+    "h1": "Parallax",
+    "title": "Parallax Component",
+    "description": "The v-parallax component creates a 3d effect that makes an image appear to scroll slower than the window.",
+    "keywords": "parallax, components"
+  },
+  "/components/sliders": {
+    "h1": "Sliders",
+    "title": "Slider Component",
+    "description": "The v-slider component is a better visualization of the number input. It is used for gathering numerical user data.",
+    "keywords": "slider, components"
   }
 }
