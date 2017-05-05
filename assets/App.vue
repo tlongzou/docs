@@ -104,7 +104,6 @@
           route: next ? next.path : null
         })
 
-        console.log(next)
         this.$store.commit('vuetify/PREVIOUS', {
           name: previous ? previous.meta && previous.meta.h1 : null,
           color: previous ? this.getColor(previous.path) : null,

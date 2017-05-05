@@ -28,25 +28,6 @@
 
 <script>
   export default {
-    name: 'alignment-view',
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Alignment Helpers | Vuetify.js',
-          h1: 'Alignment',
-          description: 'Alignment helpers assist in modifying your application layout on varying viewport sizes',
-          keywords: 'vuetify, alignment helper classes'
-        }
-      }
-    }
+    name: 'alignment-view'
   }
 </script>

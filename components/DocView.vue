@@ -13,16 +13,8 @@
   @import '~assets/stylus/settings/_variables'
 
   .view
-    margin-bottom: 3rem
+    padding-bottom: 75px
     max-width: 1024px
-
-  .version
-    margin-top: -1rem
-    margin-bottom: 1rem
-    text-align: right
-
-  .chip--component
-    margin-right: 1rem
 
   dt
     font-weight 900

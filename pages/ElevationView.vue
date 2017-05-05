@@ -45,23 +45,7 @@
     },
 
     mounted () {
-      this.$emit('view', this.meta())
       this.selected = this.elevations[1]
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Elevation Classes | Vuetify.js',
-          h1: 'Elevation',
-          description: 'Elevation helper classes allow you to control relative depth, or distance, between two surfaces along the z-axis.',
-          keywords: 'vuetify, elevation helper classes'
-        }
-      }
     }
   }
 </script>

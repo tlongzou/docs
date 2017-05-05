@@ -1,6 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc")
-    component-example(file="tooltips/1" v-bind:data="$data")
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -20,24 +19,23 @@
         doc: {
           title: 'Tooltip',
           desc: 'The <code>v-tooltip</code> directive is useful for conveying information when a user hovers over an element.',
-          props: {
-            'v-tooltip': {
-              params: [
-                [
-                  'modifiers',
-                  'String',
-                  'Required',
-                  'top, right, bottom, left',
-                ],
-                [
-                  'html',
-                  'String',
-                  'Required',
-                  'The content for the tooltip',
-                ]
-              ]
+          props: [
+            {
+              prop: 'modifiers',
+              type: 'String',
+              default: 'Required',
+              description: 'top, right, bottom, left',
+            },
+            {
+              prop: 'html',
+              type: 'String',
+              default: 'Required',
+              description: 'The content for the tooltip',
             }
-          }
+          ],
+          examples: [
+            { header: 'Default', file: 'tooltips/1', component: 'tooltips' }
+          ]
         }
       }
     },

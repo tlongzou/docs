@@ -69,26 +69,7 @@
 
 <script>
   export default {
-    name: 'spacing-view',
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Spacing Classes | Vuetify.js',
-          h1: 'Spacing',
-          description: 'Spacing helper classes allow you to apply margin or padding to any element',
-          keywords: 'vuetify, spacing helper classes'
-        }
-      }
-    }
+    name: 'spacing-view'
   }
 </script>
 

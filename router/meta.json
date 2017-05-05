@@ -1,5 +1,10 @@
 {
-  "/": {},
+  "/": {
+    "h1": "",
+    "title": "Vue.js 2 Material Component Framework",
+    "description": "Vuetify.js is a reusable semantic component framework for Vue.js 2. It aims to provide clean, semantic and reusable components.",
+    "keywords": "vue, vue 2, vue js, vue.js, material design, vue components, material design components, vuetify, vuetify.js"
+  },
   "/motion": {
     "h1": "Motion",
     "title": "Motion / Transitions",
@@ -40,13 +45,37 @@
     "h1": "Grid",
     "title": "Layout grid system",
     "description": "Vuetify supports the material design 12 point grid for laying out your application.",
-    "keywords": "grid layout"
+    "keywords": "grid, layout"
+  },
+  "/layout/spacing": {
+    "h1": "Spacing",
+    "title": "Spacing helpers",
+    "description": "Spacing helper classes allow you to apply margin or padding to any element.",
+    "keywords": "spacing helper classes"
+  },
+  "/layout/alignment": {
+    "h1": "Alignment",
+    "title": "Alignment helpers",
+    "description": "Alignment helpers assist in modifying your application layout on varying viewport sizes.",
+    "keywords": "alignment helper classes"
+  },
+  "/layout/display": {
+    "h1": "Display",
+    "title": "Display helpers",
+    "description": "Display helper classes allow you to control when elements should display based upon viewport.",
+    "keywords": "display helper classes"
+  },
+  "/layout/elevation": {
+    "h1": "Elevation",
+    "title": "Elevation helpers",
+    "description": "Elevation helper classes allow you to control relative depth, or distance, between two surfaces along the z-axis.",
+    "keywords": "elevation helper classes"
   },
   "/vuetify/quick-start": {
     "h1": "Quick Start",
     "title": "Quick Start",
     "description": "Get started with Vue and Vuetify in no time.",
-    "keywords": "vuetify quick start, vuetify templates, server side rendering"
+    "keywords": "quick start, vuetify templates, server side rendering"
   },
   "/components/alerts": {
     "h1": "Alerts",
