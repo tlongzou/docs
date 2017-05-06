@@ -125,7 +125,7 @@
           //     { href: '/components/chips', title: 'Chips' },
               { href: '/components/data-tables', title: 'Data tables' },
               { href: '/components/dialogs', title: 'Dialogs', action: 'fiber_new' },
-          //     { href: '/components/dividers', title: 'Dividers' },
+              { href: '/components/dividers', title: 'Dividers' },
           //     { href: '/components/expansion-panel', title: 'Expansion panel' },
           //     { href: '/components/footer', title: 'Footer' },
           //     { href: '/components/icons', title: 'Icons' },

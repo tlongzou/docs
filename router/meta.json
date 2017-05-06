@@ -101,6 +101,12 @@
     "description": "Carousel component for Vuetify Framework.",
     "keywords": "carousel"
   },
+  "/components/dividers": {
+    "h1": "Dividers",
+    "title": "Dividers Component",
+    "description": "Divider component for Vuetify Framework.",
+    "keywords": "carousel"
+  },
   "/components/data-tables": {
     "h1": "Data tables",
     "title": "Data tables Component",
