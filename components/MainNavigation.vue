@@ -13,16 +13,24 @@
                 v-icon arrow_drop_down
               v-list(class="grey darken-2")
                 v-list-item
-                  v-list-tile
+                  v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
+                    v-list-tile-action
+                      v-icon(fa) fa-github
                     v-list-tile-title Github
                 v-list-item
-                  v-list-tile
+                  v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
+                    v-list-tile-action
+                      v-icon(fa) fa-comments-o
                     v-list-tile-title Chat
                 v-list-item
-                  v-list-tile
+                  v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
+                    v-list-tile-action
+                      v-icon(fa) fa-twitter
                     v-list-tile-title Twitter
                 v-list-item
-                  v-list-tile
+                  v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
+                    v-list-tile-action
+                      v-icon(fa) fa-facebook
                     v-list-tile-title Facebook
           v-spacer
           v-list-tile-action
@@ -109,13 +117,13 @@
             group: '/components',
             items: [
               { href: '/components/alerts', title: 'Alerts' },
-          //     { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
-          //     { href: '/components/bottom-navigation', title: 'Bottom navigation' },
+              { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
+              { href: '/components/bottom-navigation', title: 'Bottom navigation' },
           //     { href: '/components/buttons', title: 'Buttons' },
           //     { href: '/components/cards', title: 'Cards' },
-          //     { href: '/components/carousel', title: 'Carousel' },
+              { href: '/components/carousels', title: 'Carousel' },
           //     { href: '/components/chips', title: 'Chips' },
-              { href: '/components/datatables', title: 'Data tables' },
+              { href: '/components/data-tables', title: 'Data tables' },
               { href: '/components/dialogs', title: 'Dialogs', action: 'fiber_new' },
           //     { href: '/components/dividers', title: 'Dividers' },
           //     { href: '/components/expansion-panel', title: 'Expansion panel' },

@@ -1,29 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="carousel-view")
-    component-example(file="carousel/1" v-bind:data="$data")
-    component-example(header="Custom Transition" file="carousel/2" v-bind:data="$data")
-    markup(lang="js")
-      |import Vue from 'vue'
-      |&nbsp;
-      |Vue.component('fade', {
-      |   function: true,
-      |&nbsp;
-      |   render (createElement, context) {
-      |     let data = context.data || {}
-      |     data.props = { name: 'fade' }
-      |     return createElement('transition', data, context.children)
-      |   }
-      |})
-    markup(lang="stylus")
-      |.fade
-      |   &amp;-enter-active, &amp;-leave-active, &amp;-leave-to
-      |     transition: .3s ease-out
-      |     position: absolute
-      |     top: 0
-      |     left: 0
-      |&nbsp;
-      |   &amp;-enter, &amp;-leave, &amp;-leave-to
-      |     opacity: 0
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -47,7 +23,11 @@
         doc: {
           title: 'Carousel',
           desc: 'The <code>v-carousel</code> component is used to display large numbers of visual content on a rotating timer.',
-          props: {
+          examples: [
+            { header: 'Default', file: 'carousel/1' },
+            { header: 'Custom transition', file: 'carousel/2' }
+          ],
+          props2: {
             'v-carousel': {
               params: [
                 [
@@ -101,55 +81,8 @@
               default: true
             }
           }
-        },
-        items: [
-          {
-            src: '/public/doc-images/carousel/squirrel.jpg'
-          },
-          {
-            src: '/public/doc-images/carousel/sky.jpg'
-          },
-          {
-            src: '/public/doc-images/carousel/bird.jpg'
-          },
-          {
-            src: '/public/doc-images/carousel/planet.jpg'
-          }
-        ]
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Carousel Component | Vuetify.js',
-          h1: 'Carousels',
-          description: 'Carousel component for Vuetify Framework',
-          keywords: 'vuetify, carousels, components'
         }
       }
     }
   }
 </script>
-
-
-<style lang="stylus">
-  #carousel-view
-    .fade
-      &-enter-active, &-leave-active, &-leave-to
-        transition: .3s ease-out
-        position: absolute
-        top: 0
-        left: 0
-
-      &-enter, &-leave, &-leave-to
-        opacity: 0
-</style>

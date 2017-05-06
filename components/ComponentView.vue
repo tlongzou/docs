@@ -58,7 +58,7 @@
         )
           v-card
             v-card-title
-              v-spacer
+              v-layout(row nowrap grow)
               v-spacer
               v-text-field(
                 append-icon="search"

@@ -1,11 +1,5 @@
 <template lang="pug">
-  v-view(v-bind:doc="doc" id="bottom-navigation-view")
-    component-example(header="Icons and text" file="bottom-navigation/1")
-      div(slot="desc") While the bottom nav is meant to be used with the <code>vue-router</code>, you can also programmatically control the active state of the buttons by using a <code>v-model</code>.
-    component-example(header="Color & shift" file="bottom-navigation/2")
-      div(slot="desc") When using a colored background, it is recommended to use the <code>light</code> prop. Shift will hide the button text until active. Keep in mind, <code>v-btn</code> text is required to be wrapped in a <code>&lt;span&gt;</code> tag.
-    component-example(header="Toggle" file="bottom-navigation/3")
-      div(slot="desc") As with other Vuetify components, you can control the display state with <code>v-model</code>.
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -18,6 +12,11 @@
           edit: 'BottomNavigationView',
           component: 'bottom-navigation/BottomNavigation.js',
           desc: `The <code>v-bottom-nav</code> is an alternative to the sidebar. It is primarily used on mobile and comes in two variants, icons and text, and shift.`,
+          examples: [
+            { header: 'Icons and text', file: 'bottom-navigation/1', desc: `While the bottom nav is meant to be used with the <code>vue-router</code>, you can also programmatically control the active state of the buttons by using a <code>v-model</code>.` },
+            { header: 'Color & shift', file: 'bottom-navigation/2', desc: `When using a colored background, it is recommended to use the <code>light</code> prop. Shift will hide the button text until active. Keep in mind, <code>v-btn</code> text is required to be wrapped in a <code>&lt;span&gt;</code> tag.` },
+            { header: 'Toggle', file: 'bottom-navigation/3', desc: `As with other Vuetify components, you can control the display state with <code>v-model</code>.` },
+          ],
           props: [],
           props2: {
             'v-bottom-navigation': {

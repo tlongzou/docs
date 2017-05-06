@@ -36,7 +36,7 @@
               span font-weight 400
             dt(class="primary") h6
             dd
-              div(class="title grey--text text--darken-1") Regular 20sp
+              div(class="title grey--text text--darken-1") Medium 20sp
               strong title
               span font-weight 500
             dt(class="primary") s
@@ -46,17 +46,17 @@
               span font-weight 400
             dt(class="primary") b2
             dd
-              div(class="body-2 grey--text text--darken-1") Body-2 14sp
+              div(class="body-2 grey--text text--darken-1") Medium 14sp
               strong body-2
               span font-weight 500
             dt(class="primary") b1
             dd
-              div(class="body-1 grey--text text--darken-1") Body-1 14sp
+              div(class="body-1 grey--text text--darken-1") Regular 14sp
               strong body-1
               span font-weight 400
             dt(class="primary") c
             dd
-              div(class="caption grey--text text--darken-1") Caption 12sp
+              div(class="caption grey--text text--darken-1") Regular 12sp
               strong caption
               span font-weight 400
 </template>

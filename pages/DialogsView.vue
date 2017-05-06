@@ -1,16 +1,5 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
-    //- component-example(header="Simple dialogs" file="dialogs/1" v-bind:data="$data")
-    //-   section-text(slot="details") Choosing an option immediately commits the option and closes the menu. Touching outside of the dialog, or pressing Back, cancels the action and closes the dialog.
-    //- component-example(header="Modal" file="dialogs/2" v-bind:data="$data")
-    //-   section-text(slot="details") Similar to a Simple Dialog, except that it's not dismissed when touching outside.
-    //- component-example(header="Fullscreen" file="dialogs/3" v-bind:data="$data")
-    //-   section-text(slot="details") Due to limited space, full-screen dialogs may be more appropriate for mobile devices than dialogs used on devices with larger screens.
-    //- component-example(header="Form" file="dialogs/4" v-bind:data="$data")
-    //-   section-text(slot="details") Just a simple example of a form in a dialog.
-    //- component-example(header="Scrollable" file="dialogs/5" v-bind:data="$data")
-    //-   section-text(slot="details") Example of a dialog with scrollable content.
-    //- br
 </template>
 
 <script>
@@ -25,7 +14,11 @@
           desc: `<p>The <code>v-dialog</code> component inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive.</p>
           <p>If you want to programmatically open or close the dialog, you can do so by using <code>v-model</code> with a boolean value. Keep in mind, if the trigger for the opening is not contained within the <code>activator</code> slot and is done so by a click, you must <strong>stopPropagation</strong> to avoid immediately triggering a close event.</p>`,
           examples: [
-            { header: 'Simple dialogs', file: 'dialogs/1', desc: `Choosing an option immediately commits the option and closes the menu. Touching outside of the dialog, or pressing Back, cancels the action and closes the dialog.` }
+            { header: 'Simple dialogs', file: 'dialogs/1', desc: `Choosing an option immediately commits the option and closes the menu. Touching outside of the dialog, or pressing Back, cancels the action and closes the dialog.` },
+            { header: 'Modal', file: 'dialogs/2', desc: `Similar to a Simple Dialog, except that it's not dismissed when touching outside.` },
+            { header: 'Fullscreen', file: 'dialogs/3', desc: `Due to limited space, full-screen dialogs may be more appropriate for mobile devices than dialogs used on devices with larger screens.` },
+            { header: 'Form', file: 'dialogs/4', desc: `Just a simple example of a form in a dialog.` },
+            { header: 'Scrollable', file: 'dialogs/5', desc: `Example of a dialog with scrollable content.` }
           ],
           props2: {
             'v-dialog': {
@@ -96,25 +89,6 @@
               default: true
             }
           }
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Dialog Component | Vuetify.js',
-          h1: 'Dialogs',
-          description: 'Dialog component for Vuetify Framework',
-          keywords: 'vuetify, dialogs, components'
         }
       }
     }

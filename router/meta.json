@@ -83,6 +83,36 @@
     "description": "The v-alert component is used to convey information to the user. Designed to stand out, the alerts come in four contextual styles, success, info, warning, and error.",
     "keywords": "alerts, components"
   },
+  "/components/breadcrumbs": {
+    "h1": "Breadcrumbs",
+    "title": "Breadcrumbs Component",
+    "description": "The v-breadcrumbs component is a navigational helper for pages. It can accept a Material Icons icon or characters as a divider.",
+    "keywords": "breadcrumbs"
+  },
+  "/components/bottom-navigation": {
+    "h1": "Bottom navigation",
+    "title": "Bottom Navigation Component",
+    "description": "Bottom navigation component for Vuetify Framework.",
+    "keywords": "bottom navigation, navigation"
+  },
+  "/components/carousels": {
+    "h1": "Carousels",
+    "title": "Carousels Component",
+    "description": "Carousel component for Vuetify Framework.",
+    "keywords": "carousel"
+  },
+  "/components/data-tables": {
+    "h1": "Data tables",
+    "title": "Data tables Component",
+    "description": "The v-data-table component is used for displaying tabular data. Features include sorting, searching, pagination, inline-editing, header tooltips, and row selection.",
+    "keywords": "data tables, tables"
+  },
+  "/components/dialogs": {
+    "h1": "Dialogs",
+    "title": "Dialogs Component",
+    "description": "A dialog informs a user about a specific task and may contain critical information.",
+    "keywords": "dialogs"
+  },
   "/components/pagination": {
     "h1": "Pagination",
     "title": "Pagination Component",
