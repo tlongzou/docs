@@ -42,7 +42,7 @@ export function createRouter () {
         route('/components/data-tables', 'Datatables'),
         route('/components/dialogs', 'Dialogs'),
         route('/components/dividers', 'Divider'),
-        route('/components/expansion-panel', 'ExpansionPanel'),
+        route('/components/expansion-panels', 'ExpansionPanel'),
         route('/components/footer', 'Footer'),
         route('/components/text-fields', 'TextFields'),
         route('/components/lists', 'Lists'),

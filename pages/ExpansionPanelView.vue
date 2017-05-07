@@ -1,15 +1,6 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="expansion-panel")
-    component-example(header="Accordion" file="expansion-panel/1")
-    component-example(header="Expand" file="expansion-panel/2")
+  component-view(v-bind:doc="doc")
 </template>
-
-<style lang="stylus">
-  #expansion-panel
-    .component-example__container
-      > div
-        width: 100%
-</style>
 
 <script>
   export default {
@@ -18,7 +9,11 @@
         doc: {
           title: 'Expansion Panel',
           desc: `The <code>v-expansion-panel</code> component is useful for reducing vertical space with large amounts of information. The default functionality of the component is to only display one expansion-panel body at a time, however, with the <code>expandable</code> property, the expansion-panel can remain open until explicity closed.`,
-          props: {
+          examples: [
+            { header: 'Accordion', file: 'expansion-panel/1' },
+            { header: 'Expand', file: 'expansion-panel/2' }
+          ],
+          props2: {
             'v-expansion-panel': {
               params: [
                 [

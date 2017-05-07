@@ -101,6 +101,12 @@
     "description": "Carousel component for Vuetify Framework.",
     "keywords": "carousel"
   },
+  "/components/chips": {
+    "h1": "Chips",
+    "title": "Chip Component",
+    "description": "Chip component for Vuetify Framework.",
+    "keywords": "chip"
+  },
   "/components/dividers": {
     "h1": "Dividers",
     "title": "Dividers Component",
@@ -119,6 +125,12 @@
     "description": "A dialog informs a user about a specific task and may contain critical information.",
     "keywords": "dialogs"
   },
+  "/components/expansion-panels": {
+    "h1": "Expansion panel",
+    "title": "Expansion panel Component",
+    "description": "Expansion panel component for Vuetify framework.",
+    "keywords": "expansion panel"
+  },
   "/components/footer": {
     "h1": "Footer",
     "title": "Footer Component",
@@ -130,6 +142,12 @@
     "title": "Icon Component",
     "description": "Icon component for Vuetify Framework",
     "keywords": "icon"
+  },
+  "/components/menus": {
+    "h1": "Menus",
+    "title": "Menu Component",
+    "description": "Menu component for Vuetify Framework",
+    "keywords": "menu"
   },
   "/components/pagination": {
     "h1": "Pagination",
@@ -160,5 +178,11 @@
     "title": "Subheaders",
     "description": "Subheaders are used for separating lists of content.",
     "keywords": "subheader"
+  },
+  "/components/tabs": {
+    "h1": "Tabs",
+    "title": "Tabs",
+    "description": "Tabs component for the Vuetify framework.",
+    "keywords": "tabs"
   }
 }
