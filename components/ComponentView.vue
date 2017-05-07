@@ -43,8 +43,8 @@
     )
       div(slot="desc" v-html="example.desc" v-if="example.desc")
     slot
-    section-header.mt-5 API
-    v-tabs.elevation-1
+    section-header.mt-5(v-if="props.length") API
+    v-tabs.elevation-1(v-if="props.length")
       template(v-for="(a, i) in ['Props', 'Slots', 'Events']" v-if="model[a].length")
         v-tab-item(
           v-bind:href="`#${a}`"

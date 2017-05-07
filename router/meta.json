@@ -119,6 +119,18 @@
     "description": "A dialog informs a user about a specific task and may contain critical information.",
     "keywords": "dialogs"
   },
+  "/components/footer": {
+    "h1": "Footer",
+    "title": "Footer Component",
+    "description": "Footer component for Vuetify Framework",
+    "keywords": "footer"
+  },
+  "/components/icons": {
+    "h1": "Icons",
+    "title": "Icon Component",
+    "description": "Icon component for Vuetify Framework",
+    "keywords": "icon"
+  },
   "/components/pagination": {
     "h1": "Pagination",
     "title": "Pagination Component",
@@ -136,5 +148,17 @@
     "title": "Slider Component",
     "description": "The v-slider component is a better visualization of the number input. It is used for gathering numerical user data.",
     "keywords": "slider, components"
+  },
+  "/components/snackbars": {
+    "h1": "Snackbars & toasts",
+    "title": "Snackbar & toasts Component",
+    "description": "Snackbar component for Vuetify Framework",
+    "keywords": "snackbar"
+  },
+  "/components/subheaders": {
+    "h1": "Subheaders",
+    "title": "Subheaders",
+    "description": "Subheaders are used for separating lists of content.",
+    "keywords": "subheader"
   }
 }

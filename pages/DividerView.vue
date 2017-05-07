@@ -59,7 +59,7 @@
 </script>
 
 <style lang="stylus">
-  #subheader-view
+  #dividers-view
     .grid
       max-height: 500px
       overflow-y: auto

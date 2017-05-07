@@ -1,22 +1,18 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc")
-    component-example(file="snackbars/1" v-bind:data="$data")
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
   export default {
     data () {
       return {
-        snackbar: false,
-        y: 'top',
-        x: null,
-        mode: '',
-        timeout: 6000,
-        text: 'Hello, I\'m a snackbar',
         doc: {
           title: 'Snackbar',
           desc: 'The <code>v-snackbar</code> component is used to display a quick message to a user. Snackbars support positioning, removal delay and callbacks.',
-          props: {
+          examples: [
+            { header: 'Default', file: 'snackbars/1'}
+          ],
+          props2: {
             'v-snackbar': {
               params: [
                 [
@@ -112,29 +108,12 @@
           }
         }
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      callback () {
-        alert('Alerting!')
-      },
-
-      meta () {
-        return {
-          title: 'Snackbar Component | Vuetify.js',
-          h1: 'Snackbars',
-          description: 'Snackbar component for Vuetify Framework',
-          keywords: 'vuetify, snackbar, components'
-        }
-      }
     }
   }
 </script>
+
+<style lang="stylus">
+  #snackbar-view // Needed so snackbar can show in docs
+    .component-example > .card
+      z-index: initial !important
+</style>
