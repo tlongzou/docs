@@ -1,13 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="cards")
-    component-example(header="Basic" file="cards/1" v-bind:data="$data")
-    component-example(header="Title" file="cards/2" v-bind:data="$data")
-    component-example(header="Picture" file="cards/3" v-bind:data="$data")
-    component-example(header="Background" file="cards/4" v-bind:data="$data")
-    component-example(header="Horizontal" file="cards/5" v-bind:data="$data")
-    component-example(header="Colored" file="cards/6" v-bind:data="$data")
-    component-example(header="Hover and raised" file="cards/7" v-bind:data="$data")
-      section-text(slot="details") Use the raised or hover prop to emphasize a card.
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -15,12 +7,19 @@
     data () {
       return {
         doc: {
+          component: 'card',
+          edit: 'CardsView',
           title: 'Card',
-          desc: `
-            <p>
-              The <code>v-card</code> component is a versatile component that can be used for anything from a panel to a static image. The <strong>card</strong> component has numerous helper components to make markup as easy as possible. Components that have no listed options use <strong class="green--text">Vue's</strong> functional component option for faster rendering and serve as markup sugar to make building easier.
-            </p>
-          `,
+          desc: 'The <code>v-card</code> component is a versatile component that can be used for anything from a panel to a static image. The <strong>card</strong> component has numerous helper components to make markup as easy as possible. Components that have no listed options use <strong class="green--text">Vue\'s</strong> functional component option for faster rendering and serve as markup sugar to make building easier.',
+          examples: [
+           { header: 'Basic', file: 'cards/1', desc: 'As basic as it can get.' },
+           { header: 'Title and actions', file: 'cards/2', desc: 'You can add both a title bar and an actions row to cards.' },
+           { header: 'Picture', file: 'cards/3', desc: '' },
+           { header: 'Background', file: 'cards/4', desc: 'You can also use images as card backgrounds' },
+           { header: 'Horizontal', file: 'cards/5', desc: 'Cards can be arranged horizontally with the <code>horizontal</code> prop.' },
+           { header: 'Colored', file: 'cards/6', desc: '' },
+           { header: 'Hover and raised', file: 'cards/7', desc: 'Use the <code>raised</code> and/or <code>hover</code> props to emphasize a card.' },
+          ],
           props: {
             'v-card': {
               params: [
@@ -93,55 +92,8 @@
               ]
             }
           }
-        },
-        card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.',
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Card Component | Vuetify.js',
-          h1: 'Cards',
-          description: 'Card component for Vuetify Framework',
-          keywords: 'vuetify, cards, components'
         }
       }
     }
   }
 </script>
-
-<style lang="stylus">
-  #cards
-    .portrait
-      .card__row--actions
-        background: rgba(0,0,0,.5)
-
-    .card
-      margin: 1rem 0
-
-    .component-example
-      flex-flow: row wrap
-      justify-content: space-between
-
-      > div
-        flex: 1 0 50%
-        display: flex
-        justify-content: space-between
-        padding: 1rem
-
-        @media screen and (max-width: 768px)
-          flex: 1 0 100%
-
-        > *
-          margin: 0 auto
-          width: 500px
-</style>

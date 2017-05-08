@@ -184,5 +184,17 @@
     "title": "Tabs",
     "description": "Tabs component for the Vuetify framework.",
     "keywords": "tabs"
+  },
+  "/components/progress": {
+    "h1": "Progress",
+    "title": "Progress",
+    "description": "Progress components for the Vuetify framework.",
+    "keywords": "progress"
+  },
+  "/components/cards": {
+    "h1": "Cards",
+    "title": "Cards",
+    "description": "Card component for Vuetify framework.",
+    "keywords": "vuetify, cards, components"
   }
 }
