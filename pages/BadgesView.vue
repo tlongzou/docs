@@ -1,8 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="badges-view")
-    component-example(header="Character" file="badges/1")
-    component-example(header="Icon" file="badges/2")
-    component-example(header="Inline" file="badges/3")
+  component-view(v-bind:doc="doc" id="badges-view")
 </template>
 
 <script>
@@ -18,7 +15,12 @@
             <p>
               The color can be changed by using the color--after helper class, or by apply a class that modifies the background of the badged elements <strong>:after</strong> psuedo-selector.
             </p>`,
-          props: {
+          examples: [
+            { header: 'Character', file: 'badges/1' },
+            { header: 'Icon', file: 'badges/2' },
+            { header: 'Inline', file: 'badges/3' }
+          ],
+          props2: {
             'v-badge': {
               params: [
                 [
@@ -44,33 +46,6 @@
           }
         }
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Badge Directive | Vuetify.js',
-          h1: 'Badges',
-          description: 'Badge directive for Vuetify Framework',
-          keywords: 'vuetify, badges, directives'
-        }
-      }
     }
   }
 </script>
-
-<style lang="stylus">
-  #badges-view
-    .component-example
-      .component-example__container
-        > div
-          text-align: center
-</style>

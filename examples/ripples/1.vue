@@ -1,0 +1,3 @@
+<template>
+  <v-btn primary dark ripple>Default Ripple</v-btn>
+</template>

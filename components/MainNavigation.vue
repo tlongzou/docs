@@ -152,8 +152,8 @@
             action: 'polymer',
             group: '/directives',
             items: [
-              // { href: '/directives/badges', title: 'Badges' },
-              // { href: '/directives/ripples', title: 'Ripples' },
+              { href: '/directives/badges', title: 'Badges' },
+              { href: '/directives/ripples', title: 'Ripples' },
               { href: '/directives/tooltips', title: 'Tooltips' }
             ]
           },
