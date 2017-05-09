@@ -95,6 +95,12 @@
     "description": "Bottom navigation component for Vuetify Framework.",
     "keywords": "bottom navigation, navigation"
   },
+  "/components/buttons": {
+    "h1": "Buttons",
+    "title": "Button Component",
+    "description": "Button component for Vuetify Framework.",
+    "keywords": "vuetify, buttons, components"
+  },
   "/components/carousels": {
     "h1": "Carousels",
     "title": "Carousels Component",

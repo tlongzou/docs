@@ -1,0 +1,3 @@
+<template>
+  <v-btn outline class="indigo--text">Outline Button</v-btn>
+</template>

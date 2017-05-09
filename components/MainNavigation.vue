@@ -119,7 +119,7 @@
               { href: '/components/alerts', title: 'Alerts' },
               { href: '/components/breadcrumbs', title: 'Breadcrumbs' },
               { href: '/components/bottom-navigation', title: 'Bottom navigation' },
-          //     { href: '/components/buttons', title: 'Buttons' },
+              { href: '/components/buttons', title: 'Buttons' },
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousels', title: 'Carousel' },
               { href: '/components/chips', title: 'Chips' },
