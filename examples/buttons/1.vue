@@ -2,7 +2,7 @@
   <v-container fluid class="text-xs-center">
     <v-layout row wrap>
       <v-col xs12 sm6><span>Light Theme</span>
-        <v-card height="300px" class="elevation-0">
+        <v-card height="225px" class="elevation-0">
           <v-card-text>
             <div>
               <v-btn light flat>Normal</v-btn>
@@ -20,7 +20,7 @@
         </v-card>
       </v-col>
       <v-col xs12 sm6><span>Dark Theme</span>
-        <v-card height="300px" class="secondary elevation-0">
+        <v-card height="225px" class="secondary elevation-0">
           <v-card-text>
             <div>
               <v-btn flat dark>Normal</v-btn>
