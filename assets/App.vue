@@ -10,8 +10,8 @@
 
   export default {
     components: {
-      default: () => import('layouts/Default'),
-      home: () => import('layouts/Home')
+      default: require('layouts/Default'),
+      home: require('layouts/Home')
     },
 
     data () {
