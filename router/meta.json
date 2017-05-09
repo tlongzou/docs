@@ -173,6 +173,12 @@
     "description": "Snackbar component for Vuetify Framework",
     "keywords": "snackbar"
   },
+  "/components/steppers": {
+    "h1": "Steppers",
+    "title": "Stepper Component",
+    "description": "Stepper component for Vuetify Framework",
+    "keywords": "stepper"
+  },
   "/components/subheaders": {
     "h1": "Subheaders",
     "title": "Subheaders",
@@ -184,6 +190,12 @@
     "title": "Tabs",
     "description": "Tabs component for the Vuetify framework.",
     "keywords": "tabs"
+  },
+  "/components/toolbars": {
+    "h1": "Toolbars",
+    "title": "Toolbars",
+    "description": "Toolbars component for the Vuetify framework.",
+    "keywords": "toolbars"
   },
   "/components/progress": {
     "h1": "Progress",
