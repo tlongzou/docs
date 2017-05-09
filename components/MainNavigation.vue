@@ -129,7 +129,7 @@
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
               { href: '/components/icons', title: 'Icons' },
-          //     { href: '/components/lists', title: 'Lists' },
+              { href: '/components/lists', title: 'Lists' },
               { href: '/components/menus', title: 'Menus' },
               { href: '/components/pagination', title: 'Pagination' },
               { href: '/components/parallax', title: 'Parallax' },

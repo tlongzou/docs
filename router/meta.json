@@ -155,6 +155,12 @@
     "description": "Icon component for Vuetify Framework",
     "keywords": "icon"
   },
+  "/components/lists": {
+    "h1": "Lists",
+    "title": "List Component",
+    "description": "List component for Vuetify Framework",
+    "keywords": "list, lists"
+  },
   "/components/menus": {
     "h1": "Menus",
     "title": "Menu Component",
