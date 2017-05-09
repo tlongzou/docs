@@ -140,11 +140,11 @@
           //     { href: '/components/sidebar', title: 'Sidebars' },
               { href: '/components/sliders', title: 'Sliders' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
-          //     { href: '/components/steppers', title: 'Steppers' },
+              { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
           //     { href: '/components/text-fields', title: 'Text fields' },
-          //     { href: '/components/toolbar', title: 'Toolbars' }
+              { href: '/components/toolbars', title: 'Toolbars' }
             ]
           },
           {
@@ -152,8 +152,8 @@
             action: 'polymer',
             group: '/directives',
             items: [
-              // { href: '/directives/badges', title: 'Badges' },
-              // { href: '/directives/ripples', title: 'Ripples' },
+              { href: '/directives/badges', title: 'Badges' },
+              { href: '/directives/ripples', title: 'Ripples' },
               { href: '/directives/tooltips', title: 'Tooltips' }
             ]
           },

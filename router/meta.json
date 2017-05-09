@@ -95,6 +95,12 @@
     "description": "Bottom navigation component for Vuetify Framework.",
     "keywords": "bottom navigation, navigation"
   },
+  "/components/cards": {
+    "h1": "Cards",
+    "title": "Cards",
+    "description": "Card component for Vuetify framework.",
+    "keywords": "vuetify, cards, components"
+  },
   "/components/buttons": {
     "h1": "Buttons",
     "title": "Button Component",
@@ -167,6 +173,12 @@
     "description": "The v-parallax component creates a 3d effect that makes an image appear to scroll slower than the window.",
     "keywords": "parallax, components"
   },
+  "/components/progress": {
+    "h1": "Progress",
+    "title": "Progress",
+    "description": "Progress components for the Vuetify framework.",
+    "keywords": "progress"
+  },
   "/components/sliders": {
     "h1": "Sliders",
     "title": "Slider Component",
@@ -178,6 +190,12 @@
     "title": "Snackbar & toasts Component",
     "description": "Snackbar component for Vuetify Framework",
     "keywords": "snackbar"
+  },
+  "/components/steppers": {
+    "h1": "Steppers",
+    "title": "Stepper Component",
+    "description": "Stepper component for Vuetify Framework",
+    "keywords": "stepper"
   },
   "/components/subheaders": {
     "h1": "Subheaders",
@@ -191,16 +209,28 @@
     "description": "Tabs component for the Vuetify framework.",
     "keywords": "tabs"
   },
-  "/components/progress": {
-    "h1": "Progress",
-    "title": "Progress",
-    "description": "Progress components for the Vuetify framework.",
-    "keywords": "progress"
+  "/components/toolbars": {
+    "h1": "Toolbars",
+    "title": "Toolbars",
+    "description": "Toolbars component for the Vuetify framework.",
+    "keywords": "toolbars"
   },
-  "/components/cards": {
-    "h1": "Cards",
-    "title": "Cards",
-    "description": "Card component for Vuetify framework.",
-    "keywords": "vuetify, cards, components"
+  "/directives/badges": {
+    "h1": "Badges",
+    "title": "Badges",
+    "description": "Badges directive for the Vuetify framework.",
+    "keywords": "badges"
+  },
+  "/directives/ripples": {
+    "h1": "Ripple",
+    "title": "Ripple",
+    "description": "Ripple directive for the Vuetify framework.",
+    "keywords": "ripples, ink"
+  },
+  "/directives/tooltips": {
+    "h1": "Tooltip",
+    "title": "Tooltip",
+    "description": "Tooltip directive for the Vuetify framework.",
+    "keywords": "tooltips"
   }
 }

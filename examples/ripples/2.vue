@@ -1,0 +1,3 @@
+<template>
+  <v-btn secondary dark v-bind:ripple="{ class: 'primary--text' }">Colored Ripple</v-btn>
+</template>

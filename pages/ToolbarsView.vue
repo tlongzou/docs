@@ -1,33 +1,24 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="toolbar")
-    component-example(header="With Icons" file="toolbar/1" v-bind:data="example")
-    component-example(header="With Items" file="toolbar/2" v-bind:data="example")
-    component-example(header="With Dropdown" file="toolbar/3" v-bind:data="example")
-
-    component-example(file="toolbar/4" v-bind:data="example")
-    component-example(header="Transparent" file="toolbar/5" v-bind:data="example")
-    markup(lang="css")
-      |&lt;style&gt;
-      |  #navbar-image {
-      |    background: url('...') center;
-      |    height: 300px;
-      |  }
-      |&lt;/style&gt;
-
-    component-example(header="With Search" file="toolbar/6")
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
-  import ComponentExample from "../components/ComponentExample";
 
   export default {
-      components: {ComponentExample},
-      data () {
+    data () {
       return {
         doc: {
           title: 'Toolbar',
           desc: 'The <code>v-toolbar</code> component is pivotol to any gui, as it generally is the primary source of site navigation. The toolbar component works great in cojunction with a sidebar for hiding links and presenting an activator to open the sidebar on mobile.',
-          props: {
+          examples: [
+            { header: 'With icons', file: 'toolbar/1' },
+            { header: 'With items', file: 'toolbar/2' },
+            { header: 'With dropdown', file: 'toolbar/3' },
+            { header: '', file: 'toolbar/4' },
+            { header: 'Transparent', file: 'toolbar/5' },
+            { header: 'With search', file: 'toolbar/6' }
+          ],
+          props2: {
             'v-toolbar': {
               params: [
                 [
@@ -121,39 +112,6 @@
               default: true
             }
           }
-        },
-        example: {
-          items: [
-            { text: 'Link' },
-            { text: 'Link' },
-            { text: 'Link' }
-          ],
-          itemsGroup: [
-            {
-              parent: { text: 'Home', icon: 'home' },
-              items: [
-                {text: 'Our Services', href: 'javascript:;'},
-                {text: 'Contact Us', href: 'javascript:;'},
-                {text: 'About Us', href: 'javascript:;'}
-              ]
-            },
-            { text: 'Portfolio', href: 'javascript:;', icon: 'work' }
-          ],
-          itemsGroupV: [
-            {
-              parent: { text: 'Apply', icon: 'favorite' },
-              items: [
-                {text: 'Our Mission', href: 'javascript:;'},
-                {text: 'Partners', href: 'javascript:;'},
-                {text: 'Join Our Team', href: 'javascript:;'}
-              ]
-            }
-          ],
-          dropdown_items: [
-            { title: 'Send Feedback' },
-            { title: 'Request Help' },
-            { title: 'Contact Developer' }
-          ]
         }
       }
     },
