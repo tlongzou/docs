@@ -86,7 +86,14 @@
               { href: '/vuetify/quick-start', title: 'Quick start' }
             ]
           },
-          { href: '/motion', title: 'Motion', action: 'slow_motion_video' },
+          { 
+            title: 'Motion',
+            action: 'slow_motion_video',
+            group: 'motion',
+            items: [
+              { href: '/motion/transitions', title: 'Transitions' }
+            ]
+          },
           {
             title: 'Style',
             action: 'style',

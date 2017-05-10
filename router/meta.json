@@ -5,11 +5,11 @@
     "description": "Vuetify.js is a reusable semantic component framework for Vue.js 2. It aims to provide clean, semantic and reusable components.",
     "keywords": "vue, vue 2, vue js, vue.js, material design, vue components, material design components, vuetify, vuetify.js"
   },
-  "/motion": {
-    "h1": "Motion",
-    "title": "Motion / Transitions",
+  "/motion/transitions": {
+    "h1": "Transitions",
+    "title": "Transitions",
     "description": "Make an amazing application with smooth built in animations",
-    "keywords": "motion transitions"
+    "keywords": "motion, transitions"
   },
   "/style/colors": {
     "h1": "Colors",

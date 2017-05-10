@@ -21,7 +21,7 @@ export function createRouter () {
       routes: [
         route('/', 'Home'),
         route('/vuetify/quick-start', 'QuickStart'),
-        route('/motion', 'Motion'),
+        route('/motion/transitions', 'Transitions'),
         route('/style/colors', 'Colors'),
         route('/style/theme', 'Theme'),
         route('/style/typography', 'Typography'),
