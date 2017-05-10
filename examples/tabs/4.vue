@@ -13,8 +13,9 @@
       <v-icon>account_box</v-icon>
     </v-tab-item>
     <v-tab-content
-      v-for="i in 3" :key="i"
-      v-bind:id="'mobile-tabs-4-' + i"
+      v-for="i in 3"
+      :key="i"
+      :id="'mobile-tabs-4-' + i"
       slot="content"
     >
       <v-card>

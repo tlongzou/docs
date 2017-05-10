@@ -143,7 +143,7 @@
               { href: '/components/steppers', title: 'Steppers' },
               { href: '/components/subheaders', title: 'Subheaders' },
               { href: '/components/tabs', title: 'Tabs' },
-          //     { href: '/components/text-fields', title: 'Text fields' },
+              { href: '/components/text-fields', title: 'Text fields' },
               { href: '/components/toolbars', title: 'Toolbars' }
             ]
           },

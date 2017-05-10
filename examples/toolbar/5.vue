@@ -4,7 +4,7 @@
       <v-toolbar-logo class="hidden-sm-and-down">Toolbar</v-toolbar-logo>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-toolbar-item v-for="item in items">
+        <v-toolbar-item v-for="item in items" :key="item">
           {{ item.text }}
         </v-toolbar-item>
       </v-toolbar-items>

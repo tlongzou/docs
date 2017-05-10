@@ -1,18 +1,20 @@
 export default {
   functional: true,
 
-  render (h, context) {
-    let styles = {}
+  props: {
+    first: Boolean
+  },
 
-    if (context.data.attrs && context.data.attrs.first) {
-      styles['margin-top'] = 0
-    }
-
+  render (h, { props, children }) {
     const data = {
       'class': 'display-1',
-      style: styles
+      style: {}
     }
 
-    return h('h2', data, context.children)
+    if (props.first) {
+      data.styles.marginTop = 0
+    }
+
+    return h('h2', data, children)
   }
 }

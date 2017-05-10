@@ -17,15 +17,17 @@
       </v-card-text>
     </v-card>
     <v-tab-item 
-      v-for="i in 13" :key="i"
-      v-bind:href="'#mobile-tabs-6-' + i"
+      v-for="i in 13"
+      :key="i"
+      :href="'#mobile-tabs-6-' + i"
       slot="activators"
     >
       Item {{ i }}
     </v-tab-item>
     <v-tab-content
-      v-for="i in 13" :key="i"
-      v-bind:id="'mobile-tabs-6-' + i"
+      v-for="i in 13"
+      :key="i"
+      :id="'mobile-tabs-6-' + i"
       slot="content"
     >
       <v-card>

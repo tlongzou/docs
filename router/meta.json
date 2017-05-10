@@ -215,6 +215,12 @@
     "description": "Tabs component for the Vuetify framework.",
     "keywords": "tabs"
   },
+  "/components/text-fields": {
+    "h1": "Text fields",
+    "title": "Text fields",
+    "description": "Text field component for the Vuetify framework.",
+    "keywords": "text field"
+  },
   "/components/toolbars": {
     "h1": "Toolbars",
     "title": "Toolbars",

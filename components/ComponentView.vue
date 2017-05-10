@@ -5,17 +5,18 @@
       dd(slot="desc" v-html="doc.desc")
       v-divider
       v-card-row(actions)
-        v-btn(
-          tag="a"
-          v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
-          target="_blank"
-          icon
-          light
-          v-tooltip:right="{ html: 'View component' }"
-          v-if="doc.component"
-          v-bind:class="[`${currentColor}--text`]"
-        )
-          v-icon widgets
+        div.do-not-remove-this
+          v-btn(
+            tag="a"
+            v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
+            target="_blank"
+            icon
+            light
+            v-tooltip:right="{ html: 'View component' }"
+            v-if="doc.component"
+            v-bind:class="[`${currentColor}--text`]"
+          )
+            v-icon widgets
         v-btn(
           tag="a"
           v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/src/views/'+doc.edit+'.vue'"
@@ -43,39 +44,40 @@
     )
       div(slot="desc" v-html="example.desc" v-if="example.desc")
     slot
-    section-header.mt-5(v-if="props.length") API
-    v-tabs.elevation-1(v-if="props.length")
-      template(v-for="(a, i) in ['Props', 'Slots', 'Events']" v-if="model[a].length")
-        v-tab-item(
-          v-bind:href="`#${a}`"
-          slot="activators"
-          v-bind:key="`${i}-act`"
-        ) {{ a }}
-        v-tab-content(
-          slot="content"
-          v-bind:id="a"
-          v-bind:key="`${i}-con`"
-        )
-          v-card
-            v-card-title
-              v-layout(row nowrap grow)
-              v-spacer
-              v-text-field(
-                append-icon="search"
-                label="Search..."
-                single-line
-                hide-details
-                v-model="propsSearch"
+    template(v-if="props.length")
+      section-header.mt-5 API
+      v-tabs.elevation-1
+        template(v-for="(a, i) in ['Props', 'Slots', 'Events']" v-if="model[a].length")
+          v-tab-item(
+            v-bind:href="`#${a}`"
+            slot="activators"
+            v-bind:key="`${i}-act`"
+          ) {{ a }}
+          v-tab-content(
+            slot="content"
+            v-bind:id="a"
+            v-bind:key="`${i}-con`"
+          )
+            v-card
+              v-card-title
+                v-layout(row nowrap grow)
+                v-spacer
+                v-text-field(
+                  append-icon="search"
+                  label="Search..."
+                  single-line
+                  hide-details
+                  v-model="propsSearch"
+                )
+              v-data-table(
+                v-bind:headers="headers[a]"
+                v-model="model[a]"
+                v-bind:search="propsSearch"
+                hide-actions
               )
-            v-data-table(
-              v-bind:headers="headers[a]"
-              v-model="model[a]"
-              v-bind:search="propsSearch"
-              hide-actions
-            )
-              template(slot="items" scope="props")
-                template(v-for="prop in props")
-                  td(v-for="opt in prop" v-bind:key="opt") {{ opt }}
+                template(slot="items" scope="props")
+                  template(v-for="prop in props")
+                    td(v-for="opt in prop" v-bind:key="opt") {{ opt }}
 </template>
 
 <script>

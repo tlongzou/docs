@@ -2,7 +2,7 @@
   <v-card class="grey lighten-3">
     <v-sidebar height="30vh">
       <v-list>
-        <v-list-item v-for="i in 3">
+        <v-list-item v-for="i in 3" :key="i">
           <v-list-tile ripple>
             <v-list-tile-title>Link {{ i }}</v-list-tile-title>
           </v-list-tile>

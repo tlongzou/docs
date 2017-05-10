@@ -9,7 +9,7 @@
         col(width="50%")
       thead
         tr
-          th(v-for="th in headers") {{ th }}
+          th(v-for="th in headers" v-bind:key="th") {{ th }}
       tbody
           tr(v-if="options.model")
             td <code>v-model</code>
@@ -24,12 +24,12 @@
           tr(v-if="options.default")
             td <code>default</code>
             td Vue default slot
-          tr(v-for="tr in options.params")
-            td(v-for="(td, index) in tr")
+          tr(v-for="tr in options.params" v-bind:key="tr")
+            td(v-for="(td, index) in tr" v-bind:key="td")
               span(v-if="index === 0") <code>{{ td }}</code>
               span(v-else) {{ td }}
-          tr(v-for="tr in options.events")
-            td(v-for="(td, index) in tr")
+          tr(v-for="tr in options.events" v-bind:key="tr")
+            td(v-for="(td, index) in tr" v-bind:key="td")
               span(v-if="index === 0") <code>{{ td }}</code>
               span(v-else) {{ td }}
 </template>

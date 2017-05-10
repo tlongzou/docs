@@ -1,6 +1,6 @@
 <template>
   <v-expansion-panel>
-    <v-expansion-panel-content v-for="item in 5" ripple>
+    <v-expansion-panel-content v-for="item in 5" :key="item" ripple>
       <div slot="header">
         <div v-ripple="{ class: 'grey--text' }">Item</div>
       </div>
