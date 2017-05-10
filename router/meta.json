@@ -191,6 +191,12 @@
     "description": "Progress components for the Vuetify framework.",
     "keywords": "progress"
   },
+  "/components/selects": {
+    "h1": "Selects",
+    "title": "Select Component",
+    "description": "Select component for the Vuetify Framework",
+    "keywords": "selects"
+  },
   "/components/sliders": {
     "h1": "Sliders",
     "title": "Slider Component",

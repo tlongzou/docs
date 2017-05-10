@@ -142,7 +142,7 @@
               { href: '/components/parallax', title: 'Parallax' },
               { href: '/components/pickers', title: 'Pickers' },
               { href: '/components/progress', title: 'Progress & activity' },
-          //     { href: '/components/selects', title: 'Selects' },
+              { href: '/components/selects', title: 'Selects' },
           //     { href: '/components/selection-controls', title: 'Selection controls' },
               { href: '/components/navigation-drawers', title: 'Navigation drawers' },
               { href: '/components/sliders', title: 'Sliders' },
