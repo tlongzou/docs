@@ -167,6 +167,12 @@
     "description": "Menu component for Vuetify Framework",
     "keywords": "menu"
   },
+  "/components/navigation-drawers": {
+    "h1": "Navigation drawers",
+    "title": "Navigation drawer",
+    "description": "Navigation drawer component for Vuetify Framework",
+    "keywords": "navigation, drawer, sidebar, sidenav"
+  },
   "/components/pagination": {
     "h1": "Pagination",
     "title": "Pagination Component",
