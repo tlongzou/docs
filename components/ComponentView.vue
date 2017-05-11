@@ -46,14 +46,17 @@
     slot
     template(v-if="doc.props")
       section-header.mt-5 API
-      div(v-if="api.Props && Object.keys(api.Props).length > 1")
+      v-layout(row align-horiz-start v-if="api.Props && Object.keys(api.Props).length > 1")
         v-radio(
           v-for="(component, key) in props"
           v-bind:key="key"
           v-bind:value="key"
           v-bind:label="key"
+          v-model="currentComponentKey"
+          hide-details
+          class="ma-1"
         )
-      v-tabs.elevation-1
+      v-tabs(v-model="tabs").elevation-1
         template(v-for="(a, i) in api" v-if="a")
           v-tab-item(
             v-bind:href="`#${i}`"
@@ -92,6 +95,7 @@
     data () {
       return {
         currentComponent: false,
+        currentComponentKey: null,
         propsSearch: '',
         headers: {
           Props: [{ text: 'Option', value: 'prop', left: true },
@@ -110,7 +114,8 @@
           contextual: this.makeContextual(),
           model: this.makeModel(),
           router: this.makeRouter()
-        }
+        },
+        tabs: null
       }
     },
 
@@ -120,7 +125,7 @@
 
     computed: {
       currentTable () {
-        return this.currentComponent || []
+        return  this.props[this.currentComponentKey]
       },
       currentColor () {
         return this.$store.state.currentColor
@@ -172,6 +177,7 @@
 
       if (component.length) {
         this.currentComponent = this.props[component[0]]
+        this.currentComponentKey = component[0]
       }
     },
 

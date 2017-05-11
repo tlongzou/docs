@@ -16,79 +16,74 @@
             </p>
           `,
           examples: [
-            { header: 'Text dividers', file: 'breadcrumbs/1' },
-            { header: 'Icon dividers', file: 'breadcrumbs/2' }
+            { header: 'Text dividers', file: 'breadcrumbs/1', desc: `By default, breadcrumbs use a text divider. This can be any string.` },
+            { header: 'Icon dividers', file: 'breadcrumbs/2', desc: `For the icon variant, breadcrumbs can use any icon in Material Design Icons.` }
           ],
-          props: [],
-          props2: {
-            'v-breadcrumbs': {
-              params: [
-                [
-                  'divider',
-                  'String',
-                  '/',
-                  'Specifies the dividing character'
-                ],
-                [
-                  'icon',
-                  'Boolean',
-                  'False',
-                  'Specifies that the divider is an icon'
-                ]
+          props: {
+            'v-breadcrumbs': [
+              [
+                'divider',
+                'String',
+                '/',
+                'Specifies the dividing character'
+              ],
+              [
+                'icon',
+                'Boolean',
+                'False',
+                'Specifies that the divider is an icon'
               ]
-            },
-            'v-breadcrumbs-item': {
-              params: [
-                [
-                  'append',
-                  'Boolean',
-                  'False',
-                  'Vue Router router-link prop'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'List tile is disabled'
-                ],
-                [
-                  'href',
-                  'String, Object',
-                  'javascript:;',
-                  'For router, this is passed to the "to" prop'
-                ],
-                [
-                  'to',
-                  'String, Object',
-                  'javascript:;',
-                  'For router, this is passed to the "to" prop'
-                ],
-                [
-                  'nuxt',
-                  'Boolean',
-                  'False',
-                  'Specifies the link is a nuxt-link'
-                ],
-                [
-                  'replace',
-                  'Boolean',
-                  'False',
-                  'Vue Router router-link prop'
-                ],
-                [
-                  'router',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will be a router-link'
-                ],
-                [
-                  'tag',
-                  'String',
-                  'a',
-                  'Use a custom tag for the list tile'
-                ]
+            ],
+            'v-breadcrumbs-item': [
+              [
+                'append',
+                'Boolean',
+                'False',
+                'Vue Router router-link prop'
+              ],
+              [
+                'disabled',
+                'Boolean',
+                'False',
+                'List tile is disabled'
+              ],
+              [
+                'href',
+                'String, Object',
+                'javascript:;',
+                'For router, this is passed to the "to" prop'
+              ],
+              [
+                'to',
+                'String, Object',
+                'javascript:;',
+                'For router, this is passed to the "to" prop'
+              ],
+              [
+                'nuxt',
+                'Boolean',
+                'False',
+                'Specifies the link is a nuxt-link'
+              ],
+              [
+                'replace',
+                'Boolean',
+                'False',
+                'Vue Router router-link prop'
+              ],
+              [
+                'router',
+                'Boolean',
+                'False',
+                'Designates whether the list tiles will be a router-link'
+              ],
+              [
+                'tag',
+                'String',
+                'a',
+                'Use a custom tag for the list tile'
               ]
-            }
+            ]
           }
         }
       }
