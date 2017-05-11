@@ -23,29 +23,32 @@
           },
           defaultSlot: true,
           props: {
-            alert: [
-              {
-                shared: ['contextual', 'model'],
+            alert: {
+              shared: ['contextual'],
+              model: {
+                type: '*'
               },
-              [
-                'dismissible',
-                'Boolean',
-                'False',
-                'Specifies that the Alert can be closed'
-              ],
-              [
-                'icon',
-                'String',
-                '-',
-                'Designates a specific icon'
-              ],
-              [
-                'hide-icon',
-                'Boolean',
-                'False',
-                'Hides the alert icon'
+              params: [
+                [
+                  'dismissible',
+                  'Boolean',
+                  'False',
+                  'Specifies that the Alert can be closed'
+                ],
+                [
+                  'icon',
+                  'String',
+                  '-',
+                  'Designates a specific icon'
+                ],
+                [
+                  'hide-icon',
+                  'Boolean',
+                  'False',
+                  'Hides the alert icon'
+                ]
               ]
-            ]
+            }
           }
         }
       }

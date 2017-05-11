@@ -9,6 +9,7 @@ import SectionText from './SectionText'
 import SectionDef from './SectionDef'
 import WhatsNext from './WhatsNext'
 import ComponentView from './ComponentView'
+import ParamContent from './ParamContent'
 
 export default {
   ComponentType,
@@ -21,5 +22,6 @@ export default {
   SectionText,
   SectionDef,
   WhatsNext,
-  ComponentView
+  ComponentView,
+  ParamContent
 }

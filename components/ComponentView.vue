@@ -57,37 +57,41 @@
           class="ma-1"
         )
       v-tabs(v-model="tabs").elevation-1
-        template(v-for="(a, i) in api" v-if="a")
-          v-tab-item(
-            v-bind:href="`#${i}`"
-            slot="activators"
-            v-bind:key="`${i}-act`"
-          ) {{ i }}
+        div(slot="activators")
+          v-tab-item(href="#props" v-if="props") Props
+          v-tab-item(href="#slots" v-if="slots") Slots
+          v-tab-item(href="#events" v-if="events") Events
+        div(slot="content")
           v-tab-content(
-            slot="content"
-            v-bind:id="i"
-            v-bind:key="`${i}-con`"
+            id="props"
+            v-if="api.Props"
+            v-for="prop in api.Props"
+            v-bind:key="prop"
           )
-            v-card
-              v-card-title
-                v-layout(row nowrap grow)
-                v-spacer
-                v-text-field(
-                  append-icon="search"
-                  label="Search..."
-                  single-line
-                  hide-details
-                  v-model="propsSearch"
-                )
-              v-data-table(
-                v-bind:headers="headers[i]"
-                v-bind:search="propsSearch"
-                v-model="currentTable"
-                hide-actions
-              )
-                template(slot="items" scope="props")
-                  template(v-for="prop in props")
-                    td(v-for="opt in prop" v-bind:key="opt") {{ opt }}
+            param-content(
+              v-bind:headers="headers.Props"
+              v-bind:data="prop"
+            )
+          v-tab-content(
+            id="slots"
+            v-if="api.Slots"
+            v-for="prop in api.Slots"
+            v-bind:key="prop"
+          )
+            param-content(
+              v-bind:headers="headers.Slots"
+              v-bind:data="prop"
+            )
+          v-tab-content(
+            id="events"
+            v-if="api.Events"
+            v-for="prop in api.Events"
+            v-bind:key="prop"
+          )
+            param-content(
+              v-bind:headers="headers.Events"
+              v-bind:data="prop"
+            )
 </template>
 
 <script>
@@ -96,7 +100,6 @@
       return {
         currentComponent: false,
         currentComponentKey: null,
-        propsSearch: '',
         headers: {
           Props: [{ text: 'Option', value: 'prop', left: true },
           { text: 'Type(s)', value: 'type', left: true },
@@ -104,16 +107,6 @@
           { text: 'Description', value: 'desc', left: true }],
           Slots: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }],
           Events: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }]
-        },
-        api: {
-          Props: {},
-          Slots: {},
-          Events: {}
-        },
-        shared: {
-          contextual: this.makeContextual(),
-          model: this.makeModel(),
-          router: this.makeRouter()
         },
         tabs: null
       }
@@ -124,37 +117,45 @@
     },
 
     computed: {
+      api () {
+        return {
+          Props: this.props,
+          Slots: false,
+          Events: false
+        }
+      },
       currentTable () {
-        return  this.props[this.currentComponentKey]
+        return  []
       },
       currentColor () {
         return this.$store.state.currentColor
       },
       props () {
+        return this.doc.props
         const props = this.doc.props || false
 
         if (!props) return props
 
-        for (let key in props) {
-          let prop = props[key]
+        // for (let key in props) {
+        //   let prop = props[key]
 
-          if (prop[0].shared) {
-            const shared = prop.shift().shared
+        //   if (prop[0].shared) {
+        //     const shared = prop.shift().shared
 
-            shared.forEach(s => {
-              prop = prop.concat(this.shared[s])
-            })
-          }
+        //     shared.forEach(s => {
+        //       prop = prop.concat(this.shared[s])
+        //     })
+        //   }
 
-          props[key] = prop.map(p => {
-            return {
-              prop: p[0],
-              type: p[1],
-              default: p[2],
-              desc: p[3]
-            }
-          })
-        }
+        //   props[key] = prop.map(p => {
+        //     return {
+        //       prop: p[0],
+        //       type: p[1],
+        //       default: p[2],
+        //       desc: p[3]
+        //     }
+        //   })
+        // }
 
         return props
       },
@@ -167,10 +168,6 @@
     },
 
     mounted () {
-      this.api.Props = this.props
-      this.api.Slots = this.slots
-      this.api.Events = this.events
-
       if (!this.props) return
 
       const component = Object.keys(this.props)
@@ -178,34 +175,6 @@
       if (component.length) {
         this.currentComponent = this.props[component[0]]
         this.currentComponentKey = component[0]
-      }
-    },
-
-    methods: {
-      makeModel () {
-        const model = this.doc.model || false
-
-        if (!model) return false
-
-        return [[
-          'v-model',
-          Array.isArray(model.type) ? model.type.join(', ') : model.type,
-          model.default || '-',
-          model.description ? model.description : 'Controls visibility'
-        ]]
-      },
-      makeRouter () {
-        return [[
-          'router',
-          'Boolean',
-          false,
-          `Supported through <code>href</code> or <code>to</code> props. Has access to all <a href="https://router.vuejs.org/en/api/router-link.html" target="_blank">vue-router</a> and <a href="https://nuxtjs.org/api/components-nuxt-link" target="_blank">nuxt</a> router properties.`
-        ]]
-      },
-      makeContextual () {
-        return ['success', 'info', 'warning', 'error'].map(c => {
-          return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
-        })
       }
     }
   }
