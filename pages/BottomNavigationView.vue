@@ -17,28 +17,28 @@
             { header: 'Color & shift', file: 'bottom-navigation/2', desc: `When using a colored background, it is recommended to use the <code>light</code> prop. Shift will hide the button text until active. Keep in mind, <code>v-btn</code> text is required to be wrapped in a <code>&lt;span&gt;</code> tag.` },
             { header: 'Toggle', file: 'bottom-navigation/3', desc: `As with other Vuetify components, you can control the display state with <code>v-model</code>.` },
           ],
-          props: [],
-          props2: {
-            'v-bottom-navigation': {
-              params: [
-                [
-                  'absolute',
-                  'Boolean',
-                  'False',
-                  'Change the position from fixed to absolute'
-                ],
-                [
-                  'shift',
-                  'Boolean',
-                  'False',
-                  'Hide text of button when not active'
-                ]
+          model: {
+            type: '*'
+          },
+          defaultSlot: true,
+          props: {
+            'v-bottom-navigation': [
+              {
+                shared: ['model']
+              },
+              [
+                'absolute',
+                'Boolean',
+                'False',
+                'Change the position from fixed to absolute'
               ],
-              model: {
-                types: ['Boolean'],
-                default: 'False'
-              }
-            }
+              [
+                'shift',
+                'Boolean',
+                'False',
+                'Hide text of button when not active'
+              ]
+            ]
           }
         }
       }

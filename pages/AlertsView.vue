@@ -18,31 +18,35 @@
             { header: 'Closable', file: 'alerts/2', desc: `Using <code>v-model</code> you can control the state of the Alert. If you don't want to assign a v-model and just display the alert, you can simply do <code>:value="true"</code>.` },
             { header: 'Custom Icon / No Icon', file: 'alerts/3', desc: `You can easily assign a custom icon or remove it all together.` }
           ],
-          shared: ['contextual', 'model'],
           model: {
             type: '*'
           },
           defaultSlot: true,
-          props: [
-            {
-              prop: 'dismissible',
-              type: 'Boolean',
-              default: 'False',
-              description: 'Specifies that the Alert can be closed'
-            },
-            {
-              prop: 'icon',
-              type: 'String',
-              default: '-',
-              description: 'Designates a specific icon'
-            },
-            {
-              prop: 'hide-icon',
-              type: 'Boolean',
-              default: 'False',
-              description: 'Hides the alert icon'
-            }
-          ]
+          props: {
+            alert: [
+              {
+                shared: ['contextual', 'model'],
+              },
+              [
+                'dismissible',
+                'Boolean',
+                'False',
+                'Specifies that the Alert can be closed'
+              ],
+              [
+                'icon',
+                'String',
+                '-',
+                'Designates a specific icon'
+              ],
+              [
+                'hide-icon',
+                'Boolean',
+                'False',
+                'Hides the alert icon'
+              ]
+            ]
+          }
         }
       }
     }

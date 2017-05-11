@@ -1,25 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="selects-view")
-    component-example(header="Standard select" file="selects/1" v-bind:data="$data")
-      span(class="subheading" slot="details") Light Theme
-    component-example(file="selects/2" v-bind:data="$data")
-      span(class="subheading" slot="details") Dark Theme
-    blockquote Select requires that <code>v-model</code> be an object for single and an array for multiple.
-    component-example(header="Multiple" file="selects/3" v-bind:data="$data")
-      span(class="subheading" slot="details") A multi-select can utilize v-chip as the display for selected items.
-    component-example(header="Scoped slots" file="selects/4" v-bind:data="$data")
-      span(class="subheading" slot="details") With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.
-    markup(lang="js")
-      |people: [
-      |   { 'name': 'Sandra Adams', 'group': 'Group 1', avatar: '...' },
-      |   { 'name': 'Ali Connors', 'group': 'Group 1', avatar: '...' },
-      |   { 'name': 'Trevor Hansen', 'group': 'Group 1', avatar: '...' },
-      |   { 'name': 'Tucker Smith', 'group': 'Group 1', avatar: '...' },
-      |   { 'name': 'Britta Holt', 'group': 'Group 2', avatar: '...' },
-      |   { 'name': 'Jane Smith ', 'group': 'Group 2', avatar: '...' },
-      |   { 'name': 'John Smith', 'group': 'Group 2', avatar: '...' },
-      |   { 'name': 'Sandra Williams', 'group': 'Group 2', avatar: '...' }
-      |]
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -33,18 +13,6 @@
         5: '/public/doc-images/lists/5.jpg'
       }
       return {
-        activatorXY: {clientX: 0, clientY: 0},
-        e1: null,
-        e2: null,
-        e3: null,
-        e4: null,
-        e5: null,
-        e6: [],
-        e7: [],
-        e8: null,
-        e9: [],
-        e10: [],
-        e11: [],
         items: [
           { text: 'State 1' },
           { text: 'State 2' },
@@ -86,7 +54,13 @@
         doc: {
           title: 'Select',
           desc: 'Select fields components are used for collecting user provided information from a list of options.',
-          props: {
+          examples: [
+            { header: 'Standard select', file: 'selects/1', desc: 'Light theme' },
+            { header: 'Standard select', file: 'selects/2', desc: 'Dark theme' },
+            { header: 'Multiple', file: 'selects/3', desc: `A multi-select can utilize v-chip as the display for selected items.` },
+            { header: 'Scoped slots', file: 'selects/4', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` }
+          ],
+          props2: {
             'v-select': {
               params: [
                 [
