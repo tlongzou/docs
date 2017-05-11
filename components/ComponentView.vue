@@ -44,18 +44,25 @@
     )
       div(slot="desc" v-html="example.desc" v-if="example.desc")
     slot
-    template(v-if="props.length")
+    template(v-if="doc.props")
       section-header.mt-5 API
+      div(v-if="api.Props && Object.keys(api.Props).length > 1")
+        v-radio(
+          v-for="(component, key) in props"
+          v-bind:key="key"
+          v-bind:value="key"
+          v-bind:label="key"
+        )
       v-tabs.elevation-1
-        template(v-for="(a, i) in ['Props', 'Slots', 'Events']" v-if="model[a].length")
+        template(v-for="(a, i) in api" v-if="a")
           v-tab-item(
-            v-bind:href="`#${a}`"
+            v-bind:href="`#${i}`"
             slot="activators"
             v-bind:key="`${i}-act`"
-          ) {{ a }}
+          ) {{ i }}
           v-tab-content(
             slot="content"
-            v-bind:id="a"
+            v-bind:id="i"
             v-bind:key="`${i}-con`"
           )
             v-card
@@ -70,9 +77,9 @@
                   v-model="propsSearch"
                 )
               v-data-table(
-                v-bind:headers="headers[a]"
-                v-model="model[a]"
+                v-bind:headers="headers[i]"
                 v-bind:search="propsSearch"
+                v-model="currentTable"
                 hide-actions
               )
                 template(slot="items" scope="props")
@@ -84,6 +91,7 @@
   export default {
     data () {
       return {
+        currentComponent: false,
         propsSearch: '',
         headers: {
           Props: [{ text: 'Option', value: 'prop', left: true },
@@ -91,12 +99,12 @@
           { text: 'Default', value: 'default', left: true },
           { text: 'Description', value: 'desc', left: true }],
           Slots: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }],
-          Events: []
+          Events: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }]
         },
-        model: {
-          Props: [],
-          Slots: [],
-          Events: []
+        api: {
+          Props: {},
+          Slots: {},
+          Events: {}
         },
         shared: {
           contextual: this.makeContextual(),
@@ -111,37 +119,60 @@
     },
 
     computed: {
+      currentTable () {
+        return this.currentComponent || []
+      },
+      currentColor () {
+        return this.$store.state.currentColor
+      },
       props () {
-        let props = Array.isArray(this.doc.props) ? this.doc.props : []
+        const props = this.doc.props || false
 
-        if (this.doc.shared) this.doc.shared.forEach(i => props = props.concat(this.shared[i]))
+        if (!props) return props
+
+        for (let key in props) {
+          let prop = props[key]
+
+          if (prop[0].shared) {
+            const shared = prop.shift().shared
+
+            shared.forEach(s => {
+              prop = prop.concat(this.shared[s])
+            })
+          }
+
+          props[key] = prop.map(p => {
+            return {
+              prop: p[0],
+              type: p[1],
+              default: p[2],
+              desc: p[3]
+            }
+          })
+        }
 
         return props
       },
       slots () {
-        let slots = []
-
-        if (this.doc.defaultSlot) {
-          slots.push({
-            prop: 'default',
-            description: 'Default vue slot'
-          })
-        }
-
-        return slots
+        return this.doc.slots || false
       },
       events () {
-        return []
-      },
-      currentColor () {
-        return this.$store.state.currentColor
+        return this.doc.events || false
       }
     },
 
     mounted () {
-      this.model.Props = this.props
-      this.model.Slots = this.slots
-      this.model.Events = this.events
+      this.api.Props = this.props
+      this.api.Slots = this.slots
+      this.api.Events = this.events
+
+      if (!this.props) return
+
+      const component = Object.keys(this.props)
+
+      if (component.length) {
+        this.currentComponent = this.props[component[0]]
+      }
     },
 
     methods: {
@@ -150,24 +181,24 @@
 
         if (!model) return false
 
-        return {
-          prop: 'v-model',
-          type: Array.isArray(model.type) ? model.type.join(', ') : model.type,
-          default: model.default || '-',
-          description: model.description ? model.description : 'Controls visibility'
-        }
+        return [[
+          'v-model',
+          Array.isArray(model.type) ? model.type.join(', ') : model.type,
+          model.default || '-',
+          model.description ? model.description : 'Controls visibility'
+        ]]
       },
       makeRouter () {
-        return {
-          prop: 'router',
-          type: 'Boolean',
-          default: false,
-          description: `Supported through <code>href</code> or <code>to</code> props. Has access to all <a href="https://router.vuejs.org/en/api/router-link.html" target="_blank">vue-router</a> and <a href="https://nuxtjs.org/api/components-nuxt-link" target="_blank">nuxt</a> router properties.`
-        }
+        return [[
+          'router',
+          'Boolean',
+          false,
+          `Supported through <code>href</code> or <code>to</code> props. Has access to all <a href="https://router.vuejs.org/en/api/router-link.html" target="_blank">vue-router</a> and <a href="https://nuxtjs.org/api/components-nuxt-link" target="_blank">nuxt</a> router properties.`
+        ]]
       },
       makeContextual () {
         return ['success', 'info', 'warning', 'error'].map(c => {
-          return { prop: c, type: 'Boolean', default: 'False', description: `Applies the ${c} contextual color` }
+          return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
         })
       }
     }
