@@ -86,7 +86,7 @@
               { href: '/vuetify/quick-start', title: 'Quick start' }
             ]
           },
-          { 
+          {
             title: 'Motion',
             action: 'slow_motion_video',
             group: 'motion',
@@ -143,7 +143,7 @@
               { href: '/components/pickers', title: 'Pickers' },
               { href: '/components/progress', title: 'Progress & activity' },
           //     { href: '/components/selects', title: 'Selects' },
-          //     { href: '/components/selection-controls', title: 'Selection controls' },
+              { href: '/components/selection-controls', title: 'Selection controls' },
               { href: '/components/navigation-drawers', title: 'Navigation drawers' },
               { href: '/components/sliders', title: 'Sliders' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },

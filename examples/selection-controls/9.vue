@@ -1,0 +1,37 @@
+<template>
+  <v-container fluid>
+    <v-layout row wrap>
+      <v-col xs12 md6>
+        <v-subheader>Light</v-subheader>
+        <v-card class="elevation-0">
+          <v-card-text>
+            <p>{{ ex15 }}</p>
+            <v-switch label="John" v-model="ex15" value="John" light />
+            <v-switch label="Jacob" v-model="ex15" value="Jacob" light />
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col xs12 md6>
+        <v-subheader>Dark</v-subheader>
+        <v-card class="secondary elevation-0">
+          <v-card-text>
+            <p class="white--text">{{ ex16 }}</p>
+            <v-switch label="John" v-model="ex16" value="John" dark />
+            <v-switch label="Jacob" v-model="ex16" value="Jacob" dark />
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-layout>
+  </v-container>
+</template>
+
+<script>
+  export default {
+    data () {
+      return {
+        ex15: ['John'],
+        ex16: ['John'],
+      }
+    }
+  }
+</script>

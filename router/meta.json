@@ -209,6 +209,12 @@
     "description": "Stepper component for Vuetify Framework",
     "keywords": "stepper"
   },
+  "/components/selection-controls": {
+    "h1": "Selection Controls",
+    "title": "Selection controls Input Components",
+    "description": "Selection controls input components for Vuetify Framework",
+    "keywords": "vuetify, form, components"
+  },
   "/components/subheaders": {
     "h1": "Subheaders",
     "title": "Subheaders",
