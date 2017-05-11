@@ -1,63 +1,163 @@
 <template lang="pug">
-  v-table-overflow
-    table(class="table table--component elevation-0" v-for="(options, type) in params")
-      caption <strong>&lt;{{ type }}&gt;</strong>
-      colgroup
-        col(width="20%")
-        col(width="10%")
-        col(width="20%")
-        col(width="50%")
-      thead
-        tr
-          th(v-for="th in headers" v-bind:key="th") {{ th }}
-      tbody
-          tr(v-if="options.model")
-            td <code>v-model</code>
-            td {{ options.model.types.join(', ') }}
-            td {{ options.model.default }}
-            td {{ options.model.description ? options.model.description : 'Controls visibility'}}
-          tr(v-if="options.router")
-            td <code>router</code>
-            td Boolean
-            td False
-            td Supported through <code>href</code> or <code>to</code> props. Has access to all <a href="https://router.vuejs.org/en/api/router-link.html" target="_blank">vue-router</a> and <a href="https://nuxtjs.org/api/components-nuxt-link" target="_blank">nuxt</a> router properties.
-          tr(v-if="options.default")
-            td <code>default</code>
-            td Vue default slot
-          tr(v-for="tr in options.params" v-bind:key="tr")
-            td(v-for="(td, index) in tr" v-bind:key="td")
-              span(v-if="index === 0") <code>{{ td }}</code>
-              span(v-else) {{ td }}
-          tr(v-for="tr in options.events" v-bind:key="tr")
-            td(v-for="(td, index) in tr" v-bind:key="td")
-              span(v-if="index === 0") <code>{{ td }}</code>
-              span(v-else) {{ td }}
+  v-card.component-parameters
+    v-card-title
+      v-layout(row nowrap grow)
+      v-spacer
+      v-text-field(
+        append-icon="search"
+        label="Search..."
+        single-line
+        hide-details
+        v-model="search"
+      )
+    v-data-table(
+      v-bind:headers="headers"
+      v-bind:search="search"
+      v-model="table"
+      hide-actions
+    )
+      template(slot="items" scope="props")
+        template(v-for="prop in props")
+          td(v-for="opt in prop" v-bind:key="opt" v-html="opt")
 </template>
 
 <script>
   export default {
-    props: {
-      headers: {
-        type: Array,
-        default: () => []
-      },
+    data () {
+      return {
+        search: '',
+        shared: {
+          contextual: this.makeContextual(),
+          router: this.makeRouter(),
+          default: this.makeSlot()
+        }
+      }
+    },
 
-      params: {
-        type: Object,
-        default: () => {}
+    props: {
+      id: String,
+      headers: Array,
+      data: Object
+    },
+
+    computed: {
+      table () {
+        let params = []
+
+        for (let key in this.data) {
+          params = params.concat(this.parseComponent(this.data[key], key))
+        }
+
+        return params
+      }
+    },
+
+    methods: {
+      parseComponent (c, key) {
+        let params = c.params || []
+
+        c.shared && c.shared.forEach(s => {
+          params = params.concat(this.shared[s])
+        })
+
+        c.model && params.push(this.makeModel(c.model))
+
+        return params.map(d => {
+          return {
+            key: `<code>${key}</code>`,
+            prop: d[0],
+            type: d[1],
+            default: d[2],
+            desc: d[3]
+          }
+        })
       },
+      makeSlot () {
+        return [[
+          'default',
+          'Default Vue slot'
+        ]]
+      },
+      makeModel (model) {
+        if (!model) return false
+
+        return [
+          'v-model',
+          Array.isArray(model.type) ? model.type.join(', ') : model.type,
+          model.default || '-',
+          model.description ? model.description : 'Controls visibility'
+        ]
+      },
+      makeRouter () {
+        return [[
+          'router',
+          'Boolean',
+          false,
+          `Supported through <code>href</code> or <code>to</code> props. Has access to all <a href="https://router.vuejs.org/en/api/router-link.html" target="_blank">vue-router</a> and <a href="https://nuxtjs.org/api/components-nuxt-link" target="_blank">nuxt</a> router properties.`
+        ]]
+      },
+      makeContextual () {
+        return ['success', 'info', 'warning', 'error'].map(c => {
+          return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
+        })
+      },
+      makeRouter () {
+        return [
+          [
+            'append',
+            'Boolean',
+            'False',
+            'Vue Router router-link prop'
+          ],
+          [
+            'disabled',
+            'Boolean',
+            'False',
+            'List tile is disabled'
+          ],
+          [
+            'href',
+            'String, Object',
+            'javascript:;',
+            'For router, this is passed to the "to" prop'
+          ],
+          [
+            'to',
+            'String, Object',
+            'javascript:;',
+            'For router, this is passed to the "to" prop'
+          ],
+          [
+            'nuxt',
+            'Boolean',
+            'False',
+            'Specifies the link is a nuxt-link'
+          ],
+          [
+            'replace',
+            'Boolean',
+            'False',
+            'Vue Router router-link prop'
+          ],
+          [
+            'router',
+            'Boolean',
+            'False',
+            'Designates whether the list tiles will be a router-link'
+          ],
+          [
+            'tag',
+            'String',
+            'a',
+            'Use a custom tag for the list tile'
+          ]
+        ]
+      }
     }
   }
 </script>
 
 <style lang="stylus">
-  .table--component
-    box-shadow: none
-
-    caption
-      background: rgba(#000, 0.05)
-      padding: 5px 0
-
-    &:not(:first-child)
-      margin-top: 2rem
+  .component-parameters code
+    white-space: nowrap
 </style>

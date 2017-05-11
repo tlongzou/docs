@@ -23,7 +23,7 @@
           },
           defaultSlot: true,
           props: {
-            alert: {
+            'v-alert': {
               shared: ['contextual'],
               model: {
                 type: '*'
@@ -48,6 +48,11 @@
                   'Hides the alert icon'
                 ]
               ]
+            }
+          },
+          slots: {
+            'v-alert': {
+              shared: ['default']
             }
           }
         }

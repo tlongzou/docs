@@ -46,51 +46,24 @@
     slot
     template(v-if="doc.props")
       section-header.mt-5 API
-      v-layout(row align-horiz-start v-if="api.Props && Object.keys(api.Props).length > 1")
-        v-radio(
-          v-for="(component, key) in props"
-          v-bind:key="key"
-          v-bind:value="key"
-          v-bind:label="key"
-          v-model="currentComponentKey"
-          hide-details
-          class="ma-1"
-        )
       v-tabs(v-model="tabs").elevation-1
-        div(slot="activators")
-          v-tab-item(href="#props" v-if="props") Props
-          v-tab-item(href="#slots" v-if="slots") Slots
-          v-tab-item(href="#events" v-if="events") Events
+        template(slot="activators")
+          v-tab-item(
+            v-for="p in ['props', 'slots', 'events']"
+            v-bind:href="`#${p}`"
+            v-if="doc[p]"
+            v-bind:key="p"
+          ) {{ p }}
         div(slot="content")
           v-tab-content(
-            id="props"
-            v-if="api.Props"
-            v-for="prop in api.Props"
-            v-bind:key="prop"
+            v-bind:id="p"
+            v-for="p in ['props', 'slots', 'events']"
+            v-if="doc[p]"
+            v-bind:key="p"
           )
-            param-content(
-              v-bind:headers="headers.Props"
-              v-bind:data="prop"
-            )
-          v-tab-content(
-            id="slots"
-            v-if="api.Slots"
-            v-for="prop in api.Slots"
-            v-bind:key="prop"
-          )
-            param-content(
-              v-bind:headers="headers.Slots"
-              v-bind:data="prop"
-            )
-          v-tab-content(
-            id="events"
-            v-if="api.Events"
-            v-for="prop in api.Events"
-            v-bind:key="prop"
-          )
-            param-content(
-              v-bind:headers="headers.Events"
-              v-bind:data="prop"
+            component-parameters(
+              v-bind:headers="headers[p]"
+              v-bind:data="doc[p]"
             )
 </template>
 
@@ -98,15 +71,21 @@
   export default {
     data () {
       return {
-        currentComponent: false,
-        currentComponentKey: null,
+        current: {
+          props: null,
+          slots: null,
+          events: null
+        },
         headers: {
-          Props: [{ text: 'Option', value: 'prop', left: true },
-          { text: 'Type(s)', value: 'type', left: true },
-          { text: 'Default', value: 'default', left: true },
-          { text: 'Description', value: 'desc', left: true }],
-          Slots: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }],
-          Events: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }]
+          props: [
+            { text: 'Component', value: 'key', left: true },
+            { text: 'Option', value: 'prop', left: true },
+            { text: 'Type(s)', value: 'type', left: true },
+            { text: 'Default', value: 'default', left: true },
+            { text: 'Description', value: 'desc', left: true }
+          ],
+          slots: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }],
+          events: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }]
         },
         tabs: null
       }
@@ -117,64 +96,31 @@
     },
 
     computed: {
-      api () {
-        return {
-          Props: this.props,
-          Slots: false,
-          Events: false
-        }
-      },
-      currentTable () {
-        return  []
-      },
       currentColor () {
         return this.$store.state.currentColor
-      },
-      props () {
-        return this.doc.props
-        const props = this.doc.props || false
-
-        if (!props) return props
-
-        // for (let key in props) {
-        //   let prop = props[key]
-
-        //   if (prop[0].shared) {
-        //     const shared = prop.shift().shared
-
-        //     shared.forEach(s => {
-        //       prop = prop.concat(this.shared[s])
-        //     })
-        //   }
-
-        //   props[key] = prop.map(p => {
-        //     return {
-        //       prop: p[0],
-        //       type: p[1],
-        //       default: p[2],
-        //       desc: p[3]
-        //     }
-        //   })
-        // }
-
-        return props
-      },
-      slots () {
-        return this.doc.slots || false
-      },
-      events () {
-        return this.doc.events || false
       }
     },
 
     mounted () {
-      if (!this.props) return
+      if (this.doc.props) {
+        const props = Object.keys(this.doc.props)
 
-      const component = Object.keys(this.props)
+        if (props.length) {
+          this.current.props = props[0]
+          this.currentComponentKey = props[0]
+        }
+      }
 
-      if (component.length) {
-        this.currentComponent = this.props[component[0]]
-        this.currentComponentKey = component[0]
+      if (this.doc.slots) {
+        const slots = Object.keys(this.doc.slots)
+
+        if (slots.length) this.current.slots = slots[0]
+      }
+
+      if (this.doc.events) {
+        const events = Object.keys(this.doc.events)
+
+        if (events.length) this.current.events = events[0]
       }
     }
   }
