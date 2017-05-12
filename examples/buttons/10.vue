@@ -1,9 +1,9 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0">
     <v-layout row wrap>
       <v-col xs12 sm6>
         <div class="text-xs-center">
-          <v-card class="elevation-0" height="300px">
+          <v-card class="elevation-0">
             <v-card-text>
               <div>
                 <v-btn small primary dark>Small Button</v-btn>
@@ -20,7 +20,7 @@
       </v-col>
       <v-col xs12 sm6>
         <div class="text-xs-center">
-          <v-card class="elevation-0" height="300px">
+          <v-card class="elevation-0">
             <v-card-text>
               <div>
                 <v-btn primary floating small dark>

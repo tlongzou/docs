@@ -29,7 +29,8 @@
         shared: {
           contextual: this.makeContextual(),
           router: this.makeRouter(),
-          default: this.makeSlot()
+          default: this.makeSlot(),
+          theme: this.makeTheme()
         }
       }
     },
@@ -63,6 +64,10 @@
         c.model && params.push(this.makeModel(c.model))
 
         return params.map(d => {
+          if (!d) {
+            console.log(params)
+            return {}
+          }
           return {
             key: `<code>${key}</code>`,
             prop: d[0],
@@ -88,18 +93,26 @@
           model.description ? model.description : 'Controls visibility'
         ]
       },
-      makeRouter () {
-        return [[
-          'router',
-          'Boolean',
-          false,
-          `Supported through <code>href</code> or <code>to</code> props. Has access to all <a href="https://router.vuejs.org/en/api/router-link.html" target="_blank">vue-router</a> and <a href="https://nuxtjs.org/api/components-nuxt-link" target="_blank">nuxt</a> router properties.`
-        ]]
-      },
       makeContextual () {
         return ['success', 'info', 'warning', 'error'].map(c => {
           return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
         })
+      },
+      makeTheme () {
+        return [
+          [
+            'dark',
+            'Boolean',
+            'False',
+            'Applies the dark theme (default light)'
+          ],
+          [
+            'light',
+            'Boolean',
+            'False',
+            'Applies the light theme'
+          ]
+        ]
       },
       makeRouter () {
         return [
@@ -158,6 +171,8 @@
 </script>
 
 <style lang="stylus">
-  .component-parameters code
-    white-space: nowrap
+  .component-parameters
+    box-shadow: none
+    code
+      white-space: nowrap
 </style>

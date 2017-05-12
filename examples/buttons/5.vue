@@ -1,7 +1,7 @@
 <template>
   <v-card class="elevation-0 py-5">
     <v-card-text>
-      <v-container fluid="fluid">
+      <v-container fluid class="pa-0">
         <v-layout row wrap>
           <v-col xs12 sm12 md6 class="py-2">
             <p>Exclusive</p>

@@ -2,17 +2,17 @@
   <div class="text-xs-center">
     <v-btn
       secondary
-      v-bind:loading="loading"
-      v-on:click.native="loader = 'loading'"
-      v-bind:disabled="loading"
+      :loading="loading"
+      @click.native="loader = 'loading'"
+      :disabled="loading"
     >
       Accept Terms
     </v-btn>
 
     <v-btn
-      v-bind:loading="loading3"
-      v-on:click.native="loader = 'loading3'"
-      v-bind:disabled="loading3"
+      :loading="loading3"
+      @click.native="loader = 'loading3'"
+      :disabled="loading3"
       class="blue-grey"
     >
       Upload
@@ -21,9 +21,9 @@
 
     <v-btn
       success
-      v-bind:loading="loading2"
-      v-on:click.native="loader = 'loading2'"
-      v-bind:disabled="loading2"
+      :loading="loading2"
+      @click.native="loader = 'loading2'"
+      :disabled="loading2"
     >
       Custom Loader
       <span slot="loader">Loading...</span>
@@ -31,9 +31,9 @@
 
     <v-btn
       info
-      v-bind:loading="loading4"
-      v-on:click.native="loader = 'loading4'"
-      v-bind:disabled="loading4"
+      :loading="loading4"
+      @click.native="loader = 'loading4'"
+      :disabled="loading4"
     >
       Icon Loader
       <span slot="loader" class="custom-loader">
@@ -98,7 +98,7 @@
         const l = this.loader
         this[l] = !this[l]
 
-        setTimeout(() => (this[l] = false), 30000)
+        setTimeout(() => (this[l] = false), 3000)
 
         this.loader = null
       }

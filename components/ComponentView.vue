@@ -84,7 +84,11 @@
             { text: 'Default', value: 'default', left: true },
             { text: 'Description', value: 'desc', left: true }
           ],
-          slots: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }],
+          slots: [
+            { text: 'Component', value: 'key', left: true },
+            { text: 'Name', value: 'name', left: true },
+            { text: 'Description', value: 'description', left: true }
+          ],
           events: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }]
         },
         tabs: null
@@ -106,21 +110,21 @@
         const props = Object.keys(this.doc.props)
 
         if (props.length) {
-          this.current.props = props[0]
-          this.currentComponentKey = props[0]
+          // this.current.props = props[0]
+          // this.currentComponentKey = props[0]
         }
       }
 
       if (this.doc.slots) {
         const slots = Object.keys(this.doc.slots)
 
-        if (slots.length) this.current.slots = slots[0]
+        // if (slots.length) this.current.slots = slots[0]
       }
 
       if (this.doc.events) {
         const events = Object.keys(this.doc.events)
 
-        if (events.length) this.current.events = events[0]
+        // if (events.length) this.current.events = events[0]
       }
     }
   }

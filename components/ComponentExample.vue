@@ -1,6 +1,6 @@
 <template lang="pug">
   div.component-example
-    v-card(style="z-index: 1")
+    v-card
       v-card-title(v-bind:class="[currentColor]")
         span.white--text(v-text="header")
         v-spacer

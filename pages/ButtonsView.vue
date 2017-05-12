@@ -20,32 +20,31 @@
           examples: [
             { header: "Flat", file: "buttons/1", desc: ``},
             { header: "Raised", file: "buttons/2", desc: ``},
-            { header: "Button Dropdown", file: "buttons/3", desc: ``},
+            { header: "Button Dropdown", file: "buttons/3", desc: `Button dropdowns are similar to selects, but come with different style options and are made to work with the <code>v-app-bar</code> component.`},
             { header: "Button Dropdown Variants", file: "buttons/4", desc: ``},
-            { header: "Button Toggle", file: "buttons/5", desc: ``},
-            { header: "Icon", file: "buttons/6", desc: ``},
-            { header: "App Bar", file: "buttons/7", desc: ``},
-            { header: "Floating", file: "buttons/8", desc: ``},
-            { header: "Loaders", file: "buttons/9", desc: ``},
-            { header: "Sizing", file: "buttons/10", desc: ``},
-            { header: "Outline", file: "buttons/11", desc: ``},
-            { header: "Round", file: "buttons/12", desc: ``},
-            { header: "Block", file: "buttons/13", desc: ``},
+            { header: "Button Toggle", file: "buttons/5", desc: `Toggle buttons are essentially styled radio or checkboxes, depending on the properties selected. This component is compatible with the <code>v-app-bar</code> component.`},
+            { header: "Icon", file: "buttons/6", desc: `Icons can be used for the primary cotent of a button.`},
+            { header: "App Bar", file: "buttons/7", desc: `The application bar is useful for mimicing the design of a native application.`},
+            { header: "Floating", file: "buttons/8", desc: `Floating buttons are round and usually contain an icon.`},
+            { header: "Loaders", file: "buttons/9", desc: `Using the loading prop, you can notify a user that there is processing taking place. The default behavior is to use a <code>v-progress-circular</code> component but this can be customized.`},
+            { header: "Sizing", file: "buttons/10", desc: `Buttons can be given different sizing options to fit a multitude of different scenarios.`},
+            { header: "Outline", file: "buttons/11", desc: `Outline buttons inherit their borders from the current color applied.`},
+            { header: "Round", file: "buttons/12", desc: `Rounded buttons behave the same as regular buttons but have rounded edges.`},
+            { header: "Block", file: "buttons/13", desc: `Block buttons extend the full available width.`},
           ],
           props: {
             'v-btn': {
+              shared: ['theme', 'contextual'],
+              model: {
+                types: ['Boolean'],
+                default: 'False'
+              },
               params: [
                 [
                   'active-class',
                   'String',
                   'btn--active',
                   'Applies the .btn--active class. This does not alter the button style, but can be used for hooking into.'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'False',
-                  'Applies the dark theme (default light)'
                 ],
                 [
                   'block',
@@ -114,18 +113,6 @@
                   'Applies the ripple directive',
                 ],
                 [
-                  'type',
-                  'String',
-                  'button',
-                  'Sets the buttons type attribute',
-                ],
-                [
-                  'tag',
-                  'String',
-                  'button',
-                  'Change the element type',
-                ],
-                [
                   'primary',
                   'Boolean',
                   'False',
@@ -136,39 +123,15 @@
                   'Boolean',
                   'False',
                   'Applies the "secondary" context',
-                ],
-                [
-                  'success',
-                  'Boolean',
-                  'False',
-                  'Applies the "success" context',
-                ],
-                [
-                  'info',
-                  'Boolean',
-                  'False',
-                  'Applies the "info" context',
-                ],
-                [
-                  'warning',
-                  'Boolean',
-                  'False',
-                  'Applies the "warning" context',
-                ],
-                [
-                  'error',
-                  'Boolean',
-                  'False',
-                  'Applies the "error" context',
                 ]
-              ],
-              model: {
-                types: ['Boolean'],
-                default: 'False'
-              },
-              router: true
+              ]
             },
             'v-btn-dropdown': {
+              model: {
+                types: ['String', 'Object'],
+                default: '-',
+                description: 'Sets selected value'
+              },
               params: [
                 [
                   'light',
@@ -218,12 +181,7 @@
                   'False',
                   'Designates the dropdown as a segmented btn'
                 ]
-              ],
-              model: {
-                types: ['String', 'Object'],
-                default: '-',
-                description: 'Sets selected value'
-              }
+              ]
             },
             'v-btn-toggle': {
               params: [
@@ -260,12 +218,12 @@
           },
           events: {
             'v-btn-dropdown': {
-              events: [
+              params: [
                 ['input', 'String, Number', 'Selected value']
               ]
             },
             'v-btn-toggle': {
-              events: [
+              params: [
                 ['input', 'String, Number', 'Selected button(s)']
               ]
             },

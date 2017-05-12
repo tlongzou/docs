@@ -1,3 +1,5 @@
 <template>
-  <v-btn round primary dark>Rounded Button</v-btn>
+  <div class="text-xs-center">
+    <v-btn round primary>Rounded Button</v-btn>
+  </div>
 </template>

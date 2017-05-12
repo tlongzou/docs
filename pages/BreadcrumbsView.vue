@@ -42,7 +42,10 @@
           },
           slots: {
             'v-breadcrumbs': {
-              shared: ['router']
+              shared: ['default']
+            },
+            'v-breadcrumbs-item': {
+              shared: ['default']
             }
           }
         }
