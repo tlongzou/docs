@@ -1,47 +1,5 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
-    //- h4 Checkboxes
-    //- component-example(header="Boolean" file="selection-controls/1" v-bind:data="$data")
-    //-   section-text(slot="details") A <strong>Boolean</strong> checkbox has no value and only emits a true or false. The checkbox will determine its type based upon the model type given. A checkbox has two themes, light and dark.
-    //- markup(lang="js")
-    //-   |data () {
-    //-   |   return {
-    //-   |     ex1: true,
-    //-   |     ex2: false,
-    //-   |     ex3: true,
-    //-   |     ex4: false
-    //-   |   }
-    //-   |}
-    //- component-example(header="Array" file="selection-controls/2" v-bind:data="$data")
-    //-   section-text(slot="details") An <strong>Array</strong> checkbox must have an assigned <code>value</code> prop set.
-    //- markup(lang="js")
-    //-   |data () {
-    //-   |   return {
-    //-   |     ex5: ['John'],
-    //-   |     ex6: ['John']
-    //-   |   }
-    //-   |}
-    //- component-example(header="States" file="selection-controls/3" v-bind:data="$data")
-    //- component-example(header="Contextual" file="selection-controls/4" v-bind:data="$data")
-    //- h4 Radios
-    //- component-example(header="Default" file="selection-controls/5" v-bind:data="$data")
-    //-   section-text(slot="details") Radios are value based selection where only one can be selected.
-    //- markup(slot="js")
-    //-   |data () {
-    //-   |   return {
-    //-   |     ex8: false,
-    //-   |     ex9: true
-    //-   |   }
-    //-   |}
-    //- component-example(header="States" file="selection-controls/6" v-bind:data="$data")
-    //- component-example(header="Contextual" file="selection-controls/7" v-bind:data="$data")
-    //-   section-text(slot="details") Contextual controls correspond to success, info, warning and error colors for your application.
-    //- h4 Switches
-    //- section-text Switches share functionality with <code>v-checkbox</code>. The main difference is in the style.
-    //- component-example(header="Boolean" file="selection-controls/8" v-bind:data="$data")
-    //- component-example(header="Array" file="selection-controls/9" v-bind:data="$data")
-    //- component-example(header="States" file="selection-controls/10" v-bind:data="$data")
-    //- component-example(header="Contextual" file="selection-controls/11" v-bind:data="$data")
 </template>
 
 <script>
@@ -197,15 +155,22 @@
                 ],
               ],
               model: {
-                types: ['*'],
+                type: '*',
                 default: 'None',
                 description: 'Current input value'
               }
             },
             'v-radio': {
-              params: [],
+              params: [
+                [
+                  'input-value',
+                  'String, Number',
+                  '-',
+                  'Sets the radio current input value'
+                ]
+              ],
               model: {
-                types: ['*'],
+                type: '*',
                 default: 'None',
                 description: 'Current radio value'
               }
@@ -232,7 +197,7 @@
                 ],
               ],
               model: {
-                types: ['*'],
+                type: '*',
                 default: 'None',
                 description: 'Current switch value'
               }
