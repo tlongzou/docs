@@ -49,16 +49,16 @@
       v-tabs(v-model="tabs").elevation-1
         template(slot="activators")
           v-tab-item(
-            v-for="p in ['props', 'slots', 'events']"
+            v-for="p in ['props', 'slots', 'events', 'functional']"
+            v-show="doc[p]"
             v-bind:href="`#${p}`"
-            v-if="doc[p]"
             v-bind:key="p"
           ) {{ p }}
         div(slot="content")
           v-tab-content(
-            v-bind:id="p"
-            v-for="p in ['props', 'slots', 'events']"
+            v-for="p in ['props', 'slots', 'events', 'functional']"
             v-if="doc[p]"
+            v-bind:id="p"
             v-bind:key="p"
           )
             component-parameters(
@@ -74,7 +74,8 @@
         current: {
           props: null,
           slots: null,
-          events: null
+          events: null,
+          functional: null
         },
         headers: {
           props: [
@@ -89,7 +90,16 @@
             { text: 'Name', value: 'name', left: true },
             { text: 'Description', value: 'description', left: true }
           ],
-          events: [{ text: 'Name', value: 'name', left: true }, { text: 'Description', value: 'description', left: true }]
+          events: [
+            { text: 'Component', value: 'key', left: true },
+            { text: 'Name', value: 'name', left: true },
+            { text: 'Description', value: 'description', left: true }
+          ],
+          functional: [
+            { text: 'Component', value: 'key', left: true },
+            { text: 'Name', value: 'name', left: true },
+            { text: 'Description', value: 'description', left: true }
+          ]
         },
         tabs: null
       }
@@ -110,21 +120,27 @@
         const props = Object.keys(this.doc.props)
 
         if (props.length) {
-          // this.current.props = props[0]
-          // this.currentComponentKey = props[0]
+          this.current.props = props[0]
+          this.currentComponentKey = props[0]
         }
       }
 
       if (this.doc.slots) {
         const slots = Object.keys(this.doc.slots)
 
-        // if (slots.length) this.current.slots = slots[0]
+        if (slots.length) this.current.slots = slots[0]
       }
 
       if (this.doc.events) {
         const events = Object.keys(this.doc.events)
 
-        // if (events.length) this.current.events = events[0]
+        if (events.length) this.current.events = events[0]
+      }
+
+      if (this.doc.functional) {
+        const functional = Object.keys(this.doc.functional)
+
+        if (functional.length) this.current.functional = functional[0]
       }
     }
   }

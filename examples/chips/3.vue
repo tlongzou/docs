@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-xs-center">
     <v-chip class="indigo white--text">
       <v-avatar>
         <v-icon>account_circle</v-icon>

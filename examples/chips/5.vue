@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-xs-center">
     <v-chip label>Label</v-chip>
 
     <v-chip label class="pink white--text">

@@ -1,34 +1,29 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0">
     <v-layout row wrap>
       <v-col md6 sm12>
-        <v-card class="grey lighten-4 elevation-0 py-5">
-
-          <div>
-            <v-chip close>Example Chip</v-chip>
-          </div>
-          <div>
-            <v-chip>Example Chip</v-chip>
-          </div>
-        </v-card>
+        <div class="text-xs-center">
+          <v-chip close>Example Chip</v-chip>
+        </div>
+        <div class="text-xs-center">
+          <v-chip>Example Chip</v-chip>
+        </div>
       </v-col>
       <v-col md6 sm12 xs12>
-        <v-card class="grey lighten-4 elevation-0 py-5">
-          <div>
-            <v-chip close>
-              <v-avatar>
-                <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="trevor">
-              </v-avatar>
-              Trevor Hansen
-            </v-chip>
-          </div>
-          <div>
-            <v-chip>
-              <v-avatar class="teal">A</v-avatar>
-              ANZ Bank
-            </v-chip>
-          </div>
-        </v-card>
+        <div class="text-xs-center">
+          <v-chip close>
+            <v-avatar>
+              <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="trevor">
+            </v-avatar>
+            Trevor Hansen
+          </v-chip>
+        </div>
+        <div class="text-xs-center">
+          <v-chip>
+            <v-avatar class="teal">A</v-avatar>
+            ANZ Bank
+          </v-chip>
+        </div>
       </v-col>
     </v-layout>
   </v-container>

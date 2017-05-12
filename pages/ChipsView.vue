@@ -10,14 +10,14 @@
           title: 'Chip',
           desc: `The <code>v-chip</code> component is used to convey small pieces of information. Using the <code>close</code> property, the chip becomes interactive, allowing user interaction.`,
           examples: [
-            { header: 'Default', file: 'chips/1' },
-            { header: 'Colored', file: 'chips/2' },
-            { header: 'Icon', file: 'chips/3' },
-            { header: 'Outline', file: 'chips/4' },
-            { header: 'Label', file: 'chips/5' },
-            { header: 'Closable', file: 'chips/6' },
+            { header: 'Default', file: 'chips/1', desc: 'Chips come in 4 primary variations. Regular, with icon, with portrait and closeable.' },
+            { header: 'Colored', file: 'chips/2', desc: 'Any color from the Material Design pallette can be used to change a chips color.' },
+            { header: 'Icon', file: 'chips/3', desc: 'Chips can use text or any icon available in the Material Icons font library.' },
+            { header: 'Outline', file: 'chips/4', desc: 'Outlined chips inherit their border color from the current text color.' },
+            { header: 'Label', file: 'chips/5', desc: 'Label chips use the <code>v-card</code> border-radius.' },
+            { header: 'Closable', file: 'chips/6', desc: 'Closable chips can be controlled with a v-model.' },
           ],
-          props2: {
+          props: {
             'v-chip': {
               params: [
                 [
@@ -46,42 +46,23 @@
                 ]
               ],
               model: {
-                types: ['Boolean'],
+                type: ['Boolean'],
                 default: 'True'
               }
             }
           },
           slots: {
             'v-chip': {
-              default: true
+              shared: ['default']
             }
           },
           events: {
             'v-chip': {
-              events: [
+              params: [
                 ['input', 'Boolean: False', "Chip was closed. Requires 'close' prop."]
               ]
-            },
+            }
           }
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Chip Component | Vuetify.js',
-          h1: 'Chips',
-          description: 'Chip component for Vuetify Framework',
-          keywords: 'vuetify, chips, components'
         }
       }
     }

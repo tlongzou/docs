@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-xs-center">
     <v-chip class="primary white--text">Primary</v-chip>
 
     <v-chip class="secondary white--text">Secondary</v-chip>

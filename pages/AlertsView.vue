@@ -18,10 +18,6 @@
             { header: 'Closable', file: 'alerts/2', desc: `Using <code>v-model</code> you can control the state of the Alert. If you don't want to assign a v-model and just display the alert, you can simply do <code>:value="true"</code>.` },
             { header: 'Custom Icon / No Icon', file: 'alerts/3', desc: `You can easily assign a custom icon or remove it all together.` }
           ],
-          model: {
-            type: '*'
-          },
-          defaultSlot: true,
           props: {
             'v-alert': {
               shared: ['contextual'],

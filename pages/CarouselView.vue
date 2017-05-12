@@ -27,7 +27,7 @@
             { header: 'Default', file: 'carousel/1' },
             { header: 'Custom transition', file: 'carousel/2' }
           ],
-          props2: {
+          props: {
             'v-carousel': {
               params: [
                 [
@@ -75,10 +75,10 @@
           },
           slots: {
             'v-carousel': {
-              default: true
+              shared: ['default']
             },
             'v-carousel-item': {
-              default: true
+              shared: ['default']
             }
           }
         }
