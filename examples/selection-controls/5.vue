@@ -29,8 +29,8 @@
   export default {
     data () {
       return {
-        ex8: null,
-        ex9: null,
+        ex8: 'radio-1',
+        ex9: 'radio-3',
       }
     }
   }

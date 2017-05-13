@@ -31,7 +31,7 @@
   export default {
     data () {
       return {
-        ex10: null,
+        ex10: 'radio-1',
       }
     }
   }

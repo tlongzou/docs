@@ -31,7 +31,7 @@
   export default {
     data () {
       return {
-        ex7: [],
+        ex7: ['primary', 'secondary', 'success', 'info', 'warning', 'error'],
       }
     }
   }

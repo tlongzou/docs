@@ -32,7 +32,7 @@
   export default {
     data () {
       return {
-        ex17: [],
+        ex17: ['primary', 'secondary', 'success', 'info', 'warning', 'error'],
       }
     }
   }
