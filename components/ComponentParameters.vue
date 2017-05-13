@@ -39,7 +39,8 @@
           contextual: this.makeContextual(),
           router: this.makeRouter(),
           default: this.makeSlot(),
-          theme: this.makeTheme()
+          theme: this.makeTheme(),
+          input: this.makeInput()
         }
       }
     },
@@ -68,6 +69,8 @@
         })
 
         c.model && params.push(this.makeModel(c.model))
+
+        console.log(params)
 
         return params.map(d => {
           return {
@@ -164,6 +167,100 @@
             'String',
             'a',
             'Use a custom tag for the list tile'
+          ]
+        ]
+      },
+      makeInput () {
+        return [
+          [
+            'append-icon',
+            'String',
+            '-',
+            'Append material icon'
+          ],
+          [
+            'append-icon-cb',
+            'Function',
+            '-',
+            'Callback for appended icon'
+          ],
+          [
+            'prepend-icon',
+            'String',
+            '-',
+            'Prepend material icon'
+          ],
+          [
+            'prepend-icon-cb',
+            'Function',
+            '-',
+            'Callback for prepended icon'
+          ],
+          [
+            'light',
+            'Boolean',
+            'True',
+            'Applies the light theme'
+          ],
+          [
+            'dark',
+            'Boolean',
+            'False',
+            'Applies the dark theme'
+          ],
+          [
+            'disabled',
+            'Boolean',
+            'False',
+            'Disables the input'
+          ],
+          [
+            'hint',
+            'String',
+            '-',
+            'Hint text'
+          ],
+          [
+            'persistent-hint',
+            'Boolean',
+            'False',
+            'Forces hint visible'
+          ],
+          [
+            'label',
+            'String',
+            '-',
+            'Sets input label'
+          ],
+          [
+            'required',
+            'Boolean',
+            'False',
+            'Designates the input as required'
+          ],
+          [
+            'rules',
+            'Array',
+            '[]',
+            "Array of functions that return either True or a String with an error message"
+          ],
+          [
+            'tabindex',
+            'Number',
+            '0',
+            'Tabindex of input'
+          ],
+          [
+            'placholder',
+            'String',
+            '-',
+            'Placeholder text'
+          ],
+          [
+            'hide-details',
+            'Boolean',
+            'False',
+            'Hides hint, validation errors'
           ]
         ]
       }
