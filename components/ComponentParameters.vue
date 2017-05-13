@@ -1,7 +1,16 @@
 <template lang="pug">
   v-card.component-parameters
     v-card-title
-      v-layout(row nowrap grow)
+      v-select(
+        label="Component"
+        hide-details
+        single-line
+        v-bind:items="items"
+        v-model="component"
+        bottom
+        v-show="items.length > 1"
+      )
+      v-spacer
       v-spacer
       v-text-field(
         append-icon="search"
@@ -25,6 +34,7 @@
   export default {
     data () {
       return {
+        component: Object.keys(this.data)[0],
         search: '',
         shared: {
           contextual: this.makeContextual(),
@@ -42,19 +52,16 @@
     },
 
     computed: {
+      items () {
+        return Object.keys(this.data)
+      },
       table () {
-        let params = []
-
-        for (let key in this.data) {
-          params = params.concat(this.parseComponent(this.data[key], key))
-        }
-
-        return params
+        return this.parseComponent(this.data[this.component])
       }
     },
 
     methods: {
-      parseComponent (c, key) {
+      parseComponent (c) {
         let params = c.params || []
 
         c.shared && c.shared.forEach(s => {
@@ -64,12 +71,7 @@
         c.model && params.push(this.makeModel(c.model))
 
         return params.map(d => {
-          if (!d) {
-            console.log(params)
-            return {}
-          }
           return {
-            key: `<code>${key}</code>`,
             prop: d[0],
             type: d[1],
             default: d[2],

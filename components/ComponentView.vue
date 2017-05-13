@@ -79,24 +79,20 @@
         },
         headers: {
           props: [
-            { text: 'Component', value: 'key', left: true },
             { text: 'Option', value: 'prop', left: true },
             { text: 'Type(s)', value: 'type', left: true },
             { text: 'Default', value: 'default', left: true },
             { text: 'Description', value: 'desc', left: true }
           ],
           slots: [
-            { text: 'Component', value: 'key', left: true },
             { text: 'Name', value: 'name', left: true },
             { text: 'Description', value: 'description', left: true }
           ],
           events: [
-            { text: 'Component', value: 'key', left: true },
             { text: 'Name', value: 'name', left: true },
             { text: 'Description', value: 'description', left: true }
           ],
           functional: [
-            { text: 'Component', value: 'key', left: true },
             { text: 'Name', value: 'name', left: true },
             { text: 'Description', value: 'description', left: true }
           ]
