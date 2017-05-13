@@ -1,11 +1,11 @@
 <template>
   <div id="toolbar-image">
     <v-toolbar class="transparent elevation-0">
-      <v-toolbar-logo class="hidden-sm-and-down">Toolbar</v-toolbar-logo>
+      <v-toolbar-title class="hidden-sm-and-down">Toolbar</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-toolbar-item v-for="item in items" :key="item">
-          {{ item.text }}
+          {{ item.title }}
         </v-toolbar-item>
       </v-toolbar-items>
     </v-toolbar>
@@ -25,3 +25,9 @@
     }
   }
 </script>
+
+<style>
+  #toolbar-image {
+    background: url('/static/doc-images/hero_bg.png');
+  }
+</style>

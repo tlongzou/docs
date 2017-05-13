@@ -6,7 +6,7 @@
       <v-btn dark icon>
         <v-icon>list</v-icon>
       </v-btn>
-      <v-menu bottom origin="top right" transition="v-scale-transition">
+      <v-menu left top origin="bottom right" transition="v-scale-transition">
         <v-btn dark icon slot="activator">
           <v-icon>more_vert</v-icon>
         </v-btn>

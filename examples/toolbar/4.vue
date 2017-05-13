@@ -5,7 +5,7 @@
     <v-toolbar-items>
       <v-toolbar-item>Home</v-toolbar-item>
       <v-toolbar-item>Contact</v-toolbar-item>
-      <v-menu bottom left offset-y origin="top right" transition="v-slide-y-transition">
+      <v-menu top left offset-y origin="bottom right" transition="v-slide-y-transition">
         <v-btn icon dark slot="activator">
           <v-icon>more_vert</v-icon>
         </v-btn>
