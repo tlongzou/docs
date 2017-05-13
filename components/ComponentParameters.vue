@@ -70,8 +70,6 @@
 
         c.model && params.push(this.makeModel(c.model))
 
-        console.log(params)
-
         return params.map(d => {
           return {
             prop: `<code>${d[0]}</code>`,
