@@ -19,32 +19,45 @@
             { header: 'Round', file: 'pagination/3', desc: '' },
             { header: 'Disabled', file: 'pagination/4', desc: '' }
           ],
-          shared: ['model'],
-          props: [
-            {
-              prop: 'circle',
-              type: 'Boolean',
-              default: 'False',
-              desc: 'Shape pagination elements as circles',
-            },
-            {
-              prop: 'length',
-              type: 'Number',
-              default: '0',
-              desc: 'The length of the paginator',
+          props: {
+            'v-pagination': {
+              params: [
+                [
+                  'circle',
+                  'Boolean',
+                  'False',
+                  'Shape pagination elements as circles',
+                ],
+                [
+                  'disabled',
+                  'Boolean',
+                  'False',
+                  'Disables component'
+                ],
+                [
+                  'length',
+                  'Number',
+                  '0',
+                  'The length of the paginator',
+                ]
+              ],
+              model: {
+                type: 'Number',
+                description: 'Current selected page'
+              }
             }
-          ],
-          model: {
-            type: 'Number',
-            description: 'Current selected page'
           },
-          events: [
-            {
-              event: 'input',
-              type: 'Number',
-              desc: 'Current page'
+          events: {
+            'v-pagination': {
+              params: [
+                [
+                  'input',
+                  'Number',
+                  'Current page'
+                ]
+              ]
             }
-          ]
+          }
         }
       }
     },

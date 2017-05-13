@@ -7,6 +7,8 @@
     data () {
       return {
         doc: {
+          component: 'subheader',
+          edit: 'SubheaderView',
           title: 'Subheaders',
           desc: 'The <code>v-subheader</code> component is used to separate sections of lists.',
           examples: [

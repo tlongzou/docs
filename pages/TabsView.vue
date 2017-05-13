@@ -10,6 +10,8 @@
     data () {
       return {
         doc: {
+          component: 'tabs',
+          edit: 'TabsView',
           title: 'Tabs',
           desc: 'The <code>v-tabs</code> component is used for hiding content behind a selectable item. This can also be used as a psuedo-navigation for a page, where the tabs are links and the tab-items are the content.',
           examples: [
@@ -21,7 +23,7 @@
             { header: 'Desktop tabs', file: 'tabs/6' },
             { header: '', file: 'tabs/7' },
           ],
-          props2: {
+          props: {
             'v-tabs': {
               params: [
                 [
@@ -50,60 +52,19 @@
                 ]
               ],
               model: {
-                types: ['String'],
+                type: ['String'],
                 default: '-',
                 description: 'Current selected tab'
               }
             },
             'v-tab-item': {
+              shared: ['router'],
               params: [
                 [
-                  'append',
-                  'Boolean',
-                  'False',
-                  'Vue Router router-link prop'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'Disables tab item'
-                ],
-                [
-                  'href',
-                  'String, Object',
-                  'javascript:;',
-                  'For router, this is passed to the "to" prop'
-                ],
-                [
-                  'nuxt',
-                  'Boolean',
-                  'False',
-                  'Specifies the link is a nuxt-link'
-                ],
-                [
-                  'replace',
-                  'Boolean',
-                  'False',
-                  'Vue Router router-link prop'
-                ],
-                [
-                  'router',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will be a router-link'
-                ],
-                [
-                  'ripple',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will attach the ripple directive'
-                ],
-                [
-                  'tag',
+                  'activeClass',
                   'String',
-                  'a',
-                  'Use a custom tag for the list tile'
+                  'toolbar__item--active',
+                  'Class to apply for the active toolbar item'
                 ]
               ]
             },
@@ -130,7 +91,7 @@
               ]
             }
           },
-          functional2: {
+          functional: {
             'v-tabs': {
               params: [
                 [
@@ -148,9 +109,9 @@
               ]
             },
           },
-          events2: {
+          events: {
             'v-tabs': {
-              events: [
+              params: [
                 ['input', 'Object', 'Current active tab'],
               ]
             },

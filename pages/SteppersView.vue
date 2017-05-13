@@ -7,6 +7,8 @@
     data () {
       return {
         doc: {
+          component: 'steppers',
+          edit: 'SteppersView',
           title: 'stepper',
           desc: 'The <code>v-stepper</code> component displays progress through numbered steps.',
           examples: [
@@ -40,7 +42,7 @@
                 ],
               ],
               model: {
-                types: ['Number', 'String'],
+                type: ['Number', 'String'],
                 default: '-',
                 description: 'Sets current selected step'
               }
@@ -81,7 +83,7 @@
                   'rules',
                   'Array',
                   '[]',
-                  'If any rule is falsy, step will marked with error',
+                  'If any rule is falsy, step will be marked with error',
                 ],
                 [
                   'step',

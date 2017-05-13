@@ -26,20 +26,21 @@
             { header: 'Hint text', file: 'text-fields/14', desc: 'Light theme' },
             { header: 'Prefixes & suffixes', file: 'text-fields/15', desc: 'Light theme' }
           ],
-          props2: {
+          props: {
             'v-text-field': {
+              shared: ['input'],
               params: [
                 [
-                  'append-icon',
-                  'String',
-                  '-',
-                  'Append material icon'
+                  'autofocus',
+                  'Boolean',
+                  'False',
+                  'Enable autofocus'
                 ],
                 [
-                  'prepend-icon',
-                  'String',
-                  '-',
-                  'Prepend material icon'
+                  'auto-grow',
+                  'Boolean',
+                  'False',
+                  'Auto-grows the input'
                 ],
                 [
                   'counter',
@@ -48,52 +49,16 @@
                   'Creates counter for input length'
                 ],
                 [
-                  'light',
-                  'Boolean',
-                  'True',
-                  'Applies the light theme'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'False',
-                  'Applies the dark theme'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'Disables the input'
-                ],
-                [
                   'full-width',
                   'Boolean',
                   'False',
                   'Desginates input type as full-width'
                 ],
                 [
-                  'hint',
-                  'String',
-                  '-',
-                  'Hint text'
-                ],
-                [
-                  'persistent-hint',
-                  'Boolean',
-                  'False',
-                  'Forces hint visible'
-                ],
-                [
                   'prefix',
                   'String',
                   '',
                   'Displays prefix text'
-                ],
-                [
-                  'label',
-                  'String',
-                  '-',
-                  'Sets input label'
                 ],
                 [
                   'min',
@@ -114,16 +79,22 @@
                   'Sets maximum value for a text-field'
                 ],
                 [
-                  'required',
-                  'Boolean',
-                  'False',
-                  'Designates the input as required'
-                ],
-                [
                   'multi-line',
                   'Boolean',
                   'False',
                   'Turns into textarea'
+                ],
+                [
+                  'readonly',
+                  'Boolean',
+                  'False',
+                  'Disables input'
+                ],
+                [
+                  'rows',
+                  'Number',
+                  '5',
+                  'Number of rows in textarea'
                 ],
                 [
                   'single-line',
@@ -138,20 +109,14 @@
                   'Displays suffix text'
                 ],
                 [
-                  'rules',
-                  'Array',
-                  '[]',
-                  "Array of functions that return either True or a String with an error message"
-                ],
-                [
                   'type',
                   'String',
                   'text',
                   'Sets input type'
-                ],
+                ]
               ],
               model: {
-                types: ['*'],
+                type: ['*'],
                 default: '-',
                 description: 'Current input value'
               }
@@ -159,7 +124,7 @@
           },
           events: {
             'v-text-field': {
-              events: [
+              params: [
                 ['input', 'String', 'Current input value. Fires while typing.'],
                 ['focus', '-', 'Input gained focus.'],
                 ['blur', '-', 'Input lost focus.'],
@@ -167,36 +132,7 @@
               ]
             },
           }
-        },
-        e91: 'Preliminary report describing the',
-        e92: 'Preliminary report describing the state of California',
-        e111: 'Let me only say that it fared with him as with the storm-tossed ship, that miserably drives along the leeward land.',
-        e112: 'Let me only say that it fared with him as with the storm-tossed ship, that miserably drives along the leeward land. The port',
-        e12: 'Hi,\nI just wanted to check in and see if you had any plans the upcoming weekend. We are thinking of heading up to Napa',
-        e131: null,
-        e132: null,
-        e133: null,
-        e14: [],
-        input: null,
-        multiple: ['1', '2'],
-        options: [
-          {
-            value: 1,
-            text: 'Option 1'
-          },
-          {
-            value: 2,
-            text: 'Option 2'
-          },
-          {
-            value: 3,
-            text: 'Option 3'
-          }
-        ],
-        text: null,
-        rules: [
-          () => 'Username or Password is incorrect'
-        ]
+        }
       }
     },
 

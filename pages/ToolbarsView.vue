@@ -18,7 +18,7 @@
             { header: 'Transparent', file: 'toolbar/5' },
             { header: 'With search', file: 'toolbar/6' }
           ],
-          props2: {
+          props: {
             'v-toolbar': {
               params: [
                 [
@@ -30,54 +30,13 @@
               ]
             },
             'v-toolbar-item': {
+              shared: ['router'],
               params: [
                 [
-                  'append',
-                  'Boolean',
-                  'False',
-                  'Vue Router prop. Appends the relative path to the current path'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'Disables the item'
-                ],
-                [
-                  'href',
-                  'String, Object',
-                  'javascript:;',
-                  'For router, this is passed to the "to" prop'
-                ],
-                [
-                  'nuxt',
-                  'Boolean',
-                  'False',
-                  'Specifies the link is a nuxt-link'
-                ],
-                [
-                  'replace',
-                  'Boolean',
-                  'False',
-                  'Vue Router prop. Will call router.replace() instead of router.push() when clicked, so the navigation will not leave a history record'
-                ],
-                [
-                  'router',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will be a router-link'
-                ],
-                [
-                  'ripple',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will attach the ripple directive'
-                ],
-                [
-                  'tag',
+                  'activeClass',
                   'String',
-                  'a',
-                  'Use a custom tag for the list tile'
+                  'toolbar__item--active',
+                  'Class to apply for the active toolbar item'
                 ]
               ]
             }
@@ -106,10 +65,10 @@
           },
           slots: {
             'v-toolbar': {
-              default: true
+              shared: ['default']
             },
             'v-toolbar-item': {
-              default: true
+              shared: ['default']
             }
           }
         }
