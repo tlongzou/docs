@@ -1,7 +1,7 @@
 <template>
   <v-data-table
       v-bind:headers="headers"
-      v-model="items"
+      :items="items"
       hide-actions
       class="elevation-1"
     >

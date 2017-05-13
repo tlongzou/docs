@@ -13,7 +13,9 @@
               hint="At least 8 characters"
               v-model="password"
               min="8"
-              append-icon="remove_red_eye"
+              :append-icon="e1 ? 'visibility' : 'visibility_off'"
+              :append-icon-cb="() => (e1 = !e1)"
+              :type="e1 ? 'password' : 'text'"
               counter
             ></v-text-field>
           </v-col>
@@ -28,7 +30,8 @@
               label="Enter your password"
               hint="At least 8 characters"
               min="8"
-              append-icon="visibility"
+              :append-icon="e2 ? 'visibility' : 'visibility_off'"
+              :append-icon-cb="() => (e2 = !e2)"
               value="wqfasds"
               class="input-group--focused"
             ></v-text-field>
@@ -44,7 +47,8 @@
               label="Enter your password"
               hint="At least 8 characters"
               min="8"
-              append-icon="visibility_off"
+              :append-icon="e3 ? 'visibility' : 'visibility_off'"
+              :append-icon-cb="() => (e3 = !e3)"
               value="wqfasds"
               type="password"
               class="input-group--focused"
@@ -61,7 +65,8 @@
               label="Enter your password"
               hint="At least 8 characters"
               min="8"
-              append-icon="visibility"
+              :append-icon="e4 ? 'visibility' : 'visibility_off'"
+              :append-icon-cb="() => (e4 = !e4)"
               value="Pa"
               v-bind:rules="[() => ('The email and password you entered don\'t match')]"
               class="input-group--focused"
@@ -77,7 +82,11 @@
   export default {
     data () {
       return {
-        password: ''
+        e1: false,
+        e2: false,
+        e3: false,
+        e4: false,
+        password: 'Password'
       }
     }
   }

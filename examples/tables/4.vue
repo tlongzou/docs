@@ -1,68 +1,33 @@
 <template>
-  <v-card>
-    <v-card-title>
-      Nutrition
-      <v-spacer></v-spacer>
-      <v-text-field
-        append-icon="search"
-        label="Search"
-        single-line
-        hide-details
-        v-model="search"
-      ></v-text-field>
-    </v-card-title>
+  <div>
     <v-data-table
-        v-bind:headers="headers"
-        v-bind:items="items"
-        v-bind:search="search"
-        hide-actions
-      >
+      v-bind:headers="headers"
+      v-bind:items="items"
+      v-bind:search="search"
+      v-bind:pagination.sync="pagination"
+      hide-actions
+      class="elevation-1"
+    >
+      <template slot="headers" scope="props">
+        <span v-tooltip:bottom="{ 'html': props.item.text }">
+          {{ props.item.text }}
+        </span>
+      </template>
       <template slot="items" scope="props">
-        <td>
-          <v-edit-dialog
-            @open="props.item._name = props.item.name"
-            @cancel="props.item.name = props.item._name || props.item.name"
-            lazy
-          > {{ props.item.name }}
-            <v-text-field
-              slot="input"
-              label="Edit"
-              v-bind:value="props.item.name"
-              v-on:change="val => props.item.name = val"
-              single-line counter="counter"
-            ></v-text-field>
-          </v-edit-dialog>
-        </td>
-        <td class="text-xs-right">{{ props.item.calories }}</td>
-        <td class="text-xs-right">{{ props.item.fat }}</td>
-        <td class="text-xs-right">{{ props.item.carbs }}</td>
-        <td class="text-xs-right">{{ props.item.protein }}</td>
-        <td class="text-xs-right">{{ props.item.sodium }}</td>
-        <td class="text-xs-right">{{ props.item.calcium }}</td>
-        <td>
-          <v-edit-dialog
-            class="text-xs-right"
-            @open="props.item._iron = props.item.iron"
-            @cancel="props.item.iron = props.item._iron || props.item.iron"
-            large
-            lazy
-          >
-            <div class="text-xs-right">{{ props.item.iron }}</div>
-            <div slot="input" class="mt-3 title">Update Iron</div>
-            <v-text-field
-              slot="input"
-              label="Edit"
-              v-bind:value="props.item.iron"
-              v-on:blur="val => props.item.iron = val"
-              single-line
-              counter
-              autofocus
-            ></v-text-field>
-          </v-edit-dialog>
-        </td>
+        <td>{{ props.item.name }}</td>
+        <td  class="text-xs-right">{{ props.item.calories }}</td>
+        <td  class="text-xs-right">{{ props.item.fat }}</td>
+        <td  class="text-xs-right">{{ props.item.carbs }}</td>
+        <td  class="text-xs-right">{{ props.item.protein }}</td>
+        <td  class="text-xs-right">{{ props.item.sodium }}</td>
+        <td  class="text-xs-right">{{ props.item.calcium }}</td>
+        <td  class="text-xs-right">{{ props.item.iron }}</td>
       </template>
     </v-data-table>
-  </v-card>
+    <div class="text-xs-center pt-2">
+      <v-pagination v-model="pagination.page" :length="Math.ceil(pagination.totalItems / pagination.rowsPerPage)"></v-pagination>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -71,6 +36,7 @@
       return {
         search: '',
         pagination: {},
+        selected: [],
         headers: [
           {
             text: 'Dessert (100g serving)',

@@ -21,7 +21,7 @@
     v-data-table(
       v-bind:headers="headers"
       v-bind:search="search"
-      v-model="table"
+      v-bind:items="table"
       hide-actions
     )
       template(slot="items" scope="props")

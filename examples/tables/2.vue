@@ -1,9 +1,11 @@
 <template>
   <v-data-table
     v-bind:headers="headers"
-    v-model="items"
+    v-bind:items="items"
     v-bind:search="search"
-    hide-actions
+    v-bind:pagination.sync="pagination"
+    v-model="selected"
+    selected-key="name"
     select-all
     class="elevation-1"
   >
@@ -15,8 +17,9 @@
     <template slot="items" scope="props">
       <td>
         <v-checkbox
+          primary
           hide-details
-          v-model="props.item.value"
+          v-model="props.selected"
         ></v-checkbox>
       </td>
       <td>{{ props.item.name }}</td>
@@ -36,6 +39,8 @@
     data () {
       return {
         search: '',
+        pagination: {},
+        selected: [],
         headers: [
           {
             text: 'Dessert (100g serving)',

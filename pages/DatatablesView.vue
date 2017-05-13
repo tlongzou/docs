@@ -7,13 +7,18 @@
     data () {
       return {
         doc: {
+          component: 'tables',
+          edit: 'DatatablesView',
           title: 'Data tables',
           id: '#data-tables-view',
           desc: `The <code>v-data-table</code> component is used for displaying tabular data. Features include sorting, searching, pagination, inline-editing, header tooltips, and row selection.`,
           examples: [
-            { header: 'Standard', file: 'tables/1', desc: 'The standard data-table contains data with no additional functionality.' },
+            { header: 'Standard', file: 'tables/1', desc: 'The standard data-table contains data with no additional functionality. You can opt out of displaying table actions that allow you to control the pagination of information with the <code>hide-actions</code> prop.' },
             { header: 'Selectable rows', file: 'tables/2', desc: 'Selectable rows allow you to perform an action on specific and all rows.' },
-            { header: 'Card with actions', file: 'tables/3', desc: 'The data-table exposes a <code>search</code> prop that allows you to filter your data. You can also opt in for displaying table actions that allow you to control the pagination of information.' }
+            { header: 'Search', file: 'tables/3', desc: 'The data table exposes a <code>search</code> prop that allows you to filter your data.' },
+            { header: 'External pagination', file: 'tables/4', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
+            { header: 'External sorting', file: 'tables/5', desc: 'Sorting can also be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier. You can also use the prop to set the default sorted column.' },
+            { header: 'Paginate and sort server-side', file: 'tables/6', desc: 'If you\'re loading data from a backend and want to paginate and sort the results before displaying them, you can use the <code>total-items</code> prop. Defining this prop will disable the built-in sorting and pagination, and you will instead need to use the <code>pagination</code> prop to listen for changes. Use the <code>loading</code> prop to display a progress bar while fetching data.'}
           ],
           props: {
             'v-data-table': {
@@ -43,12 +48,6 @@
                   'The array of table rows'
                 ],
                 [
-                  'item-value',
-                  'String',
-                  'value',
-                  'When using a selectable row, used for determining the item value for highlight.'
-                ],
-                [
                   'no-data-text',
                   'String',
                   'No data available in table',
@@ -59,12 +58,6 @@
                   'String',
                   'No matching records found',
                   'Display text when there are no filtered results.'
-                ],
-                [
-                  'rows-per-page',
-                  'Number',
-                  '5',
-                  'The default rows-per-page to show'
                 ],
                 [
                   'rows-per-page-text',
@@ -85,9 +78,15 @@
                   'Adds header row select all radio.'
                 ],
                 [
+                  'selected-key',
+                  'String',
+                  'id',
+                  'Determines the item value used for identifying selected items.'
+                ],
+                [
                   'search',
                   'String',
-                  '',
+                  '-',
                   'The search model for filtering results'
                 ],
                 [
@@ -98,12 +97,47 @@
                       val.toString().toLowerCase().indexOf(search) !== -1
                   }`,
                   'The filtering method for search'
+                ],
+                [
+                  'custom-filter',
+                  'Function',
+                  '-',
+                  'Custom search filter'
+                ],
+                [
+                  'custom-sort',
+                  'Function',
+                  '-',
+                  'Custom sort filter'
+                ],
+                [
+                  'total-items',
+                  'Number',
+                  '-',
+                  'Manually sets total number of row items, which disables built-in sort and pagination. Used together with pagination prop to enable server-side sort and pagination.'
+                ],
+                [
+                  'loading',
+                  'Boolean',
+                  'False',
+                  'Displays progress bar'
+                ],
+                [
+                  'pagination.sync',
+                  'Object',
+                  `{
+                    page: 1,
+                    rowsPerPage: 5,
+                    descending: false,
+                    totalItems: 0
+                  }`,
+                  'Used to control pagination and sorting from outside the data table. Can also be used to set default sorted column.'
                 ]
               ],
               model: {
-                types: ['Array'],
-                default: 'undefined',
-                description: 'Used for mutating the items array when selecting items.'
+                type: ['Array'],
+                default: '',
+                description: 'Holds selected row items'
               }
             },
             'v-edit-dialog': {
