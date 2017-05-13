@@ -28,7 +28,7 @@
     //- component-example(header="In dialog and menu" file="pickers/3" v-bind:data="$data")
     //-   section-text(slot="details") When integrating a picker into a <code>v-text-field</code>, it is recommended to use the <strong>readonly</strong> prop. This will prevent mobile keyboards from triggering. To save vertical space, you can also hide the picker title.
     //-   section-text(slot="details") Pickers expose a scoped slot that allow you to hook into save and cancel functionality. This will maintain an old value which can be replaced if the user cancels.
-    //- blockquote While the <code>format</code> of the picker can be modified using a prop, this should be used carefully. The <code>date-picker</code> uses the javascript Date object, which can be very particular. 
+    //- blockquote While the <code>format</code> of the picker can be modified using a prop, this should be used carefully. The <code>date-picker</code> uses the javascript Date object, which can be very particular.
     //- component-example(header="Time pickers" file="pickers/4" v-bind:data="$data")
     //-   section-text(slot="details") Time pickers share the same portrait and landscape functionality.
     //- component-example(file="pickers/5" v-bind:data="$data")
@@ -44,29 +44,25 @@
   export default {
     data () {
       return {
-        e1: null,
-        e2: null,
-        e3: null,
-        e4: null,
-        e5: null,
-        e6: null,
-        e7: null,
-        e8: null,
-        menu: false,
-        modal: false,
-        menu2: false,
-        modal2: false,
-        fn: function (date) {
-          return date.getDay() % 2 == 0
-        },
         doc: {
+          component: 'pickers',
+          edit: 'PickersView',
           title: 'Pickers',
-          id: 'pickers-view',
           desc: 'The <code>v-date-picker</code> and <code>v-time-picker</code> are stand-alone components that can be utilized in many existing Vuetify components. They offer the user a visual reprensetation for selecting date and time.',
           examples: [
-            { header: 'Date pickers', file: 'pickers/1', desc: '' }
+            { header: "Date pickers - Light", file: "pickers/1", desc: ''},
+            { header: "Date pickers - Dark", file: "pickers/2", desc: ''},
+            { header: "Date pickers - In dialog and menu", file: "pickers/3", desc: ''},
+            { header: "Date pickers - Allowed dates", file: "pickers/11", desc: ''},
+            { header: "Time pickers - Light", file: "pickers/4", desc: ''},
+            { header: "Time pickers - Dark", file: "pickers/5", desc: ''},
+            { header: "Time pickers - In dialog and menu", file: "pickers/6", desc: ''},
+            { header: "Time pickers - 24h format", file: "pickers/7", desc: ''},
+            { header: "", file: "pickers/8", desc: ''},
+            { header: "", file: "pickers/9", desc: ''},
+            { header: "", file: "pickers/10", desc: ''},
           ],
-          props2: {
+          props: {
             'v-date-picker': {
               params: [
                 [
@@ -194,7 +190,7 @@
 <style lang="stylus">
   #pickers-view
     min-height: 150vh
-    
+
     .component-example .col
       margin: 1rem auto
 </style>
