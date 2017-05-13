@@ -18,7 +18,7 @@
             { header: 'Icon with 2 lines and action', file: 'lists/3', desc: `Lists can contain subheaders, dividers, and can contain 1 or more lines. The subtitle will overflow with ellipsis if it extends past one line.` },
             { header: 'Avatar with 3 lines', file: 'lists/4', desc: `For three line lists, the subtitle will clamp vertically at 2 lines and then ellipsis. If you need more than 3 lines, it is adviced to use a <router-link to="/components/cards">card</router-link>.` },
             { header: 'Avatar with title and action', file: 'lists/5', desc: `When a lists slot is used, you must manually define whether it contains headers, or if the items contain an avatar. This is required to maintain proper spacing.` },
-            { header: 'Action with title and sub-title', file: 'lists/6' },
+            { header: 'Subheadings and dividers', file: 'lists/6', desc: 'Lists can contain multple subheaders and dividers.' },
             { header: 'Card image with toolbar and list', file: 'lists/7', desc: `A list can be combined with a card.` },
             { header: 'Title with sub-title, actions and action-text', file: 'lists/8', desc: `A list can contain a stack within an action. Ripple and router props can be passed through the main v-list, to the v-list-tile or as a property in the items array.` },
             { header: 'Action with title and sub-title', file: 'lists/9', desc: `A list can contain up to 3 lines.` },
