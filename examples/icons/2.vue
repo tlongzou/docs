@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <v-icon medium light>lock</v-icon>
+  <v-layout align-space-around>
+    <v-icon medium fa light>lock</v-icon>
 
-    <v-icon medium light>search</v-icon>
+    <v-icon medium fa light>search</v-icon>
 
-    <v-icon medium light>settings</v-icon>
+    <v-icon medium fa light>list</v-icon>
 
-    <v-icon medium light>pets</v-icon>
+    <v-icon medium fa light>edit</v-icon>
 
-    <v-icon medium light>settings_voice</v-icon>
+    <v-icon medium fa light>dashboard</v-icon>
 
-    <v-icon medium light>schedule</v-icon>
-  </div>
+    <v-icon medium fa light>phone</v-icon>
+  </v-layout>
 </template>

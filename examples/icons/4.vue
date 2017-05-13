@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-layout align-space-around>
     <v-icon x-large light>view_week</v-icon>
 
     <v-icon x-large light>radio</v-icon>
@@ -11,5 +11,5 @@
     <v-icon x-large light>add_to_queue</v-icon>
 
     <v-icon x-large light>battery_std</v-icon>
-  </div>
+  </v-layout>
 </template>

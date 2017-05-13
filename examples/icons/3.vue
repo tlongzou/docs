@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-layout align-space-around>
     <v-icon large light>note</v-icon>
 
     <v-icon large light>mic</v-icon>
@@ -11,5 +11,5 @@
     <v-icon large light>repeat_one</v-icon>
 
     <v-icon large light>replay</v-icon>
-  </div>
+  </v-layout>
 </template>

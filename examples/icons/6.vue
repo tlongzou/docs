@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-xs-center">
     <v-btn class="primary white--text">Accept
       <v-icon dark right>check_circle</v-icon>
     </v-btn>
@@ -8,8 +8,8 @@
       <v-icon dark right>block</v-icon>
     </v-btn>
 
-    <v-btn class="grey lighten-2">
-      <v-icon dark left>remove_circle</v-icon>Cancel
+    <v-btn light>
+      <v-icon light left>remove_circle</v-icon>Cancel
     </v-btn>
 
     <v-btn class="orange darken-2 white--text">
