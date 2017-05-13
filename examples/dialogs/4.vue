@@ -1,30 +1,31 @@
 <template>
-  <v-dialog v-model="dialog">
-    <v-btn primary dark slot="activator">Open Dialog</v-btn>
-    <v-card>
-      <v-card-row>
-        <v-card-title>User Profile</v-card-title>
-      </v-card-row>
-      <v-card-row>
-        <v-card-text>
-          <v-container fluid>
-            <v-text-field label="Email" required />
-            <v-text-field label="Password" type="password" required />
-            <v-text-field label="Legal first name" required />
-            <v-text-field label="Legal middle name" hint="example of helper text only on focus" />
+  <v-layout row align-horiz-center>
+    <v-dialog v-model="dialog">
+      <v-btn primary dark slot="activator">Open Dialog</v-btn>
+      <v-card>
+        <v-card-row>
+          <v-card-title>User Profile</v-card-title>
+        </v-card-row>
+        <v-card-row>
+          <v-card-text>
+            <v-text-field label="Email" required></v-text-field>
+            <v-text-field label="Password" type="password" required></v-text-field>
+            <v-text-field label="Legal first name" required></v-text-field>
+            <v-text-field label="Legal middle name" hint="example of helper text only on focus"></v-text-field>
             <v-text-field label="Legal last name" hint="example of persistent helper text"
               persistent-hint
-              required />
+              required
+            ></v-text-field>
             <small>*indicates required field</small>
-          </v-container>
-        </v-card-text>
-      </v-card-row>
-      <v-card-row actions>
-        <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Close</v-btn>
-        <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Save</v-btn>
-      </v-card-row>
-    </v-card>
-  </v-dialog>
+          </v-card-text>
+        </v-card-row>
+        <v-card-row actions>
+          <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Close</v-btn>
+          <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Save</v-btn>
+        </v-card-row>
+      </v-card>
+    </v-dialog>
+  </v-layout>
 </template>
 
 <script>

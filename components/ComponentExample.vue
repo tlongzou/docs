@@ -142,4 +142,7 @@
 
       > li
         border: none
+        
+    nav.toolbar
+      z-index: 0
 </style>

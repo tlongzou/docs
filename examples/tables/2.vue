@@ -16,7 +16,6 @@
       <td>
         <v-checkbox
           hide-details
-          primary
           v-model="props.item.value"
         ></v-checkbox>
       </td>
@@ -36,6 +35,7 @@
   export default {
     data () {
       return {
+        search: '',
         headers: [
           {
             text: 'Dessert (100g serving)',

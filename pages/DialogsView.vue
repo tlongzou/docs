@@ -20,7 +20,7 @@
             { header: 'Form', file: 'dialogs/4', desc: `Just a simple example of a form in a dialog.` },
             { header: 'Scrollable', file: 'dialogs/5', desc: `Example of a dialog with scrollable content.` }
           ],
-          props2: {
+          props: {
             'v-dialog': {
               params: [
                 [
@@ -80,13 +80,13 @@
           },
           slots: {
             'v-dialog': {
+              shared: ['default'],
               params: [
                 [
                   'activator',
                   'The element that will activate the dialog'
                 ]
-              ],
-              default: true
+              ]
             }
           }
         }
@@ -94,9 +94,3 @@
     }
   }
 </script>
-
-<style lang="stylus">
-  #dialogs-view
-    .component-example
-      // position: initial
-</style>

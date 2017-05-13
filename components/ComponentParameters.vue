@@ -8,7 +8,6 @@
         v-bind:items="items"
         v-model="component"
         bottom
-        v-show="items.length > 1"
       )
       v-spacer
       v-spacer
@@ -72,7 +71,7 @@
 
         return params.map(d => {
           return {
-            prop: d[0],
+            prop: `<code>${d[0]}</code>`,
             type: d[1],
             default: d[2],
             desc: d[3]

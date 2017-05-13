@@ -1,11 +1,12 @@
 <template>
   <v-carousel icon="remove">
     <v-carousel-item 
-      v-for="(item,i) in items" :key="i"
+      v-for="(item,i) in items"
+      v-bind:key="i"
       v-bind:src="item.src" 
       transition="fade" 
       reverseTransition="fade"
-    />
+    ></v-carousel-item>
   </v-carousel>
 </template>
 

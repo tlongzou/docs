@@ -10,25 +10,20 @@
           title: 'Dvididers',
           desc: 'The <code>v-divider</code> component is used to separate sections of lists.',
           examples: [
-            { header: 'Full bleed', file: 'dividers/1' },
-            { header: 'Full bleed', file: 'dividers/2' },
-            { header: 'Inset dividers', file: 'dividers/3' },
-            { header: 'Subheaders and dividers', file: 'dividers/4' },
+            { header: 'Full bleed', file: 'dividers/1', desc: 'Full bleed dividers extend the entire content width.' },
+            { header: 'Full bleed', file: 'dividers/2', desc: 'Dividers have light and dark variants.' },
+            { header: 'Inset dividers', file: 'dividers/3', desc: 'Inset dividers are moved 72px to the right. This will cause them to line up with list items.' },
+            { header: 'Subheaders and dividers', file: 'dividers/4', desc: 'Subheaders can be lined up with inset dividers by using the same prop.' },
           ],
-          props2: {
+          props: {
             'v-divider': {
+              shared: ['theme'],
               params: [
                 [
                   'inset',
                   'Boolean',
                   'False',
                   'Applies a margin-left of 72px'
-                ],
-                [
-                  'light',
-                  'Boolean',
-                  'False',
-                  'Changes color for darker backgrounds'
                 ]
               ]
             }

@@ -14,10 +14,10 @@
           examples: [
            { header: 'Basic', file: 'cards/1', desc: 'As basic as it can get.' },
            { header: 'Title and actions', file: 'cards/2', desc: 'You can add both a title bar and an actions row to cards.' },
-           { header: 'Picture', file: 'cards/3', desc: '' },
+           { header: 'Picture', file: 'cards/3', desc: 'The <code>v-card</code> and <code>v-card-row</code> can both have a background image.' },
            { header: 'Background', file: 'cards/4', desc: 'You can also use images as card backgrounds' },
            { header: 'Horizontal', file: 'cards/5', desc: 'Cards can be arranged horizontally with the <code>horizontal</code> prop.' },
-           { header: 'Colored', file: 'cards/6', desc: '' },
+           { header: 'Colored', file: 'cards/6', desc: 'You can use any color in the Material design pallete as a background of a card.' },
            { header: 'Hover and raised', file: 'cards/7', desc: 'Use the <code>raised</code> and/or <code>hover</code> props to emphasize a card.' },
           ],
           props: {
