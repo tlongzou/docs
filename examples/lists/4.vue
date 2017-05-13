@@ -1,28 +1,34 @@
 <template>
-  <v-card>
-    <v-toolbar class="cyan">
-      <v-toolbar-side-icon class="grey--text text--darken-4" />
-      <v-toolbar-title>Inbox</v-toolbar-title>
-      <v-icon>search</v-icon>
-    </v-toolbar>
-    <v-list three-line>
-      <template v-for="item in items">
-        <v-subheader v-if="item.header" v-text="item.header"/>
-        <v-divider v-else-if="item.divider" v-bind:inset="item.inset"/>
-        <v-list-item v-else v-bind:key="item.title">
-          <v-list-tile avatar>
-            <v-list-tile-avatar>
-              <img v-bind:src="item.avatar"/>
-            </v-list-tile-avatar>
-            <v-list-tile-content>
-              <v-list-tile-title v-html="item.title"/>
-              <v-list-tile-sub-title v-html="item.subtitle"/>
-            </v-list-tile-content>
-          </v-list-tile>
-        </v-list-item>
-      </template>
-    </v-list>
-  </v-card>
+  <v-layout row>
+    <v-col xs12 sm6 offset-sm3>
+      <v-card>
+        <v-toolbar class="cyan">
+          <v-toolbar-side-icon class="grey--text text--darken-4" />
+          <v-toolbar-title>Inbox</v-toolbar-title>
+          <v-btn icon>
+            <v-icon>search</v-icon>
+          </v-btn>
+        </v-toolbar>
+        <v-list three-line>
+          <template v-for="item in items">
+            <v-subheader v-if="item.header" v-text="item.header"/>
+            <v-divider v-else-if="item.divider" v-bind:inset="item.inset"/>
+            <v-list-item v-else v-bind:key="item.title">
+              <v-list-tile avatar>
+                <v-list-tile-avatar>
+                  <img v-bind:src="item.avatar"/>
+                </v-list-tile-avatar>
+                <v-list-tile-content>
+                  <v-list-tile-title v-html="item.title"/>
+                  <v-list-tile-sub-title v-html="item.subtitle"/>
+                </v-list-tile-content>
+              </v-list-tile>
+            </v-list-item>
+          </template>
+        </v-list>
+      </v-card>
+    </v-col>
+  </v-layout>
 </template>
 
 <script>

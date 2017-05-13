@@ -24,7 +24,7 @@
             { header: 'Action with title and sub-title', file: 'lists/9', desc: `A list can contain up to 3 lines.` },
             { header: 'Expansion Lists', file: 'lists/10', desc: `A list can contain a group of items which will display on click. Expansion lists are also used within the <code>sidebar</code> component.` }
           ],
-          props2: {
+          props: {
             'v-list': {
               params: [
                 [
@@ -54,13 +54,8 @@
               ]
             },
             'v-list-tile': {
+              shared: ['router'],
               params: [
-                [
-                  'append',
-                  'Boolean',
-                  'False',
-                  'Vue Router router-link prop'
-                ],
                 [
                   'avatar',
                   'Boolean',
@@ -68,46 +63,10 @@
                   'Used to set minimum tile height on a single-line list item'
                 ],
                 [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'List tile is disabled'
-                ],
-                [
-                  'href',
-                  'String, Object',
-                  'javascript:;',
-                  'For router, this is passed to the "to" prop'
-                ],
-                [
-                  'nuxt',
-                  'Boolean',
-                  'False',
-                  'Specifies the link is a nuxt-link'
-                ],
-                [
-                  'replace',
-                  'Boolean',
-                  'False',
-                  'Vue Router router-link prop'
-                ],
-                [
-                  'router',
-                  'Boolean',
-                  'False',
-                  'Designates whether the list tiles will be a router-link'
-                ],
-                [
                   'ripple',
                   'Boolean',
                   'False',
                   'Designates whether the list tiles will attach the ripple directive'
-                ],
-                [
-                  'tag',
-                  'String',
-                  'a',
-                  'Use a custom tag for the list tile'
                 ]
               ],
               model: {
@@ -148,7 +107,7 @@
             'v-list': {
               params: [
                 ['v-list-item', 'list__item'],
-                ['v-list-tile-action', 'list__tile__action--stack']
+                ['v-list-tile-action', 'list__tile__action--stack'],
                 ['v-list-tile-action-text', 'list__tile__action-text'],
                 ['v-list-tile-avatar', 'list__tile__avatar'],
                 ['v-list-tile-content', 'list__tile__content'],
@@ -159,34 +118,34 @@
           },
           slots: {
             'v-list': {
-              default: true
+              shared: ['default']
             },
             'v-list-item': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile-content': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile-title': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile-sub-title': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile-action': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile-action-text': {
-              default: true
+              shared: ['default']
             },
             'v-list-tile-avatar': {
-              default: true
+              shared: ['default']
             },
             'v-subheader': {
-              default: true
+              shared: ['default']
             }
           }
         }
