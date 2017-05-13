@@ -10,10 +10,12 @@
           title: 'Snackbar',
           desc: 'The <code>v-snackbar</code> component is used to display a quick message to a user. Snackbars support positioning, removal delay and callbacks.',
           examples: [
-            { header: 'Default', file: 'snackbars/1'}
+            { header: 'Position', file: 'snackbars/1'},
+            { header: 'Contextual', file: 'snackbars/2'}
           ],
-          props2: {
+          props: {
             'v-snackbar': {
+              shared: ['contextual'],
               params: [
                 [
                   'absolute',
@@ -62,47 +64,11 @@
                   'Boolean',
                   'False',
                   'Stacks snackbar content vertically (mobile)'
-                ],
-                [
-                  'primary',
-                  'Boolean',
-                  'False',
-                  'Applies the "primary" context',
-                ],
-                [
-                  'secondary',
-                  'Boolean',
-                  'False',
-                  'Applies the "secondary" context',
-                ],
-                [
-                  'success',
-                  'Boolean',
-                  'False',
-                  'Applies the "success" context',
-                ],
-                [
-                  'info',
-                  'Boolean',
-                  'False',
-                  'Applies the "info" context',
-                ],
-                [
-                  'warning',
-                  'Boolean',
-                  'False',
-                  'Applies the "warning" context',
-                ],
-                [
-                  'error',
-                  'Boolean',
-                  'False',
-                  'Applies the "error" context',
                 ]
               ],
               model: {
-                types: ['Boolean'],
-                default: 'None'
+                type: ['Boolean'],
+                default: 'False'
               }
             }
           }

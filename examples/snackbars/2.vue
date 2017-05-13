@@ -3,17 +3,23 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs12 sm3>
-            <v-checkbox v-model="x" value="left" label="Left" light/>
+          <v-col xs6 sm2>
+            <v-radio v-model="context" value="success" label="Success" light/>
           </v-col>
-          <v-col xs6 sm3>
-            <v-checkbox v-model="x" value="right" label="Right" light/>
+          <v-col xs6 sm2>
+            <v-radio v-model="context" value="info" label="Info" light/>
           </v-col>
-          <v-col xs6 sm3>
-            <v-checkbox v-model="y" value="top" label="Top" light/>
+          <v-col xs6 sm2>
+            <v-radio v-model="context" value="warning" label="Warning" light/>
           </v-col>
-          <v-col xs6 sm3>
-            <v-checkbox v-model="y" value="bottom" label="Bottom" light/>
+          <v-col xs6 sm2>
+            <v-radio v-model="context" value="error" label="Error" light/>
+          </v-col>
+          <v-col xs6 sm2>
+            <v-radio v-model="context" value="primary" label="Primary" light/>
+          </v-col>
+          <v-col xs6 sm2>
+            <v-radio v-model="context" value="secondary" label="Secondary" light/>
           </v-col>
           <v-col xs12 sm3>
             <v-checkbox v-model="mode" value="multi-line" label="Multi-line (mobile)" light/>
@@ -34,15 +40,15 @@
     </v-card-text>
     <v-snackbar
       :timeout="timeout"
-      :top="y === 'top'"
-      :bottom="y === 'bottomm'"
-      :right="x === 'right'"
-      :left="x === 'left'"
+      :success="context === 'success'"
+      :info="context === 'info'"
+      :warning="context === 'warning'"
+      :error="context === 'error'"
       :multi-line="mode === 'multi-line'"
       :vertical="mode === 'vertical'"
       v-model="snackbar">
       {{ text }}
-      <v-btn flat class="pink--text" @click.native="snackbar = false">Close</v-btn>
+      <v-btn flat @click.native="snackbar = false">Close</v-btn>
     </v-snackbar>
   </v-card>
 </template>
@@ -52,8 +58,7 @@
     data () {
       return {
         snackbar: false,
-        y: 'top',
-        x: null,
+        context: '',
         mode: '',
         timeout: 6000,
         text: 'Hello, I\'m a snackbar'

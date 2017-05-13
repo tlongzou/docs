@@ -1,8 +1,5 @@
 <template lang="pug">
-  doc-view(v-bind:doc="doc" id="subheader-view")
-    component-example(header="List subheaders" file="subheaders/1" v-bind:data="$data")
-    component-example(header="Grid subheaders" file="subheaders/2" v-bind:data="$data")
-    component-example(header="Menu subheaders" file="subheaders/3" v-bind:data="$data")
+  component-view(v-bind:doc="doc")
 </template>
 
 <script>
@@ -10,6 +7,8 @@
     data () {
       return {
         doc: {
+          component: 'subheader',
+          edit: 'SubheaderView',
           title: 'Subheaders',
           desc: 'The <code>v-subheader</code> component is used to separate sections of lists.',
           examples: [
@@ -17,7 +16,7 @@
             { header: 'Grid subheaders', file: 'subheaders/2' },
             { header: 'Menu subheaders', file: 'subheaders/3' }
           ],
-          props2: {
+          props: {
             'v-subheader': {
               params: [
                 [
