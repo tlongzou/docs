@@ -45,7 +45,7 @@
       div(slot="desc" v-html="example.desc" v-if="example.desc")
     slot
     template(v-if="doc.props")
-      section-header.mt-5 API
+      section-header.mt-5(id="api") API
       v-tabs(v-model="tabs").elevation-1
         template(slot="activators")
           v-tab-item(
