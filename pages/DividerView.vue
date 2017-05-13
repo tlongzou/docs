@@ -23,7 +23,7 @@
                   'inset',
                   'Boolean',
                   'False',
-                  'Applies a margin-left of 72px'
+                  'Adds identation (72px)'
                 ]
               ]
             }
