@@ -1,0 +1,15 @@
+{
+  "/components/dropdowns": "/components/menus",
+  "/quick-start": "/vuetify/quick-start",
+  "/overview": "/guides/server-side-rendering",
+  "/motion": "/motion/transitions",
+  "/event-bus": "/",
+  "/components/sidebars": "/components/navigation-drawers",
+  "/components/collapsible": "/components/expansion-panels",
+  "/components/navbars": "/components/toolbars",
+  "/components/forms": "/components/text-fields",
+  "/components/toasts": "/components/snackbars",
+  "/components/carousel": "/components/carousels",
+  "/components/datatables": "/components/data-tables",
+  "/components/expansion-panel": "/components/expansion-panels"
+}

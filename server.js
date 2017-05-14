@@ -6,6 +6,7 @@ const favicon = require('serve-favicon')
 const compression = require('compression')
 const resolve = file => path.resolve(__dirname, file)
 const { createBundleRenderer } = require('vue-server-renderer')
+const redirects = require('./router/301.json')
 
 const isProd = process.env.NODE_ENV === 'production'
 const useMicroCache = process.env.MICRO_CACHE !== 'false'
@@ -69,6 +70,14 @@ app.use('/static/robots.txt', serve('./robots.txt'))
 app.get('/sitemap.xml', (req, res) => {
   res.setHeader("Content-Type", "text/xml")
   res.sendFile(resolve('./static/sitemap.xml'))
+})
+
+// 301 redirect for changed routes
+Object.keys(redirects).forEach(k => {
+  app.get(k, (req, res) => {
+    console.log(redirects[k])
+    res.redirect(301, redirects[k])
+  })
 })
 
 // 1-second microcache.

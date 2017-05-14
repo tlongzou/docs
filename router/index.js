@@ -44,8 +44,8 @@ export function createRouter () {
         route('/components/dividers', 'Divider'),
         route('/components/expansion-panels', 'ExpansionPanel'),
         route('/components/footer', 'Footer'),
-        route('/components/lists', 'Lists'),
         route('/components/icons', 'Icon'),
+        route('/components/lists', 'Lists'),
         route('/components/menus', 'Menus'),
         route('/components/navigation-drawers', 'NavigationDrawer'),
         route('/components/pagination', 'Pagination'),
@@ -57,8 +57,8 @@ export function createRouter () {
         route('/components/selects', 'Select'),
         route('/components/sliders', 'Slider'),
         route('/components/snackbars', 'Snackbar'),
-        route('/components/subheaders', 'Subheader'),
         route('/components/steppers', 'Steppers'),
+        route('/components/subheaders', 'Subheader'),
         route('/components/tabs', 'Tabs'),
         route('/components/text-fields', 'TextFields'),
         route('/components/toolbars', 'Toolbars'),
@@ -66,14 +66,6 @@ export function createRouter () {
         route('/directives/ripples', 'Ripples'),
         route('/directives/tooltips', 'Tooltips'),
         route('/guides/server-side-rendering', 'SSR'),
-        // 301 redirects
-        { path: '/overview', redirect: '/server-side-rendering' },
-        { path: '/event-bus', redirect: '/' },
-        { path: '/components/dropdowns', redirect: '/components/menus' },
-        { path: '/components/collapsible', redirect: '/components/expansion-panel' },
-        { path: '/components/navbars', redirect: '/components/toolbars' },
-        { path: '/components/forms', redirect: '/components/text-fields' },
-        { path: '/functions/toasts', redirect: '/components/snackbars' },
         // Global redirect for 404
         { path: '*', redirect: '/' }
       ]
