@@ -53,26 +53,11 @@
               desc: `Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.`
             }
           ],
-          props: []
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Layouts | Vuetify.js',
-          h1: 'Layouts',
-          description: 'Layouts for the Vuetify Framework',
-          keywords: 'vuetify, layouts'
+          props: {
+            'v-layout': {
+              params: []
+            }
+          }
         }
       }
     }
