@@ -145,5 +145,4 @@
 <style lang="stylus">
   .view
     max-width: 1024px
-    padding-bottom: 75px
 </style>
