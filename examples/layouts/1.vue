@@ -28,7 +28,9 @@
       </v-container>
       <v-navigation-drawer right temporary v-model="right"></v-navigation-drawer>
     </main>
-    <v-footer class="indigo"></v-footer>
+    <v-footer class="indigo">
+      <span>&copy; 2017</span>
+    </v-footer>
   </v-app>
 </template>
 
@@ -36,7 +38,7 @@
   export default {
     data () {
       return {
-        drawer: null,
+        drawer: true,
         items: [
           { title: 'Home', icon: 'dashboard' },
           { title: 'About', icon: 'question_answer' }

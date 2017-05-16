@@ -6,11 +6,11 @@
         dd(slot="desc") Update your layout without creating new classes. Spacing helpers are useful for modifying the padding and margin of an element.
     section
       h6 Type
-      ul
+      ul.mb-5
         li <code>m</code> - to set margin
         li <code>p</code> - to set padding
       h6 Direction
-      ul
+      ul.mb-5
         li <code>t</code> - to set top
         li <code>r</code> - to set right
         li <code>b</code> - to set bottom
@@ -19,13 +19,13 @@
         li <code>y</code> - to set y-axis
         li <code>a</code> - to set all
       h6 Size
-      ul
+      ul.mb-5
         li <code>0</code> - removes margin or padding for specified direction
-        li <code>1</code> - applies margin or padding with <code>1rem * .25</code>
-        li <code>2</code> - applies margin or padding with <code>1rem * .50</code>
-        li <code>3</code> - applies margin or padding with <code>1rem</code> (14px)
-        li <code>4</code> - applies margin or padding with <code>1rem * 1.5</code>
-        li <code>5</code> - applies margin or padding with <code>1rem * 3</code>
+        li <code>1</code> - applies margin or padding with <code>16px * .25</code>
+        li <code>2</code> - applies margin or padding with <code>16px * .50</code>
+        li <code>3</code> - applies margin or padding with <code>16px</code>
+        li <code>4</code> - applies margin or padding with <code>16px * 1.5</code>
+        li <code>5</code> - applies margin or padding with <code>16px * 3</code>
     section
       h6 Example of spacers variable
       markup(lang="html")
@@ -35,7 +35,7 @@
         |&nbsp;
         |&lt;v-btn class="primary ma-3"&gt;...&lt;/v-btn&gt;
       markup(lang="stylus")
-        |$spacer := 1rem
+        |$spacer := 16px
         |$spacer-x := $spacer
         |$spacer-y := $spacer
         |&nbsp;

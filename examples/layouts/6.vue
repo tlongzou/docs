@@ -32,13 +32,13 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed class="teal">
+    <v-toolbar fixed class="indigo darken-4">
       <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
       <v-container fluid>
-        <div class="title">Click on sidebar to re-open. Current is bugged for closing again.</div>
+        <div class="title">Click on sidebar to re-open.</div>
         <!--v-router-->
       </v-container>
     </main>

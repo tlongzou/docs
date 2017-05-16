@@ -1,6 +1,6 @@
 <template>
   <v-app id="example-2">
-    <v-navigation-drawer temporary v-model="drawer" :mini-variant="mini">
+    <v-navigation-drawer temporary v-model="drawer" :mini-variant.sync="mini">
       <v-list class="pa-0">
         <v-list-item>
           <v-list-tile avatar tag="div">
@@ -32,13 +32,13 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar fixed class="teal">
+    <v-toolbar fixed class="deep-orange">
       <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
       <v-container fluid>
-        <div class="title">Click on sidebar to re-open. Current is bugged for closing again.</div>
+        <div class="title">Click on sidebar to re-open.</div>
         <!--v-router-->
       </v-container>
     </main>

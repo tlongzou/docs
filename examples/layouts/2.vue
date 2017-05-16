@@ -3,7 +3,7 @@
     <v-navigation-drawer permanent>
       <v-list class="pa-0">
         <v-list-item>
-          <v-list-tile avatar></v-list-tile>
+          <v-list-tile avatar tag="ul"></v-list-tile>
         </v-list-item>
       </v-list>
       <v-divider></v-divider>

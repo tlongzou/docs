@@ -1,6 +1,6 @@
 <template lang="pug">
   v-footer.white.main-footer(data-footer)
-    v-layout(row)
+    v-layout(row grow).ma-0
       v-col(
         v-if="previous.route"
         xs12

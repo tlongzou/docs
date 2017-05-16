@@ -35,6 +35,7 @@
           href="#api"
           v-bind:class="[`${currentColor}--text`]"
         ) Go to api
+    slot(name="top")
     section-header Examples
     component-example(
       v-for="(example, i) in doc.examples"

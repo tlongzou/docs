@@ -13,7 +13,6 @@
   @import '~assets/stylus/settings/_variables'
 
   .view
-    padding-bottom: 75px
     max-width: 1024px
 
   dt

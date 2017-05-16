@@ -14,7 +14,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="teal">
+    <v-toolbar class="green">
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>

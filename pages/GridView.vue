@@ -1,14 +1,12 @@
 <template lang="pug">
-  doc-view(id="grid-view")
-    section-def
-      dt(slot="title") {{ doc.title }}
-      dd(slot="desc") {{ doc.desc }}
-    v-card.mb-5
+  component-view(v-bind:doc="doc")
+    v-card(slot="top").mb-5
       v-table-overflow
         table.table
-          caption Viewport breakpoints
+          caption.mt-3
+            strong Material Design Viewport Breakpoints
           thead
-            tr
+            tr.text-xs-left
               th Device
               th Types
               th Range
@@ -43,14 +41,6 @@
                 span Extra large
               td 4k and ultra-wides
               td &gt; 1920px
-
-    component-example(
-      v-for="(example, i) in doc.examples"
-      v-bind:key="example"
-      v-bind:header="`#${i + 1} ${example.header}`"
-      v-bind:file="example.file"
-    )
-      div(slot="desc" v-html="example.desc" v-if="example.desc")
 </template>
 
 <script>
@@ -63,11 +53,11 @@
           examples: [
             { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-col</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-col</strong>.` },
             { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },
-            { header: 'Order', file: 'grid/3', desc: '' },
-            { header: 'Direction and Align', file: 'grid/4', desc: '' },
-            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: '' }
+            { header: 'Order', file: 'grid/3', desc: 'You can control the ordering of grid items.' },
+            { header: 'Direction and Align', file: 'grid/4', desc: 'Designate the direction and alignment in a various amount of ways.' },
+            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: 'Dynamically change your layout based upon resolution.' }
           ],
-          props2: {
+          props: {
             'v-container': {
               params: [
                 [
@@ -78,109 +68,108 @@
                 ]
               ]
             },
-              'v-layout': {
-                  params: [
-                      [
-                          'row[-size]',
-                          'Boolean',
-                          'False',
-                          'Applies the .row class align elements horizontal. Available for all breakpoints xs => xl. Example: row-sm'
-                      ],
-                      [
-                          'row--reverse',
-                          'Boolean',
-                          'False',
-                          'Applies the .row class align and reverse the order'
-                      ],
-                      [
-                          'column[-size]',
-                          'Boolean',
-                          'False',
-                          'Applies the .column class align elements vertical. Available for all breakpoints xs => xl. Example: column-xs'
-                      ],
-                      [
-                          'child-flex[-size]',
-                          'Boolean',
-                          'False',
-                          'Applies the .flex class (flex:1) to the first child of layout. Available for all breakpoints xs => xl. Example: child-flex-xs. Hint: You can use class="flex" on specific child element.'
-                      ],
-                      [
-                          'flex[-size]',
-                          'Class',
-                          'False',
-                          'Applies the .flex class (flex:1). Available for all breakpoints xs => xl. Example: class="flex-sm"'
-                      ],
-                      [
-                          'align-space-around',
-                          'Boolean',
-                          'False',
-                          'Space around for child elements.'
-                      ],
-                      [
-                          'align-space-between',
-                          'Boolean',
-                          'False',
-                          'Space between child elements.'
-                      ],
-                      [
-                          'align-center',
-                          'Boolean',
-                          'False',
-                          'Center all child elements horizontal and vertical.'
-                      ],
-                      [
-                          'align-vert-[start|end]',
-                          'Boolean',
-                          'False',
-                          'Vertical alignment to start or end.Example: align-vert-start'
-                      ],
-                      [
-                          'align-horiz-[start|end]',
-                          'Boolean',
-                          'False',
-                          'Horizontal alignment to start or end. Example: align-horiz-start'
-                      ],
-                      [
-                          'wrap',
-                          'Boolean',
-                          'False',
-                          'Allows children to wrap within the container if the elements use more than 100%.'
-                      ]
+            'v-layout': {
+                params: [
+                  [
+                    'row[-size]',
+                    'Boolean',
+                    'False',
+                    'Applies the .row class align elements horizontal. Available for all breakpoints xs => xl. Example: row-sm'
+                  ],
+                  [
+                    'row--reverse',
+                    'Boolean',
+                    'False',
+                    'Applies the .row class align and reverse the order'
+                  ],
+                  [
+                    'column[-size]',
+                    'Boolean',
+                    'False',
+                    'Applies the .column class align elements vertical. Available for all breakpoints xs => xl. Example: column-xs'
+                  ],
+                  [
+                    'child-flex[-size]',
+                    'Boolean',
+                    'False',
+                    'Applies the .flex class (flex:1) to the first child of layout. Available for all breakpoints xs => xl. Example: child-flex-xs. Hint: You can use class="flex" on specific child element.'
+                  ],
+                  [
+                    'flex[-size]',
+                    'Class',
+                    'False',
+                    'Applies the .flex class (flex:1). Available for all breakpoints xs => xl. Example: class="flex-sm"'
+                  ],
+                  [
+                    'align-space-around',
+                    'Boolean',
+                    'False',
+                    'Space around for child elements.'
+                  ],
+                  [
+                    'align-space-between',
+                    'Boolean',
+                    'False',
+                    'Space between child elements.'
+                  ],
+                  [
+                    'align-center',
+                    'Boolean',
+                    'False',
+                    'Center all child elements horizontal and vertical.'
+                  ],
+                  [
+                    'align-vert-[start|end]',
+                    'Boolean',
+                    'False',
+                    'Vertical alignment to start or end.Example: align-vert-start'
+                  ],
+                  [
+                    'align-horiz-[start|end]',
+                    'Boolean',
+                    'False',
+                    'Horizontal alignment to start or end. Example: align-horiz-start'
+                  ],
+                  [
+                    'wrap',
+                    'Boolean',
+                    'False',
+                    'Allows children to wrap within the container if the elements use more than 100%.'
                   ]
+                ]
               },
               'v-col': {
-                  params: [
-                      [
-                          'xs(1-12)',
-                          'Boolean',
-                          'False',
-                          'xs:extra small, sm:small, md:medium, lg:large, xl:extra large - 1 through 12'
-                      ], [
-                          'offset-[size](1-12)',
-                          'Boolean',
-                          'False',
-                          'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large. Example: offset-xs3'
-                      ], [
-                          'order-[size](1-12)',
-                          'Boolean',
-                          'False',
-                          'order-xs:extra small, order-sm:small, order-md:medium, order-lg:large, order-xl:extra large. Example: order-xs1'
-                      ],
-                      [
-                          'fill-height',
-                          'Boolean',
-                          'False',
-                          'make sure that col element height is filled with parent and child. Important for Safari/Firefox if children is column element.'
-                      ]
+                params: [
+                  [
+                    'xs(1-12)',
+                    'Boolean',
+                    'False',
+                    'xs:extra small, sm:small, md:medium, lg:large, xl:extra large - 1 through 12'
+                  ], [
+                    'offset-[size](1-12)',
+                    'Boolean',
+                    'False',
+                    'offset-xs:extra small, offset-sm:small, offset-md:medium, offset-lg:large, offset-xl:extra large. Example: offset-xs3'
+                  ], [
+                    'order-[size](1-12)',
+                    'Boolean',
+                    'False',
+                    'order-xs:extra small, order-sm:small, order-md:medium, order-lg:large, order-xl:extra large. Example: order-xs1'
+                  ],
+                  [
+                    'fill-height',
+                    'Boolean',
+                    'False',
+                    'make sure that col element height is filled with parent and child. Important for Safari/Firefox if children is column element.'
                   ]
-
+                ]
               }
           },
           functional: {
             'grid': {
               params: [
-                ['<v-content>', 'The main content wrapper for your application'],
-                ['<v-spacer>', 'Spacer for flexbox grids']
+                ['v-content', 'The main content wrapper for your application'],
+                ['v-spacer', 'Spacer for flexbox grids']
               ]
             }
           }
@@ -189,17 +178,3 @@
     }
   }
 </script>
-
-<style lang="stylus">
-  #grid-view
-    .component-example
-      .card__text
-        .card
-          color: #fff
-          text-align: center
-          padding: 1rem 0
-          margin: .5rem 0
-
-          &__text
-            padding: 0
-</style>

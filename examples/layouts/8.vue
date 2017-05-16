@@ -60,3 +60,9 @@
     }
   }
 </script>
+
+<style>
+  #example-8 .card {
+    background: #424242
+  }
+</style>

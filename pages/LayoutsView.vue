@@ -10,7 +10,7 @@
           title: 'Layouts',
           edit: 'LayoutsView',
           component: 'app',
-          desc: 'The layout system is the heart of every application. Below are the officially supported examples, ranging from desktop to mobile applications.',
+          desc: 'The layout system is the heart of every application. Below are the officially supported examples, ranging from desktop to mobile applications. While Vuetify.js aims to be as un-opinionated as possible, the layout structure must be <strong>explicitly</strong> followed to receive the expected results.',
           examples: [
             {
               header: 'Structure',
@@ -25,39 +25,34 @@
             {
               header: 'Permanent clipped drawer',
               file: 'layouts/3',
-              desc: ``
+              desc: `A clipped drawer rests under the application toolbar.`
             },
             {
               header: 'Permanent floating drawer',
               file: 'layouts/4',
-              desc: ``
+              desc: `A floating drawer has no visible container (no border-right).`
             },
             {
               header: 'Permanent floating drawer in a card',
               file: 'layouts/5',
-              desc: ``
+              desc: `A card can be used to contain a navigation drawer's items.`
             },
             {
               header: 'Persistent',
               file: 'layouts/6',
-              desc: ``
+              desc: `A persistent drawer can be opened or closed. This is recommended sidebar for an application that supports both desktop and mobile.`
             },
             {
               header: 'Temporary',
               file: 'layouts/7',
-              desc: ``
+              desc: `A temporary drawer sits above its application and uses a scrim (overlay) to darken the background. This drawer behavior is mimiced on the persistent drawer when on mobile. Clicking outside of the drawer will cause it to close.`
             },
             {
               header: 'Dark theme',
               file: 'layouts/8',
               desc: `Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.`
             }
-          ],
-          props: {
-            'v-layout': {
-              params: []
-            }
-          }
+          ]
         }
       }
     }
@@ -69,13 +64,12 @@
   @import '../node_modules/vuetify/src/stylus/tools/_elevations'
 
   #layouts-view
-    #example-8
-      .card
-        background: #424242
-
     .component-example
       position: relative
       z-index: 0
+      
+      &:last-child .divider
+        display: none
 
       [data-app]
         overflow: hidden
@@ -85,8 +79,8 @@
         .navigation-drawer, .toolbar, .overlay
           position: absolute
 
-        main
-          min-height: calc(400px - 36px)
+        main .container
+          min-height: calc(400px - 36px) !important
 
         .navigation-drawer
           height: 400px !important

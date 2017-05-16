@@ -6,3 +6,23 @@
     </v-toolbar-items>
   </v-toolbar>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        items: [
+          {
+            text: 'Link'
+          },
+          {
+            text: 'Link'
+          },
+          {
+            text: 'Link'
+          }
+        ]
+      }
+    }
+  }
+</script>
