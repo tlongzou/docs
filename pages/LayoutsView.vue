@@ -1,16 +1,20 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
     div(slot='top')
-      h6 Vuetify's app markup:
-      markup(lang='html')
-        |&lt;v-app&gt;
-        |  &lt;v-navigation-drawer/&gt;&lt;v-navigation-drawer/&gt;
-        |  &lt;v-toolbar&gt;&lt;/v-toolbar&gt;
-        |  &lt;main&gt;
-        |    &lt;router-view&gt;&lt;/router-view&gt;
-        |  &lt;/main&gt;
-        |  &lt;v-footer&gt;&lt;/v-footer&gt;
-        |&lt;/v-app&gt;
+      section
+        h2.display-1 Default application markup:
+        section-text This is the default application markup for Vuetify. The key is that drawer, toolbar, main and footer exist on the same level in the DOM. Using any one of the 5 pre-made vue-cli templates will automatically include this structure:
+        markup(lang='html')
+          |&lt;v-app&gt;
+          |   &lt;v-navigation-drawer&gt;&lt;v-navigation-drawer/&gt;
+          |   &lt;v-toolbar&gt;&lt;/v-toolbar&gt;
+          |   &lt;main&gt;
+          |     &lt;v-container fluid&gt;
+          |       &lt;router-view&gt;&lt;/router-view&gt;
+          |     &lt;/v-container&gt;
+          |   &lt;/main&gt;
+          |   &lt;v-footer&gt;&lt;/v-footer&gt;
+          |&lt;/v-app&gt;
 </template>
 
 <script>

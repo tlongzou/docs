@@ -26,12 +26,12 @@
 </template>
 
 <style>
-  #example-2 {
+  #layouts-view #example-2 {
     color: #fff;
     text-align: center;
   }
 
-  #example-2 .col {
+  #layouts-view #example-2 .col {
     margin-bottom: 16px;
   }
 </style>

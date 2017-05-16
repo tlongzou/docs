@@ -1,5 +1,5 @@
 <template>
-  <v-app id="example-3">
+  <v-app id="example-2">
     <v-navigation-drawer permanent>
       <v-list class="pa-0">
         <v-list-item>
