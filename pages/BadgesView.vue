@@ -16,11 +16,11 @@
               The color can be changed by using the color--after helper class, or by apply a class that modifies the background of the badged elements <strong>:after</strong> psuedo-selector.
             </p>`,
           examples: [
-            { header: 'Character', file: 'badges/1' },
-            { header: 'Icon', file: 'badges/2' },
-            { header: 'Inline', file: 'badges/3' }
+            { header: 'Character', file: 'badges/1', desc: 'Any character can be placed with a badge.' },
+            { header: 'Icon', file: 'badges/2', desc: 'The icon badge type only supports Material Design icons.' },
+            { header: 'Inline', file: 'badges/3', desc: 'Badges can also be placed inline with text.' }
           ],
-          props2: {
+          props: {
             'v-badge': {
               params: [
                 [

@@ -7,5 +7,5 @@
     <v-btn v-tooltip:bottom="{ html: 'Bottom tooltip' }" primary>Bottom</v-btn>
 
     <v-btn v-tooltip:left="{ html: 'Left tooltip' }" primary>Left</v-btn>
-</div>
+  </div>
 </template>

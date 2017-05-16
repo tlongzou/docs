@@ -10,7 +10,7 @@
 
     <v-icon 
       large 
-      v-badge:notifications.icon.overlap 
+      v-badge:notifications.icon.overlap
       class="grey--text text--darken-1 orange--after"
     >
       account_box
