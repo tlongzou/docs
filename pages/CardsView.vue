@@ -86,6 +86,10 @@
                   '.card__title'
                 ],
                 [
+                  'v-card-text',
+                  '.card__text'
+                ],
+                [
                   'v-card-col',
                   '.card__col'
                 ]
