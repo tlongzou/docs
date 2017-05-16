@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card horizontal>
-      <v-card-row img="/public/doc-images/cards/hotel.jpg" height="130px"></v-card-row>
+      <v-card-row img="/static/doc-images/cards/hotel.jpg" height="130px"></v-card-row>
       <v-card-column>
         <v-card-row height="75px" class="brown white--text">
           <v-card-text>
@@ -27,7 +27,7 @@
           </v-card-text>
         </v-card-row>
       </v-card-column>
-      <v-card-row img="/public/doc-images/cards/store.jpg" height="125px"></v-card-row>
+      <v-card-row img="/static/doc-images/cards/store.jpg" height="125px"></v-card-row>
     </v-card>
   </div>
 </template>

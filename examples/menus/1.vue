@@ -1,14 +1,16 @@
 <template>
-  <v-menu offset-y>
-    <v-btn primary dark slot="activator">Dropdown</v-btn>
-    <v-list>
-      <v-list-item v-for="item in items" :key="item">
-        <v-list-tile>
-          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-        </v-list-tile>
-      </v-list-item>
-    </v-list>
-  </v-menu>
+  <div class="text-xs-center">
+    <v-menu offset-y>
+      <v-btn primary dark slot="activator">Dropdown</v-btn>
+      <v-list>
+        <v-list-item v-for="item in items" :key="item">
+          <v-list-tile>
+            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+  </div>
 </template>
 
 <script>

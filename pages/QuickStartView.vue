@@ -110,7 +110,6 @@
                 v-list-tile-action
                   v-icon(v-if="!browser.supported").error--text clear
                   v-icon(v-else).success--text check
-        section-text This is not an exhaustive list, but Vuetify is only supported on these browsers.
 </template>
 
 <script>

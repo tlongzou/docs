@@ -8,6 +8,8 @@
       return {
         doc: {
           title: 'Icons',
+          component: 'icon',
+          edit: 'IconView',
           desc: 'The <code>v-icon</code> component provides a large set of glyphs to provide context to various aspects of your application. Vuetify icons utilize Google\'s Material Icons font library. For a list of all available icons, visit the official <a href="https://material.io/icons/" target="_blank">Material Icons</a> page.',
           examples: [
             { header: 'Standard (small)', file: 'icons/1', desc: 'Icons come in two themes, light and dark.' },

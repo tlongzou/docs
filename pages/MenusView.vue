@@ -8,14 +8,16 @@
     data () {
       return {
         doc: {
+          title: 'Menu',
+          component: 'menu',
+          edit: 'MenusView',
+          desc: `The <code>v-menu</code> component utilizes the v-menu directive to link itself to another element. Once binded, clicking the element, or by hovering (if using the <code>hover</code> parameter), the menu will reposition absolutely positioned on top of the selected activator.`,
           examples: [
             { header: 'On click', file: 'menus/1', desc: `If you want to programmatically open or close the menu, you can do so by using <code>v-model</code> with a boolean value. Keep in mind, if the trigger for the opening is not contained within the <code>activator</code> slot and is done so by a click, you must <strong>stopPropagation</strong> to avoid immediately triggering a close event.` },
-            { header: 'Menus', file: 'menus/2' },
+            { header: 'Menus', file: 'menus/2', desc: 'Menus can be placed within almost any component.' },
             { header: 'Custom transitions', file: 'menus/3', desc: `Vuetify comes with 3 standard transitions, <strong>scale</strong>, <strong>slide-x</strong> and <strong>slide-y</strong>. You can also create your own and pass it as the transition argument. For an example of how the stock transitions are constructed, visit <a href="https://github.com/vuetifyjs/vuetify/blob/master/src/util/helpers.js#L13" target="_blank">here</a>.` }
           ],
-          title: 'Menu',
-          desc: `The <code>v-menu</code> component utilizes the v-menu directive to link itself to another element. Once binded, clicking the element, or by hovering (if using the <code>hover</code> parameter), the menu will reposition absolutely positioned on top of the selected activator.`,
-          props2: {
+          props: {
             'v-menu': {
               params: [
                 [
@@ -137,13 +139,13 @@
           },
           slots: {
             'v-menu': {
+              shared: ['default'],
               params: [
                 [
                   'activator',
                   'The element that will activate the menu'
                 ]
-              ],
-              default: true
+              ]
             }
           }
         }

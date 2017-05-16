@@ -8,6 +8,8 @@
       return {
         doc: {
           title: 'Snackbar',
+          component: 'snackbars',
+          edit: 'SnackbarView',
           desc: 'The <code>v-snackbar</code> component is used to display a quick message to a user. Snackbars support positioning, removal delay and callbacks.',
           examples: [
             { header: 'Position', file: 'snackbars/1', desc: 'The standard snackbar is useful for calling attention to some function that has just happened.'},

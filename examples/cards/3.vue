@@ -23,7 +23,7 @@
         </v-menu>
       </v-card-title>
     </v-card-row>
-    <v-card-row img="/public/doc-images/cards/space.jpg" height="300px"></v-card-row>
+    <v-card-row img="/static/doc-images/cards/space.jpg" height="300px"></v-card-row>
     <v-card-text class="blue-grey darken-3 white--text">
       <div v-text="card_text"></div>
     </v-card-text>

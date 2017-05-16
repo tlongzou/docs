@@ -8,6 +8,8 @@
       return {
         doc: {
           title: 'Expansion Panel',
+          edit: 'ExpansionPanelView',
+          component: 'expansion-panel',
           desc: `The <code>v-expansion-panel</code> component is useful for reducing vertical space with large amounts of information. The default functionality of the component is to only display one expansion-panel body at a time, however, with the <code>expandable</code> property, the expansion-panel can remain open until explicity closed.`,
           examples: [
             { header: 'Accordion', file: 'expansion-panel/1', desc: 'Accordion expansion panels can only have 1 panel open at a time.' },
@@ -54,25 +56,6 @@
               ]
             }
           }
-        }
-      }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Expansion Panel Component | Vuetify.js',
-          h1: 'Expansion Panel',
-          description: 'Expansion Panel component for Vuetify Framework',
-          keywords: 'vuetify, expansion-panel, components'
         }
       }
     }

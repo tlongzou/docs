@@ -11,6 +11,8 @@
       return {
         doc: {
           title: 'List',
+          component: 'list',
+          edit: 'ListsView',
           desc: 'The <code>v-list</code> component is used to display information. It can contain an avatar, content, actions, subheaders and much more. Lists can contain children and are used in the sidebar.',
           examples: [
             { header: 'Avatar with 2 lines', file: 'lists/1', desc: `Lists can take an array of list items. When given an array, the list component will figure out the classes that are needed depending on what it was given. You can also define headers or dividers within the items array.` },

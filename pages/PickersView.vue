@@ -1,43 +1,5 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
-    //- component-example(header="Date pickers" file="pickers/1" v-bind:data="$data")
-    //-   section-text(slot="details") Date pickers come in two orientation variations, portrait <strong>(default)</strong> and landscape.
-    //- component-example(file="pickers/2" v-bind:data="$data")
-    //-   span(class="title" slot="details") Dark Theme
-    //-   section-text(slot="details") Date pickers come in a dark variant which utilizes the applications primary accent color.
-    //- component-example(file="pickers/11" v-bind:data="$data")
-    //-   span(class="title" slot="details") Allowed dates
-    //-   section-text(slot="details") You can specify allowed dates using arrays, objects, and functions.
-    //- v-expansion-panel(class="mb-5")
-    //-   v-expansion-panel-content
-    //-     div(slot="header") Example Data
-    //-     markup(lang="js" class="mb-0")
-    //-       |fn: function (date) {
-    //-       |  return date.getDate() % 2 == 0
-    //-       |}
-    //-       |
-    //-       |array: [
-    //-       |  '2017-01-01',
-    //-       |  new Date(2017-12-31)
-    //-       |]
-    //-       |
-    //-       |obj: {
-    //-       |  min: new Date(2017, 01, 01),
-    //-       |  max: new Date(2017, 12, 31)
-    //-       |}
-    //- component-example(header="In dialog and menu" file="pickers/3" v-bind:data="$data")
-    //-   section-text(slot="details") When integrating a picker into a <code>v-text-field</code>, it is recommended to use the <strong>readonly</strong> prop. This will prevent mobile keyboards from triggering. To save vertical space, you can also hide the picker title.
-    //-   section-text(slot="details") Pickers expose a scoped slot that allow you to hook into save and cancel functionality. This will maintain an old value which can be replaced if the user cancels.
-    //- blockquote While the <code>format</code> of the picker can be modified using a prop, this should be used carefully. The <code>date-picker</code> uses the javascript Date object, which can be very particular.
-    //- component-example(header="Time pickers" file="pickers/4" v-bind:data="$data")
-    //-   section-text(slot="details") Time pickers share the same portrait and landscape functionality.
-    //- component-example(file="pickers/5" v-bind:data="$data")
-    //-   span(class="title" slot="details") Dark Theme
-    //-   section-text(slot="details") Time pickers also have a dark theme which utilizes the applications primary accent color.
-    //- component-example(header="In dialog and menu" file="pickers/6" v-bind:data="$data")
-    //-   section-text(slot="details") Due to the flexibility of pickers, you can really dial in the experience exactly how you want it.
-    //- component-example(header="24hr time" file="pickers/7" v-bind:data="$data")
-    //-   section-text(slot="details") A time picker can be switched to 24hr format.
 </template>
 
 <script>
@@ -50,17 +12,14 @@
           title: 'Pickers',
           desc: 'The <code>v-date-picker</code> and <code>v-time-picker</code> are stand-alone components that can be utilized in many existing Vuetify components. They offer the user a visual reprensetation for selecting date and time.',
           examples: [
-            { header: "Date pickers - Light", file: "pickers/1", desc: ''},
-            { header: "Date pickers - Dark", file: "pickers/2", desc: ''},
-            { header: "Date pickers - In dialog and menu", file: "pickers/3", desc: ''},
-            { header: "Date pickers - Allowed dates", file: "pickers/11", desc: ''},
-            { header: "Time pickers - Light", file: "pickers/4", desc: ''},
-            { header: "Time pickers - Dark", file: "pickers/5", desc: ''},
-            { header: "Time pickers - In dialog and menu", file: "pickers/6", desc: ''},
-            { header: "Time pickers - 24h format", file: "pickers/7", desc: ''},
-            { header: "", file: "pickers/8", desc: ''},
-            { header: "", file: "pickers/9", desc: ''},
-            { header: "", file: "pickers/10", desc: ''},
+            { header: "Date pickers - Light", file: "pickers/1", desc: 'Date pickers come in two orientation variations, portrait <strong>(default)</strong> and landscape.'},
+            { header: "Date pickers - Dark", file: "pickers/2", desc: 'Date pickers come in a dark variant which utilizes the applications primary accent color.'},
+            { header: "Date pickers - In dialog and menu", file: "pickers/3", desc: '<p>When integrating a picker into a <code>v-text-field</code>, it is recommended to use the <strong>readonly</strong> prop. This will prevent mobile keyboards from triggering. To save vertical space, you can also hide the picker title.</p><p>Pickers expose a scoped slot that allow you to hook into save and cancel functionality. This will maintain an old value which can be replaced if the user cancels.</p>' },
+            { header: "Date pickers - Allowed dates", file: "pickers/11", desc: 'You can specify allowed dates using arrays, objects, and functions.'},
+            { header: "Time pickers - Light", file: "pickers/4", desc: 'Time pickers have the light theme enabled by default.'},
+            { header: "Time pickers - Dark", file: "pickers/5", desc: 'An alternate dark theme can be used for dark theme applications.'},
+            { header: "Time pickers - In dialog and menu", file: "pickers/6", desc: 'Due to the flexibility of pickers, you can really dial in the experience exactly how you want it.'},
+            { header: "Time pickers - 24h format", file: "pickers/7", desc: 'A time picker can be switched to 24hr format.'},
           ],
           props: {
             'v-date-picker': {

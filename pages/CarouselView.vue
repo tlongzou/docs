@@ -22,6 +22,8 @@
       return {
         doc: {
           title: 'Carousel',
+          component: 'carousel',
+          edit: 'CarouselView',
           desc: 'The <code>v-carousel</code> component is used to display large numbers of visual content on a rotating timer.',
           examples: [
             { header: 'Default', file: 'carousel/1', desc: 'A carousel by default has a slide transition.' },

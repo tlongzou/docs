@@ -9,6 +9,8 @@
       return {
         doc: {
           title: 'Toolbar',
+          component: 'toolbar',
+          edit: 'ToolbarsView',
           desc: 'The <code>v-toolbar</code> component is pivotol to any gui, as it generally is the primary source of site navigation. The toolbar component works great in cojunction with a sidebar for hiding links and presenting an activator to open the sidebar on mobile.',
           examples: [
             { header: 'With icons', file: 'toolbar/1', desc: 'You can use icons for your applications various actions.' },

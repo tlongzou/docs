@@ -8,6 +8,8 @@
       return {
         doc: {
           title: 'Footer',
+          component: 'footer',
+          edit: 'FooterView',
           desc: 'The <code>v-footer</code> component is used for displaying general information that a user might want to access from any page within your site.',
           examples: [
             { header: 'Default', file: 'footer/1', desc: 'The footer component is just a basic container that uses your application\'s primary theme' }

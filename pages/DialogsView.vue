@@ -10,7 +10,8 @@
       return {
         doc: {
           title: 'Dialog',
-          id: '#dialog-view',
+          component: 'dialog',
+          edit: 'DialogsView',
           desc: `<p>The <code>v-dialog</code> component inform users about a specific task and may contain critical information, require decisions, or involve multiple tasks. Use dialogs sparingly because they are interruptive.</p>
           <p>If you want to programmatically open or close the dialog, you can do so by using <code>v-model</code> with a boolean value. Keep in mind, if the trigger for the opening is not contained within the <code>activator</code> slot and is done so by a click, you must <strong>stopPropagation</strong> to avoid immediately triggering a close event.</p>`,
           examples: [

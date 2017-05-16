@@ -8,6 +8,8 @@
       return {
         doc: {
           title: 'Chip',
+          component: 'chip',
+          edit: 'ChipsView',
           desc: `The <code>v-chip</code> component is used to convey small pieces of information. Using the <code>close</code> property, the chip becomes interactive, allowing user interaction.`,
           examples: [
             { header: 'Default', file: 'chips/1', desc: 'Chips come in 4 primary variations. Regular, with icon, with portrait and closeable.' },

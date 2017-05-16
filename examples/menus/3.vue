@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-xs-center">
     <v-menu
       origin="center center"
       transition="v-scale-transition"

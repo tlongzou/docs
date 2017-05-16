@@ -7,7 +7,9 @@
     data () {
       return {
         doc: {
-          title: 'Dvididers',
+          title: 'Dividers',
+          component: 'divider',
+          edit: 'DividerView',
           desc: 'The <code>v-divider</code> component is used to separate sections of lists.',
           examples: [
             { header: 'Full bleed', file: 'dividers/1', desc: 'Full bleed dividers extend the entire content width.' },
@@ -30,31 +32,12 @@
           }
         }
       }
-    },
-
-    mounted () {
-      this.$emit('view', this.meta())
-    },
-
-    preFetch () {
-      return this.methods.meta()
-    },
-
-    methods: {
-      meta () {
-        return {
-          title: 'Divider Component | Vuetify.js',
-          h1: 'Dividers',
-          description: 'Dividers are used for separating lists of content.',
-          keywords: 'vuetify, header, divider'
-        }
-      }
     }
   }
 </script>
 
 <style lang="stylus">
-  #dividers-view
+  #divider-view
     .grid
       max-height: 500px
       overflow-y: auto
