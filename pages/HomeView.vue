@@ -28,7 +28,7 @@
                 tag="a"
                 href="https://github.com/vuetifyjs/vuetify"
               ).grey.lighten-2
-                v-icon(fa left light medium) fa-github
+                v-icon(fa left light medium) github
                 span Github
               v-btn(dark large router href="/vuetify/quick-start").green.lighten-2
                 span Get Started

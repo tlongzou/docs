@@ -94,7 +94,7 @@
       section-header Support Browsers
       section-text Vuetify.js is a progressive framework that attempts to push web development to the next level. In order to best accomplish this task, some sacrifices had to be made in terms of support for older versions of Internet Explorer.
       v-list
-        v-layout(row wrap)
+        v-layout(row wrap).mb-3
           v-col(
             xs4
             v-for="browser in browsers"
@@ -110,7 +110,7 @@
                 v-list-tile-action
                   v-icon(v-if="!browser.supported").error--text clear
                   v-icon(v-else).success--text check
-        section-text This is not an exhaustive list but the officially supported browsers.
+        section-text This is not an exhaustive list, but Vuetify is only supported on these browsers.
 </template>
 
 <script>
