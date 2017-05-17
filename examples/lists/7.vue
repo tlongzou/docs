@@ -1,6 +1,6 @@
 <template>
   <v-layout row>
-    <v-col xs12 sm6 offset-sm3>
+    <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-card-row img="/static/doc-images/lists/alison.jpeg" height="300px">
           <v-card-text class="white--text pa-0">
@@ -83,6 +83,6 @@
           </v-list-item>
         </v-list>
       </v-card>
-    </v-col>
+    </v-flex>
   </v-layout>
 </template>

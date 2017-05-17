@@ -1,6 +1,6 @@
 <template>
   <v-layout row>
-    <v-col xs12 sm6 offset-sm3>
+    <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-toolbar class="teal white--text">
           <v-toolbar-side-icon></v-toolbar-side-icon>
@@ -35,7 +35,7 @@
           </v-list-group>
         </v-list>
       </v-card>
-    </v-col>
+    </v-flex>
   </v-layout>
 </template>
 

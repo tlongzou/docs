@@ -3,10 +3,10 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs12 sm6>
+          <v-flex xs12 sm6>
             <v-subheader v-text="'Multiple with persistent hint'" />
-          </v-col>
-          <v-col xs12 sm6>
+          </v-flex>
+          <v-flex xs12 sm6>
             <v-select
               label="Select"
               v-bind:items="states"
@@ -17,11 +17,11 @@
               hint="Pick your favorite states"
               persistent-hint
             />
-          </v-col>
-          <v-col xs12 sm6>
+          </v-flex>
+          <v-flex xs12 sm6>
             <v-subheader v-text="'Multiple (Chips) with persistent hint'" />
-          </v-col>
-          <v-col xs12 sm6>
+          </v-flex>
+          <v-flex xs12 sm6>
             <v-select
               label="Select"
               v-bind:items="states"
@@ -32,7 +32,7 @@
               hint="What are the target regions"
               persistent-hint
             />
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

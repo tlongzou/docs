@@ -3,10 +3,10 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs12 sm6>
+          <v-flex xs12 sm6>
             <v-subheader v-text="'Slots'" />
-          </v-col>
-          <v-col xs12 sm6>
+          </v-flex>
+          <v-flex xs12 sm6>
             <v-select
               label="Select"
               v-bind:items="people"
@@ -43,7 +43,7 @@
                 </v-list-tile-content>
               </template>
             </v-select>
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

@@ -11,7 +11,7 @@
       h6 Playground
       v-container(fluid)
         v-layout(row)
-          v-col(xs4)
+          v-flex(xs4)
             v-select(
               label="Select elevation"
               v-bind:items="elevations"
@@ -20,7 +20,7 @@
               item-value="class"
               return-object
             )
-          v-col(xs6 offset-xs1)
+          v-flex(xs6 offset-xs1)
             v-card(v-bind:class="example.classes")
               v-card-text
                 p.text-xs-center.ma-0 {{ example.elevation }}

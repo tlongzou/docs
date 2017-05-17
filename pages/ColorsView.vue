@@ -10,7 +10,7 @@
       div.colors
         v-container(fluid).pa-0
           v-layout(row wrap)
-            v-col(xs6 sm6 md4 lg3 v-for="color in colors" v-bind:key="color")
+            v-flex(xs6 sm6 md4 lg3 v-for="color in colors" v-bind:key="color")
               v-card(v-bind:class="[color]" height="100px")
                 v-card-text
                   h3 {{ color }}

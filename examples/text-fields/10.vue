@@ -3,10 +3,10 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Normal with hint text</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-10-1"
               label="Enter your password"
@@ -18,13 +18,13 @@
               :type="e1 ? 'password' : 'text'"
               counter
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Visible</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-10-2"
               label="Enter your password"
@@ -35,13 +35,13 @@
               value="wqfasds"
               class="input-group--focused"
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Nonvisible</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-10-2"
               label="Enter your password"
@@ -53,13 +53,13 @@
               type="password"
               class="input-group--focused"
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Error</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-10-2"
               label="Enter your password"
@@ -71,7 +71,7 @@
               v-bind:rules="[() => ('The email and password you entered don\'t match')]"
               class="input-group--focused"
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

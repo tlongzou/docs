@@ -4,24 +4,24 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs9>
+          <v-flex xs9>
             <v-slider label="R" light v-bind:max="255" v-model="red"></v-slider>
-          </v-col>
-          <v-col xs3>
+          </v-flex>
+          <v-flex xs3>
             <v-text-field light v-model="red" type="number"></v-text-field>
-          </v-col>
-          <v-col xs9>
+          </v-flex>
+          <v-flex xs9>
             <v-slider label="G" light v-bind:max="255" v-model="green"></v-slider>
-          </v-col>
-          <v-col xs3>
+          </v-flex>
+          <v-flex xs3>
             <v-text-field light v-model="green" type="number"></v-text-field>
-          </v-col>
-          <v-col xs9>
+          </v-flex>
+          <v-flex xs9>
             <v-slider label="B" light v-bind:max="255" v-model="blue"></v-slider>
-          </v-col>
-          <v-col xs3>
+          </v-flex>
+          <v-flex xs3>
             <v-text-field light v-model="blue" type="number"></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

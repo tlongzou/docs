@@ -3,10 +3,10 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs6>
+          <v-flex xs6>
             <v-subheader v-text="'Standard'" />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-select 
               v-bind:items="states"
               v-model="e1"
@@ -15,11 +15,11 @@
               single-line
               auto
             />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-subheader v-text="'Standard with focus'" />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-select 
               v-bind:items="items"
               v-model="e2"
@@ -28,11 +28,11 @@
               light
               item-value="text"
             />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-subheader v-text="'Error'" />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-select
               label="Select"
               v-bind:items="items"
@@ -41,11 +41,11 @@
               light
               item-value="text"
             />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-subheader v-text="'Disabled'" />
-          </v-col>
-          <v-col xs6>
+          </v-flex>
+          <v-flex xs6>
             <v-select
               label="Select"
               v-bind:items="items"
@@ -53,7 +53,7 @@
               disabled
               light
             />
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

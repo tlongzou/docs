@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col xs12 md6 offset-md3>
+      <v-flex xs12 md6 offset-md3>
         <v-card>
           <v-toolbar class="indigo">
             <v-toolbar-title>DMV Application</v-toolbar-title>
@@ -29,7 +29,7 @@
             <small>*indicates required field</small>
           </v-card-text>
         </v-card>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

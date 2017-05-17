@@ -3,15 +3,15 @@
     <v-card-text>
       <v-container fluid class="pa-0">
         <v-layout row wrap>
-          <v-col xs12 sm4 class="py-2">
+          <v-flex xs12 sm4 class="py-2">
             <v-btn-dropdown label="State" v-bind:options="dropdown.slice(0, 4)" max-height="auto"></v-btn-dropdown>
-          </v-col>
-          <v-col xs12 sm4 class="py-2">
+          </v-flex>
+          <v-flex xs12 sm4 class="py-2">
             <v-btn-dropdown label="State" v-bind:options="dropdown.slice(0, 7)"></v-btn-dropdown>
-          </v-col>
-          <v-col xs12 sm4 class="py-2">
+          </v-flex>
+          <v-flex xs12 sm4 class="py-2">
             <v-btn-dropdown label="State" v-bind:options="dropdown"></v-btn-dropdown>
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

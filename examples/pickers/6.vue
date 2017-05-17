@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col xs12 sm6>
+      <v-flex xs12 sm6>
         <v-menu
           lazy
           :close-on-content-click="false"
@@ -19,8 +19,8 @@
           ></v-text-field>
           <v-time-picker v-model="e6"></v-time-picker>
         </v-menu>
-      </v-col>
-      <v-col xs12 sm6>
+      </v-flex>
+      <v-flex xs12 sm6>
         <v-dialog
           persistent
           v-model="modal2"
@@ -42,7 +42,7 @@
             </template>
           </v-time-picker>
         </v-dialog>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

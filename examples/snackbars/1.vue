@@ -3,30 +3,30 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs12 sm3>
+          <v-flex xs12 sm3>
             <v-checkbox v-model="x" value="left" label="Left" light></v-checkbox>
-          </v-col>
-          <v-col xs6 sm3>
+          </v-flex>
+          <v-flex xs6 sm3>
             <v-checkbox v-model="x" value="right" label="Right" light></v-checkbox>
-          </v-col>
-          <v-col xs6 sm3>
+          </v-flex>
+          <v-flex xs6 sm3>
             <v-checkbox v-model="y" value="top" label="Top" light></v-checkbox>
-          </v-col>
-          <v-col xs6 sm3>
+          </v-flex>
+          <v-flex xs6 sm3>
             <v-checkbox v-model="y" value="bottom" label="Bottom" light></v-checkbox>
-          </v-col>
-          <v-col xs12 sm3>
+          </v-flex>
+          <v-flex xs12 sm3>
             <v-checkbox v-model="mode" value="multi-line" label="Multi-line (mobile)" light></v-checkbox>
-          </v-col>
-          <v-col xs12 sm3>
+          </v-flex>
+          <v-flex xs12 sm3>
             <v-checkbox v-model="mode" value="vertical" label="Vertical (mobile)" light></v-checkbox>
-          </v-col>
-          <v-col xs12 sm4 offset-sm4>
+          </v-flex>
+          <v-flex xs12 sm4 offset-sm4>
             <v-text-field v-model="text" type="text" label="Text"></v-text-field>
-          </v-col>
-          <v-col xs12 sm4>
+          </v-flex>
+          <v-flex xs12 sm4>
             <v-text-field v-model.number="timeout" type="number" label="Timeout"></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
 
       </v-container>

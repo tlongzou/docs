@@ -4,24 +4,24 @@
       <v-container fluid>
 
         <v-layout row wrap>
-          <v-col xs12 sm4 md2>
+          <v-flex xs12 sm4 md2>
             <v-switch label="Primary" v-model="ex17" value="primary" primary light hide-details />
-          </v-col>
-          <v-col xs12 sm4 md2>
+          </v-flex>
+          <v-flex xs12 sm4 md2>
             <v-switch label="Secondary" v-model="ex17" value="secondary" secondary light hide-details />
-          </v-col>
-          <v-col xs12 sm4 md2>
+          </v-flex>
+          <v-flex xs12 sm4 md2>
             <v-switch label="Success" v-model="ex17" value="success" success light hide-details />
-          </v-col>
-          <v-col xs12 sm4 md2>
+          </v-flex>
+          <v-flex xs12 sm4 md2>
             <v-switch label="Info" v-model="ex17" value="info" info light hide-details />
-          </v-col>
-          <v-col xs12 sm4 md2>
+          </v-flex>
+          <v-flex xs12 sm4 md2>
             <v-switch label="Warning" v-model="ex17" value="warning" warning light hide-details />
-          </v-col>
-          <v-col xs12 sm4 md2>
+          </v-flex>
+          <v-flex xs12 sm4 md2>
             <v-switch label="Error" v-model="ex17" value="error" error light hide-details />
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

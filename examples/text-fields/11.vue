@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col xs12 sm6>
+      <v-flex xs12 sm6>
         <v-card>
           <v-toolbar class="teal">
             <v-icon class="white--text">arrow_back</v-icon>
@@ -11,13 +11,13 @@
           <v-card-text>
             <v-container fluid>
               <v-layout row wrap>
-                <v-col xs12>
+                <v-flex xs12>
                   <v-text-field
                     label="Title"
                     value="Preliminary report"
                   />
-                </v-col>
-                <v-col xs12>
+                </v-flex>
+                <v-flex xs12>
                   <v-text-field
                     label="Title"
                     v-model="title"
@@ -25,13 +25,13 @@
                     multi-line
                     max="120"
                   />
-                </v-col>
+                </v-flex>
               </v-layout>
             </v-container>
           </v-card-text>
         </v-card>
-      </v-col>
-      <v-col xs12 sm6>
+      </v-flex>
+      <v-flex xs12 sm6>
         <v-card>
           <v-toolbar class="teal">
             <v-icon class="white--text">arrow_back</v-icon>
@@ -42,13 +42,13 @@
             <v-container fluid>
 
               <v-layout row wrap>
-                <v-col xs12>
+                <v-flex xs12>
                   <v-text-field
                     label="Title"
                     value="Preliminary report"
                   />
-                </v-col>
-                <v-col xs12>
+                </v-flex>
+                <v-flex xs12>
                   <v-text-field
                     label="Title"
                     v-model="title2"
@@ -56,12 +56,12 @@
                     multi-line
                     max="120"
                   />
-                </v-col>
+                </v-flex>
               </v-layout>
             </v-container>
           </v-card-text>
         </v-card>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

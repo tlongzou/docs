@@ -51,11 +51,11 @@
           title: 'Grid',
           desc: 'Vuetify.js uses a 12 point grid system. The grid is used to layout an applications content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.',
           examples: [
-            { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-col</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-col</strong>.` },
+            { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-flex</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-flex</strong>.` },
             { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },
             { header: 'Order', file: 'grid/3', desc: 'You can control the ordering of grid items.' },
             { header: 'Direction and Align', file: 'grid/4', desc: 'Designate the direction and alignment in a various amount of ways.' },
-            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: 'Dynamically change your layout based upon resolution.' }
+            { header: 'Row and column based on breakpoint', file: 'grid/5', desc: 'Dynamically change your layout based upon resolution. <strong>(resize your screen and watch the layout change on small breakpoints)</strong>' }
           ],
           props: {
             'v-container': {
@@ -74,40 +74,58 @@
                     'row[-size]',
                     'Boolean',
                     'False',
-                    'Applies the .row class align elements horizontal. Available for all breakpoints xs => xl. Example: row-sm'
+                    'Applies the .row class align elements horizontal. Available for all breakpoints xs => xl.'
                   ],
                   [
-                    'row--reverse',
+                    'reverse',
                     'Boolean',
                     'False',
-                    'Applies the .row class align and reverse the order'
+                    'Reverses the currently selected direction (column, row).'
                   ],
                   [
                     'column[-size]',
                     'Boolean',
                     'False',
-                    'Applies the .column class align elements vertical. Available for all breakpoints xs => xl. Example: column-xs'
+                    'Applies the .column class align elements vertical. Available for all breakpoints xs => xl.'
                   ],
                   [
                     'child-flex[-size]',
                     'Boolean',
                     'False',
-                    'Applies the .flex class (flex:1) to the first child of layout. Available for all breakpoints xs => xl. Example: child-flex-xs. Hint: You can use class="flex" on specific child element.'
+                    'Applies the .flex class (flex: 1) to the first child of layout. Available for all breakpoints xs => xl. Hint: You can use class="flex" on specific child element.'
                   ],
                   [
                     'flex[-size]',
                     'Class',
                     'False',
-                    'Applies the .flex class (flex:1). Available for all breakpoints xs => xl. Example: class="flex-sm"'
+                    'Applies the .flex class (flex: 1). Available for all breakpoints xs => xl."'
                   ],
                   [
-                    'align-space-around',
+                    'justify-space-around',
                     'Boolean',
                     'False',
-                    'Space around for child elements.'
+                    'Justify content to the space around.'
                   ],
                   [
-                    'align-space-between',
+                    'justify-space-between',
+                    'Boolean',
+                    'False',
+                    'Justify content to the space between.'
+                  ],
+                  [
+                    'justify-center',
+                    'Boolean',
+                    'False',
+                    'Justify content to the center..'
+                  ],
+                  [
+                    'justify-start',
+                    'Boolean',
+                    'False',
+                    'Space between child elements.'
+                  ],
+                  [
+                    'justify-end',
                     'Boolean',
                     'False',
                     'Space between child elements.'
@@ -116,19 +134,25 @@
                     'align-center',
                     'Boolean',
                     'False',
-                    'Center all child elements horizontal and vertical.'
+                    'Align items to the center.'
                   ],
                   [
-                    'align-vert-[start|end]',
+                    'align-baseline',
                     'Boolean',
                     'False',
-                    'Vertical alignment to start or end.Example: align-vert-start'
+                    'Align items to the baseline.'
                   ],
                   [
-                    'align-horiz-[start|end]',
+                    'align-start',
                     'Boolean',
                     'False',
-                    'Horizontal alignment to start or end. Example: align-horiz-start'
+                    'Align items to the start.'
+                  ],
+                  [
+                    'align-end',
+                    'Boolean',
+                    'False',
+                    'Align items to the end.'
                   ],
                   [
                     'wrap',
@@ -138,7 +162,7 @@
                   ]
                 ]
               },
-              'v-col': {
+              'v-flex': {
                 params: [
                   [
                     'xs(1-12)',
@@ -160,7 +184,7 @@
                     'fill-height',
                     'Boolean',
                     'False',
-                    'make sure that col element height is filled with parent and child. Important for Safari/Firefox if children is column element.'
+                    'Make sure that col element height is filled with parent and child. Important for Safari/Firefox if children is column element.'
                   ]
                 ]
               }

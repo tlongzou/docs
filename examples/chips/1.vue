@@ -1,15 +1,15 @@
 <template>
   <v-container fluid class="pa-0">
     <v-layout row wrap>
-      <v-col md6 sm12>
+      <v-flex md6 sm12>
         <div class="text-xs-center">
           <v-chip close>Example Chip</v-chip>
         </div>
         <div class="text-xs-center">
           <v-chip>Example Chip</v-chip>
         </div>
-      </v-col>
-      <v-col md6 sm12 xs12>
+      </v-flex>
+      <v-flex md6 sm12 xs12>
         <div class="text-xs-center">
           <v-chip close>
             <v-avatar>
@@ -24,7 +24,7 @@
             ANZ Bank
           </v-chip>
         </div>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

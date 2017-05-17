@@ -1,7 +1,7 @@
 <template lang="pug">
   v-footer.white.main-footer(data-footer)
     v-layout(row grow).ma-0
-      v-col(
+      v-flex(
         v-if="previous.route"
         xs12
         v-bind:class="[previous.color, { 'xs6': next.route }]").primary.pa-0
@@ -12,7 +12,7 @@
               v-list-tile-content
                 v-list-tile-sub-title Previous
                 v-list-tile-title(v-text="previous.name")
-      v-col(
+      v-flex(
         v-if="next.route"
         xs12
         v-bind:class="[next.color, { 'xs6': previous.route }]").pa-0

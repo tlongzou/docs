@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col sm12 md6 class="my-3">
+      <v-flex sm12 md6 class="my-3">
         <v-card>
           <v-app top-toolbar id="example-9-1">
             <v-toolbar>
@@ -16,31 +16,31 @@
             <main>
               <v-container fluid class="px-3">
                 <v-layout row wrap>
-                  <v-col xs12>
+                  <v-flex xs12>
                     <v-text-field
                       label="Title"
                       counter
                       v-model="title"
                       max="50"
                     />
-                  </v-col>
-                  <v-col xs12>
+                  </v-flex>
+                  <v-flex xs12>
                     <v-text-field
                       label="Description"
                     />
-                  </v-col>
-                  <v-col xs12>
+                  </v-flex>
+                  <v-flex xs12>
                     <v-text-field
                       label="More descriptive text"
                     />
-                  </v-col>
+                  </v-flex>
                 </v-layout>
               </v-container>
             </main>
           </v-app>
         </v-card>
-      </v-col>
-      <v-col sm12 md6 class="my-3">
+      </v-flex>
+      <v-flex sm12 md6 class="my-3">
         <v-card>
           <v-app top-toolbar id="example-9-2">
             <v-toolbar>
@@ -55,7 +55,7 @@
             <main>
               <v-container fluid class="px-3">
                 <v-layout row wrap>
-                  <v-col xs12>
+                  <v-flex xs12>
                     <v-text-field
                       label="Title"
                       class="input-group--focused"
@@ -63,23 +63,23 @@
                       counter
                       max="50"
                     />
-                  </v-col>
-                  <v-col xs12>
+                  </v-flex>
+                  <v-flex xs12>
                     <v-text-field
                       label="Description"
                     />
-                  </v-col>
-                  <v-col xs12>
+                  </v-flex>
+                  <v-flex xs12>
                     <v-text-field
                       label="More descriptive text"
                     />
-                  </v-col>
+                  </v-flex>
                 </v-layout>
               </v-container>
             </main>
           </v-app>
         </v-card>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

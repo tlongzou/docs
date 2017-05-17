@@ -6,9 +6,9 @@
     v-alert(info v-bind:value="true")
       v-container(fluid)
         v-layout(row wrap)
-          v-col(xs12 sm12 md8)
+          v-flex(xs12 sm12 md8)
             slot
-          v-col(xs12 sm12 md4 class="text-sm-right text-xs-center")
+          v-flex(xs12 sm12 md4 class="text-sm-right text-xs-center")
             v-btn(class="blue darken-3 white--text" v-bind:href="route" router)
               | {{ text }}
               v-icon(right) chevron_right

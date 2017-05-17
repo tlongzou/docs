@@ -4,22 +4,22 @@
       <v-container fluid>
 
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader class="grey--text text--lighten-1">Normal with hint text/label</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-1"
               label="Label Text"
               dark
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader class="grey--text text--lighten-1">Focus</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-2"
               label="Label Text"
@@ -27,26 +27,26 @@
               class="input-group--focused"
               dark
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader class="grey--text text--lighten-1">Normal with input text + label</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-3"
               label="Label Text"
               value="Input text"
               dark
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader class="grey--text text--lighten-1">Disabled</v-subheader>
-          </v-col>
-          <v-col xs8>
+          </v-flex>
+          <v-flex xs8>
             <v-text-field
               name="input-3"
               label="Label Text"
@@ -54,7 +54,7 @@
               disabled
               dark
             ></v-text-field>
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

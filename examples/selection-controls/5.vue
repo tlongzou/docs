@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col xs12 md6>
+      <v-flex xs12 md6>
         <v-subheader>Light</v-subheader>
         <v-card class="elevation-0">
           <v-card-text>
@@ -10,8 +10,8 @@
             <v-radio label="Radio 2" v-model="ex8" value="radio-2" light />
           </v-card-text>
         </v-card>
-      </v-col>
-      <v-col xs12 md6>
+      </v-flex>
+      <v-flex xs12 md6>
         <v-subheader>Dark</v-subheader>
         <v-card class="secondary elevation-0">
           <v-card-text>
@@ -20,7 +20,7 @@
             <v-radio label="Radio 4" v-model="ex9" value="radio-4" dark />
           </v-card-text>
         </v-card>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

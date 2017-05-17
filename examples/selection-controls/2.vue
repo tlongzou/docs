@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col xs12 md6>
+      <v-flex xs12 md6>
         <v-subheader>Light</v-subheader>
         <v-card class="elevation-0">
           <v-card-text>
@@ -10,8 +10,8 @@
             <v-checkbox label="Jacob" v-model="ex5" value="Jacob" light />
           </v-card-text>
         </v-card>
-      </v-col>
-      <v-col xs12 md6>
+      </v-flex>
+      <v-flex xs12 md6>
         <v-subheader>Dark</v-subheader>
         <v-card class="secondary elevation-0">
           <v-card-text>
@@ -20,7 +20,7 @@
             <v-checkbox label="Jacob" v-model="ex6" value="Jacob" dark />
           </v-card-text>
         </v-card>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

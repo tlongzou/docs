@@ -1,6 +1,6 @@
 <template>
   <v-layout row>
-    <v-col xs12 sm6 offset-sm3>
+    <v-flex xs12 sm6 offset-sm3>
       <v-card height="200px">
         <v-card-row class="blue white--text">
           <v-menu bottom right>
@@ -19,7 +19,7 @@
         </v-card-row>
         <v-card-text>Lorem Ipsum</v-card-text>
       </v-card>
-    </v-col>
+    </v-flex>
   </v-layout>
 </template>
 

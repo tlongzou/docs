@@ -1,12 +1,12 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-col md12 lg4>
+      <v-flex md12 lg4>
         <v-date-picker v-model="picker"></v-date-picker>
-      </v-col>
-      <v-col md12 lg8>
+      </v-flex>
+      <v-flex md12 lg8>
         <v-date-picker v-model="picker2" landscape></v-date-picker>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

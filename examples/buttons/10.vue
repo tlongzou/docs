@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pa-0">
     <v-layout row wrap>
-      <v-col xs12 sm6>
+      <v-flex xs12 sm6>
         <div class="text-xs-center">
           <v-card class="elevation-0">
             <v-card-text>
@@ -17,8 +17,8 @@
             </v-card-text>
           </v-card>
         </div>
-      </v-col>
-      <v-col xs12 sm6>
+      </v-flex>
+      <v-flex xs12 sm6>
         <div class="text-xs-center">
           <v-card class="elevation-0">
             <v-card-text>
@@ -40,7 +40,7 @@
             </v-card-text>
           </v-card>
         </div>
-      </v-col>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

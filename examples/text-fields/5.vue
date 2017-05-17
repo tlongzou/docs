@@ -3,26 +3,26 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Normal with hint text</v-subheader>
-          </v-col>
-          <v-col xs12 sm5>
+          </v-flex>
+          <v-flex xs12 sm5>
             <v-text-field
               name="input-1-3"
               label="Hint Text"
               single-line
               prepend-icon="phone"
             ></v-text-field>
-          </v-col>
-          <v-col xs12 sm3>
+          </v-flex>
+          <v-flex xs12 sm3>
             <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" />
-          </v-col>
+          </v-flex>
         </v-layout>
         <v-layout row wrap>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Focus</v-subheader>
-          </v-col>
-          <v-col xs12 sm5>
+          </v-flex>
+          <v-flex xs12 sm5>
             <v-text-field
               name="input-2-3"
               label="Hint Text"
@@ -31,17 +31,17 @@
               value="650"
               single-line
             ></v-text-field>
-          </v-col>
-          <v-col xs12 sm3>
+          </v-flex>
+          <v-flex xs12 sm3>
             <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" />
-          </v-col>
+          </v-flex>
 
         </v-layout>
         <v-layout row wrap>
-          <v-col xs4>
+          <v-flex xs4>
             <v-subheader>Normal with input text</v-subheader>
-          </v-col>
-          <v-col xs12 sm5>
+          </v-flex>
+          <v-flex xs12 sm5>
             <v-text-field
               name="input-3-3"
               label="Hint Text"
@@ -49,10 +49,10 @@
               prepend-icon="phone"
               single-line
             ></v-text-field>
-          </v-col>
-          <v-col xs12 sm3>
+          </v-flex>
+          <v-flex xs12 sm3>
             <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" />
-          </v-col>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-card-text>

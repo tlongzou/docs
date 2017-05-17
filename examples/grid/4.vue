@@ -1,7 +1,7 @@
 <template>
   <div id="example-4">
     <v-container fluid>
-      <v-layout row align-space-between>
+      <v-layout row justify-space-between>
         <v-card class="primary">
           <v-card-text>one</v-card-text>
         </v-card>
@@ -12,7 +12,7 @@
           <v-card-text>three</v-card-text>
         </v-card>
       </v-layout>
-      <v-layout row align-space-around>
+      <v-layout row justify-space-around>
         <v-card class="primary">
           <v-card-text>one</v-card-text>
         </v-card>
