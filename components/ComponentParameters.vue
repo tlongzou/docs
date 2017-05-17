@@ -96,7 +96,7 @@
         ]
       },
       makeContextual () {
-        return ['success', 'info', 'warning', 'error'].map(c => {
+        return ['primary', 'secondary', 'success', 'info', 'warning', 'error'].map(c => {
           return [ c, 'Boolean', 'False', `Applies the ${c} contextual color` ]
         })
       },
