@@ -37,7 +37,15 @@
               ]
             },
             'v-breadcrumbs-item': {
-              shared: ['router']
+              shared: ['router'],
+              params: [
+                [
+                  'active-class',
+                  'String',
+                  'breadcrumbs__item--active',
+                  'Specifies the class to apply to the active breadcrumb'
+                ]
+              ]
             }
           },
           slots: {
