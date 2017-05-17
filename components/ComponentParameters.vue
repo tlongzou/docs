@@ -131,6 +131,12 @@
             'List tile is disabled'
           ],
           [
+            'exact',
+            'Boolean',
+            'False',
+            'Exactly match the link. Without this, "/" will match every route'
+          ],
+          [
             'href',
             'String, Object',
             'javascript:;',
@@ -153,6 +159,12 @@
             'Boolean',
             'False',
             'Vue Router router-link prop'
+          ],
+          [
+            'ripple',
+            'Boolean',
+            'False',
+            'Applies ripple effect'
           ],
           [
             'router',
