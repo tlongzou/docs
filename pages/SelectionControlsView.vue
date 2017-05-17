@@ -28,106 +28,10 @@
           ],
           props: {
             'all': {
-              params: [
-                [
-                  'append-icon',
-                  'String',
-                  '-',
-                  'Append material icon'
-                ],
-                [
-                  'prepend-icon',
-                  'String',
-                  '-',
-                  'Prepend material icon'
-                ],
-                [
-                  'light',
-                  'Boolean',
-                  'True',
-                  'Applies the light theme'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'False',
-                  'Applies the dark theme'
-                ],
-                [
-                  'disabled',
-                  'Boolean',
-                  'False',
-                  'Disables the input'
-                ],
-                [
-                  'label',
-                  'String',
-                  '-',
-                  'Sets input label'
-                ],
-                [
-                  'hint',
-                  'String',
-                  '-',
-                  'Hint text'
-                ],
-                [
-                  'persistent-hint',
-                  'Boolean',
-                  'False',
-                  'Forces hint visible'
-                ],
-                [
-                  'required',
-                  'Boolean',
-                  'False',
-                  'Designates the input as required'
-                ],
-                [
-                  'rules' ,
-                  'Array',
-                  '[]',
-                  "Array of functions that return either True or a String with an error message"
-                ],
-                [
-                  'primary',
-                  'Boolean',
-                  'False',
-                  'Sets input context to "primary"'
-                ],
-                [
-                  'secondary',
-                  'Boolean',
-                  'False',
-                  'Sets input context to "secondary"'
-                ],
-                [
-                  'success',
-                  'Boolean',
-                  'False',
-                  'Sets input context to "success"'
-                ],
-                [
-                  'info',
-                  'Boolean',
-                  'False',
-                  'Sets input context to "info"'
-                ],
-                [
-                  'warning',
-                  'Boolean',
-                  'False',
-                  'Sets input context to "warning"'
-                ],
-                [
-                  'error',
-                  'Boolean',
-                  'False',
-                  'Sets input context to "error"'
-                ],
-              ],
+              shared: ['contextual', 'input'],
             },
             'v-checkbox': {
+              shared: ['contextual', 'input'],
               params: [
                 [
                   'input-value',
@@ -161,6 +65,7 @@
               }
             },
             'v-radio': {
+              shared: ['contextual', 'input'],
               params: [
                 [
                   'input-value',
@@ -176,6 +81,7 @@
               }
             },
             'v-switch': {
+              shared: ['contextual', 'input'],
               params: [
                 [
                   'input-value',
