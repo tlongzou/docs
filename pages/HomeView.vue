@@ -54,27 +54,27 @@
                   v-card-title.pl-0.pt-0 Premade Templates
                   div.grey--text.text--darken-1 Vuetify comes ready to go with 5 pre-made vue-cli templates. Ranging from a simple html to a full blown SSR (server side rendered) application. No matter what the project, you are ready to go in minutes with your next great idea.
               v-flex(xs6).hidden-xs-only
-                v-card(height="300px" img="/static/vuetify_cli.svg")
+                v-card(height="280px" img="/static/vuetify_cli.svg")
           v-flex(sm12).my-5
             v-layout(row)
               v-flex(xs6).hidden-xs-only
-                v-card(height="300px" img="/static/vuetify_semantic.svg")
-              v-flex(xs12 sm6 layout column align-start justify-center)
-                v-card.transparent.elevation-0
-                  v-card-title.pl-0.pt-0 Semantic components
-                  div.grey--text.text--darken-1 Every component has been meticulously crafted to offer the easiest, most understandable interface and robust api of properties that will customize the experience delivered in your next application.
-          v-flex(sm12).my-5
-            v-layout(row)
+                v-card(height="280px" img="/static/vuetify_layout2.svg")
               v-flex(xs12 sm6 layout column align-end justify-center)
                 v-card.transparent.elevation-0
                   v-card-title.pl-0.pt-0 Custom layouts
                   div.grey--text.text--darken-1 Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any task.
+          v-flex(sm12).my-5
+            v-layout(row)
+              v-flex(xs12 sm6 layout column align-start justify-center)
+                v-card.transparent.elevation-0
+                  v-card-title.pl-0.pt-0 Semantic components
+                  div.grey--text.text--darken-1 Every component has been meticulously crafted to offer the easiest, most understandable interface and robust api of properties that will customize the experience delivered in your next application.
               v-flex(xs6).hidden-xs-only
-                v-card(height="300px" img="/static/vuetify_layout1.svg")
+                v-card(height="280px" img="/static/vuetify_semantic.svg")
           v-flex(sm12).my-5
             v-layout(row)
               v-flex(xs6).hidden-xs-only
-                v-card(height="300px" img="/static/vuetify_sizes.svg")
+                v-card(height="280px" img="/static/vuetify_sizes.svg")
               v-flex(xs12 sm6 layout column align-start justify-center)
                 v-card.transparent.elevation-0
                   v-card-title.pl-0.pt-0 Material design framework
@@ -83,22 +83,22 @@
 
     section#highlights.text-xs-center.grey.lighten-4.py-5
       v-container
-        v-layout(row)
-          v-flex(xs3)
+        v-layout(row wrap)
+          v-flex(xs12 sm6 md3)
+            div.py-3.caption Ready for any screen size, from desktop to mobile
             v-btn(floating large).red.lighten-2
               v-icon devices
-            p Ready for any screen size, from desktop to mobile.
-          v-flex(xs3)
+          v-flex(xs12 sm6 md3)
             v-btn(floating large).red.lighten-2
               v-icon storage
-            p Reusable components to make app development a breeze.
-          v-flex(xs3)
+            div.py-3.caption Reusable components that make app development a breeze
+          v-flex(xs12 sm6 md3)
+            div.py-3.caption SSR support for SEO friendly apps
             v-btn(floating dark large).red.lighten-2 SSR
-            p SSR support for SEO friendly apps.
-          v-flex(xs3)
+          v-flex(xs12 sm6 md3)
             v-btn(floating large).red.lighten-2
               v-icon photo_size_select_small
-            p Small footprint <br/> Under 100KB
+            div.py-3.caption Small footprint. Under 100KB
 
     section#sponsors.py-5
       v-container( fluid)
@@ -144,6 +144,9 @@
     #hero
       .btn
         width: 190px
+    
+    div.grey--text
+      line-height: 2
         
   #features
     .card__column.transparent
