@@ -5,11 +5,9 @@ export default {
     first: Boolean
   },
 
-  render (h, { props, children }) {
-    const data = {
-      'class': 'display-1',
-      style: {}
-    }
+  render (h, { data, props, children }) {
+    data.class = 'display-1'
+    data.style = {}
 
     if (props.first) {
       data.styles.marginTop = 0

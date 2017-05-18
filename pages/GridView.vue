@@ -49,12 +49,12 @@
       return {
         doc: {
           title: 'Grid',
-          desc: 'Vuetify.js uses a 12 point grid system. The grid is used to layout an applications content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.',
+          desc: 'Vuetify.js uses a 12 point grid system. The grid is used to layout an application\'s content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.',
           examples: [
             { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-flex</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-flex</strong>.` },
-            { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },
-            { header: 'Order', file: 'grid/3', desc: 'You can control the ordering of grid items.' },
-            { header: 'Direction and Align', file: 'grid/4', desc: 'Designate the direction and alignment in a various amount of ways.' },
+            { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or to control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },
+            { header: 'Order', file: 'grid/3', desc: 'You can control the ordering of grid items. As with offsets, you can set different orders for different sizes' },
+            { header: 'Direction and Align', file: 'grid/4', desc: 'Designate the direction and alignment in a variety of ways.' },
             { header: 'Row and column based on breakpoint', file: 'grid/5', desc: 'Dynamically change your layout based upon resolution. <strong>(resize your screen and watch the layout change on small breakpoints)</strong>' }
           ],
           props: {

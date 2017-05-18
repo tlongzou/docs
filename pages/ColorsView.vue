@@ -70,8 +70,8 @@
 
 <style lang="stylus">
   #colors-view .colors
-    .col
-      margin: .5rem 0
+    .flex
+      margin: 1rem 0
 
     .card
       color: #fff
