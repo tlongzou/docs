@@ -16,12 +16,12 @@
           span.subheading Updates
 
     section#hero.elevation-12
-      v-parallax(src="/static/doc-images/bg-2.jpg")
+      v-parallax(src="/static/doc-images/bg-2.jpg" height="400")
         v-layout(row align-vert-center align-horiz-center)
           v-flex(xs12).text-xs-center
-            h1(class="grey--text text--lighten-4") Vuetify.js
-            div.grey--text.text--lighten-4.display-1 Material Component Framework
-            div.mt-5.pt-5
+            h1.grey--text.text--lighten-4.display-2 Vuetify.js
+            div.grey--text.text--lighten-4.headline.hidden-xs-only Material Component Framework
+            div.mt-5
               v-btn(
                 light
                 large
@@ -89,16 +89,16 @@
             v-btn(floating large).red.lighten-2
               v-icon devices
           v-flex(xs12 sm6 md3)
+            div.py-3.caption Reusable components that make app development a breeze
             v-btn(floating large).red.lighten-2
               v-icon storage
-            div.py-3.caption Reusable components that make app development a breeze
           v-flex(xs12 sm6 md3)
             div.py-3.caption SSR support for SEO friendly apps
             v-btn(floating dark large).red.lighten-2 SSR
           v-flex(xs12 sm6 md3)
+            div.py-3.caption Small footprint. Under 100KB
             v-btn(floating large).red.lighten-2
               v-icon photo_size_select_small
-            div.py-3.caption Small footprint. Under 100KB
 
     section#sponsors.py-5
       v-container( fluid)

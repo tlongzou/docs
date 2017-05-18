@@ -52,6 +52,12 @@
                   'Boolean',
                   'False',
                   'Specifies a higher default elevation',
+                ],
+                [
+                  'flat',
+                  'Boolean',
+                  'False',
+                  'Specifies a 0 elevation',
                 ]
               ]
             },
