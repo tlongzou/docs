@@ -12,10 +12,11 @@
           component: 'select',
           edit: 'SelectView',
           examples: [
-            { header: 'Standard select', file: 'selects/1', desc: 'Light theme' },
-            { header: 'Standard select', file: 'selects/2', desc: 'Dark theme' },
-            { header: 'Multiple', file: 'selects/3', desc: `A multi-select can utilize v-chip as the display for selected items.` },
-            { header: 'Scoped slots', file: 'selects/4', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` }
+            { header: 'Light theme', file: 'selects/1', desc: '' },
+            { header: 'Dark theme', file: 'selects/2', desc: '' },
+            { header: 'Icons', file: 'selects/3', desc: '' },
+            { header: 'Multiple', file: 'selects/4', desc: `A multi-select can utilize v-chip as the display for selected items.` },
+            { header: 'Scoped slots', file: 'selects/5', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` }
           ],
           props: {
             'v-select': {

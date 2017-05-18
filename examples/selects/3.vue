@@ -3,35 +3,33 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-flex xs12 sm6>
-            <v-subheader v-text="'Multiple with persistent hint'" />
+          <v-flex xs6>
+            <v-subheader>Prepended icon</v-subheader>
           </v-flex>
-          <v-flex xs12 sm6>
+          <v-flex xs6>
             <v-select
-              label="Select"
               v-bind:items="states"
-              v-model="e6"
-              multiple
+              v-model="e1"
+              label="Select"
               dark
-              max-height="400"
-              hint="Pick your favorite states"
-              persistent-hint
-            />
+              single-line
+              auto
+              prepend-icon="map"
+            ></v-select>
           </v-flex>
-          <v-flex xs12 sm6>
-            <v-subheader v-text="'Multiple (Chips) with persistent hint'" />
+          <v-flex xs6>
+            <v-subheader>Appended icon</v-subheader>
           </v-flex>
-          <v-flex xs12 sm6>
+          <v-flex xs6>
             <v-select
-              label="Select"
               v-bind:items="states"
-              v-model="e7"
-              multiple
-              chips
+              v-model="e2"
+              label="Select"
               dark
-              hint="What are the target regions"
-              persistent-hint
-            />
+              single-line
+              auto
+              append-icon="map"
+            ></v-select>
           </v-flex>
         </v-layout>
       </v-container>
@@ -43,8 +41,19 @@
   export default {
     data () {
       return {
-        e6: [],
-        e7: [],
+        e1: null,
+        e2: null,
+        e3: null,
+        e4: null,
+        items: [
+          { text: 'State 1' },
+          { text: 'State 2' },
+          { text: 'State 3' },
+          { text: 'State 4' },
+          { text: 'State 5' },
+          { text: 'State 6' },
+          { text: 'State 7' }
+        ],
         states: [
           'Alabama','Alaska','American Samoa','Arizona',
           'Arkansas','California','Colorado','Connecticut',

@@ -4,7 +4,7 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs6>
-            <v-subheader v-text="'Standard'" />
+            <v-subheader>Standard</v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -14,10 +14,10 @@
               dark
               single-line
               auto
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs6>
-            <v-subheader v-text="'Standard with focus'" />
+            <v-subheader>Standard with focus</v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -27,10 +27,10 @@
               class="input-group--focused"
               dark
               item-value="text"
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs6>
-            <v-subheader v-text="'Error'" />
+            <v-subheader>Error</v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -40,10 +40,10 @@
               v-bind:rules="[() => e3 && e3.text && e3.text.length > 0 || 'Please select an option']"
               dark
               item-value="text"
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs6>
-            <v-subheader v-text="'Disabled'" />
+            <v-subheader>Disabled</v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -52,7 +52,7 @@
               v-model="e4"
               disabled
               dark
-            />
+            ></v-select>
           </v-flex>
         </v-layout>
       </v-container>
