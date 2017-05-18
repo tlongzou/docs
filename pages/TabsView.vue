@@ -50,7 +50,19 @@
                   'Boolean',
                   'False',
                   'Displays scrollbars when content overflows'
-                ]
+                ],
+                [
+                  'bg-color',
+                  'String',
+                  '-',
+                  'Specifies the tabs background color. Default: $theme.primary'
+                ],
+                [
+                  'slider-color',
+                  'String',
+                  '-',
+                  'Specifies the slider color. Default: $theme.accent'
+                ],
               ],
               model: {
                 type: ['String'],
