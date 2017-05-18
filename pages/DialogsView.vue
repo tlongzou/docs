@@ -61,6 +61,12 @@
                   'When set to true, expects a card, card-title, card-text and card-row with the actions prop. Will set card-row to scroll'
                 ],
                 [
+                  'disabled',
+                  'Boolean',
+                  'False',
+                  'Disabled the ability to open the dialog.'
+                ],
+                [
                   'origin',
                   'String',
                   'center center',
