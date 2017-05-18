@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <v-slider v-model="value" dark></v-slider>
-    <v-slider v-model="value" dark disabled></v-slider>
-  </div>
+  <v-card class="secondary">
+    <v-card-text>
+      <v-slider v-model="value" light></v-slider>
+      <v-slider v-model="value" light disabled></v-slider>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>
