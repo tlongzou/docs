@@ -149,6 +149,12 @@
             'For router, this is passed to the "to" prop'
           ],
           [
+            'target',
+            'String',
+            '-',
+            'Specify the target attribute, only works with anchor tag.'
+          ],
+          [
             'nuxt',
             'Boolean',
             'False',
