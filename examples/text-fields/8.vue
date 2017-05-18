@@ -11,7 +11,7 @@
               name="input-7-1"
               label="Label Text"
               multi-line
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -26,7 +26,7 @@
               value="Input Text"
               class="input-group--focused"
               multi-line
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -41,7 +41,7 @@
               value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
               single-line
               multi-line
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -55,7 +55,7 @@
               label="Label Text"
               value="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
               multi-line
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>

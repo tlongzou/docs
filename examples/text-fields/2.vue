@@ -11,7 +11,7 @@
             <v-text-field
               name="input-1"
               label="Label Text"
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -25,7 +25,7 @@
               label="Label Text"
               value="Input text"
               class="input-group--focused"
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -38,7 +38,7 @@
               name="input-3"
               label="Label Text"
               value="Input text"
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -52,7 +52,7 @@
               label="Label Text"
               value="Input text"
               disabled
-              dark
+              light
             ></v-text-field>
           </v-flex>
         </v-layout>

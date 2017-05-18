@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-navigation-drawer(v-model="isActive" persistent dark :mini-variant.sync="mini")
+  v-navigation-drawer(v-model="isActive" persistent light :mini-variant.sync="mini")
     v-list.pa-0.vuetify
       v-list-item
         v-list-tile(avatar tag="div")
@@ -10,7 +10,7 @@
             v-menu(transition="v-scale-transition" origin="top")
               v-list-tile-title(slot="activator")
                 span Vuetify
-                v-icon arrow_drop_down
+                v-icon(light) arrow_drop_down
               v-list(class="grey darken-2")
                 v-list-item
                   v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
@@ -34,7 +34,7 @@
                     v-list-tile-title Facebook
           v-spacer
           v-list-tile-action
-            v-btn(icon v-on:click.native.stop="mini = !mini")
+            v-btn(icon light v-on:click.native.stop="mini = !mini")
               v-icon chevron_left
     v-divider
     v-list(dense)
@@ -42,11 +42,11 @@
         v-list-group(v-if="item.items" v-bind:group="item.group")
           v-list-tile(slot="item" ripple)
             v-list-tile-action
-              v-icon(dark) {{ item.action }}
+              v-icon(light) {{ item.action }}
             v-list-tile-content
               v-list-tile-title {{ item.title }}
             v-list-tile-action
-              v-icon(dark) keyboard_arrow_down
+              v-icon(light) keyboard_arrow_down
           v-list-item(v-for="subItem in item.items" v-bind:key="subItem")
             v-list-tile(
               :href="subItem.href"
@@ -58,17 +58,17 @@
               v-list-tile-content
                 v-list-tile-title {{ subItem.title }}
               v-list-tile-action(v-if="subItem.action")
-                v-icon(dark class="success--text") {{ subItem.action }}
+                v-icon(light class="success--text") {{ subItem.action }}
         v-subheader(v-else-if="item.header") {{ item.header }}
         v-divider(v-else-if="item.divider")
         v-list-item(v-else)
           v-list-tile(:href="item.href" router ripple v-bind:disabled="item.disabled")
             v-list-tile-action
-              v-icon(dark) {{ item.action }}
+              v-icon(light) {{ item.action }}
             v-list-tile-content
               v-list-tile-title {{ item.title }}
             v-list-tile-action(v-if="item.subAction")
-              v-icon(dark class="success--text") {{ item.subAction }}
+              v-icon(light class="success--text") {{ item.subAction }}
 </template>
 
 <script>

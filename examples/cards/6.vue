@@ -10,7 +10,7 @@
     <v-card-row actions>
       <v-btn flat class="white--text">Add to Calendar</v-btn>
       <v-spacer></v-spacer>
-      <v-btn icon dark>
+      <v-btn icon light>
         <v-icon>event</v-icon>
       </v-btn>
     </v-card-row>

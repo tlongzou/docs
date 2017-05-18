@@ -1,6 +1,6 @@
 <template>
   <v-card height="200px">
-    <v-bottom-nav 
+    <v-bottom-nav
       absolute
       shift
       value="true"
@@ -11,19 +11,19 @@
         'brown lighten-1': e2 === 4
       }"
     >
-      <v-btn flat dark @click.native="e2 = 1" :value="e2 === 1">
+      <v-btn flat light @click.native="e2 = 1" :value="e2 === 1">
         <span>Video</span>
         <v-icon>ondemand_video</v-icon>
       </v-btn>
-      <v-btn flat dark @click.native="e2 = 2" :value="e2 === 2">
+      <v-btn flat light @click.native="e2 = 2" :value="e2 === 2">
         <span>Music</span>
         <v-icon>music_note</v-icon>
       </v-btn>
-      <v-btn flat dark @click.native="e2 = 3" :value="e2 === 3">
+      <v-btn flat light @click.native="e2 = 3" :value="e2 === 3">
         <span>Book</span>
         <v-icon>book</v-icon>
       </v-btn>
-      <v-btn flat dark @click.native="e2 = 4" :value="e2 === 4">
+      <v-btn flat light @click.native="e2 = 4" :value="e2 === 4">
         <span>Image</span>
         <v-icon>image</v-icon>
       </v-btn>

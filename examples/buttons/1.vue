@@ -5,16 +5,16 @@
         <v-card height="225px" class="elevation-0">
           <v-card-text>
             <div>
-              <v-btn light flat>Normal</v-btn>
+              <v-btn dark flat>Normal</v-btn>
             </div>
             <div>
-              <v-btn light flat class="btn--light-flat-focused">Focused</v-btn>
+              <v-btn dark flat class="btn--dark-flat-focused">Focused</v-btn>
             </div>
             <div>
-              <v-btn light flat class="btn--light-flat-pressed">Pressed</v-btn>
+              <v-btn dark flat class="btn--dark-flat-pressed">Pressed</v-btn>
             </div>
             <div>
-              <v-btn light flat disabled>Disabled</v-btn>
+              <v-btn dark flat disabled>Disabled</v-btn>
             </div>
           </v-card-text>
         </v-card>
@@ -23,16 +23,16 @@
         <v-card height="225px" class="secondary elevation-0">
           <v-card-text>
             <div>
-              <v-btn flat dark>Normal</v-btn>
+              <v-btn flat light>Normal</v-btn>
             </div>
             <div>
-              <v-btn flat dark class="btn--dark-flat-focused">Focused</v-btn>
+              <v-btn flat light class="btn--light-flat-focused">Focused</v-btn>
             </div>
             <div>
-              <v-btn flat dark class="btn--dark-flat-pressed">Pressed</v-btn>
+              <v-btn flat light class="btn--light-flat-pressed">Pressed</v-btn>
             </div>
             <div>
-              <v-btn flat dark disabled>Disabled</v-btn>
+              <v-btn flat light disabled>Disabled</v-btn>
             </div>
           </v-card-text>
         </v-card>
@@ -49,11 +49,11 @@
     background-color: $button-light-overlay
 
   .btn--light-flat-pressed:after
-    background-color: rgba(#000, .3)
+    background-color: rgba(#fff, .3)
 
   .btn--dark-flat-focused:after
     background-color: $button-dark-overlay
 
   .btn--dark-flat-pressed:after
-    background-color: rgba(#fff, .3)
+    background-color: rgba(#000, .3)
 </style>

@@ -25,6 +25,7 @@
           ],
           props: {
             'v-tabs': {
+              shared: ['theme'],
               params: [
                 [
                   'centered',

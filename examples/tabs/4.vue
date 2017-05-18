@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-4" grow icons>
+  <v-tabs id="mobile-tabs-4" grow icons light>
     <v-tab-item href="#mobile-tabs-4-1" slot="activators">
       Recents
       <v-icon>phone</v-icon>

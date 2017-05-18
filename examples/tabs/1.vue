@@ -1,23 +1,24 @@
 <template>
-  <v-tabs 
-    id="mobile-tabs-1" 
-    grow 
-    scroll-bars 
+  <v-tabs
+    id="mobile-tabs-1"
+    grow
+    scroll-bars
     v-model="active"
+    light
   >
-    <v-tab-item 
+    <v-tab-item
       v-for="i in 3"
       :key="i"
-      :href="'#mobile-tabs-1-' + i" 
+      :href="'#mobile-tabs-1-' + i"
       ripple
       slot="activators"
     >
       Item {{ i }}
     </v-tab-item>
-    <v-tab-content 
+    <v-tab-content
       v-for="i in 3"
       :key="i"
-      :id="'mobile-tabs-1-' + i" 
+      :id="'mobile-tabs-1-' + i"
       slot="content"
     >
       <v-card>

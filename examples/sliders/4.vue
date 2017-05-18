@@ -5,22 +5,22 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs9>
-            <v-slider label="R" light v-bind:max="255" v-model="red"></v-slider>
+            <v-slider label="R" dark v-bind:max="255" v-model="red"></v-slider>
           </v-flex>
           <v-flex xs3>
-            <v-text-field light v-model="red" type="number"></v-text-field>
+            <v-text-field dark v-model="red" type="number"></v-text-field>
           </v-flex>
           <v-flex xs9>
-            <v-slider label="G" light v-bind:max="255" v-model="green"></v-slider>
+            <v-slider label="G" dark v-bind:max="255" v-model="green"></v-slider>
           </v-flex>
           <v-flex xs3>
-            <v-text-field light v-model="green" type="number"></v-text-field>
+            <v-text-field dark v-model="green" type="number"></v-text-field>
           </v-flex>
           <v-flex xs9>
-            <v-slider label="B" light v-bind:max="255" v-model="blue"></v-slider>
+            <v-slider label="B" dark v-bind:max="255" v-model="blue"></v-slider>
           </v-flex>
           <v-flex xs3>
-            <v-text-field light v-model="blue" type="number"></v-text-field>
+            <v-text-field dark v-model="blue" type="number"></v-text-field>
           </v-flex>
         </v-layout>
       </v-container>

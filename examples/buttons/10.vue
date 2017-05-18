@@ -6,13 +6,13 @@
           <v-card class="elevation-0">
             <v-card-text>
               <div>
-                <v-btn small primary dark>Small Button</v-btn>
+                <v-btn small primary light>Small Button</v-btn>
               </div>
               <div>
-                <v-btn warning dark>Normal Button</v-btn>
+                <v-btn warning light>Normal Button</v-btn>
               </div>
               <div>
-                <v-btn error dark large>Large Button</v-btn>
+                <v-btn error light large>Large Button</v-btn>
               </div>
             </v-card-text>
           </v-card>
@@ -23,18 +23,18 @@
           <v-card class="elevation-0">
             <v-card-text>
               <div>
-                <v-btn primary floating small dark>
-                  <v-icon>edit</v-icon>
+                <v-btn primary floating small>
+                  <v-icon light>edit</v-icon>
                 </v-btn>
               </div>
               <div>
-                <v-btn warning floating dark>
-                  <v-icon>account_circle</v-icon>
+                <v-btn warning floating>
+                  <v-icon light>account_circle</v-icon>
                 </v-btn>
               </div>
               <div>
-                <v-btn error floating large dark>
-                  <v-icon>alarm</v-icon>
+                <v-btn error floating large>
+                  <v-icon light>alarm</v-icon>
                 </v-btn>
               </div>
             </v-card-text>

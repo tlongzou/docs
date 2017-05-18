@@ -1,22 +1,22 @@
 <template>
   <div class="text-xs-center">
     <v-btn floating small primary>
-      <v-icon>remove</v-icon>
+      <v-icon light>remove</v-icon>
     </v-btn>
     <v-btn floating small class="pink">
-      <v-icon>favorite</v-icon>
+      <v-icon light>favorite</v-icon>
     </v-btn>
     <v-btn floating class="indigo">
-      <v-icon>add</v-icon>
+      <v-icon light>add</v-icon>
     </v-btn>
     <v-btn floating class="teal">
-      <v-icon>list</v-icon>
+      <v-icon light>list</v-icon>
     </v-btn>
     <v-btn floating large class="cyan">
-      <v-icon>edit</v-icon>
+      <v-icon light>edit</v-icon>
     </v-btn>
     <v-btn floating large class="purple">
-      <v-icon>android</v-icon>
+      <v-icon light>android</v-icon>
     </v-btn>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-  <v-tabs id="mobile-tabs-3" grow>
-    <v-tab-item 
+  <v-tabs id="mobile-tabs-3" grow light>
+    <v-tab-item
       v-for="i in 3"
       :key="i"
       :href="'#mobile-tabs-3-' + i"
@@ -8,7 +8,7 @@
     >
       Item {{ i }}
     </v-tab-item>
-    <v-tab-content 
+    <v-tab-content
       v-for="i in 3"
       :key="i"
       :id="'mobile-tabs-3-' + i"

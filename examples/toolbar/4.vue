@@ -1,12 +1,12 @@
 <template>
   <v-toolbar class="purple">
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-side-icon light></v-toolbar-side-icon>
     <v-toolbar-title class="hidden-sm-and-down">Toolbar</v-toolbar-title>
     <v-toolbar-items>
       <v-toolbar-item>Home</v-toolbar-item>
       <v-toolbar-item>Contact</v-toolbar-item>
       <v-menu top left offset-y origin="bottom right" transition="v-slide-y-transition">
-        <v-btn icon dark slot="activator">
+        <v-btn icon light slot="activator">
           <v-icon>more_vert</v-icon>
         </v-btn>
         <v-list>

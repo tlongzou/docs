@@ -12,10 +12,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true"  light />
+                  <v-switch value="true" input-value="true"  dark />
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch light />
+                  <v-switch dark />
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="dark--text">
@@ -24,10 +24,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true" light disabled />
+                  <v-switch value="true" input-value="true" dark disabled />
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch light disabled />
+                  <v-switch dark disabled />
                 </v-flex>
               </v-layout>
             </v-container>
@@ -45,10 +45,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true" dark />
+                  <v-switch value="true" input-value="true" light />
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch dark />
+                  <v-switch light />
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="light--text">
@@ -57,10 +57,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true" dark disabled />
+                  <v-switch value="true" input-value="true" light disabled />
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch dark disabled />
+                  <v-switch light disabled />
                 </v-flex>
               </v-layout>
             </v-container>

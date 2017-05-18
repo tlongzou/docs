@@ -5,13 +5,13 @@
     </v-stepper-step>
     <v-stepper-content step="1">
       <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px" />
-      <v-btn primary @click.native="e13 = 2">Continue</v-btn>
+      <v-btn primary light @click.native="e13 = 2">Continue</v-btn>
       <v-btn flat light>Cancel</v-btn>
     </v-stepper-content>
     <v-stepper-step step="2" complete>Name of step 2</v-stepper-step>
     <v-stepper-content step="2">
       <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px" />
-      <v-btn primary @click.native="e13 = 3">Continue</v-btn>
+      <v-btn primary light @click.native="e13 = 3">Continue</v-btn>
       <v-btn flat light>Cancel</v-btn>
     </v-stepper-content>
     <v-stepper-step step="3" v-bind:rules="[() => false]">
@@ -20,13 +20,13 @@
     </v-stepper-step>
     <v-stepper-content step="3">
       <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px" />
-      <v-btn primary @click.native="e13 = 4">Continue</v-btn>
+      <v-btn primary light @click.native="e13 = 4">Continue</v-btn>
       <v-btn flat light>Cancel</v-btn>
     </v-stepper-content>
     <v-stepper-step step="4">View setup instructions</v-stepper-step>
     <v-stepper-content step="4">
       <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px" />
-      <v-btn primary @click.native="e13 = 1">Continue</v-btn>
+      <v-btn primary light @click.native="e13 = 1">Continue</v-btn>
       <v-btn flat light>Cancel</v-btn>
     </v-stepper-content>
   </v-stepper>

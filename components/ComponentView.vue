@@ -47,7 +47,7 @@
     slot
     template(v-if="doc.props")
       section-header.mt-5(id="api") API
-      v-tabs(v-model="tabs").elevation-1
+      v-tabs(v-model="tabs" light).elevation-1
         template(slot="activators")
           v-tab-item(
             v-for="p in ['props', 'slots', 'events', 'functional']"

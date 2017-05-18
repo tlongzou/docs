@@ -4,22 +4,22 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs12 sm3>
-            <v-checkbox v-model="x" value="left" label="Left" light></v-checkbox>
+            <v-checkbox v-model="x" value="left" label="Left" dark></v-checkbox>
           </v-flex>
           <v-flex xs6 sm3>
-            <v-checkbox v-model="x" value="right" label="Right" light></v-checkbox>
+            <v-checkbox v-model="x" value="right" label="Right" dark></v-checkbox>
           </v-flex>
           <v-flex xs6 sm3>
-            <v-checkbox v-model="y" value="top" label="Top" light></v-checkbox>
+            <v-checkbox v-model="y" value="top" label="Top" dark></v-checkbox>
           </v-flex>
           <v-flex xs6 sm3>
-            <v-checkbox v-model="y" value="bottom" label="Bottom" light></v-checkbox>
+            <v-checkbox v-model="y" value="bottom" label="Bottom" dark></v-checkbox>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-checkbox v-model="mode" value="multi-line" label="Multi-line (mobile)" light></v-checkbox>
+            <v-checkbox v-model="mode" value="multi-line" label="Multi-line (mobile)" dark></v-checkbox>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-checkbox v-model="mode" value="vertical" label="Vertical (mobile)" light></v-checkbox>
+            <v-checkbox v-model="mode" value="vertical" label="Vertical (mobile)" dark></v-checkbox>
           </v-flex>
           <v-flex xs12 sm4 offset-sm4>
             <v-text-field v-model="text" type="text" label="Text"></v-text-field>
@@ -30,7 +30,7 @@
         </v-layout>
 
       </v-container>
-      <v-btn block primary @click.native="snackbar = true" dark>Show Snackbar</v-btn>
+      <v-btn block primary @click.native="snackbar = true" light>Show Snackbar</v-btn>
     </v-card-text>
     <v-snackbar
       :timeout="timeout"

@@ -32,7 +32,7 @@
     </v-card-row>
     <v-card-text>
       <v-card-row height="75px">
-        <v-icon class="mr-5" light>card_membership</v-icon>
+        <v-icon class="mr-5" dark>card_membership</v-icon>
         <div>
           <div>Membership Number</div><strong>113241423</strong>
         </div>

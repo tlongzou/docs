@@ -105,14 +105,14 @@
           [
             'dark',
             'Boolean',
-            'False',
-            'Applies the dark theme (default light)'
+            'True',
+            'Applies a dark tint to the content - light themes'
           ],
           [
             'light',
             'Boolean',
             'False',
-            'Applies the light theme'
+            'Applies a light tint to the content - dark themes'
           ]
         ]
       },
@@ -210,13 +210,13 @@
             'light',
             'Boolean',
             'True',
-            'Applies the light theme'
+            'Applies a light tint to the content - dark themes'
           ],
           [
             'dark',
             'Boolean',
             'False',
-            'Applies the dark theme'
+            'Applies a dark tint to the content - light themes'
           ],
           [
             'disabled',

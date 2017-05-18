@@ -11,7 +11,7 @@
         </v-card-row>
         <v-card-row actions class="brown darken-2">
           <v-btn flat class="white--text">
-            <v-icon left>directions</v-icon>Directions
+            <v-icon left light>directions</v-icon>Directions
           </v-btn>
         </v-card-row>
       </v-card-column>

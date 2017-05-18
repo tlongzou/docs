@@ -12,10 +12,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-radio value="radio-1" input-value="radio-1" light />
+                  <v-radio value="radio-1" input-value="radio-1" dark />
                 </v-flex>
                 <v-flex xs6>
-                  <v-radio input-value="radio-2" light />
+                  <v-radio input-value="radio-2" dark />
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="dark--text">
@@ -24,10 +24,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-radio value="radio-3" input-value="radio-3"  light disabled />
+                  <v-radio value="radio-3" input-value="radio-3"  dark disabled />
                 </v-flex>
                 <v-flex xs6>
-                  <v-radio input-value="radio-4" light disabled />
+                  <v-radio input-value="radio-4" dark disabled />
                 </v-flex>
               </v-layout>
             </v-container>
@@ -45,10 +45,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-radio value="radio-5" input-value="radio-5" dark />
+                  <v-radio value="radio-5" input-value="radio-5" light />
                 </v-flex>
                 <v-flex xs6>
-                  <v-radio input-value="radio-6" dark />
+                  <v-radio input-value="radio-6" light />
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="light--text">
@@ -57,10 +57,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-radio value="radio-7" input-value="radio-7"  dark disabled />
+                  <v-radio value="radio-7" input-value="radio-7"  light disabled />
                 </v-flex>
                 <v-flex xs6>
-                  <v-radio input-value="radio-8" dark disabled />
+                  <v-radio input-value="radio-8" light disabled />
                 </v-flex>
               </v-layout>
             </v-container>

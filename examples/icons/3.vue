@@ -1,15 +1,15 @@
 <template>
   <v-layout align-space-around>
-    <v-icon large light>note</v-icon>
+    <v-icon large dark>note</v-icon>
 
-    <v-icon large light>mic</v-icon>
+    <v-icon large dark>mic</v-icon>
 
-    <v-icon large light>new_releases</v-icon>
+    <v-icon large dark>new_releases</v-icon>
 
-    <v-icon large light>equalizer</v-icon>
+    <v-icon large dark>equalizer</v-icon>
 
-    <v-icon large light>repeat_one</v-icon>
+    <v-icon large dark>repeat_one</v-icon>
 
-    <v-icon large light>replay</v-icon>
+    <v-icon large dark>replay</v-icon>
   </v-layout>
 </template>

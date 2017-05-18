@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-6" scroll-bars>
+  <v-tabs id="mobile-tabs-6" scroll-bars light>
     <v-card class="primary white--text">
       <v-card-text>
         <v-card-row>
@@ -16,7 +16,7 @@
         </v-card-row>
       </v-card-text>
     </v-card>
-    <v-tab-item 
+    <v-tab-item
       v-for="i in 13"
       :key="i"
       :href="'#mobile-tabs-6-' + i"

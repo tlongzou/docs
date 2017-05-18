@@ -1,15 +1,15 @@
 <template>
   <v-layout align-space-around>
-    <v-icon light>home</v-icon>
+    <v-icon dark>home</v-icon>
 
-    <v-icon light>event</v-icon>
+    <v-icon dark>event</v-icon>
 
-    <v-icon light>info</v-icon>
+    <v-icon dark>info</v-icon>
 
-    <v-icon light>folder_open</v-icon>
+    <v-icon dark>folder_open</v-icon>
 
-    <v-icon light>widgets</v-icon>
+    <v-icon dark>widgets</v-icon>
 
-    <v-icon light>gavel</v-icon>
+    <v-icon dark>gavel</v-icon>
   </v-layout>
 </template>

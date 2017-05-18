@@ -8,22 +8,22 @@
           </v-flex>
           <v-flex xs12 sm3>
             <v-btn icon class="pink--text">
-              <v-icon light>favorite</v-icon>
+              <v-icon>favorite</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
             <v-btn icon class="indigo--text">
-              <v-icon light>star</v-icon>
+              <v-icon>star</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
             <v-btn icon class="green--text">
-              <v-icon light>cached</v-icon>
+              <v-icon>cached</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
             <v-btn icon class="deep-orange--text">
-              <v-icon light>thumb_up</v-icon>
+              <v-icon>thumb_up</v-icon>
             </v-btn>
           </v-flex>
         </v-layout>
@@ -32,22 +32,22 @@
             <p>Disabled</p>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon disabled light class="pink--text">
+            <v-btn icon disabled class="pink--text">
               <v-icon>favorite</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon disabled light class="indigo--text">
+            <v-btn icon disabled class="indigo--text">
               <v-icon>star</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon disabled light class="green--text">
+            <v-btn icon disabled class="green--text">
               <v-icon>cached</v-icon>
             </v-btn>
           </v-flex>
           <v-flex xs12 sm3>
-            <v-btn icon disabled light class="deep-orange--text">
+            <v-btn icon disabled class="deep-orange--text">
               <v-icon>thumb_up</v-icon>
             </v-btn>
           </v-flex>

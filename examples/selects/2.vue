@@ -7,11 +7,11 @@
             <v-subheader class="grey--text text--lighten-1" v-text="'Standard'" />
           </v-flex>
           <v-flex xs6>
-            <v-select 
+            <v-select
               v-bind:items="items"
               v-model="e1"
               label="Select"
-              dark
+              light
               item-value="text"
             />
           </v-flex>
@@ -19,12 +19,12 @@
             <v-subheader class="grey--text text--lighten-1" v-text="'Standard with focus'" />
           </v-flex>
           <v-flex xs6>
-            <v-select 
+            <v-select
               v-bind:items="items"
               v-model="e2"
               label="Select"
               class="input-group--focused"
-              dark
+              light
               item-value="text"
             />
           </v-flex>
@@ -37,7 +37,7 @@
               v-bind:items="items"
               v-model="e3"
               v-bind:rules="[() => e3 && e3.text && e3.text.length > 0 || 'Please select an option']"
-              dark
+              light
               item-value="text"
             />
           </v-flex>
@@ -50,7 +50,7 @@
               v-bind:items="items"
               v-model="e4"
               disabled
-              dark
+              light
             />
           </v-flex>
         </v-layout>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-slider v-model="value1" light></v-slider>
-    <v-slider v-model="value2" light disabled></v-slider>
+    <v-slider v-model="value1" dark></v-slider>
+    <v-slider v-model="value2" dark disabled></v-slider>
   </div>
 </template>
 

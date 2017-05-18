@@ -5,6 +5,7 @@
         span.white--text(v-text="header")
         v-spacer
         v-btn(
+          light
           icon
           tag="a"
           v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/public/examples/'+file+'.vue'"
@@ -13,6 +14,7 @@
         )
           v-icon edit
         v-btn(
+          light
           icon
           v-on:click.native.stop="panel = !panel"
           v-tooltip:left="{ html: 'View source' }"
@@ -127,7 +129,7 @@
 </script>
 
 <style lang="stylus">
-  .component-example    
+  .component-example
     .component-example__panel
       .expansion-panel__body
         border: none
@@ -142,7 +144,7 @@
 
       > li
         border: none
-        
+
     nav.toolbar
       z-index: 0
 </style>

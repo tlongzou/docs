@@ -1,7 +1,7 @@
 <template>
   <v-layout row align-horiz-center>
     <v-dialog v-model="dialog">
-      <v-btn primary dark slot="activator">Open Dialog</v-btn>
+      <v-btn primary light slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-row>
           <v-card-title>User Profile</v-card-title>

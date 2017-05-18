@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-5" grow>
+  <v-tabs id="mobile-tabs-5" grow light>
     <v-tab-item href="#mobile-tabs-5-1" slot="activators">
       <v-icon>phone</v-icon>
     </v-tab-item>
@@ -9,7 +9,7 @@
     <v-tab-item href="#mobile-tabs-5-3" slot="activators">
       <v-icon>account_box</v-icon>
     </v-tab-item>
-    <v-tab-content 
+    <v-tab-content
       v-for="i in 3"
       :key="i"
       :id="'mobile-tabs-5-' + i"

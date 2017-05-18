@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-2" grow>
+  <v-tabs id="mobile-tabs-2" grow light>
     <v-card class="primary white--text">
       <div>
         <v-card-row>
@@ -27,7 +27,7 @@
     >
       Item {{ i }}
     </v-tab-item>
-    <v-tab-content 
+    <v-tab-content
       v-for="i in 3"
       :key="i"
       :id="'mobile-tabs-2-' + i"

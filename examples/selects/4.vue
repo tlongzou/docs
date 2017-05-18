@@ -15,12 +15,12 @@
               item-value="name"
               multiple
               chips
-              light
+              dark
               max-height="auto"
               autocomplete
             >
               <template slot="selection" scope="data">
-                <v-chip 
+                <v-chip
                   close
                   @input="data.parent.selectItem(data.item)"
                   @click.native.stop

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-slider v-model="value1" light thumb-label step="2"></v-slider>
-    <v-slider v-model="value2" light disabled></v-slider>
+    <v-slider v-model="value1" dark thumb-label step="2"></v-slider>
+    <v-slider v-model="value2" dark disabled></v-slider>
   </div>
 </template>
 
@@ -13,5 +13,5 @@
         value2: 0
       }
     }
-  }  
+  }
 </script>
