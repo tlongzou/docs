@@ -3,14 +3,14 @@
     <v-card class="primary white--text">
       <div>
         <v-card-row>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>menu</v-icon>
           </v-btn>
           <v-spacer></v-spacer>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>search</v-icon>
           </v-btn>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-card-row>

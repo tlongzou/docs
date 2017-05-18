@@ -3,14 +3,14 @@
     <v-card class="primary white--text">
       <v-card-text>
         <v-card-row>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>menu</v-icon>
           </v-btn>
           <v-card-title>Page Title</v-card-title>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>search</v-icon>
           </v-btn>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-card-row>
