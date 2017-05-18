@@ -17,7 +17,7 @@
         |   error: $red.base
         |   success: $green.base
         |}
-      section-text In order to change these variables, we have to create our array before the import of the Vuetify styles. In order to do this, you will need to setup your build process to accommodate a stylus file. If you are using one of the pre-made templates available on the <router-link to="/quick-start">Quick Start</router-link> guide, you can skip this next section.
+      section-text In order to change these variables, we have to create our array before the import of the Vuetify styles. You will need to setup your build process to accommodate a stylus file. If you are using one of the pre-made templates available on the <router-link to="/quick-start">Quick Start</router-link> guide, you can skip this next section.
       h6 Setup stylus-loader with Webpack
       section-text In the command line, run:
       markup(lang="cli")
@@ -43,7 +43,7 @@
         |&lt;/style&gt;
       section-text After you have decided on your import location, if you are requiring the Vuetify stylesheet by a &lt;link&gt; tag in your index file, remove it. Restart your build processes and re-open your project. You should see all of the styles working correctly.
       h6 Modify your theme
-      section-text Now that stylus is configured, we can create a custom <code>$theme</code> hash containing the application specific styles. Keep in mind, if you want to use the built in color pack variables, i.e. <code>$grey.lighten-3</code> you will need to import the color file at the top of your <code>main.styl</code> file. For a list of colors available, navigate to the <router-link to="/style/colors">Colors</router-link> section of the documenation.
+      section-text Now that stylus is configured, we can create a custom <code>$theme</code> hash containing the application specific styles. Keep in mind, if you want to use the built in color pack variables, i.e. <code>$grey.lighten-3</code> you will need to import the color file at the top of your <code>main.styl</code> file. For a list of colors available, navigate to the <router-link to="/style/colors">Colors</router-link> section of the documentation.
       markup(lang="stylus")
         |@import '../../node_modules/vuetify/src/stylus/settings/_colors'
         |&nbsp;
