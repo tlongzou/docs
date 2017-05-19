@@ -8,20 +8,6 @@
       return {
         valueDeterminate: 0
       }
-    },
-    methods: {
-      determinate () {
-        setInterval(() => {
-          if (this.valueDeterminate >= 100) {
-            this.valueDeterminate = 0
-          } else {
-            this.valueDeterminate += 5
-          }
-        }, 1000)
-      }
-    },
-    mounted () {
-      this.determinate()
     }
   }
 </script>

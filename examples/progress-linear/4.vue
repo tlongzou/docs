@@ -13,7 +13,8 @@
       return {
         value: 0,
         query: false,
-        show: true
+        show: true,
+        interval: {}
       }
     },
     methods: {
@@ -23,20 +24,21 @@
         this.value = 0
         let int
 
-        setTimeout(() => {
-          this.query = false
+        this.query = false
 
-          int = setInterval(() => {
-            if (this.value === 100) {
-              clearInterval(int)
-              this.show = false
-              return setTimeout(this.queryAndIndeterminate, 2000)
-            }
-            this.value += 25
-          }, 1000)
-        }, 3500)
+        this.interval = setInterval(() => {
+          if (this.value === 100) {
+            clearInterval(this.interval)
+            this.show = false
+            return setTimeout(this.queryAndIndeterminate, 2000)
+          }
+          this.value += 25
+        }, 1000)
       }
     },
+    beforeDestroy () {
+      clearInterval(this.interval)
+  },
     mounted () {
       this.queryAndIndeterminate()
     }
