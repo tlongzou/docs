@@ -22,7 +22,7 @@
           v-icon code
       v-expansion-panel.elevation-0.component-example__panel
         v-expansion-panel-content(v-model="panel")
-          v-tabs
+          v-tabs(ref="tabs" light)
             v-tab-item(
               v-for="tab in tabs"
               v-bind:key="tab"
@@ -71,6 +71,12 @@
     computed: {
       currentColor () {
         return this.$store.state.currentColor
+      }
+    },
+
+    watch: {
+      panel () {
+        this.$refs.tabs.slider()
       }
     },
 

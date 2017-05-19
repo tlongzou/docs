@@ -4,7 +4,7 @@
       code(v-bind:class="lang" ref="markup")
         slot
     div(class="markup__copy")
-      v-icon(v-on:click.native="copyMarkup" light) content_copy
+      v-icon(v-on:click="copyMarkup" dark) content_copy
     v-slide-x-transition
       span(class="component-example-copied" v-if="copied") Copied
     textarea(
