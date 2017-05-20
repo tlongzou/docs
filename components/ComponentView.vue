@@ -48,24 +48,24 @@
     template(v-if="doc.props")
       section-header.mt-5(id="api") API
       v-tabs(v-model="tabs" light).elevation-1
-        template(slot="activators")
-          v-tab-item(
+        v-tabs-bar(slot="activators" v-bind:class="[currentColor]")
+          v-tabs-slider(v-bind:class="[currentColor]").lighten-4
+          v-tabs-item(
             v-for="p in ['props', 'slots', 'events', 'functional']"
             v-show="doc[p]"
             v-bind:href="`#${p}`"
             v-bind:key="p"
           ) {{ p }}
-        div(slot="content")
-          v-tab-content(
-            v-for="p in ['props', 'slots', 'events', 'functional']"
-            v-if="doc[p]"
-            v-bind:id="p"
-            v-bind:key="p"
+        v-tabs-content(
+          v-for="p in ['props', 'slots', 'events', 'functional']"
+          v-if="doc[p]"
+          v-bind:id="p"
+          v-bind:key="p"
+        )
+          component-parameters(
+            v-bind:headers="headers[p]"
+            v-bind:data="doc[p]"
           )
-            component-parameters(
-              v-bind:headers="headers[p]"
-              v-bind:data="doc[p]"
-            )
 </template>
 
 <script>

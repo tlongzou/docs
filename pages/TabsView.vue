@@ -21,7 +21,7 @@
             { header: '', file: 'tabs/4' },
             { header: '', file: 'tabs/5' },
             { header: 'Desktop tabs', file: 'tabs/6' },
-            { header: '', file: 'tabs/7' },
+            { header: '', file: 'tabs/7' }
           ],
           props: {
             'v-tabs': {

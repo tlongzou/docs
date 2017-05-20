@@ -23,18 +23,18 @@
       v-expansion-panel.elevation-0.component-example__panel
         v-expansion-panel-content(v-model="panel")
           v-tabs(ref="tabs" light)
-            v-tab-item(
-              v-for="tab in tabs"
-              v-bind:key="tab"
-              slot="activators"
-              v-bind:href="'#'+tab"
-              v-show="parsed[tab]"
-            ) {{ tab }}
-            v-tab-content(
+            v-tabs-bar(slot="activators" v-bind:class="[currentColor]" class="darken-4")
+              v-tabs-slider(class="lighten-4" v-bind:class="[currentColor]")
+              v-tabs-item(
+                v-for="tab in tabs"
+                v-bind:key="tab"
+                v-bind:href="'#'+tab"
+                v-show="parsed[tab]"
+              ) {{ tab }}
+            v-tabs-content(
               v-for="tab in tabs"
               v-bind:key="tab"
               v-bind:id="tab"
-              slot="content"
             )
               markup(:lang="getLang(tab)" v-if="parsed[tab]").ma-0
                 div(v-html="parsed[tab]")

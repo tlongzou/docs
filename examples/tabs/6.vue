@@ -16,21 +16,22 @@
         </v-card-row>
       </v-card-text>
     </v-card>
-    <v-tab-item
-      v-for="i in 13"
-      :key="i"
-      :href="'#mobile-tabs-6-' + i"
-      slot="activators"
-    >
-      Item {{ i }}
-    </v-tab-item>
+    <v-tabs-bar slot="activators">
+      <v-tabs-slider></v-tabs-slider>
+      <v-tabs-item
+        v-for="i in 13"
+        :key="i"
+        :href="'#mobile-tabs-6-' + i"
+      >
+        Item {{ i }}
+      </v-tabs-item>
+    </v-tabs-bar>
     <v-tab-content
       v-for="i in 13"
       :key="i"
       :id="'mobile-tabs-6-' + i"
-      slot="content"
     >
-      <v-card>
+      <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
       </v-card>
     </v-tab-content>
