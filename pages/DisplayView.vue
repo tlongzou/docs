@@ -25,6 +25,7 @@
         li <code>hidden-lg-and-up</code> - hidden on large viewports and up
         li <code>hidden-xl-only</code> - hidden on extra large viewports only
       component-example(header="Hidden elements" file="display/1")
+        div(slot="desc") The toolbar links will be hidden on small viewport devices and down
 </template>
 
 <script>

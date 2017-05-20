@@ -13,31 +13,31 @@
           tbody
             tr
               td
-                v-icon(light).mr-3 phone_iphone
+                v-icon(dark).mr-3 phone_iphone
                 span Extra small
               td small to large handset
               td &lt; 600px
             tr
               td
-                v-icon(light).mr-3 tablet
+                v-icon(dark).mr-3 tablet
                 span Small
               td small to medium tablet
               td 600px &gt; &lt; 1024px
             tr
               td
-                v-icon(light).mr-3 laptop
+                v-icon(dark).mr-3 laptop
                 span Medium
               td large tablet to laptop
               td 1024px &gt; &lt; 1440px
             tr
               td
-                v-icon(light).mr-3 desktop_windows
+                v-icon(dark).mr-3 desktop_windows
                 span Large
               td desktop
               td 1440px &gt; &lt; 1920px
             tr
               td
-                v-icon(light).mr-3 tv
+                v-icon(dark).mr-3 tv
                 span Extra large
               td 4k and ultra-wides
               td &gt; 1920px
