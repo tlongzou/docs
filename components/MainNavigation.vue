@@ -204,8 +204,8 @@
               }
             ]
           },
-          { title: 'Optimization', action: 'flash_on', disabled: true },
-          { title: 'Deployment', action: 'important_devices', disabled: true }
+          // { title: 'Optimization', action: 'flash_on', disabled: true },
+          // { title: 'Deployment', action: 'important_devices', disabled: true }
         ]
       }
     },

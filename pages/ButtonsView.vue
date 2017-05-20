@@ -111,18 +111,6 @@
                   'Boolean',
                   'True',
                   'Applies the ripple directive',
-                ],
-                [
-                  'primary',
-                  'Boolean',
-                  'False',
-                  'Applies the "primary" context',
-                ],
-                [
-                  'secondary',
-                  'Boolean',
-                  'False',
-                  'Applies the "secondary" context',
                 ]
               ]
             },

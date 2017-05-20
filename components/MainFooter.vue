@@ -13,7 +13,7 @@
                 v-list-tile-sub-title Previous
                 v-list-tile-title(v-text="previous.name")
       v-flex(
-        v-if="next.route"
+        v-if="next.route && next.route !== '*'"
         xs12
         v-bind:class="[next.color, { 'xs6': previous.route }]").pa-0
         v-list.py-0
