@@ -3,7 +3,6 @@
     v-bind:headers="headers"
     v-bind:items="items"
     v-bind:search="search"
-    v-bind:pagination.sync="pagination"
     v-model="selected"
     selected-key="name"
     select-all
@@ -39,7 +38,6 @@
     data () {
       return {
         search: '',
-        pagination: {},
         selected: [],
         headers: [
           {
