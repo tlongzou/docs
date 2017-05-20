@@ -29,6 +29,12 @@
             'v-stepper': {
               params: [
                 [
+                  'non-linear',
+                  'Boolean',
+                  'False',
+                  'Allow user to jump to any step'
+                ],
+                [
                   'alt-labels',
                   'Boolean',
                   'False',
