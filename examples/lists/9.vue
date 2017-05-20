@@ -3,9 +3,9 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-toolbar class="purple white--text">
-          <v-toolbar-side-icon></v-toolbar-side-icon>
+          <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Settings</v-toolbar-title>
-          <v-btn icon>
+          <v-btn light icon>
             <v-icon>search</v-icon>
           </v-btn>
         </v-toolbar>

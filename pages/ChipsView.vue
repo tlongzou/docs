@@ -17,7 +17,7 @@
             { header: 'Icon', file: 'chips/3', desc: 'Chips can use text or any icon available in the Material Icons font library.' },
             { header: 'Outline', file: 'chips/4', desc: 'Outlined chips inherit their border color from the current text color.' },
             { header: 'Label', file: 'chips/5', desc: 'Label chips use the <code>v-card</code> border-radius.' },
-            { header: 'Closable', file: 'chips/6', desc: 'Closable chips can be controlled with a v-model.' },
+            { header: 'Closable', file: 'chips/6', desc: 'Closable chips can be controlled with a v-model. Listen to the <code>input</code> event if you want to know when a chip has been closed.' },
           ],
           props: {
             'v-chip': {

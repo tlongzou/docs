@@ -3,9 +3,9 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-toolbar class="cyan">
-          <v-toolbar-side-icon class="grey--text text--darken-4"></v-toolbar-side-icon>
+          <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Inbox</v-toolbar-title>
-          <v-btn icon>
+          <v-btn light icon>
             <v-icon>search</v-icon>
           </v-btn>
         </v-toolbar>
