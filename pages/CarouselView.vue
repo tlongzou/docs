@@ -27,7 +27,8 @@
           desc: 'The <code>v-carousel</code> component is used to display large numbers of visual content on a rotating timer.',
           examples: [
             { header: 'Default', file: 'carousel/1', desc: 'A carousel by default has a slide transition.' },
-            { header: 'Custom transition', file: 'carousel/2', desc: 'You can also apply your own custom transition.' }
+            { header: 'Custom transition', file: 'carousel/2', desc: 'You can also apply your own custom transition.' },
+            { header: 'Custom delimiter', file: 'carousel/3', desc: 'You can also change the icon for the carousel delimiter.' }
           ],
           props: {
             'v-carousel': {
