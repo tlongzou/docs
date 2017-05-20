@@ -92,11 +92,11 @@
     methods: {
       getLang (tab) {
         if (tab === 'script') return 'js'
-        if (tab === 'style') return 'css'
+        if (tab === 'style') return 'stylus'
         return 'html'
       },
       parseTemplate (target, template) {
-        const string = `(<${target}>[\\w\\W]*<\\/${target}>)`
+        const string = `(<${target}(.*)?>[\\w\\W]*<\\/${target}>)`
         const regex = new RegExp(string, 'g')
         const parsed = regex.exec(template)
 
