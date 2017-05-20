@@ -27,7 +27,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-        <v-footer class="mt-5" />
+        <v-footer class="mt-5"></v-footer>
       </v-card>
     </v-flex>
   </v-layout>

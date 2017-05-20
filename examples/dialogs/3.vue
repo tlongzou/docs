@@ -39,7 +39,7 @@
           <v-list-item>
             <v-list-tile avatar>
               <v-list-tile-action>
-                <v-checkbox />
+                <v-checkbox></v-checkbox>
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>Notifications</v-list-tile-title>
@@ -50,7 +50,7 @@
           <v-list-item>
             <v-list-tile avatar>
               <v-list-tile-action>
-                <v-checkbox />
+                <v-checkbox></v-checkbox>
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>Sound</v-list-tile-title>
@@ -61,7 +61,7 @@
           <v-list-item>
             <v-list-tile avatar>
               <v-list-tile-action>
-                <v-checkbox />
+                <v-checkbox></v-checkbox>
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>Auto-add widgets</v-list-tile-title>

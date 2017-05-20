@@ -20,19 +20,19 @@
               value="Grocery delivery"
               hint="For example, flowers or used cars"
               persistent-hint
-            />
+            ></v-text-field>
             <v-text-field
               label="Your landing page"
               hint="www.example.com/page"
               persistent-hint
-            />
+            ></v-text-field>
             <v-select
               label="Your product category"
               hint="Enter or select a product category"
               persistent-hint
               :items="options"
               v-model="select"
-            />
+            ></v-select>
           </v-card-text>
         </v-card>
       </v-flex>

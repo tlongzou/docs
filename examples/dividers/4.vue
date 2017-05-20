@@ -3,13 +3,13 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-toolbar class="light-blue">
-          <v-toolbar-side-icon></v-toolbar-side-icon>
+          <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>My files</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn icon>
+          <v-btn light icon>
             <v-icon>search</v-icon>
           </v-btn>
-          <v-btn icon>
+          <v-btn light icon>
             <v-icon>view_module</v-icon>
           </v-btn>
         </v-toolbar>

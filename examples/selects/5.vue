@@ -4,7 +4,7 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs12 sm6>
-            <v-subheader v-text="'Slots'" />
+            <v-subheader v-text="'Slots'"></v-subheader>
           </v-flex>
           <v-flex xs12 sm6>
             <v-select
@@ -38,8 +38,8 @@
                   <img v-bind:src="data.item.avatar"/>
                 </v-list-tile-avatar>
                 <v-list-tile-content>
-                  <v-list-tile-title v-html="data.item.name"/>
-                  <v-list-tile-sub-title v-html="data.item.group"/>
+                  <v-list-tile-title v-html="data.item.name"></v-list-tile-title>
+                  <v-list-tile-sub-title v-html="data.item.group"></v-list-tile-sub-title>
                 </v-list-tile-content>
               </template>
             </v-select>

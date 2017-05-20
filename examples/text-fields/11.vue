@@ -15,7 +15,7 @@
                   <v-text-field
                     label="Title"
                     value="Preliminary report"
-                  />
+                  ></v-text-field>
                 </v-flex>
                 <v-flex xs12>
                   <v-text-field
@@ -24,7 +24,7 @@
                     counter
                     multi-line
                     max="120"
-                  />
+                  ></v-text-field>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -46,7 +46,7 @@
                   <v-text-field
                     label="Title"
                     value="Preliminary report"
-                  />
+                  ></v-text-field>
                 </v-flex>
                 <v-flex xs12>
                   <v-text-field
@@ -55,7 +55,7 @@
                     counter
                     multi-line
                     max="120"
-                  />
+                  ></v-text-field>
                 </v-flex>
               </v-layout>
             </v-container>

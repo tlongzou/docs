@@ -22,17 +22,17 @@
                       counter
                       v-model="title"
                       max="50"
-                    />
+                    ></v-text-field>
                   </v-flex>
                   <v-flex xs12>
                     <v-text-field
                       label="Description"
-                    />
+                    ></v-text-field>
                   </v-flex>
                   <v-flex xs12>
                     <v-text-field
                       label="More descriptive text"
-                    />
+                    ></v-text-field>
                   </v-flex>
                 </v-layout>
               </v-container>
@@ -62,17 +62,17 @@
                       v-model="title2"
                       counter
                       max="50"
-                    />
+                    ></v-text-field>
                   </v-flex>
                   <v-flex xs12>
                     <v-text-field
                       label="Description"
-                    />
+                    ></v-text-field>
                   </v-flex>
                   <v-flex xs12>
                     <v-text-field
                       label="More descriptive text"
-                    />
+                    ></v-text-field>
                   </v-flex>
                 </v-layout>
               </v-container>

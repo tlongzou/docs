@@ -16,7 +16,7 @@
             />
           </v-flex>
           <v-flex xs3>
-            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light />
+            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
           </v-flex>
         </v-layout>
         <v-layout row>
@@ -35,7 +35,7 @@
             />
           </v-flex>
           <v-flex xs3>
-            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light />
+            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
           </v-flex>
         </v-layout>
         <v-layout row>
@@ -53,7 +53,7 @@
             />
           </v-flex>
           <v-flex xs3>
-            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light />
+            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
           </v-flex>
         </v-layout>
       </v-container>

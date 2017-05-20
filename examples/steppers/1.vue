@@ -13,12 +13,12 @@
       <v-btn flat dark>Cancel</v-btn>
     </v-stepper-content>
     <v-stepper-content step="2">
-      <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px" />
+      <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px"></v-card>
       <v-btn primary @click.native="e1 = 3" light>Continue</v-btn>
       <v-btn flat dark>Cancel</v-btn>
     </v-stepper-content>
     <v-stepper-content step="3">
-      <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px" />
+      <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px"></v-card>
       <v-btn primary @click.native="e1 = 1" light>Continue</v-btn>
       <v-btn flat dark>Cancel</v-btn>
     </v-stepper-content>

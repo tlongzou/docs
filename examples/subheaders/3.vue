@@ -11,8 +11,8 @@
         </v-toolbar>
         <v-list>
           <template v-for="item in items">
-            <v-divider v-if="item.divider" />
-            <v-subheader v-else-if="item.header" v-text="item.header" />
+            <v-divider v-if="item.divider"></v-divider>
+            <v-subheader v-else-if="item.header" v-text="item.header"></v-subheader>
             <v-list-item v-else>
               <v-list-tile slot="item">
                 <v-list-tile-action>

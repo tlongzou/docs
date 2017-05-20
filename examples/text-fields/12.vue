@@ -29,17 +29,17 @@
                   </v-chip>
                 </v-flex>
                 <v-flex xs12>
-                  <v-divider />
+                  <v-divider></v-divider>
                   <v-text-field
                     label="Subject"
                     value="Plans for the weekend"
                     single-line
                     full-width
                     class="mb-0"
-                  />
+                  ></v-text-field>
                 </v-flex>
                 <v-flex xs12>
-                  <v-divider />
+                  <v-divider></v-divider>
                   <v-text-field
                     label="Message"
                     v-model="title"
@@ -48,7 +48,7 @@
                     full-width
                     multi-line
                     single-line
-                  />
+                  ></v-text-field>
                 </v-flex>
               </v-layout>
             </v-container>

@@ -4,7 +4,7 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs6>
-            <v-subheader class="grey--text text--lighten-1" v-text="'Standard'" />
+            <v-subheader class="grey--text text--lighten-1" v-text="'Standard'"></v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -16,7 +16,7 @@
             />
           </v-flex>
           <v-flex xs6>
-            <v-subheader class="grey--text text--lighten-1" v-text="'Standard with focus'" />
+            <v-subheader class="grey--text text--lighten-1" v-text="'Standard with focus'"></v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -29,7 +29,7 @@
             />
           </v-flex>
           <v-flex xs6>
-            <v-subheader class="grey--text text--lighten-1" v-text="'Error'" />
+            <v-subheader class="grey--text text--lighten-1" v-text="'Error'"></v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select
@@ -42,7 +42,7 @@
             />
           </v-flex>
           <v-flex xs6>
-            <v-subheader class="grey--text text--lighten-1" v-text="'Disabled'" />
+            <v-subheader class="grey--text text--lighten-1" v-text="'Disabled'"></v-subheader>
           </v-flex>
           <v-flex xs6>
             <v-select

@@ -13,19 +13,19 @@
               class="mt-5"
               v-model="first"
               required
-            />
+            ></v-text-field>
             <v-text-field
               label="Legal middle name"
               hint="example of helper text only on focus"
               v-model="middle"
-            />
+            ></v-text-field>
             <v-text-field
               label="Legal last name"
               hint="example of persistent helper text"
               persistent-hint
               v-model="last"
               required
-            />
+            ></v-text-field>
             <small>*indicates required field</small>
           </v-card-text>
         </v-card>

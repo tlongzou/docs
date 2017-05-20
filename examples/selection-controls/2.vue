@@ -6,8 +6,8 @@
         <v-card class="elevation-0">
           <v-card-text>
             <p>{{ ex5 }}</p>
-            <v-checkbox label="John" v-model="ex5" value="John" dark />
-            <v-checkbox label="Jacob" v-model="ex5" value="Jacob" dark />
+            <v-checkbox label="John" v-model="ex5" value="John" dark></v-checkbox>
+            <v-checkbox label="Jacob" v-model="ex5" value="Jacob" dark></v-checkbox>
           </v-card-text>
         </v-card>
       </v-flex>
@@ -16,8 +16,8 @@
         <v-card class="secondary elevation-0">
           <v-card-text>
             <p class="white--text">{{ ex6 }}</p>
-            <v-checkbox label="John" v-model="ex6" value="John" light />
-            <v-checkbox label="Jacob" v-model="ex6" value="Jacob" light />
+            <v-checkbox label="John" v-model="ex6" value="John" light></v-checkbox>
+            <v-checkbox label="Jacob" v-model="ex6" value="Jacob" light></v-checkbox>
           </v-card-text>
         </v-card>
       </v-flex>
