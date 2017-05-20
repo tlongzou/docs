@@ -2,7 +2,7 @@
   component-view(v-bind:doc="doc")
     div(slot='top')
       section
-        h2.display-1 Default application markup:
+        h2.display-1 Default application markup
         section-text This is the default application markup for Vuetify. The key is that drawer, toolbar, main and footer exist on the same level in the DOM. Using any one of the 5 pre-made vue-cli templates will automatically include this structure:
         markup(lang='html')
           |&lt;v-app&gt;
@@ -28,7 +28,7 @@
           desc: 'The layout system is the heart of every application. Below are the officially supported examples, ranging from desktop to mobile applications. While Vuetify.js aims to be as un-opinionated as possible, the layout structure must be <strong>explicitly</strong> followed to receive the expected results.',
           examples: [
             {
-              header: 'Structure',
+              header: 'Baseline',
               file: 'layouts/1',
               desc: `The default structure of the Vuetify layout is one of the few opinionated designs you will encounter in the framework. It is done so that each layout is easy to understand and works as expected for any given scenario. Below is the <strong>baseline</strong> structure for a layout. It includes a navigation drawer, toolbar, right navigation drawer, content and footer.`
             },
