@@ -274,5 +274,11 @@
     "title": "Tooltip",
     "description": "Tooltip directive for the Vuetify framework.",
     "keywords": "tooltips"
+  },
+  "/guides/server-side-rendering": {
+    "h1": "Server side rendering",
+    "title": "Server side rendering",
+    "description": "Server side rendering guide for the Vuetify framework.",
+    "keywords": "server side rendering, ssr"
   }
 }

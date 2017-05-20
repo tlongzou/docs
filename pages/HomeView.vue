@@ -16,7 +16,7 @@
           span.subheading Updates
 
     section#hero.elevation-12
-      v-parallax(src="/static/doc-images/bg-2.jpg" height="400")
+      v-parallax(src="/static/doc-images/vbanner.jpg" height="400")
         v-layout(row align-vert-center align-horiz-center)
           v-flex(xs12).text-xs-center
             h1.grey--text.text--lighten-4.display-2 Vuetify.js
@@ -49,7 +49,7 @@
           v-flex(sm12).my-5
             v-layout(row)
               v-flex(xs12 sm6 layout column align-end justify-center)
-                v-card.transparent.elevation-0
+                v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Premade Templates
                   div.grey--text.text--darken-1 Vuetify comes ready to go with 5 pre-made vue-cli templates. Ranging from a simple html to a full blown SSR (server side rendered) application. No matter what the project, you are ready to go in minutes with your next great idea.
               v-flex(xs6).hidden-xs-only
@@ -59,13 +59,13 @@
               v-flex(xs6).hidden-xs-only
                 v-card(height="280px" img="/static/vuetify_layout2.svg")
               v-flex(xs12 sm6 layout column align-end justify-center)
-                v-card.transparent.elevation-0
+                v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Custom layouts
                   div.grey--text.text--darken-1 Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any task.
           v-flex(sm12).my-5
             v-layout(row)
               v-flex(xs12 sm6 layout column align-start justify-center)
-                v-card.transparent.elevation-0
+                v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Semantic components
                   div.grey--text.text--darken-1 Every component has been meticulously crafted to offer the easiest, most understandable interface and robust api of properties that will customize the experience delivered in your next application.
               v-flex(xs6).hidden-xs-only
@@ -75,7 +75,7 @@
               v-flex(xs6).hidden-xs-only
                 v-card(height="280px" img="/static/vuetify_sizes.svg")
               v-flex(xs12 sm6 layout column align-start justify-center)
-                v-card.transparent.elevation-0
+                v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Material design framework
                   div.grey--text.text--darken-1 Be prepared to have an armada of specialized components at your disposal. With over 80 in total, there is a solution to any situation.
 

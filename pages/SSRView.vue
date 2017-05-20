@@ -5,6 +5,7 @@
         dt(slot="title") Overview
         dd(slot="desc")
           p This overview is designed to help you become fluent in <strong>Vuetify's</strong> Vue SSR Template. If you have not already installed the <code>webpack-ssr</code> template, please do so <router-link to="/quick-start#webpack-ssr">here</router-link>.
+    v-alert(error value="true").mb-4 This guide is currently deprecated. It applies to a previous version of the Webpack-SSR template.
     section
       section-header Introduction
       section-text This Vue CLI template was designed for performance, seo optimization and usability. This template is configured out of the box for css, sass and stylus pre-processors. It also utilizes <code>buble</code> with webpack's buble-loader.

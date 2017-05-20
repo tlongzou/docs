@@ -6,7 +6,7 @@
   export default {
     data () {
       return {
-        valueDeterminate: 0
+        valueDeterminate: 50
       }
     }
   }
