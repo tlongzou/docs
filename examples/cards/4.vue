@@ -13,8 +13,8 @@
   </div>
 </template>
 
-<style type="stylus" scoped>
+<style lang="stylus">
   .portrait
     .card__row--actions
-      background: rgba(0,0,0,.5)
+      background: rgba(0, 0, 0, .25)
 </style>
