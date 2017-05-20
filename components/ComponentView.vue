@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.view(v-bind:id="`${doc.title.toLowerCase()}-view`")
+  div.view(v-bind:id="`${doc.title.toLowerCase().replace(' ', '-')}-view`")
     section-def(v-bind:doc="doc")
       dt(slot="title" v-text="doc.title")
       dd(slot="desc" v-html="doc.desc")

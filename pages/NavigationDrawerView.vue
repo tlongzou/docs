@@ -11,7 +11,8 @@
           title: 'Navigation drawer',
           desc: `The <code>v-navigation-drawer</code> component is what your users will utilize to navigate through the application. The navigation-drawer is pre-configured to work with or without <strong>vue-router</strong> right out the box.`,
           examples: [
-            { header: '', file: 'navigation-drawers/1' }
+            { header: 'Google keep', file: 'navigation-drawers/1' },
+            { header: 'Google contacts', file: 'navigation-drawers/2' }
           ],
           props2: {
             'v-sidebar': {
@@ -101,3 +102,9 @@
     }
   }
 </script>
+
+<style lang="stylus">
+  #navigation-drawer-view
+    .navigation-drawer
+      z-index: 0
+</style>
