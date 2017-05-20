@@ -1,5 +1,5 @@
 <template>
-  <v-layout align-space-around>
+  <v-layout justify-space-around>
     <v-icon large dark>note</v-icon>
 
     <v-icon large dark>mic</v-icon>

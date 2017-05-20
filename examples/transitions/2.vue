@@ -1,7 +1,7 @@
 <template>
   <div class="text-xs-center">
     <v-menu transition="v-slide-y-transition">
-      <v-btn primary slot="activator">Slide Y Transition</v-btn>
+      <v-btn light primary slot="activator">Slide Y Transition</v-btn>
       <v-list>
         <v-list-item v-for="n in 5" :key="n">
           <v-list-tile>
@@ -11,7 +11,7 @@
       </v-list>
     </v-menu>
     <v-menu transition="v-slide-y-reverse-transition">
-      <v-btn primary slot="activator">Slide Y Reverse Transition</v-btn>
+      <v-btn light primary slot="activator">Slide Y Reverse Transition</v-btn>
       <v-list>
         <v-list-item v-for="n in 5" :key="n">
           <v-list-tile>

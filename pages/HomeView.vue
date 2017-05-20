@@ -23,16 +23,15 @@
             div.grey--text.text--lighten-4.headline.hidden-xs-only Material Component Framework
             div.mt-5
               v-btn(
-                light
                 large
                 tag="a"
                 href="https://github.com/vuetifyjs/vuetify"
               ).grey.lighten-2
-                v-icon(fa left light medium) github
+                v-icon(fa left medium) github
                 span Github
-              v-btn(dark large router href="/vuetify/quick-start").green.lighten-2
+              v-btn(light large router href="/vuetify/quick-start").green.lighten-2
                 span Get Started
-                v-icon(right) chevron_right
+                v-icon(right light) chevron_right
 
     section#development.text-xs-center.pa-5
       v-container(fluid)
@@ -87,18 +86,18 @@
           v-flex(xs12 sm6 md3)
             div.py-3.caption Ready for any screen size, from desktop to mobile
             v-btn(floating large).red.lighten-2
-              v-icon devices
+              v-icon(light) devices
           v-flex(xs12 sm6 md3)
             div.py-3.caption Reusable components that make app development a breeze
             v-btn(floating large).red.lighten-2
-              v-icon storage
+              v-icon(light) storage
           v-flex(xs12 sm6 md3)
             div.py-3.caption SSR support for SEO friendly apps
-            v-btn(floating dark large).red.lighten-2 SSR
+            v-btn(floating light large).red.lighten-2 SSR
           v-flex(xs12 sm6 md3)
             div.py-3.caption Small footprint. Under 100KB
             v-btn(floating large).red.lighten-2
-              v-icon photo_size_select_small
+              v-icon(light) photo_size_select_small
 
     section#sponsors.py-5
       v-container( fluid)

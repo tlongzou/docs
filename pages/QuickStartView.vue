@@ -105,7 +105,7 @@
             v-list-item
               v-list-tile(avatar tag="ul")
                 v-list-tile-avatar
-                  v-icon(fa).primary {{ browser.icon }}
+                  v-icon(fa light).primary {{ browser.icon }}
                 v-list-tile-content
                   v-list-tile-title {{ browser.title }}
                   v-list-tile-sub-title {{ browser.supported ? 'Supported' : 'Not supported' }}

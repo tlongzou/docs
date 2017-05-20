@@ -1,5 +1,5 @@
 <template>
-  <v-layout row align-horiz-center>
+  <v-layout row justify-center>
     <v-dialog v-model="dialog" scrollable>
       <v-btn primary light slot="activator">Open Dialog</v-btn>
       <v-card>

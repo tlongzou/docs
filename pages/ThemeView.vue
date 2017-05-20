@@ -17,7 +17,7 @@
         |   error: $red.base
         |   success: $green.base
         |}
-      section-text In order to change these variables, we have to create our array before the import of the Vuetify styles. You will need to setup your build process to accommodate a stylus file. If you are using one of the pre-made templates available on the <router-link to="/quick-start">Quick Start</router-link> guide, you can skip this next section.
+      section-text In order to change these variables, we have to create our array before the import of the Vuetify styles. You will need to setup your build process to accommodate a stylus file. If you are using one of the pre-made templates available on the <router-link to="/vuetify/quick-start">Quick Start</router-link> guide, you can skip this next section.
       h6 Setup stylus-loader with Webpack
       section-text In the command line, run:
       markup(lang="cli")

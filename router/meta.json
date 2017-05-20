@@ -227,6 +227,12 @@
     "description": "Selection controls input components for Vuetify Framework",
     "keywords": "vuetify, form, components"
   },
+  "/components/selects": {
+    "h1": "Selects",
+    "title": "Selects Input Components",
+    "description": "Selects input components for Vuetify Framework",
+    "keywords": "vuetify, form, components"
+  },
   "/components/subheaders": {
     "h1": "Subheaders",
     "title": "Subheaders",

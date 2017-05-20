@@ -1,6 +1,6 @@
 <template>
   <v-app id="example-2">
-    <v-navigation-drawer temporary v-model="drawer" :mini-variant.sync="mini">
+    <v-navigation-drawer temporary v-model="drawer" :mini-variant.sync="mini" light>
       <v-list class="pa-0">
         <v-list-item>
           <v-list-tile avatar tag="div">
@@ -23,7 +23,7 @@
         <v-list-item v-for="item in items" :key="item">
           <v-list-tile>
             <v-list-tile-action>
-              <v-icon light>{{ item.icon }}</v-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -33,7 +33,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed class="deep-orange">
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>

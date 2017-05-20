@@ -1,5 +1,5 @@
 <template>
-  <v-layout align-space-around>
+  <v-layout justify-space-around>
     <v-icon x-large dark>view_week</v-icon>
 
     <v-icon x-large dark>radio</v-icon>

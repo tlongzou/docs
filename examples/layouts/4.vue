@@ -1,11 +1,11 @@
 <template>
   <v-app id="example-3">
-    <v-navigation-drawer permanent floating>
+    <v-navigation-drawer permanent floating light>
       <v-list dense class="pt-0">
         <v-list-item v-for="item in items" :key="item">
           <v-list-tile>
             <v-list-tile-action>
-              <v-icon light>{{ item.icon }}</v-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>{{ item.title }}</v-list-tile-title>

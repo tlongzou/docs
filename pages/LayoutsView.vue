@@ -83,9 +83,6 @@
       position: relative
       z-index: 0
 
-      &:last-child .divider
-        display: none
-
       [data-app]
         overflow: hidden
         height: 400px

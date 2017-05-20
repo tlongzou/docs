@@ -1,5 +1,5 @@
 <template>
-  <v-layout align-space-around>
+  <v-layout justify-space-around>
     <v-icon dark>home</v-icon>
 
     <v-icon dark>event</v-icon>

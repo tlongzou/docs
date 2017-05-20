@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-navigation-drawer(v-model="isActive" persistent light :mini-variant.sync="mini")
+  v-navigation-drawer(v-model="isActive" persistent :mini-variant.sync="mini")
     v-list.pa-0.vuetify
       v-list-item
         v-list-tile(avatar tag="div")
@@ -138,13 +138,13 @@
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
               { href: '/components/menus', title: 'Menus' },
+              { href: '/components/navigation-drawers', title: 'Navigation drawers' },
               { href: '/components/pagination', title: 'Pagination' },
               { href: '/components/parallax', title: 'Parallax' },
               { href: '/components/pickers', title: 'Pickers' },
               { href: '/components/progress', title: 'Progress & activity' },
-              { href: '/components/selection-controls', title: 'Selection controls' },
               { href: '/components/selects', title: 'Selects' },
-              { href: '/components/navigation-drawers', title: 'Navigation drawers' },
+              { href: '/components/selection-controls', title: 'Selection controls' },
               { href: '/components/sliders', title: 'Sliders' },
               { href: '/components/snackbars', title: 'Snackbars & toasts' },
               { href: '/components/steppers', title: 'Steppers' },

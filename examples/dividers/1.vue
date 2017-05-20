@@ -3,12 +3,12 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-toolbar class="white--text pink">
-          <v-toolbar-side-icon></v-toolbar-side-icon>
+          <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Inbox</v-toolbar-title>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>search</v-icon>
           </v-btn>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>check_circle</v-icon>
           </v-btn>
         </v-toolbar>

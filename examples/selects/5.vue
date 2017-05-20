@@ -54,11 +54,11 @@
   export default {
     data () {
       let srcs = {
-        1: '/public/doc-images/lists/1.jpg',
-        2: '/public/doc-images/lists/2.jpg',
-        3: '/public/doc-images/lists/3.jpg',
-        4: '/public/doc-images/lists/4.jpg',
-        5: '/public/doc-images/lists/5.jpg'
+        1: '/static/doc-images/lists/1.jpg',
+        2: '/static/doc-images/lists/2.jpg',
+        3: '/static/doc-images/lists/3.jpg',
+        4: '/static/doc-images/lists/4.jpg',
+        5: '/static/doc-images/lists/5.jpg'
       }
 
       return {

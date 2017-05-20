@@ -1,5 +1,5 @@
 <template>
-  <v-layout align-space-around>
+  <v-layout justify-space-around>
     <v-icon medium fa dark>lock</v-icon>
 
     <v-icon medium fa dark>search</v-icon>

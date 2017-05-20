@@ -1,11 +1,11 @@
 <template>
   <v-app id="example-1">
-    <v-navigation-drawer persistent v-model="drawer">
+    <v-navigation-drawer persistent v-model="drawer" light>
       <v-list dense>
         <v-list-item v-for="item in items" :key="item">
           <v-list-tile>
             <v-list-tile-action>
-              <v-icon light>{{ item.icon }}</v-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -15,10 +15,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="indigo">
-      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon @click.native.stop="right = !right">
+      <v-btn light icon @click.native.stop="right = !right">
         <v-icon>exit_to_app</v-icon>
       </v-btn>
     </v-toolbar>
