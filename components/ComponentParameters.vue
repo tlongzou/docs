@@ -40,7 +40,8 @@
           router: this.makeRouter(),
           default: this.makeSlot(),
           theme: this.makeTheme(),
-          input: this.makeInput()
+          input: this.makeInput(),
+          overlay: this.makeOverlay()
         }
       }
     },
@@ -277,6 +278,16 @@
             'Boolean',
             'False',
             'Hides hint, validation errors'
+          ]
+        ]
+      },
+      makeOverlay () {
+        return [
+          [
+            'hide-overlay',
+            'Boolean',
+            'False',
+            'Hide the display of the overlay'
           ]
         ]
       }

@@ -14,8 +14,13 @@
             { header: 'Google keep', file: 'navigation-drawers/1' },
             { header: 'Google contacts', file: 'navigation-drawers/2' }
           ],
-          props2: {
-            'v-sidebar': {
+          props: {
+            'v-navigation-drawer': {
+              shared: ['theme', 'overlay'],
+              model: {
+                type: ['Boolean'],
+                default: 'True'
+              },
               params: [
                 [
                   'absolute',
@@ -24,58 +29,46 @@
                   'Sets the sidebar position to absolute',
                 ],
                 [
-                  'close-on-click',
-                  'Boolean',
-                  'True',
-                  'Designates if sidebar should close on body click',
-                ],
-                [
-                  'drawer',
+                  'clipped',
                   'Boolean',
                   'False',
-                  'Default hides sidebar. Will not automatically hide on resize',
+                  'A clipped drawer rests under the application toolbar',
                 ],
                 [
-                  'fixed',
+                  'disable-route-watcher',
                   'Boolean',
                   'False',
-                  'Sets the sidebar position to fixed',
+                  'Disables opening of Sidebar when route changes'
                 ],
                 [
                   'height',
                   'String',
-                  `[fixed || drawer ? '100vh' : 'auto']`,
+                  '100%',
                   'Sets height of the sidebar',
                 ],
                 [
-                  'hide-overlay',
+                  'floating',
                   'Boolean',
                   'False',
-                  'Hide the display of the overlay',
+                  'A floating drawer has no visible container (no border-right)'
                 ],
                 [
-                  'light',
-                  'Boolean',
-                  'False',
-                  'Changes the sidebar theme to light (default dark)',
-                ],
-                [
-                  'mini',
+                  'mini-variant.sync',
                   'Boolean',
                   'False',
                   'Condenses sidebar width',
                 ],
                 [
-                  'mobile',
+                  'permanent',
                   'Boolean',
-                  'True',
-                  'Specifies whether menu should collapse automatically on mobile',
+                  'False',
+                  'The drawer remains visible regardless of screen size'
                 ],
                 [
-                  'mobile-break-point',
-                  '[Number, String]',
-                  '992',
-                  'The maximum width in px before sidebar auto-closes',
+                  'persistent',
+                  'Boolean',
+                  'False',
+                  'A persistent drawer can be opened or closed'
                 ],
                 [
                   'right',
@@ -84,17 +77,17 @@
                   'Places the sidebar on the right'
                 ],
                 [
-                  'disable-route-watcher',
+                  'temporary',
                   'Boolean',
                   'False',
-                  'Disables opening of Sidebar when route changes'
+                  'A temporary drawer sits above its application and uses a scrim (overlay) to darken the background',
                 ],
               ]
             }
           },
           slots: {
-            'v-sidebar': {
-              default: true
+            'v-navigation-drawer': {
+              shared: ['default']
             }
           }
         }
