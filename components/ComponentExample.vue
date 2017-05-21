@@ -83,10 +83,12 @@
     },
 
     mounted () {
+      import('../examples/'+this.file+'.vue').then(comp => {
+        console.log(comp)
+      })
       this.uid = this._uid
       const vm = this
       import('../examples/'+this.file+'.vue').then(comp => {
-        console.log(comp)
         new Vue(comp).$mount('#example-'+vm.uid)
       })
       this.request(this.file, this.boot)
