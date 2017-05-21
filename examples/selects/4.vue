@@ -16,7 +16,7 @@
               max-height="400"
               hint="Pick your favorite states"
               persistent-hint
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs12 sm6>
             <v-subheader v-text="'Multiple (Chips) with persistent hint'"></v-subheader>
@@ -31,7 +31,7 @@
               dark
               hint="What are the target regions"
               persistent-hint
-            />
+            ></v-select>
           </v-flex>
         </v-layout>
       </v-container>

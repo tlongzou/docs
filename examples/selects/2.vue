@@ -13,7 +13,7 @@
               label="Select"
               light
               item-value="text"
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs6>
             <v-subheader class="grey--text text--lighten-1" v-text="'Standard with focus'"></v-subheader>
@@ -26,7 +26,7 @@
               class="input-group--focused"
               light
               item-value="text"
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs6>
             <v-subheader class="grey--text text--lighten-1" v-text="'Error'"></v-subheader>
@@ -39,7 +39,7 @@
               v-bind:rules="[() => e3 && e3.text && e3.text.length > 0 || 'Please select an option']"
               light
               item-value="text"
-            />
+            ></v-select>
           </v-flex>
           <v-flex xs6>
             <v-subheader class="grey--text text--lighten-1" v-text="'Disabled'"></v-subheader>
@@ -51,7 +51,7 @@
               v-model="e4"
               disabled
               light
-            />
+            ></v-select>
           </v-flex>
         </v-layout>
       </v-container>

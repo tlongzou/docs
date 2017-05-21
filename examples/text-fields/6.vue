@@ -13,7 +13,7 @@
               single-line
               light
               prepend-icon="phone"
-            />
+            ></v-text-field>
           </v-flex>
           <v-flex xs3>
             <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
@@ -32,7 +32,7 @@
               value="650"
               single-line
               light
-            />
+            ></v-text-field>
           </v-flex>
           <v-flex xs3>
             <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
@@ -50,7 +50,7 @@
               prepend-icon="phone"
               single-line
               light
-            />
+            ></v-text-field>
           </v-flex>
           <v-flex xs3>
             <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
