@@ -186,6 +186,7 @@
           {
             title: 'Guides',
             action: 'developer_mode',
+            group: '/guides',
             items: [
               {
                 href: '/guides/server-side-rendering',
@@ -223,6 +224,8 @@
           hue = 370
         } else if (color === 'cyan') {
           hue = 337
+        } else if (color === 'teal') {
+          hue = 315
         }
 
         return {

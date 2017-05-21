@@ -1,6 +1,6 @@
 <template lang="pug">
   div#home-view
-    v-toolbar(fixed :class="[toolbar ? 'primary' : 'transparent elevation-0']")
+    v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'transparent elevation-0']")
       img(src="/static/v.png" height="38px")
       v-spacer
       v-toolbar-items
@@ -8,7 +8,7 @@
           to="/vuetify/quick-start"
           router
         )
-          span.subheading Docs
+          span.subheading Documentation
         v-toolbar-item(
           href="https://github.com/vuetifyjs/vuetify/releases"
           target="_blank"
@@ -37,7 +37,11 @@
       v-container(fluid)
         v-layout(row)
           v-flex(xs12)
-            img(src="static/doc-images/featured.png" width="100%" style="max-width: 1024px")
+            img(
+              src="static/doc-images/featured.png"
+              width="100%"
+              style="max-width: 1024px"
+            )
       h2.display-2 Supercharge your Development
       span.headline With the power of Vue and Material Design
 
@@ -77,37 +81,40 @@
               v-flex(xs12 sm6 layout column align-start justify-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Material design framework
-                  div.grey--text.text--darken-1 Be prepared to have an armada of specialized components at your disposal. With over 80 in total, there is a solution to any situation.
+                  div.grey--text.text--darken-1 Be prepared to have an armada of specialized components at your disposal. With over 80 in total, there is a solution for any situation.
 
+    v-divider
 
-    section#highlights.text-xs-center.grey.lighten-4.py-5
-      v-container
-        v-layout(row wrap)
-          v-flex(xs12 sm6 md3)
-            div.py-3.caption Ready for any screen size, from desktop to mobile
-            v-btn(floating large).red.lighten-2
-              v-icon(light) devices
-          v-flex(xs12 sm6 md3)
-            div.py-3.caption Reusable components that make app development a breeze
-            v-btn(floating large).red.lighten-2
-              v-icon(light) storage
-          v-flex(xs12 sm6 md3)
-            div.py-3.caption SSR support for SEO friendly apps
-            v-btn(floating light large).red.lighten-2 SSR
-          v-flex(xs12 sm6 md3)
-            div.py-3.caption Small footprint. Under 100KB
-            v-btn(floating large).red.lighten-2
-              v-icon(light) photo_size_select_small
-
-    section#sponsors.py-5
+    section#sponsors.py-5.mb-0
       v-container( fluid)
         v-layout(row)
           v-flex(xs10 offset-xs1).text-xs-center
             h4.headline.text-xs-center.mb-5 Vuetify.js is proudly sponsored by
-            a( href="http://www.thedifferenceengine.io/")
-              img( width="300px" src="https://vuetifyjs.com/public/doc-images/browser-stack.svg")
+            a(href="https://www.browserstack.com/")
+              img( width="300px" src="/static/doc-images/browser-stack.svg")
 
-    v-footer.grey.lighten-4.grey--text.text--darken-4
+    section#support.py-5.grey.lighten-4.mb-0
+      v-container(fluid)
+        v-layout(row wrap).text-xs-center
+          v-flex(xs12).mb-5
+            h4.headline.pb-3 Support Vuetify.js
+            p Has Vuetify helped you create an amazing application? You can show your support by making a donation in one of two ways:
+          v-flex(xs12 sm6)
+            a(
+              href="https://www.patreon.com/vuetify"
+              target="_blank"
+            ).dark--text
+              div.display-1.mb-2 Patreon
+              img(src="/static/doc-images/patreon.png" width="125px")
+          v-flex(xs12 sm6)
+            a(
+              href="https://paypal.me/vuetify"
+              target="_blank"
+            ).dark--text
+              div.display-1.mb-2 Paypal
+              img(src="/static/doc-images/paypal.png" width="125px")
+
+    v-footer.secondary.white--text
       v-layout(row flex)
         v-flex(xs6)
           span © {{ new Date().getFullYear() }} John Leider
@@ -130,7 +137,7 @@
     },
     methods: {
       onScroll () {
-        this.toolbar = window.scrollY > 200
+        this.toolbar = window.scrollY > 0
       }
     }
   }
@@ -140,6 +147,13 @@
   @import '../node_modules/vuetify/src/stylus/settings/_colors'
   
   #home-view
+    .toolbar--home
+      background: #132563
+
+    #support
+      a
+        text-decoration: none
+
     #hero
       .btn
         width: 190px

@@ -34,6 +34,7 @@
           tag="a"
           href="#api"
           v-bind:class="[`${currentColor}--text`]"
+          v-if="doc.props"
         ) Go to api
     slot(name="top")
     section-header Examples

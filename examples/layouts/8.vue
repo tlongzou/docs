@@ -2,6 +2,13 @@
   <v-app id="example-8" dark>
     <v-navigation-drawer temporary v-model="drawer" :mini-variant="mini" dark>
       <v-list class="pa-0">
+        <v-list-item v-if="mini">
+          <v-list-tile @click.native.stop="mini = !mini">
+            <v-list-tile-action>
+              <v-icon light>chevron_right</v-icon>
+            </v-list-tile-action>
+          </v-list-tile>
+        </v-list-item>
         <v-list-item>
           <v-list-tile avatar tag="div">
             <v-list-tile-avatar>

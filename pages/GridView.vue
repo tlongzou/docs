@@ -49,6 +49,8 @@
       return {
         doc: {
           title: 'Grid',
+          component: 'grid',
+          edit: 'GridView',
           desc: 'Vuetify.js uses a 12 point grid system. The grid is used to layout an application\'s content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.',
           examples: [
             { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-flex</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-flex</strong>.` },

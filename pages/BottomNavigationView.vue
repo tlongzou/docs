@@ -8,7 +8,6 @@
       return {
         doc: {
           title: 'Bottom navigation',
-          id: 'bottom-navigation-view',
           edit: 'BottomNavigationView',
           component: 'bottom-navigation/BottomNavigation.js',
           desc: `The <code>v-bottom-nav</code> is an alternative to the sidebar. It is primarily used on mobile and comes in two variants, icons and text, and shift.`,

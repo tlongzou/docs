@@ -27,9 +27,6 @@
             { header: "Switches - Contextual", file: "selection-controls/11", desc: '' },
           ],
           props: {
-            'all': {
-              shared: ['contextual', 'input'],
-            },
             'v-checkbox': {
               shared: ['contextual', 'input'],
               params: [

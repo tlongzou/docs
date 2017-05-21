@@ -23,7 +23,6 @@
 </script>
 
 <style lang="stylus">
-
   #main-toolbar .toolbar
     &__logo, &__title
       white-space: nowrap

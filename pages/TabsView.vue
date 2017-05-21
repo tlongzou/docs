@@ -50,19 +50,7 @@
                   'Boolean',
                   'False',
                   'Displays scrollbars when content overflows'
-                ],
-                [
-                  'bg-color',
-                  'String',
-                  '-',
-                  'Specifies the tabs background color. Default: $theme.primary'
-                ],
-                [
-                  'slider-color',
-                  'String',
-                  '-',
-                  'Specifies the slider color. Default: $theme.accent'
-                ],
+                ]
               ],
               model: {
                 type: ['String'],
@@ -70,7 +58,7 @@
                 description: 'Current selected tab'
               }
             },
-            'v-tab-item': {
+            'v-tabs-item': {
               shared: ['router'],
               params: [
                 [
@@ -81,7 +69,7 @@
                 ]
               ]
             },
-            'v-tab-content': {
+            'v-tabs-content': {
               params: [
                 [
                   'id',
@@ -112,13 +100,9 @@
                   '.tabs__slider'
                 ],
                 [
-                  'v-tabs-items',
-                  '.tabs__items'
-                ],
-                [
-                  'v-tabs-tabs',
-                  '.tabs__tabs'
-                ],
+                  'v-tabs-bar',
+                  '.tabs__bar'
+                ]
               ]
             },
           },

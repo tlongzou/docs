@@ -1,23 +1,28 @@
 <template>
   <v-container fluid>
     <v-layout row wrap>
-      <v-flex md12 lg4 lg-offset8>
+      <v-flex xs12>
         <v-btn
           :primary="allowedDates === everyOtherDay"
-          class="white--text"
+          :class="{ 'white--text': allowedDates === everyOtherDay }"
           @click.native="allowedDates = everyOtherDay"
         >Function</v-btn>
         <v-btn
           :primary="allowedDates === randomDays"
-          class="white--text"
+          :class="{ 'white--text': allowedDates === randomDays }"
           @click.native="allowedDates = randomDays"
         >Array</v-btn>
         <v-btn
           :primary="allowedDates === lastFiveDays"
-          class="white--text"
+          :class="{ 'white--text': allowedDates === lastFiveDays }"
           @click.native="allowedDates = lastFiveDays"
         >Object</v-btn>
-        <v-date-picker landscape v-model="date" :allowed-dates="allowedDates"></v-date-picker>
+        <v-date-picker
+          class="mt-3"
+          landscape
+          v-model="date"
+          :allowed-dates="allowedDates"
+        ></v-date-picker>
       </v-flex>
     </v-layout>
   </v-container>

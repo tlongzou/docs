@@ -86,7 +86,7 @@
         } else if (this.match(path, /style/)) {
           color = 'cyan'
         } else if (this.match(path, /directives/)) {
-          color = 'orange'
+          color = 'teal'
         }
 
         return color

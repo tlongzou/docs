@@ -15,6 +15,7 @@
               single-line
               auto
               prepend-icon="map"
+              hide-details
             ></v-select>
           </v-flex>
           <v-flex xs6>
@@ -29,6 +30,7 @@
               single-line
               auto
               append-icon="map"
+              hide-details
             ></v-select>
           </v-flex>
         </v-layout>

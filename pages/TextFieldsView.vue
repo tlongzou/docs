@@ -160,18 +160,9 @@
 </script>
 
 <style lang="stylus">
-  #forms-view
-    .with
-      min-height: 0
-
+  #text-fields-view
     main
+      
+    .container
       min-height: 0
-      padding-left: 0
-
-    .toolbar
-      max-height: 64px
-
-    .component-example__container
-      justify-content: space-between
-      flex-wrap: wrap
 </style>

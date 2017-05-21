@@ -11,7 +11,7 @@
               <v-list-tile-title>John Leider</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-action>
-              <v-btn icon light @click.native.stop="mini = !mini">
+              <v-btn icon dark @click.native.stop="mini = !mini">
                 <v-icon>chevron_left</v-icon>
               </v-btn>
             </v-list-tile-action>

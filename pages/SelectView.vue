@@ -12,9 +12,9 @@
           component: 'select',
           edit: 'SelectView',
           examples: [
-            { header: 'Light theme', file: 'selects/1', desc: '' },
-            { header: 'Dark theme', file: 'selects/2', desc: '' },
-            { header: 'Icons', file: 'selects/3', desc: '' },
+            { header: 'Light theme', file: 'selects/1', desc: 'A standard single select has a multitude of configuration options.' },
+            { header: 'Dark theme', file: 'selects/2', desc: 'Selects also support themeing, dark and light.' },
+            { header: 'Icons', file: 'selects/3', desc: 'Use a custom prepended or appended icon.' },
             { header: 'Multiple', file: 'selects/4', desc: `A multi-select can utilize v-chip as the display for selected items.` },
             { header: 'Scoped slots', file: 'selects/5', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` }
           ],
