@@ -9,7 +9,7 @@
       section-text The default configuration is set to a light theme, but you're free to swap to a darker one by doing the following.
       section-text After setting your app theme with <code>&lt;v-app dark&gt;&lt;/v-app&gt;</code> theme, reset the material theme stylus variable:
       markup(lang="stylus")
-        |$material-theme := $mterial-dark
+        |$material-theme := $material-dark
     section
       section-header Customizing
       section-text The default theme hash looks like the example below:
