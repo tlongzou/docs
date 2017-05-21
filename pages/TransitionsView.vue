@@ -27,6 +27,7 @@
       return {
         doc: {
           title: 'Motion',
+          edit: 'Transitions',
           desc: `Smooth animations help make a UI feel great. Using Vue's transition system and re-usable functional components, you can easily control the motion of your application.`,
           examples: [
             { header: "Slide X transitions", file: 'transitions/1', desc: 'Slide x transitions move along the horizontal axis.' },
