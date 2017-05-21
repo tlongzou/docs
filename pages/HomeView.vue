@@ -49,10 +49,10 @@
 
     section#features.pb-5.pt-3
       v-container(style="max-width: 1024px")
-        v-layout(column)
+        v-layout(row wrap)
           v-flex(sm12).my-5
             v-layout(row)
-              v-flex(xs12 sm6 layout column align-end justify-center)
+              v-flex(xs12 sm6 layout row align-end justify-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Premade Templates
                   div.grey--text.text--darken-1 Vuetify comes ready to go with 5 pre-made vue-cli templates. Ranging from a simple html to a full blown SSR (server side rendered) application. No matter what the project, you are ready to go in minutes with your next great idea.
@@ -62,13 +62,13 @@
             v-layout(row)
               v-flex(xs6).hidden-xs-only
                 v-card(height="280px" img="/static/vuetify_layout2.svg")
-              v-flex(xs12 sm6 layout column align-end justify-center)
+              v-flex(xs12 sm6 layout row align-end justify-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Custom layouts
                   div.grey--text.text--darken-1 Each and every available layout from the Material design spec is at your disposal. Create unique and flexible user interfaces that fit the scope of any task.
           v-flex(sm12).my-5
             v-layout(row)
-              v-flex(xs12 sm6 layout column align-start justify-center)
+              v-flex(xs12 sm6 layout row align-start justify-center)
                 v-card.transparent.elevation-0.pa-3
                   v-card-title.pl-0.pt-0 Semantic components
                   div.grey--text.text--darken-1 Every component has been meticulously crafted to offer the easiest, most understandable interface and robust api of properties that will customize the experience delivered in your next application.
@@ -91,7 +91,7 @@
           v-flex(xs10 offset-xs1).text-xs-center
             h4.headline.text-xs-center.mb-5 Vuetify.js is proudly sponsored by
             a(href="https://www.browserstack.com/")
-              img( width="300px" src="/static/doc-images/browser-stack.svg")
+              img(width="300px" height="50px" src="/static/doc-images/browser-stack.svg")
 
     section#support.py-5.grey.lighten-4.mb-0
       v-container(fluid)
@@ -99,14 +99,14 @@
           v-flex(xs12).mb-5
             h4.headline.pb-3 Support Vuetify.js
             p Has Vuetify helped you create an amazing application? You can show your support by making a donation in one of two ways:
-          v-flex(xs12 sm6)
+          v-flex(xs12 sm6).mb-3
             a(
               href="https://www.patreon.com/vuetify"
               target="_blank"
             ).dark--text
               div.display-1.mb-2 Patreon
               img(src="/static/doc-images/patreon.png" width="125px")
-          v-flex(xs12 sm6)
+          v-flex(xs12 sm6).mb-3
             a(
               href="https://paypal.me/vuetify"
               target="_blank"

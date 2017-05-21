@@ -15,22 +15,22 @@
                 v-list-item
                   v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
                     v-list-tile-action
-                      v-icon(fa) github
+                      v-icon(fa light) github
                     v-list-tile-title Github
                 v-list-item
                   v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
                     v-list-tile-action
-                      v-icon(fa) comments-o
+                      v-icon(fa light) comments-o
                     v-list-tile-title Chat
                 v-list-item
                   v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
                     v-list-tile-action
-                      v-icon(fa) twitter
+                      v-icon(fa light) twitter
                     v-list-tile-title Twitter
                 v-list-item
                   v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
                     v-list-tile-action
-                      v-icon(fa) facebook
+                      v-icon(fa light) facebook
                     v-list-tile-title Facebook
           v-spacer
           v-list-tile-action
