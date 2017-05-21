@@ -85,11 +85,10 @@
     mounted () {
       this.uid = this._uid
       const vm = this
-      setTimeout(() => {
-        import('../examples/'+this.file+'.vue').then(comp => {
-          new Vue(comp).$mount('#example-'+vm.uid)
-        })
-      }, 500)
+      import('../examples/'+this.file+'.vue').then(comp => {
+        console.log(comp)
+        new Vue(comp).$mount('#example-'+vm.uid)
+      })
       this.request(this.file, this.boot)
     },
 
