@@ -4431,15 +4431,16 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.2.tgz#a0a6c50c941d2a4abda963f2f42c337ac450ee95"
 
-vue@^2.2.0, vue@^2.3.3:
+vue@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.3.tgz#d1eaa8fde5240735a4563e74f2c7fead9cbb064c"
 
-vuetify@^0.11.1:
-  version "0.11.1"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.11.1.tgz#6dc73fee09e8da676f4c8f815f0b89a5a1f95c01"
+vuetify@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.12.0.tgz#b742851541259637e26503b65d28f00564afad44"
   dependencies:
-    vue "^2.2.0"
+    vue "^2.3.3"
+    vue-server-renderer "^2.3.3"
 
 vuex-router-sync@^4.1.2:
   version "4.1.2"

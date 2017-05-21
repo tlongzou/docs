@@ -47,6 +47,8 @@
 
 <script>
   import Vue from 'vue'
+  const path = require('path')
+  const resolve = file => path.resolve(__dirname, file)
 
   export default {
     data () {
@@ -83,9 +85,11 @@
     mounted () {
       this.uid = this._uid
       const vm = this
-      import('../examples/'+this.file+'.vue').then(comp => {
-        new Vue(comp).$mount('#example-'+vm.uid)
-      })
+      setTimeout(() => {
+        import('../examples/'+this.file+'.vue').then(comp => {
+          new Vue(comp).$mount('#example-'+vm.uid)
+        })
+      }, 500)
       this.request(this.file, this.boot)
     },
 
