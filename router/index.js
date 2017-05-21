@@ -8,7 +8,7 @@ function route (path, view) {
     path: path,
     meta: meta[path],
     // component: resolve => import(`pages/${view}View.vue`).then(resolve),
-    component: r => require.ensure([], () => r(require(`pages/${view}View.vue`)))
+    component: require(`../pages/${view}View.vue`)
   }
 }
 
