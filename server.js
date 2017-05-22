@@ -75,7 +75,6 @@ app.get('/sitemap.xml', (req, res) => {
 // 301 redirect for changed routes
 Object.keys(redirects).forEach(k => {
   app.get(k, (req, res) => {
-    console.log(redirects[k])
     res.redirect(301, redirects[k])
   })
 })
@@ -93,7 +92,8 @@ const microCache = LRU({
 // headers.
 const isCacheable = req => useMicroCache
 
-app.get('*', (req, res) => {
+
+function render (req, res) {
   const s = Date.now()
 
   res.setHeader("Content-Type", "text/html")
@@ -137,6 +137,10 @@ app.get('*', (req, res) => {
       console.log(`whole request: ${Date.now() - s}ms`)
     }
   })
+}
+
+app.get('*', isProd ? render : (req, res) => {
+  readyPromise.then(() => render(req, res))
 })
 
 app.get('*', isProd ? render : (req, res) => {

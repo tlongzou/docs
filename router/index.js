@@ -7,7 +7,7 @@ function route (path, view) {
   return {
     path: path,
     meta: meta[path],
-    component: resolve => import(`pages/${view}View.vue`).then(resolve)
+    component: () => import(`../pages/${view}View.vue`)
   }
 }
 

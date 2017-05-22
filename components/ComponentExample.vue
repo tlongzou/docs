@@ -8,7 +8,7 @@
           light
           icon
           tag="a"
-          v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/public/examples/'+file+'.vue'"
+          v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/examples/'+file+'.vue'"
           target="_blank"
           v-tooltip:left="{ html: 'Edit this example' }"
         )
