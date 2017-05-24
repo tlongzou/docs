@@ -24,7 +24,9 @@
     position: fixed
     bottom: 24px
     right: 24px
-    
+    padding: 1em;
+    background-color: hsla(0, 0%, 98%, .9)
+    z-index: 3
 
     a
       color: rgba(#000, .87)
@@ -34,10 +36,14 @@
       
       &.carbon-poweredby
         color: rgba(#000, .56)
+        text-transform: uppercase
+        letter-spacing: 1px
+        font-size: 9px !important
 
-      &.carbon-text, &.carbon-poweredby
+      &.carbon-text
         display: block
         font-size: 12px
+        margin-bottom: .5em
 
   .ads
     @media $display-breakpoints.lg-and-up
