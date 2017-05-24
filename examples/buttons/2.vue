@@ -2,7 +2,7 @@
   <v-container fluid="fluid" class="text-xs-center">
     <v-layout row wrap>
       <v-flex xs12="xs12" sm6="sm6"><span>Raised Light Theme</span>
-        <v-card height="225px" class="elevation-0">
+        <v-card height="225px" class="elevation-0 white">
           <v-card-text>
             <div>
               <v-btn dark default>Normal</v-btn>
