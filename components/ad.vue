@@ -1,7 +1,19 @@
 <template lang="pug">
   v-flex(xs12 sm4).ads
-    script(defer type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuetifyjscom" id="_carbonads_js")
 </template>
+
+<script>
+  export default {
+    mounted () {
+      const script = document.createElement('script')
+      script.type = 'text/javascript'
+      script.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuetifyjscom'
+      script.id = '_carbonads_js'
+
+      this.$el.appendChild(script)
+    }
+  }
+</script>
 
 <style lang="stylus">
   @import '~assets/stylus/settings/_variables.styl'

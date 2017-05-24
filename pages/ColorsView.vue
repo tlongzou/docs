@@ -1,9 +1,11 @@
 <template lang="pug">
   doc-view(id="colors-view")
-    div
-      section-def
-        dt(slot="title") {{ doc.title }}
-        dd(slot="desc") {{ doc.desc }}
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") {{ doc.title }}
+          dd(slot="desc") {{ doc.desc }}
+      ad
     section.mb-5
       section-header Classes
       section-text You can change a background or text color by adding a class to the element. For background, use just the name, for example, <code>&lt;div class="red"&gt;</code>. To use a shade, just add the modifying type, such as, <strong>darken-3</strong>. Text is very similar, adding a modification class, <strong>red--text</strong>, you can change the color of text, or change the type with adding <strong>text--lighten-2</strong>. For some elements like the <code>v-badge</code>, you can use the <em>--after</em> type for the background, <code>&lt;span class="green--after" v-badge:5&gt;</code>.
