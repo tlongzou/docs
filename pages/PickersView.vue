@@ -16,6 +16,7 @@
             { header: "Date pickers - Dark", file: "pickers/2", desc: 'Date pickers come in a dark variant which utilizes the applications primary accent color.'},
             { header: "Date pickers - In dialog and menu", file: "pickers/3", desc: '<p>When integrating a picker into a <code>v-text-field</code>, it is recommended to use the <strong>readonly</strong> prop. This will prevent mobile keyboards from triggering. To save vertical space, you can also hide the picker title.</p><p>Pickers expose a scoped slot that allow you to hook into save and cancel functionality. This will maintain an old value which can be replaced if the user cancels.</p>' },
             { header: "Date pickers - Allowed dates", file: "pickers/11", desc: 'You can specify allowed dates using arrays, objects, and functions.'},
+            { header: "Custom format", file: "pickers/12", desc: 'You can specify a custom date format. This will be returned through the <prop>formatted-value</code> prop. Using the sync property (new in Vue 2.3), you can link up a formatted version of the date.'},
             { header: "Time pickers - Light", file: "pickers/4", desc: 'Time pickers have the light theme enabled by default.'},
             { header: "Time pickers - Dark", file: "pickers/5", desc: 'An alternate dark theme can be used for dark theme applications.'},
             { header: "Time pickers - In dialog and menu", file: "pickers/6", desc: 'Due to the flexibility of pickers, you can really dial in the experience exactly how you want it.'},
@@ -23,6 +24,11 @@
           ],
           props: {
             'v-date-picker': {
+              model: {
+                type: ['null, String, Date Object, Number'],
+                default: 'null',
+                description: 'Controls the displayed date.'
+              },
               params: [
                 [
                   'actions',
@@ -52,7 +58,13 @@
                   'date-format',
                   'Function',
                   'val => new Date(val).toISOString().substr(0, 10)',
-                  'The emitted format when the date is changed'
+                  'This is the date format emitted on the <strong>formatted-value</strong> prop when the picker\'s model changes.'
+                ],
+                [
+                  'formatted-value',
+                  'Function',
+                  'val => new Date(val).toISOString().substr(0, 10)',
+                  'This it the formatted value.'
                 ],
                 [
                   'days',
@@ -81,6 +93,11 @@
               ]
             },
             'v-time-picker': {
+              model: {
+                type: ['String'],
+                default: 'null',
+                description: 'Controls the displayed time.'
+              },
               params: [
                 [
                   'actions',
