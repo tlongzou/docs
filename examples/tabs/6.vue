@@ -26,7 +26,7 @@
         Item {{ i }}
       </v-tabs-item>
     </v-tabs-bar>
-    <v-tab-content
+    <v-tabs-content
       v-for="i in 13"
       :key="i"
       :id="'mobile-tabs-6-' + i"
@@ -34,7 +34,7 @@
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
       </v-card>
-    </v-tab-content>
+    </v-tabs-content>
 </v-tabs>
 </template>
 
