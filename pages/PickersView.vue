@@ -64,7 +64,7 @@
                   'formatted-value',
                   'Function',
                   'val => new Date(val).toISOString().substr(0, 10)',
-                  'This it the formatted value.'
+                  'This is the formatted value.'
                 ],
                 [
                   'days',
