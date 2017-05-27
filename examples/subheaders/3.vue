@@ -2,10 +2,10 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="teal white--text">
-          <v-toolbar-side-icon></v-toolbar-side-icon>
+        <v-toolbar class="teal white--text" light>
+          <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Manage</v-toolbar-title>
-          <v-btn icon>
+          <v-btn icon light>
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-toolbar>
