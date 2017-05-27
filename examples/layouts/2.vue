@@ -20,7 +20,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="cyan">
+    <v-toolbar class="cyan" light>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
