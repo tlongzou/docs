@@ -1,9 +1,11 @@
 <template lang="pug">
   div(class="view" id="display-view")
-    div
-      section-def
-        dt(slot="title") Display
-        dd(slot="desc") The display helpers allow you to control the displaying of content based upon viewport width.
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") Display
+          dd(slot="desc") The display helpers allow you to control the displaying of content based upon viewport width.
+      ad
     section
       h6 Viewport sizes
       ul.mb-5

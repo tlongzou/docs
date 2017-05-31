@@ -90,7 +90,7 @@
                   'nudge-bottom',
                   'Number',
                   '0',
-                  'Nudge the menu from the bottomm'
+                  'Nudge the menu from the bottom'
                 ],
                 [
                   'nudge-left',

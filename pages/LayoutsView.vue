@@ -60,7 +60,7 @@
             {
               header: 'Temporary',
               file: 'layouts/7',
-              desc: `A temporary drawer sits above its application and uses a scrim (overlay) to darken the background. This drawer behavior is mimiced on the persistent drawer when on mobile. Clicking outside of the drawer will cause it to close.`
+              desc: `A temporary drawer sits above its application and uses a scrim (overlay) to darken the background. This drawer behavior is mimicked on the persistent drawer when on mobile. Clicking outside of the drawer will cause it to close.`
             },
             {
               header: 'Dark theme',

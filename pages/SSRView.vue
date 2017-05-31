@@ -1,10 +1,12 @@
 <template lang="pug">
   div(class="view")
-    div
-      section-def
-        dt(slot="title") Overview
-        dd(slot="desc")
-          p This overview is designed to help you become fluent in <strong>Vuetify's</strong> Vue SSR Template. If you have not already installed the <code>webpack-ssr</code> template, please do so <router-link to="/quick-start#webpack-ssr">here</router-link>.
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") Overview
+          dd(slot="desc")
+            p This overview is designed to help you become fluent in <strong>Vuetify's</strong> Vue SSR Template. If you have not already installed the <code>webpack-ssr</code> template, please do so <router-link to="/quick-start#webpack-ssr">here</router-link>.
+      ad
     v-alert(error value="true").mb-4 This guide is currently deprecated. It applies to a previous version of the Webpack-SSR template.
     section
       section-header Introduction

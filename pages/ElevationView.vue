@@ -1,9 +1,11 @@
 <template lang="pug">
   .view(id="elevation-view")
-    div
-      section-def
-        dt(slot="title") Elevation
-        dd(slot="desc") The elevation helpers allow you to control relative depth, or distance, between two surfaces along the z-axis.
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") Elevation
+          dd(slot="desc") The elevation helpers allow you to control relative depth, or distance, between two surfaces along the z-axis.
+      ad
     section
       h6 Variants
       p.mb-5 There's a total of 25 elevation levels. You can set an element's elevation by using the class <code>elevation-N</code>, where N is a integer between 0-24 corresponding to the desired elevation.

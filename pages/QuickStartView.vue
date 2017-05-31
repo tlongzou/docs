@@ -1,9 +1,11 @@
 <template lang="pug">
   doc-view(id="quick-start-view")
-    div
-      section-def
-        dt(slot="title") Getting Started
-        dd(slot="desc") Use one of the Vuetify.js Vue CLI packages <em>(based on the official examples)</em> to get your project started in no time. Vuetify.js supports <strong>SSR</strong> (server-side rendering), <strong>SPA</strong> (single page application), <strong>PWA</strong> (persistent web application) and standard <strong>HTML</strong> pages.
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") Getting Started
+          dd(slot="desc") Use one of the Vuetify.js Vue CLI packages <em>(based on the official examples)</em> to get your project started in no time. Vuetify.js supports <strong>SSR</strong> (server-side rendering), <strong>SPA</strong> (single page application), <strong>PWA</strong> (persistent web application) and standard <strong>HTML</strong> pages.
+      ad
 
     section
       section-header CDN Install

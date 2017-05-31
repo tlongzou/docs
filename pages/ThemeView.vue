@@ -1,9 +1,11 @@
 <template lang="pug">
   doc-view
-    div
-      section-def
-        dt(slot="title") Theme
-        dd(slot="desc") Vuetify offers the ability to easily change the colors of your application.
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") Theme
+          dd(slot="desc") Vuetify offers the ability to easily change the colors of your application.
+      ad
     section
       section-header Light and Dark
       section-text The default configuration is set to a light theme, but you're free to swap to a darker one by doing the following.

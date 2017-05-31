@@ -1,41 +1,45 @@
 <template lang="pug">
   div.view(v-bind:id="`${doc.title.toLowerCase().replace(' ', '-')}-view`")
-    section-def(v-bind:doc="doc")
-      dt(slot="title" v-text="doc.title")
-      dd(slot="desc" v-html="doc.desc")
-      v-divider
-      v-card-row(actions)
-        div.do-not-remove-this
-          v-btn(
-            tag="a"
-            v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
-            target="_blank"
-            icon
-            light
-            v-tooltip:right="{ html: 'View component' }"
-            v-if="doc.component"
-            v-bind:class="[`${currentColor}--text`]"
-          )
-            v-icon widgets
-        v-btn(
-          tag="a"
-          v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/src/pages/'+doc.edit+'.vue'"
-          target="_blank"
-          icon
-          light
-          v-tooltip:right="{ html: 'Edit this page' }"
-          v-if="doc.edit"
-          v-bind:class="[`${currentColor}--text`]"
-        )
-          v-icon edit
-        v-spacer
-        v-btn(
-          flat
-          tag="a"
-          href="#api"
-          v-bind:class="[`${currentColor}--text`]"
-          v-if="doc.props"
-        ) Go to api
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def(v-bind:doc="doc")
+          dt(slot="title" v-text="doc.title")
+          dd(slot="desc" v-html="doc.desc")
+          v-divider
+          v-card-row(actions)
+            div.do-not-remove-this
+              v-btn(
+                tag="a"
+                v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
+                target="_blank"
+                icon
+                light
+                v-tooltip:right="{ html: 'View component' }"
+                v-if="doc.component"
+                v-bind:class="[`${currentColor}--text`]"
+              )
+                v-icon widgets
+            v-btn(
+              tag="a"
+              v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/src/pages/'+doc.edit+'.vue'"
+              target="_blank"
+              icon
+              light
+              v-tooltip:right="{ html: 'Edit this page' }"
+              v-if="doc.edit"
+              v-bind:class="[`${currentColor}--text`]"
+            )
+              v-icon edit
+            v-spacer
+            v-btn(
+              flat
+              tag="a"
+              href="#api"
+              v-bind:class="[`${currentColor}--text`]"
+              v-if="doc.props"
+            ) Go to api
+      ad
+
     slot(name="top")
     section-header Examples
     component-example(

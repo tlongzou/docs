@@ -35,7 +35,7 @@
     <v-snackbar
       :timeout="timeout"
       :top="y === 'top'"
-      :bottom="y === 'bottomm'"
+      :bottom="y === 'bottom'"
       :right="x === 'right'"
       :left="x === 'left'"
       :multi-line="mode === 'multi-line'"

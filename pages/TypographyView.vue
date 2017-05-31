@@ -1,9 +1,11 @@
 <template lang="pug">
   doc-view(id="typography-view")
-    div
-      section-def
-        dt(slot="title") {{ doc.title }}
-        dd(slot="desc") {{ doc.desc }}
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") {{ doc.title }}
+          dd(slot="desc") {{ doc.desc }}
+      ad
     section
       section-header Examples
       div(class="component-example")

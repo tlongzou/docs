@@ -1,9 +1,11 @@
 <template lang="pug">
   doc-view(id="spacing-view")
-    div
-      section-def
-        dt(slot="title") Spacing
-        dd(slot="desc") Update your layout without creating new classes. Spacing helpers are useful for modifying the padding and margin of an element.
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") Spacing
+          dd(slot="desc") Update your layout without creating new classes. Spacing helpers are useful for modifying the padding and margin of an element.
+      ad
     section
       h6 Type
       ul.mb-5

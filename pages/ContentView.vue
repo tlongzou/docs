@@ -1,9 +1,11 @@
 <template lang="pug">
   doc-view(id="content-view")
-    div
-      section-def
-        dt(slot="title") {{ doc.title }}
-        dd(slot="desc") {{ doc.desc }}
+    v-layout(column-xs row-sm)
+      v-flex(xs12 sm8 md12)
+        section-def
+          dt(slot="title") {{ doc.title }}
+          dd(slot="desc") {{ doc.desc }}
+      ad
     section
       section-header Block quote
       blockquote.mb-5 Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.
