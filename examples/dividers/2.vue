@@ -14,7 +14,7 @@
             <v-divider v-if="item.divider" light></v-divider>
             <v-subheader v-else-if="item.header" v-text="item.header" class="grey--text text--lighten-4"></v-subheader>
             <v-list-item v-else>
-              <v-list-tile slot="item">
+              <v-list-tile slot="item" light>
                 <v-list-tile-action>
                   <v-icon light>{{ item.action }}</v-icon>
                 </v-list-tile-action>
