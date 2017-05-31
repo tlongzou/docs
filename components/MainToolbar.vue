@@ -5,8 +5,8 @@
     )
 
     transition(name="slide" mode="out-in")
-      div(style="position: relative" v-bind:key="title")
-        v-toolbar-title(v-html="title")
+      div(style="position: relative; display: flex; flex: 1;" v-bind:key="title")
+        v-toolbar-title(v-html="title" style="display: flex;")
 </template>
 
 <script>
