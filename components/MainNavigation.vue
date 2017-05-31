@@ -1,5 +1,11 @@
 <template lang="pug">
-  v-navigation-drawer(v-model="isActive" persistent :mini-variant.sync="mini" light)
+  v-navigation-drawer(
+    v-model="isActive"
+    persistent
+    :mini-variant.sync="mini"
+    dark
+    enable-resize-watcher
+  )
     v-list.pa-0.vuetify
       v-list-item
         v-list-tile(avatar tag="div")

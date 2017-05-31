@@ -43,6 +43,12 @@
                   'Disables opening of Sidebar when route changes'
                 ],
                 [
+                  'enable-resize-watcher',
+                  'Boolean',
+                  'False',
+                  'Will automatically open/close drawer when resized depending if mobile or desktop.'
+                ],
+                [
                   'height',
                   'String',
                   '100%',
