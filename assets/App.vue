@@ -28,7 +28,10 @@
       let h1 = metaData.h1
 
       if (section.length > 2) {
-        h1 = `${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp; ${h1}`
+        h1 = `
+          <div class="hidden-sm-and-down">${section[1].charAt(0).toUpperCase()}${section[1].slice(1)} &nbsp;&mdash;&nbsp;&nbsp;
+          </div><div>${h1}</div>
+        `
       }
 
       this.$store.commit('vuetify/H1', h1)
