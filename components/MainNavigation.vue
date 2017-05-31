@@ -3,7 +3,7 @@
     v-model="isActive"
     persistent
     :mini-variant.sync="mini"
-    light
+    dark
     enable-resize-watcher
   )
     v-list.pa-0.vuetify
