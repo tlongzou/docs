@@ -22,7 +22,7 @@
     display: flex
     justify-content: center
     position: fixed
-    top: calc(56px + 24px)
+    bottom: 124px
     right: 24px
     padding: 1em;
     background-color: hsla(0, 0%, 98%, .9)
