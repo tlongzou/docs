@@ -9,6 +9,7 @@
       permanent
       absolute
       height="100%"
+      light
     >
       <v-list dense>
         <template v-for="(item, i) in items">
