@@ -1,12 +1,16 @@
 <template lang="pug">
-  v-toolbar(:class="[color]" fixed)#main-toolbar
+  v-toolbar(:class="[color]" fixed light)#main-toolbar
     v-toolbar-side-icon( light
       v-on:click.native.stop="$store.commit('vuetify/SIDEBAR', !$store.state.sidebar)"
     )
 
     transition(name="slide" mode="out-in")
-      div(style="position: relative; display: flex; flex: 1;" v-bind:key="title")
-        v-toolbar-title(v-html="title" style="display: flex;")
+      v-toolbar-title(
+        v-html="title"
+        style="position: relative"
+        v-bind:key="title"
+        class="flexbox"
+      )
 </template>
 
 <script>

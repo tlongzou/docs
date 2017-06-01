@@ -1,5 +1,11 @@
 <template lang="pug">
-  v-navigation-drawer(v-model="isActive" persistent :mini-variant.sync="mini")
+  v-navigation-drawer(
+    v-model="isActive"
+    persistent
+    :mini-variant.sync="mini"
+    dark
+    enable-resize-watcher
+  )
     v-list.pa-0.vuetify
       v-list-item
         v-list-tile(avatar tag="div")
@@ -59,7 +65,7 @@
                 v-list-tile-title {{ subItem.title }}
               v-list-tile-action(v-if="subItem.action")
                 v-icon(light class="success--text") {{ subItem.action }}
-        v-subheader(v-else-if="item.header") {{ item.header }}
+        v-subheader(v-else-if="item.header" light) {{ item.header }}
         v-divider(v-else-if="item.divider")
         v-list-item(v-else)
           v-list-tile(:href="item.href" router ripple v-bind:disabled="item.disabled")

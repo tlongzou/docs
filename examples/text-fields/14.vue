@@ -3,12 +3,12 @@
     <v-layout row wrap>
       <v-flex xs12 md6 offset-md3>
         <v-card>
-          <v-toolbar class="indigo">
-            <v-btn icon>
+          <v-toolbar class="indigo" light>
+            <v-btn icon light>
               <v-icon>arrow_back</v-icon>
             </v-btn>
             <v-toolbar-title>Application</v-toolbar-title>
-            <v-btn icon>
+            <v-btn icon light>
               <v-icon>more_vert</v-icon>
             </v-btn>
           </v-toolbar>

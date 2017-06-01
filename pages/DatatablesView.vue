@@ -184,7 +184,7 @@
                 ],
                 [
                   'scope[items]',
-                  'The scoped slot for templating the row display.'
+                  'The scoped slot for templating the row display. Available props are the currently iterated <code>item</code> and its <code>index</code>.'
                 ]
               ]
             }

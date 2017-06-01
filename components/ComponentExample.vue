@@ -53,6 +53,7 @@
       return {
         tabs: ['template', 'script', 'style'],
         component: null,
+        instance: null,
         uid: null,
         panel: false,
         parsed: {
@@ -80,11 +81,16 @@
       }
     },
 
+    beforeDestroy () {
+      this.instance.$destroy()
+    },
+
     mounted () {
       this.uid = this._uid
       const vm = this
       import('../examples/'+this.file+'.vue').then(comp => {
-        new Vue(comp).$mount('#example-'+vm.uid)
+        this.instance = new Vue(comp)
+        this.instance.$mount('#example-'+vm.uid)
       })
       this.request(this.file, this.boot)
     },

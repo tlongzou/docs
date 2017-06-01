@@ -9,7 +9,6 @@
       permanent
       absolute
       height="100%"
-      light
     >
       <v-list dense>
         <template v-for="(item, i) in items">
@@ -18,7 +17,7 @@
             v-if="item.heading"
             align-center
             :key="i"
-          > 
+          >
             <v-flex xs6>
               <v-subheader v-if="item.heading">
                 {{ item.heading }}

@@ -2,7 +2,7 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="teal">
+        <v-toolbar class="teal" light>
           <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title class="text-xs-center">New Chat</v-toolbar-title>
           <v-btn light icon>
