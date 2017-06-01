@@ -1,6 +1,6 @@
 <template>
   <div id="toolbar-image">
-    <v-toolbar class="transparent elevation-0">
+    <v-toolbar class="transparent elevation-0" light>
       <v-toolbar-title class="hidden-sm-and-down">Toolbar</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>

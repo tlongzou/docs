@@ -2,7 +2,7 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="white--text pink">
+        <v-toolbar class="white--text pink" light>
           <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Inbox</v-toolbar-title>
           <v-btn light icon>
