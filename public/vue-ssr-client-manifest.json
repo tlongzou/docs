@@ -254,16 +254,6 @@
     "250.9b9907dfdca6846da3f4.js",
     "251.b32748c973fa24e9dd7d.js",
     "vendor.41722cc57ddda2b854d9.js",
-<<<<<<< HEAD
-    "app.e6ffb2bb0dc0166503fe.js",
-    "manifest.329a236d19bbfbf0e6b8.js",
-    "common.e6ffb2bb0dc0166503fe.css"
-  ],
-  "initial": [
-    "manifest.329a236d19bbfbf0e6b8.js",
-    "vendor.41722cc57ddda2b854d9.js",
-    "app.e6ffb2bb0dc0166503fe.js"
-=======
     "app.2f414dfcd611a1e30805.js",
     "manifest.566b296af10febb3ec62.js",
     "common.2f414dfcd611a1e30805.css"
@@ -272,7 +262,6 @@
     "manifest.566b296af10febb3ec62.js",
     "vendor.41722cc57ddda2b854d9.js",
     "app.2f414dfcd611a1e30805.js"
->>>>>>> 7d78cffc955d123b58e97651ecee9c4a39eb7bc2
   ],
   "async": [
     "128.ff463e3e9fced612f6c6.js",
