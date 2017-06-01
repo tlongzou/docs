@@ -39,7 +39,7 @@
       bottom
     >
       <v-btn primary light slot="activator" class="purple">
-        Slide X Transition
+        Slide Y Transition
       </v-btn>
       <v-list>
         <v-list-item v-for="item in items" :key="item">
