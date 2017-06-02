@@ -1,6 +1,14 @@
 <template lang="pug">
   v-app
     main-navigation
+    v-navigation-drawer(
+      right
+      persistent
+    )
+      v-list
+        v-list-item
+          v-list-tile
+            v-list-tile-title Hello
     main-toolbar
     main
       v-container(fluid)
