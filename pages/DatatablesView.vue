@@ -73,9 +73,9 @@
                 ],
                 [
                   'select-all',
-                  'Boolean',
+                  '[Boolean, String]',
                   'False',
-                  'Adds header row select all radio.'
+                  'Adds header row select all checkbox. Can either be a String which specifies which color is applied to the button (primary, secondary, success, info, warning, error) or a Boolean (which uses the primary color).'
                 ],
                 [
                   'selected-key',
@@ -118,9 +118,9 @@
                 ],
                 [
                   'loading',
-                  'Boolean',
+                  '[Boolean, String]',
                   'False',
-                  'Displays progress bar'
+                  'Displays progress bar. Can either be a String which specifies which color is applied to the progress bar (primary, secondary, success, info, warning, error) or a Boolean (which uses the primary color)'
                 ],
                 [
                   'pagination.sync',

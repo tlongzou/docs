@@ -32,7 +32,11 @@
     "28.5241a9886be8e33463e8.js",
     "29.798ee089c1aff7be4c12.js",
     "30.0786c91c89f5dc72141f.js",
+<<<<<<< HEAD
     "31.64a1f27e065c4bc39a35.js",
+=======
+    "31.5530c71ca8d7f774d819.js",
+>>>>>>> dev
     "32.d053d1f32a49e7c40eee.js",
     "33.dee373dd8687fcb7656f.js",
     "34.cbf4294c3b1ca04790cb.js",
@@ -254,6 +258,7 @@
     "250.9b9907dfdca6846da3f4.js",
     "251.b32748c973fa24e9dd7d.js",
     "vendor.41722cc57ddda2b854d9.js",
+<<<<<<< HEAD
     "app.da7cdceb89b5e576570b.js",
     "manifest.225c5d9c537b8cd3122a.js",
     "common.da7cdceb89b5e576570b.css"
@@ -262,6 +267,16 @@
     "manifest.225c5d9c537b8cd3122a.js",
     "vendor.41722cc57ddda2b854d9.js",
     "app.da7cdceb89b5e576570b.js"
+=======
+    "app.2f414dfcd611a1e30805.js",
+    "manifest.566b296af10febb3ec62.js",
+    "common.2f414dfcd611a1e30805.css"
+  ],
+  "initial": [
+    "manifest.566b296af10febb3ec62.js",
+    "vendor.41722cc57ddda2b854d9.js",
+    "app.2f414dfcd611a1e30805.js"
+>>>>>>> dev
   ],
   "async": [
     "128.ff463e3e9fced612f6c6.js",
@@ -295,7 +310,11 @@
     "28.5241a9886be8e33463e8.js",
     "29.798ee089c1aff7be4c12.js",
     "30.0786c91c89f5dc72141f.js",
+<<<<<<< HEAD
     "31.64a1f27e065c4bc39a35.js",
+=======
+    "31.5530c71ca8d7f774d819.js",
+>>>>>>> dev
     "32.d053d1f32a49e7c40eee.js",
     "33.dee373dd8687fcb7656f.js",
     "34.cbf4294c3b1ca04790cb.js",

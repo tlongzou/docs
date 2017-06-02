@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "entry": "server-bundle.js",
   "files": {
@@ -257,3 +258,5 @@
   },
   "maps": {}
 }
+=======
+>>>>>>> dev

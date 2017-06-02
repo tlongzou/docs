@@ -30,7 +30,7 @@
             {
               header: 'Baseline',
               file: 'layouts/1',
-              desc: `The default structure of the Vuetify layout is one of the few opinionated designs you will encounter in the framework. It is done so that each layout is easy to understand and works as expected for any given scenario. Below is the <strong>baseline</strong> structure for a layout. It includes a navigation drawer, toolbar, right navigation drawer, content and footer.`
+              desc: `The default structure of the Vuetify layout is one of the few opinionated designs you will encounter in the framework. It is done so that each layout is easy to understand and works as expected for any given scenario. Below is the <strong>baseline</strong> structure for a layout. It includes a navigation drawer w/ right variant, toolbar, temporary navigation drawer w/ right variant, content and footer.`
             },
             {
               header: 'Permanent drawer',
