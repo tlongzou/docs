@@ -1,6 +1,6 @@
 <template>
   <v-app id="example-1">
-    <v-navigation-drawer persistent v-model="drawer" light>
+    <v-navigation-drawer persistent v-model="drawer" light enable-resize-watcher>
       <v-list dense>
         <v-list-item>
           <v-list-tile @click.native.stop="left = !left">
@@ -14,7 +14,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-navigation-drawer persistent v-model="drawerRight" light right>
+    <v-navigation-drawer persistent v-model="drawerRight" light right light enable-resize-watcher>
       <v-list dense>
         <v-list-item>
           <v-list-tile @click.native.stop="right = !right">
@@ -35,11 +35,18 @@
       <v-toolbar-side-icon light @click.native.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
     </v-toolbar>
     <main>
-      <v-navigation-drawer temporary v-model="left"></v-navigation-drawer>
+      <v-navigation-drawer
+        temporary
+        v-model="left"
+      ></v-navigation-drawer>
       <v-container fluid>
         <!--v-router-->
       </v-container>
-      <v-navigation-drawer right temporary v-model="right"></v-navigation-drawer>
+      <v-navigation-drawer
+        right
+        temporary
+        v-model="right"
+      ></v-navigation-drawer>
     </main>
     <v-footer class="indigo">
       <span>&copy; 2017</span>
