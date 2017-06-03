@@ -16,7 +16,8 @@
             { header: 'Dark theme', file: 'selects/2', desc: 'Selects also support themeing, dark and light.' },
             { header: 'Icons', file: 'selects/3', desc: 'Use a custom prepended or appended icon.' },
             { header: 'Multiple', file: 'selects/4', desc: `A multi-select can utilize v-chip as the display for selected items.` },
-            { header: 'Scoped slots', file: 'selects/5', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` }
+            { header: 'Scoped slots', file: 'selects/5', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` },
+            { header: 'Customized item text and value', file: 'selects/6', desc: `You can specify the specific properties within your items array correspond to the text and value fields. By default, this is <strong>text</strong> and <strong>value</strong>. In this example we also use the <code>return-object</code> prop which will return the entire object of the selected item on selection.` }
           ],
           props: {
             'v-select': {
