@@ -4,7 +4,7 @@
       <v-btn primary light slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-row>
-          <v-toolbar>
+          <v-toolbar light>
             <v-btn icon="icon" @click.native="dialog = false" light>
               <v-icon>close</v-icon>
             </v-btn>
