@@ -26,7 +26,8 @@
             { header: 'Full-width text field with character counter', file: 'text-fields/12', desc: 'Light theme' },
             { header: 'Required fields', file: 'text-fields/13', desc: 'Light theme' },
             { header: 'Hint text', file: 'text-fields/14', desc: 'Light theme' },
-            { header: 'Prefixes & suffixes', file: 'text-fields/15', desc: 'Light theme' }
+            { header: 'Prefixes & suffixes', file: 'text-fields/15', desc: 'Light theme' },
+            { header: 'Custom validation', file: 'text-fields/16', desc: 'If you want to skip the built in validation and use your own or a plugin such as <a href="https://github.com/monterail/vuelidate" target="_blank">vuelidate</a> or <a href="https://github.com/logaretm/vee-validate" target="_blank">vee-validation</a>, you can use the <strong>errors</strong> or <strong>error</strong> props. Errors accepts a string or array and error simply places the field in an error state.' }
           ],
           props: {
             'v-text-field': {

@@ -63,8 +63,7 @@
               name="input-3-5"
               label="Hint Text"
               value="Input text"
-              v-bind:rules="rules"
-              class="input-group--focused"
+              error
               single-line
             ></v-text-field>
           </v-flex>

@@ -202,6 +202,18 @@
             'Callback for appended icon'
           ],
           [
+            'error',
+            'Boolean',
+            'False',
+            'Puts the input in an error state'
+          ],
+          [
+            'errors',
+            'Array',
+            '[]',
+            'Puts the input in an error state and passes through custom error messsages. Will be combined with any validations that occur from the <code>rules</code> prop.'
+          ],
+          [
             'prepend-icon',
             'String',
             '-',
