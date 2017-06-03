@@ -16,6 +16,11 @@
               persistent-hint
               required
             ></v-text-field>
+            <v-select
+              label="Age"
+              required
+              :items="['0-17', '18-29', '30-54', '54+']"
+            ></v-select>
             <small>*indicates required field</small>
           </v-card-text>
         </v-card-row>

@@ -34,7 +34,7 @@
           ],
           props: {
             'v-btn': {
-              shared: ['theme', 'contextual'],
+              shared: ['theme', 'contextual', 'router'],
               model: {
                 types: ['Boolean'],
                 default: 'False'
