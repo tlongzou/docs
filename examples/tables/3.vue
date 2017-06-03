@@ -15,7 +15,6 @@
         v-bind:headers="headers"
         v-bind:items="items"
         v-bind:search="search"
-        hide-actions
       >
       <template slot="items" scope="props">
         <td>
@@ -60,6 +59,9 @@
             ></v-text-field>
           </v-edit-dialog>
         </td>
+      </template>
+      <template slot="pageText" scope="{ pageStart, pageStop }">
+        From {{ pageStart }} to {{ pageStop }}
       </template>
     </v-data-table>
   </v-card>

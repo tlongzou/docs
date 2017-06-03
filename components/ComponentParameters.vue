@@ -211,7 +211,7 @@
             'errors',
             'Array',
             '[]',
-            'Puts the input in an error state and passes through custom error messsages. Will be combined with any validations that occur from the <code>rules</code> prop.'
+            'Puts the input in an error state and passes through custom error messsages. Will be combined with any validations that occur from the <code>rules</code> prop. This field will not trigger validation.'
           ],
           [
             'prepend-icon',
