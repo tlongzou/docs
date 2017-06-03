@@ -32,7 +32,19 @@
                   'items',
                   'Array',
                   '[]',
-                  'The array of items. Item object is required to have a <code>text</code> property'
+                  'Can be an array of objects or array of strings. When using objects, will look for a <strong>text</strong> and <strong>value</strong> field. This can be changed using the <code>item-text</code> and <code>item-value</code> props.'
+                ],
+                [
+                  'item-text',
+                  'String',
+                  'text',
+                  'Set property of <code>items</code> will be displayed on option'
+                ],
+                [
+                  'item-value',
+                  'String',
+                  'value',
+                  'Set property of <code>items</code> define option\'s value'
                 ],
                 [
                   'max-height',
