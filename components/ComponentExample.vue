@@ -47,6 +47,9 @@
 
 <script>
   import Vue from 'vue'
+  const release = process.env.RELEASE
+  const path = require('path')
+  const resolve = (file) => path.resolve(__dirname, file)
 
   export default {
     data () {
@@ -60,7 +63,8 @@
           script: null,
           style: null,
           template: null
-        }
+        },
+        url: release ? 'releases/' + release + '/' : ''
       }
     },
 
@@ -88,7 +92,7 @@
     mounted () {
       this.uid = this._uid
       const vm = this
-      import('../examples/'+this.file+'.vue').then(comp => {
+      import(`../examples/${this.file}.vue`).then(comp => {
         this.instance = new Vue(comp)
         this.instance.$mount('#example-'+vm.uid)
       })
@@ -125,7 +129,7 @@
         const xmlhttp = new XMLHttpRequest()
         const vm = this
         const timeout = setTimeout(() => this.loading = true, 500)
-        xmlhttp.open('GET', `/examples/${file}.vue`, true)
+        xmlhttp.open('GET', `/${this.url}examples/${file}.vue`, true)
 
         xmlhttp.onreadystatechange = function () {
           if(xmlhttp.status == 200 && xmlhttp.readyState == 4) {

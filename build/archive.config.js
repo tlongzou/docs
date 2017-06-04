@@ -3,18 +3,25 @@ const webpack = require('webpack')
 const vueConfig = require('./vue-loader.config')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-const isProd = process.env.NODE_ENV === 'production'
 const resolve = (file) => path.resolve(__dirname, file)
+const isProd = process.env.NODE_ENV === 'production'
+const release = process.env.RELEASE
+const rimraf = require('rimraf')
+const copyTo = `releases/${release}/`
+
+rimraf(resolve(`../releases/${release}`), function (err) {
+  err && console.log(err)
+})
 
 module.exports = {
-  devtool: isProd
-    ? false
-    : '#cheap-module-source-map',
+  entry: resolve('../assets/archive.js'),
   output: {
-    path: resolve('../public'),
-    publicPath: '/public/',
-    filename: '[name].[chunkhash].js'
+    path: resolve(`../releases/${release}/public`),
+    publicPath: `/releases/${release}/public/`,
+    filename: 'build.js'
   },
   resolve: {
     extensions: ['*', '.js', '.json', '.vue'],
@@ -65,16 +72,44 @@ module.exports = {
     maxEntrypointSize: 300000,
     hints: isProd ? 'warning' : false
   },
-  plugins: isProd
-    ? [
-        new webpack.optimize.UglifyJsPlugin({
-          compress: { warnings: false }
-        }),
-        new ExtractTextPlugin({
-          filename: 'common.[chunkhash].css'
-        })
-      ]
-    : [
-        new FriendlyErrorsPlugin()
-      ]
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false }
+    }),
+    new ExtractTextPlugin({
+      filename: 'build.css'
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"production"',
+      'process.env.RELEASE': release,
+      'process.env.VUE_ENV': '"client"'
+    }),
+    new HtmlWebpackPlugin({
+      filename: '../index.html',
+      template: 'assets/archive.template.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true
+      },
+      chunksSortMode: 'dependency'
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'static',
+        to: '../static',
+        ignore: ['.*']
+      },
+      {
+        from: 'examples',
+        to: '../examples',
+        ignore: ['.*']
+      },
+      {
+        from: 'pages',
+        to: '../pages',
+        ignore: ['.*']
+      }
+    ])
+  ]
 }

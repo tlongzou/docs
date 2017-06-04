@@ -66,6 +66,12 @@ app.use('/public', serve('./public', true))
 app.use('/examples', serve('./examples', true))
 app.use('/static/manifest.json', serve('./manifest.json', true))
 app.use('/static/robots.txt', serve('./robots.txt'))
+app.use('/releases', serve('./releases'))
+
+app.get('/releases/:release', (req, res) => {
+  res.setHeader("Content-Type", "text/html")
+  res.sendFile(resolve(`./releases/${req.params.release}`))
+})
 
 app.get('/sitemap.xml', (req, res) => {
   res.setHeader("Content-Type", "text/xml")
@@ -138,10 +144,6 @@ function render (req, res) {
     }
   })
 }
-
-app.get('*', isProd ? render : (req, res) => {
-  readyPromise.then(() => render(req, res))
-})
 
 app.get('*', isProd ? render : (req, res) => {
   readyPromise.then(() => render(req, res))

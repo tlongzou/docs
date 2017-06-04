@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const meta = require('./meta.json')
+const release = process.env.RELEASE
 
 function route (path, view) {
   return {
@@ -15,8 +16,8 @@ Vue.use(Router)
 
 export function createRouter () {
     const router = new Router({
-      base: __dirname,
-      mode: 'history',
+      base: release ? `/releases/${release}` : __dirname,
+      mode: release ? 'hash' : 'history',
       scrollBehavior: () => ({ y: 0 }),
       routes: [
         route('/', 'Home'),
@@ -66,7 +67,7 @@ export function createRouter () {
         route('/directives/tooltips', 'Tooltips'),
         route('/guides/server-side-rendering', 'SSR'),
         // Global redirect for 404
-        { path: '*', redirect: '/' }
+        // { path: '*', redirect: '/' }
       ]
     })
 

@@ -21,7 +21,7 @@
     },
 
     created () {
-      if (process.env.VUE_ENV === 'client') return
+      if (process.env.VUE_ENV !== 'server') return
 
       const metaData = meta[this.$route.path] || {}
       const section = this.$route.path.split('/')
