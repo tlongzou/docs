@@ -1,20 +1,23 @@
+// Config and utils
 const path = require('path')
 const webpack = require('webpack')
 const vueConfig = require('./vue-loader.config')
+
+// Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+// Helpers
 const resolve = (file) => path.resolve(__dirname, file)
 const isProd = process.env.NODE_ENV === 'production'
 const release = process.env.RELEASE
 const rimraf = require('rimraf')
 const copyTo = `releases/${release}/`
 
-rimraf(resolve(`../releases/${release}`), function (err) {
-  err && console.log(err)
-})
+// Remove release if already exists
+rimraf(resolve(`../releases/${release}`), err => err && console.log(err))
 
 module.exports = {
   entry: resolve('../assets/archive.js'),
@@ -73,6 +76,19 @@ module.exports = {
     hints: isProd ? 'warning' : false
   },
   plugins: [
+    // extract vendor chunks for better caching
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks: function (module) {
+        // a module is extracted into the vendor chunk if...
+        return (
+          // it's inside node_modules
+          /node_modules/.test(module.context) &&
+          // and not a CSS file (due to extract-text-webpack-plugin limitation)
+          !/\.css$/.test(module.request)
+        )
+      }
+    })
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false }
     }),

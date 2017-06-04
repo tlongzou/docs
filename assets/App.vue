@@ -9,6 +9,8 @@
   const meta = require('../router/meta.json')
 
   export default {
+    name: 'App',
+
     components: {
       default: require('layouts/Default'),
       home: require('layouts/Home')
@@ -133,6 +135,5 @@
     min-height: calc(100vh - 156px)
 
   #app
-    transition: .3s ease-in-out
-  
+    transition: .3s ease-in-out  
 </style>

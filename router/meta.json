@@ -8,7 +8,7 @@
   "/motion/transitions": {
     "h1": "Transitions",
     "title": "Transitions",
-    "description": "Make an amazing application with smooth built in animations",
+    "description": "Make an amazing application with smooth built in animations.",
     "keywords": "motion, transitions"
   },
   "/style/colors": {
@@ -20,32 +20,32 @@
   "/style/theme": {
     "h1": "Theme",
     "title": "Application theming",
-    "description": "Setup your custom application theme.",
+    "description": "Setup your custom application theme by changing a few variables.",
     "keywords": "themes"
   },
   "/style/typography": {
     "h1": "Typography",
     "title": "Application typography",
-    "description": "View the various typography styles.",
-    "keywords": "typography"
+    "description": "View the various typography styles. From headings to captions, with various weights and sizes.",
+    "keywords": "typography, headings, titles"
   },
   "/style/content": {
     "h1": "Content",
     "title": "Content styles",
-    "description": "Vuetify has custom styling for default html markup",
-    "keywords": "Content"
+    "description": "Vuetify has custom styling for default html markup.",
+    "keywords": "content, html, markup"
   },
   "/layout/pre-defined": {
     "h1": "Pre-defined",
     "title": "Application layouts",
     "description": "Select from a multitude of official material design layouts.",
-    "keywords": "pre-defined material design layouts"
+    "keywords": "pre-defined layouts, layouts, application layout, material design layouts"
   },
   "/layout/grid": {
     "h1": "Grid",
     "title": "Layout grid system",
     "description": "Vuetify supports the material design 12 point grid for laying out your application.",
-    "keywords": "grid, layout"
+    "keywords": "grid, layout, flex"
   },
   "/layout/spacing": {
     "h1": "Spacing",
@@ -75,7 +75,13 @@
     "h1": "Quick Start",
     "title": "Quick Start",
     "description": "Get started with Vue and Vuetify in no time.",
-    "keywords": "quick start, vuetify templates, server side rendering"
+    "keywords": "quick start, vuetify templates, get started"
+  },
+  "/vuetify/frequently-asked-questions": {
+    "h1": "Frequently asked questions",
+    "title": "Frequently asked questions",
+    "description": "Stuck on a problem? Check these frequently asked questions.",
+    "keywords": "frequently asked questions, faq"
   },
   "/components/alerts": {
     "h1": "Alerts",
@@ -87,13 +93,13 @@
     "h1": "Breadcrumbs",
     "title": "Breadcrumbs Component",
     "description": "The v-breadcrumbs component is a navigational helper for pages. It can accept a Material Icons icon or characters as a divider.",
-    "keywords": "breadcrumbs"
+    "keywords": "breadcrumbs, crumbs"
   },
   "/components/bottom-navigation": {
     "h1": "Bottom navigation",
     "title": "Bottom Navigation Component",
-    "description": "Bottom navigation component for Vuetify Framework.",
-    "keywords": "bottom navigation, navigation"
+    "description": "The v-bottom-nav component is primarily for mobile use and acts as the primary navigation.",
+    "keywords": "bottom nav, material nav, nav, bottom navigation, navigation"
   },
   "/components/cards": {
     "h1": "Cards",

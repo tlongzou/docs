@@ -1,9 +1,13 @@
+// Config and utils
 const path = require('path')
 const webpack = require('webpack')
 const vueConfig = require('./vue-loader.config')
+
+// Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
+// Helpers
 const isProd = process.env.NODE_ENV === 'production'
 const resolve = (file) => path.resolve(__dirname, file)
 
