@@ -53,8 +53,8 @@
         },
         minMaxValues: {
           hours: {
-            min: 9,
-            max: 3
+            min: '9AM',
+            max: '3PM'
           },
           minutes: {
             min: 30,
