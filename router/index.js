@@ -23,6 +23,7 @@ export function createRouter () {
     routes: [
       route('/', 'Home'),
       route('/vuetify/quick-start', 'QuickStart'),
+      route('/vuetify/sandbox', 'Sandbox'),
       route('/vuetify/frequently-asked-questions', 'Faq'),
       route('/motion/transitions', 'Transitions'),
       route('/style/colors', 'Colors'),

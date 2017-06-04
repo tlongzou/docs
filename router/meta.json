@@ -5,6 +5,24 @@
     "description": "Vuetify.js is a reusable semantic component framework for Vue.js 2. It aims to provide clean, semantic and reusable components.",
     "keywords": "vue, vue 2, vue js, vue.js, material design, vue components, material design components, vuetify, vuetify.js"
   },
+  "/vuetify/quick-start": {
+    "h1": "Quick Start",
+    "title": "Quick Start",
+    "description": "Get started with Vue and Vuetify in no time.",
+    "keywords": "quick start, vuetify templates, get started"
+  },
+  "/vuetify/sandbox": {
+    "h1": "Sandbox",
+    "title": "Sandbox",
+    "description": "Play around with the available configuring options for your next application.",
+    "keywords": "sandbox, vuetify, layout sandbox"
+  },
+  "/vuetify/frequently-asked-questions": {
+    "h1": "Frequently asked questions",
+    "title": "Frequently asked questions",
+    "description": "Stuck on a problem? Check these frequently asked questions.",
+    "keywords": "frequently asked questions, faq"
+  },
   "/motion/transitions": {
     "h1": "Transitions",
     "title": "Transitions",
@@ -70,18 +88,6 @@
     "title": "Elevation helpers",
     "description": "Elevation helper classes allow you to control relative depth, or distance, between two surfaces along the z-axis.",
     "keywords": "elevation helper classes"
-  },
-  "/vuetify/quick-start": {
-    "h1": "Quick Start",
-    "title": "Quick Start",
-    "description": "Get started with Vue and Vuetify in no time.",
-    "keywords": "quick start, vuetify templates, get started"
-  },
-  "/vuetify/frequently-asked-questions": {
-    "h1": "Frequently asked questions",
-    "title": "Frequently asked questions",
-    "description": "Stuck on a problem? Check these frequently asked questions.",
-    "keywords": "frequently asked questions, faq"
   },
   "/components/alerts": {
     "h1": "Alerts",

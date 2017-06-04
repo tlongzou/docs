@@ -90,6 +90,7 @@
             group: 'vuetify',
             items: [
               { href: '/vuetify/quick-start', title: 'Quick start' },
+              { href: '/vuetify/sandbox', title: 'Sandbox' },
               { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' }
             ]
           },
