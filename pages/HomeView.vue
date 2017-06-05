@@ -1,6 +1,6 @@
 <template lang="pug">
-  div#home-view
-    v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'transparent elevation-0']" light)
+  div#home-view.white
+    v-toolbar(fixed :class="[toolbar ? 'toolbar--home' : 'transparent elevation-0']" dark)
       img(src="/static/v.png" height="38px")
       v-spacer
       v-toolbar-items
