@@ -20,12 +20,20 @@
       <v-container fluid>
         <v-layout align-center justify-center>
           <v-flex xs8>
-            <v-card height="200px"></v-card>
+            <v-card>
+              <v-card-text style="height: 300px;"></v-card-text>
+              <v-card-row actions>
+                <v-btn flat>Cancel</v-btn>
+                <v-btn flat primary>Submit</v-btn>
+              </v-card-row>
+            </v-card>
           </v-flex>
         </v-layout>
       </v-container>
     </main>
-    <v-footer></v-footer>
+    <v-footer>
+      <span>&copy; {{ new Date().getFullYear() }}</span>
+    </v-footer>
   </v-app>
 </template>
 
@@ -47,6 +55,7 @@
 <style>
   #sandbox {
     border: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
   }
   #sandbox .container, #sandbox {
     min-height: 700px;

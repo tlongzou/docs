@@ -1,7 +1,6 @@
 <template>
   <div class="text-xs-center">
     <v-btn
-      light
       secondary
       :loading="loading"
       @click.native="loader = 'loading'"
@@ -11,18 +10,16 @@
     </v-btn>
 
     <v-btn
-      light
       :loading="loading3"
       @click.native="loader = 'loading3'"
       :disabled="loading3"
-      class="blue-grey"
+      class="blue-grey white--text"
     >
       Upload
       <v-icon right light>cloud_upload</v-icon>
     </v-btn>
 
     <v-btn
-      light
       success
       :loading="loading2"
       @click.native="loader = 'loading2'"
@@ -33,7 +30,6 @@
     </v-btn>
 
     <v-btn
-      light
       info
       :loading="loading4"
       @click.native="loader = 'loading4'"
