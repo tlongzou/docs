@@ -81,8 +81,10 @@
       z-index: 0
 
       [data-app]
+        border: 1px solid rgba(#000, .1)
         overflow: hidden
         height: 400px
+        min-height: 0
         elevation(2)
 
         .navigation-drawer, .toolbar, .overlay

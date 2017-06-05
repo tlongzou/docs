@@ -16,7 +16,7 @@
         </v-list>
       </v-card>
     </v-navigation-drawer>
-    <v-toolbar class="purple" light>
+    <v-toolbar class="purple" dark>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
