@@ -12,8 +12,8 @@
       :clipped="primaryDrawer.clipped"
       absolute
     ></v-navigation-drawer>
-    <v-toolbar light>
-      <v-toolbar-side-icon light></v-toolbar-side-icon>
+    <v-toolbar>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Vuetify</v-toolbar-title>
     </v-toolbar>
     <main>
