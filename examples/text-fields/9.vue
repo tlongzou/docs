@@ -3,8 +3,8 @@
     <v-layout row wrap>
       <v-flex sm12 md6 class="my-3">
         <v-card>
-          <v-app top-toolbar id="example-9-1">
-            <v-toolbar>
+          <v-app top-toolbar id="example-9-1" style="min-height: 0;">
+            <v-toolbar class="primary">
               <v-btn icon>
                 <v-icon class="white--text">arrow_back</v-icon>
               </v-btn>
@@ -42,8 +42,8 @@
       </v-flex>
       <v-flex sm12 md6 class="my-3">
         <v-card>
-          <v-app top-toolbar id="example-9-2">
-            <v-toolbar>
+          <v-app top-toolbar id="example-9-2" style="min-height: 0;">
+            <v-toolbar class="primary">
               <v-btn icon>
                 <v-icon class="white--text">arrow_back</v-icon>
               </v-btn>

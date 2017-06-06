@@ -11,7 +11,7 @@
               name="input-1-3"
               label="Hint Text"
               single-line
-              light
+              dark
             ></v-text-field>
           </v-flex>
         </v-layout>
@@ -24,7 +24,7 @@
               name="input-2-3"
               label="Hint Text"
               class="input-group--focused"
-              light
+              dark
               single-line
             ></v-text-field>
           </v-flex>
@@ -39,7 +39,7 @@
               label="Hint Text"
               value="Input text"
               class="input-group--focused"
-              light
+              dark
               single-line
             ></v-text-field>
           </v-flex>
@@ -53,7 +53,7 @@
               name="input-3-4"
               label="Hint Text"
               value="Input text"
-              light
+              dark
               single-line
             ></v-text-field>
           </v-flex>
@@ -69,7 +69,7 @@
               value="Input text"
               v-bind:rules="[() => 'Username or Password is incorrect.']"
               class="input-group--focused"
-              light
+              dark
               single-line
             ></v-text-field>
           </v-flex>
@@ -84,7 +84,7 @@
               label="Label Text"
               value="Input text"
               disabled
-              light
+              dark
               single-line
             ></v-text-field>
           </v-flex>

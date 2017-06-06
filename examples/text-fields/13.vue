@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 md6 offset-md3>
         <v-card>
-          <v-toolbar class="indigo" light>
+          <v-toolbar class="indigo" dark>
             <v-toolbar-title>DMV Application</v-toolbar-title>
           </v-toolbar>
           <v-card-text>

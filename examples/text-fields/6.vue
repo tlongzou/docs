@@ -11,12 +11,12 @@
               name="input-1-3"
               label="Hint Text"
               single-line
-              light
+              dark
               prepend-icon="phone"
             ></v-text-field>
           </v-flex>
           <v-flex xs3>
-            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
+            <v-select v-bind:items="[{ text: 'Mobile' }]" label="Mobile" dark></v-select>
           </v-flex>
         </v-layout>
         <v-layout row>
@@ -31,11 +31,11 @@
               prepend-icon="phone"
               value="650"
               single-line
-              light
+              dark
             ></v-text-field>
           </v-flex>
           <v-flex xs3>
-            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
+            <v-select v-bind:items="[{ text: 'Mobile' }]" label="Mobile" dark></v-select>
           </v-flex>
         </v-layout>
         <v-layout row>
@@ -49,11 +49,11 @@
               value="650-555-1234"
               prepend-icon="phone"
               single-line
-              light
+              dark
             ></v-text-field>
           </v-flex>
           <v-flex xs3>
-            <v-btn-dropdown v-bind:options="[{ text: 'Mobile' }]" label="Mobile" light></v-btn-dropdown>
+            <v-select v-bind:items="[{ text: 'Mobile' }]" label="Mobile" dark></v-select>
           </v-flex>
         </v-layout>
       </v-container>

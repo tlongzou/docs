@@ -21,7 +21,9 @@
         <v-layout align-center justify-center>
           <v-flex xs8>
             <v-card>
-              <v-card-text style="height: 300px;"></v-card-text>
+              <v-card-text style="height: 300px;">
+                <v-switch primary label="Dark" v-model="dark"></v-switch>
+              </v-card-text>
               <v-card-row actions>
                 <v-btn flat>Cancel</v-btn>
                 <v-btn flat primary>Submit</v-btn>
@@ -40,7 +42,7 @@
 <script>
   export default {
     data: () => ({
-      dark: false,
+      dark: true,
       primaryDrawer: {
         model: true,
         permanent: false,
