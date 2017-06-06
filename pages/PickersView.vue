@@ -89,6 +89,12 @@
                   'Array, Object, Function',
                   'null',
                   'Restricts which dates can be selected'
+                ],
+                [
+                  'first-day-of-week',
+                  'String',
+                  'Sundary',
+                  'Sets the first day of the week'
                 ]
               ]
             },
