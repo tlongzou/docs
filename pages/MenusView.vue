@@ -134,6 +134,18 @@
                   'Boolean',
                   'False',
                   'Conditionally renders content on mounted'
+                ],
+                [
+                  'position-x',
+                  'Number',
+                  '0',
+                  'Used to position the menu when not using an activator slot'
+                ],
+                [
+                  'position-y',
+                  'Number',
+                  '0',
+                  'Used to position the menu when not using an activator slot'
                 ]
               ]
             }
