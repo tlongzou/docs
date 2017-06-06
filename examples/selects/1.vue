@@ -8,7 +8,7 @@
           </v-flex>
           <v-flex xs6>
             <v-select
-              v-bind:items="states"
+              v-bind:items="options"
               v-model="e1"
               label="Select"
               dark
@@ -61,9 +61,14 @@
 </template>
 
 <script>
+const options = new Array(100).fill(0).map(
+  function (currentValue, index, array) {
+    return {id: index, name: 'Name ' + index}
+})
   export default {
     data () {
       return {
+        options,
         e1: null,
         e2: null,
         e3: null,
