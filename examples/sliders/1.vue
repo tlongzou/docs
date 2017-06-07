@@ -1,8 +1,8 @@
 <template>
   <v-card>
     <v-card-text>
-      <v-slider v-model="value1" dark></v-slider>
-      <v-slider v-model="value2" dark disabled></v-slider>
+      <v-slider v-model="value1"></v-slider>
+      <v-slider v-model="value2" disabled></v-slider>
     </v-card-text>
   </v-card>
 </template>

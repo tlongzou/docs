@@ -2,11 +2,11 @@
   <v-card>
     <v-subheader>Media volume</v-subheader>
     <v-card-text>
-      <v-slider dark prepend-icon="volume_up" v-model="media"></v-slider>
+      <v-slider prepend-icon="volume_up" v-model="media"></v-slider>
     </v-card-text>
     <v-subheader>Alarm volume</v-subheader>
     <v-card-text>
-      <v-slider dark append-icon="alarm" v-model="alarm"></v-slider>
+      <v-slider append-icon="alarm" v-model="alarm"></v-slider>
     </v-card-text>
   </v-card>
 </template>
