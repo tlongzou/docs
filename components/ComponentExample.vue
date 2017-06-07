@@ -5,7 +5,7 @@
         span.white--text(v-text="header")
         v-spacer
         v-btn(
-          light
+          dark
           icon
           tag="a"
           v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/examples/'+file+'.vue'"
@@ -14,7 +14,7 @@
         )
           v-icon edit
         v-btn(
-          light
+          dark
           icon
           v-on:click.native.stop="panel = !panel"
           v-tooltip:left="{ html: 'View source' }"

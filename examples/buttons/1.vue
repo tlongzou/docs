@@ -5,16 +5,16 @@
         <v-card height="225px" class="elevation-0 white">
           <v-card-text>
             <div>
-              <v-btn dark flat>Normal</v-btn>
+              <v-btn flat>Normal</v-btn>
             </div>
             <div>
-              <v-btn dark flat class="btn--dark-flat-focused">Focused</v-btn>
+              <v-btn flat class="btn--dark-flat-focused">Focused</v-btn>
             </div>
             <div>
-              <v-btn dark flat class="btn--dark-flat-pressed">Pressed</v-btn>
+              <v-btn flat class="btn--dark-flat-pressed">Pressed</v-btn>
             </div>
             <div>
-              <v-btn dark flat disabled>Disabled</v-btn>
+              <v-btn flat disabled>Disabled</v-btn>
             </div>
           </v-card-text>
         </v-card>
@@ -23,16 +23,16 @@
         <v-card height="225px" class="secondary elevation-0">
           <v-card-text>
             <div>
-              <v-btn flat light>Normal</v-btn>
+              <v-btn flat dark>Normal</v-btn>
             </div>
             <div>
-              <v-btn flat light class="btn--light-flat-focused">Focused</v-btn>
+              <v-btn flat dark class="btn--light-flat-focused">Focused</v-btn>
             </div>
             <div>
-              <v-btn flat light class="btn--light-flat-pressed">Pressed</v-btn>
+              <v-btn flat dark class="btn--light-flat-pressed">Pressed</v-btn>
             </div>
             <div>
-              <v-btn flat light disabled>Disabled</v-btn>
+              <v-btn flat dark disabled>Disabled</v-btn>
             </div>
           </v-card-text>
         </v-card>

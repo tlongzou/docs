@@ -11,7 +11,6 @@
               v-bind:items="states"
               v-model="e1"
               label="Select"
-              dark
               single-line
               auto
             ></v-select>
@@ -25,7 +24,6 @@
               v-model="e2"
               label="Select"
               class="input-group--focused"
-              dark
               item-value="text"
             ></v-select>
           </v-flex>
@@ -38,7 +36,6 @@
               v-bind:items="items"
               v-model="e3"
               v-bind:rules="[() => e3 && e3.text && e3.text.length > 0 || 'Please select an option']"
-              dark
               item-value="text"
             ></v-select>
           </v-flex>
@@ -51,7 +48,6 @@
               v-bind:items="items"
               v-model="e4"
               disabled
-              dark
             ></v-select>
           </v-flex>
         </v-layout>

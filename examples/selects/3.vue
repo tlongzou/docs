@@ -11,7 +11,6 @@
               v-bind:items="states"
               v-model="e1"
               label="Select"
-              dark
               single-line
               auto
               prepend-icon="map"
@@ -26,7 +25,6 @@
               v-bind:items="states"
               v-model="e2"
               label="Select"
-              dark
               single-line
               auto
               append-icon="map"

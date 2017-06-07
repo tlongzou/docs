@@ -1,15 +1,15 @@
 <template>
   <v-layout row justify-center>
     <v-dialog v-model="dialog" fullscreen transition="v-dialog-bottom-transition" :overlay=false>
-      <v-btn primary light slot="activator">Open Dialog</v-btn>
+      <v-btn primary dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-row>
-          <v-toolbar>
-            <v-btn icon="icon" @click.native="dialog = false" light>
+          <v-toolbar dark class="primary">
+            <v-btn icon="icon" @click.native="dialog = false" dark>
               <v-icon>close</v-icon>
             </v-btn>
             <v-toolbar-title>Settings</v-toolbar-title>
-            <v-btn light flat @click.native="dialog = false">Save</v-btn>
+            <v-btn dark flat @click.native="dialog = false">Save</v-btn>
           </v-toolbar>
         </v-card-row>
 

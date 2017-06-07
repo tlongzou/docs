@@ -13,8 +13,8 @@
       )
     v-spacer
     v-menu
-      v-btn(flat slot="activator" light) Version: {{ release || 'Latest' }}
-        v-icon(light) arrow_drop_down
+      v-btn(flat slot="activator" dark) Version: {{ release || 'Latest' }}
+        v-icon arrow_drop_down
       v-list
         v-list-item(
           v-for="(release, i) in releases"

@@ -11,7 +11,6 @@
               v-bind:items="items"
               v-model="select"
               label="Select"
-              dark
               single-line
               item-text="state"
               item-value="abbr"

@@ -15,7 +15,6 @@
               item-value="name"
               multiple
               chips
-              dark
               max-height="auto"
               autocomplete
             >

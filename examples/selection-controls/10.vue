@@ -12,10 +12,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true"  dark></v-switch>
+                  <v-switch value input-value="true" ></v-switch>
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch dark></v-switch>
+                  <v-switch ></v-switch>
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="dark--text">
@@ -24,10 +24,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true" dark disabled></v-switch>
+                  <v-switch value input-value="true" disabled></v-switch>
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch dark disabled></v-switch>
+                  <v-switch disabled></v-switch>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -45,10 +45,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true" light></v-switch>
+                  <v-switch value input-value="true" dark></v-switch>
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch light></v-switch>
+                  <v-switch dark></v-switch>
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="light--text">
@@ -57,10 +57,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-switch value="true" input-value="true" light disabled></v-switch>
+                  <v-switch value input-value="true" dark disabled></v-switch>
                 </v-flex>
                 <v-flex xs6>
-                  <v-switch light disabled></v-switch>
+                  <v-switch dark disabled></v-switch>
                 </v-flex>
               </v-layout>
             </v-container>

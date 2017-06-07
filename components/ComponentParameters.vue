@@ -7,7 +7,7 @@
         single-line
         v-bind:items="items"
         v-model="component"
-        bottom
+        auto
       )
       v-spacer
       v-spacer

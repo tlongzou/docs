@@ -6,8 +6,8 @@
         <v-card class="elevation-0">
           <v-card-text>
             <p>{{ ex8 || 'null' }}</p>
-            <v-radio label="Radio 1" v-model="ex8" value="radio-1" dark></v-radio>
-            <v-radio label="Radio 2" v-model="ex8" value="radio-2" dark></v-radio>
+            <v-radio label="Radio 1" v-model="ex8" value="radio-1"></v-radio>
+            <v-radio label="Radio 2" v-model="ex8" value="radio-2"></v-radio>
           </v-card-text>
         </v-card>
       </v-flex>
@@ -16,8 +16,8 @@
         <v-card class="secondary elevation-0">
           <v-card-text>
             <p class="white--text">{{ ex9 || 'null' }}</p>
-            <v-radio label="Radio 3" v-model="ex9" value="radio-3" light></v-radio>
-            <v-radio label="Radio 4" v-model="ex9" value="radio-4" light></v-radio>
+            <v-radio label="Radio 3" v-model="ex9" value="radio-3" dark></v-radio>
+            <v-radio label="Radio 4" v-model="ex9" value="radio-4" dark></v-radio>
           </v-card-text>
         </v-card>
       </v-flex>

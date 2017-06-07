@@ -17,7 +17,7 @@
               v-list-tile-title(slot="activator")
                 span Vuetify
                 v-icon(light) arrow_drop_down
-              v-list(class="grey darken-2")
+              v-list(class="grey darken-2" dark)
                 v-list-item
                   v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
                     v-list-tile-action
@@ -40,7 +40,7 @@
                     v-list-tile-title Facebook
           v-spacer
           v-list-tile-action
-            v-btn(icon light v-on:click.native.stop="mini = !mini")
+            v-btn(icon dark v-on:click.native.stop="mini = !mini")
               v-icon chevron_left
     v-divider
     v-list(dense)

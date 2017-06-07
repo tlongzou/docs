@@ -21,7 +21,7 @@
                 v-icon widgets
             v-btn(
               tag="a"
-              v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/src/pages/'+doc.edit+'.vue'"
+              v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/pages/'+doc.edit+'.vue'"
               target="_blank"
               icon
               light

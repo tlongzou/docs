@@ -1,7 +1,7 @@
 <template>
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
-      <v-card class="teal">
+      <v-card>
         <v-toolbar class="teal white--text" light>
           <v-toolbar-side-icon light></v-toolbar-side-icon>
           <v-toolbar-title>Manage</v-toolbar-title>
@@ -9,9 +9,9 @@
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-toolbar>
-        <v-list>
+        <v-list class="teal">
           <template v-for="item in items">
-            <v-divider v-if="item.divider" light></v-divider>
+            <v-divider v-if="item.divider" dark></v-divider>
             <v-subheader v-else-if="item.header" v-text="item.header" class="grey--text text--lighten-4"></v-subheader>
             <v-list-item v-else>
               <v-list-tile slot="item" light>

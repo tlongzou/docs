@@ -12,7 +12,6 @@
               v-bind:items="states"
               v-model="e6"
               multiple
-              dark
               max-height="400"
               hint="Pick your favorite states"
               persistent-hint
@@ -28,7 +27,6 @@
               v-model="e7"
               multiple
               chips
-              dark
               hint="What are the target regions"
               persistent-hint
             ></v-select>

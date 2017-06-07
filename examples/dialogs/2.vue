@@ -1,7 +1,7 @@
 <template>
   <v-layout row justify-center>
     <v-dialog v-model="dialog" persistent>
-      <v-btn primary light slot="activator">Open Dialog</v-btn>
+      <v-btn primary dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-row>
           <v-card-title>Use Google's location service?</v-card-title>

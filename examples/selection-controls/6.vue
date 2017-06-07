@@ -45,10 +45,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-radio value="radio-5" input-value="radio-5" light></v-radio>
+                  <v-radio value="radio-5" input-value="radio-5" dark></v-radio>
                 </v-flex>
                 <v-flex xs6>
-                  <v-radio input-value="radio-6" light></v-radio>
+                  <v-radio input-value="radio-6" dark></v-radio>
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="light--text">
@@ -57,10 +57,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-radio value="radio-7" input-value="radio-7"  light disabled></v-radio>
+                  <v-radio value="radio-7" input-value="radio-7" dark disabled></v-radio>
                 </v-flex>
                 <v-flex xs6>
-                  <v-radio input-value="radio-8" light disabled></v-radio>
+                  <v-radio input-value="radio-8" dark disabled></v-radio>
                 </v-flex>
               </v-layout>
             </v-container>

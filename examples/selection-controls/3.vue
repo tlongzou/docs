@@ -13,13 +13,13 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs4>
-                  <v-checkbox input-value="true" value="true" dark></v-checkbox>
+                  <v-checkbox input-value="true" value></v-checkbox>
                 </v-flex>
                 <v-flex xs4>
-                  <v-checkbox value="" dark></v-checkbox>
+                  <v-checkbox value></v-checkbox>
                 </v-flex>
                 <v-flex xs4>
-                  <v-checkbox value="" indeterminate dark></v-checkbox>
+                  <v-checkbox value indeterminate></v-checkbox>
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="dark--text">
@@ -28,10 +28,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-checkbox input-value="true" value="true" dark disabled></v-checkbox>
+                  <v-checkbox input-value="true" value disabled></v-checkbox>
                 </v-flex>
                 <v-flex xs6>
-                  <v-checkbox value="" dark disabled></v-checkbox>
+                  <v-checkbox value disabled></v-checkbox>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -50,13 +50,13 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs4>
-                  <v-checkbox input-value="true" value="true" light></v-checkbox>
+                  <v-checkbox input-value="true" value dark></v-checkbox>
                 </v-flex>
                 <v-flex xs4>
-                  <v-checkbox value="" light></v-checkbox>
+                  <v-checkbox value dark></v-checkbox>
                 </v-flex>
                 <v-flex xs4>
-                  <v-checkbox value="" indeterminate light></v-checkbox>
+                  <v-checkbox value indeterminate dark></v-checkbox>
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="light--text">
@@ -65,10 +65,10 @@
               </v-layout>
               <v-layout row wrap>
                 <v-flex xs6>
-                  <v-checkbox input-value="true" value="true" light disabled></v-checkbox>
+                  <v-checkbox input-value="true" value dark disabled></v-checkbox>
                 </v-flex>
                 <v-flex xs6>
-                  <v-checkbox value="" light disabled></v-checkbox>
+                  <v-checkbox value dark disabled></v-checkbox>
                 </v-flex>
               </v-layout>
             </v-container>

@@ -4,7 +4,7 @@
       <v-card height="200px">
         <v-card-row class="blue white--text">
           <v-menu bottom right>
-            <v-btn icon="icon" slot="activator" light>
+            <v-btn icon slot="activator" dark>
               <v-icon>more_vert</v-icon>
             </v-btn>
             <v-list>
