@@ -21,6 +21,7 @@
             { header: "Time pickers - Dark", file: "pickers/5", desc: 'An alternate dark theme can be used for dark theme applications.'},
             { header: "Time pickers - In dialog and menu", file: "pickers/6", desc: 'Due to the flexibility of pickers, you can really dial in the experience exactly how you want it.'},
             { header: "Time pickers - 24h format", file: "pickers/7", desc: 'A time picker can be switched to 24hr format.'},
+            { header: "Time pickers - Allowed times", file: "pickers/10", desc: 'You can specify allowed times using arrays, objects, and functions.'},
           ],
           props: {
             'v-date-picker': {
@@ -140,6 +141,18 @@
                   'Boolean',
                   'False',
                   'Allows the use of the mousewheel in the picker'
+                ],
+                [
+                  'allowed-hours',
+                  'Array, Object, Function',
+                  'null',
+                  'Restricts which hours can be selected'
+                ],
+                [
+                  'allowed-minutes',
+                  'Array, Object, Function',
+                  'null',
+                  'Restricts which minutes can be selected'
                 ]
               ]
             }
