@@ -2,7 +2,6 @@
   <v-card class="elevation-0">
     <v-card-text>
       <v-container fluid>
-
         <v-layout row wrap>
           <v-flex xs12 sm4 md2>
             <v-switch label="Primary" v-model="ex17" value="primary" primary hide-details></v-switch>
