@@ -14,6 +14,9 @@
           desc: 'The <code>v-menu</code> component shows a menu at the position of the element used to activate it.',
           examples: [
             { header: 'Activator', file: 'menus/1', desc: 'Remember to put the element that activates the menu in the <code>activator</code> slot.' },
+            { header: 'Absolute position', file: 'menus/4', desc: 'Menus can also be placed absolutely on top of the activator element using the <code>position-absolutely</code> prop. Try clicking anywhere on the image.' },
+            { header: 'Absolute position without activator', file: 'menus/5', desc: 'Menus can also be used without an activator by using <code>position-absolutely</code> together with the props <code>position-x</code> and <code>position-y</code>. Try right-clicking anywhere on the image.' },
+            { header: 'Hover', file: 'menus/6', desc: 'Menus can be accessed using hover instead of clicking with the <code>open-on-hover</code> prop.' },
             { header: 'Menus', file: 'menus/2', desc: 'Menus can be placed within almost any component.' },
             { header: 'Custom transitions', file: 'menus/3', desc: `Vuetify comes with 3 standard transitions, <strong>scale</strong>, <strong>slide-x</strong> and <strong>slide-y</strong>. You can also create your own and pass it as the transition argument. For an example of how the stock transitions are constructed, visit <a href="https://github.com/vuetifyjs/vuetify/blob/master/src/util/helpers.js#L13" target="_blank">here</a>.` }
           ],
@@ -133,6 +136,18 @@
                   'Boolean',
                   'False',
                   'Conditionally renders content on mounted'
+                ],
+                [
+                  'position-x',
+                  'Number',
+                  '0',
+                  'Used to position the menu when not using an activator slot'
+                ],
+                [
+                  'position-y',
+                  'Number',
+                  '0',
+                  'Used to position the menu when not using an activator slot'
                 ]
               ]
             }
