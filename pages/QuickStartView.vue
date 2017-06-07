@@ -114,6 +114,26 @@
                 v-list-tile-action
                   v-icon(v-if="!browser.supported").error--text clear
                   v-icon(v-else).success--text check
+
+    section
+      section-header Internet Explorer 11 Support
+      section-text To use Vuetify.js with Internet Explorer, you must include a polyfill in your project. Vuetify.js can work with either <a href="https://polyfill.io/v2/docs/" target="_blank">polyfill.io</a> or <a href="https://babeljs.io/docs/usage/polyfill/#installation" target="_blank">babel-polyfill</a>. The polyfill must be loaded before your project source code. Other polyfills may be needed to use specific features in your project.
+
+      section-text Due to Internet Explorer's limited support for &lt;template&gt; tags, you must take care to send fully compiled dom elements to the browser. This can be done by either building your Vue code in advance or by creating helper components to replace the dom elements. For instance, if sent directly to IE, this will fail:
+
+      markup(lang="html")
+        | &lt;template slot="items" scope="props"&gt;
+        |   &lt;td&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/td&gt;
+
+      section-text With a &lt;cell&gt; helper component, this would succeed:
+
+      markup(lang="html")
+        | &lt;template slot="items" scope="props"&gt;
+        |   &lt;cell&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/cell&gt;
+
+      markup(lang="js")
+        | Vue.component('cell',{ template: '&lt;td&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/td&gt;'});
+
 </template>
 
 <script>
