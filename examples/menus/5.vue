@@ -1,7 +1,9 @@
 <template>
-  <div class="text-xs-center">
-    <v-menu offset-y v-model="showMenu" :position-absolutely="true">
-      <v-card class="portrait" img="/static/doc-images/cards/girl.jpg" height="300px" slot="activator"></v-card>
+  <div>
+    <v-layout flex justify-center>
+      <v-card class="portrait" img="/static/doc-images/cards/girl.jpg" height="300px" @contextmenu="show"></v-card>
+    </v-layout>
+    <v-menu offset-y v-model="showMenu" :position-absolutely="true" :position-x="x" :position-y="y">
       <v-list>
         <v-list-item v-for="item in items" :key="item">
           <v-list-tile>
@@ -46,8 +48,3 @@
     }
   }
 </script>
-
-<style lang="stylus">
-  .portrait.card
-    width: 600px
-</style>

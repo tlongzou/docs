@@ -1,7 +1,7 @@
 <template>
   <div class="text-xs-center">
-    <v-menu offset-y v-model="showMenu" :position-absolutely="true">
-      <v-card class="portrait" img="/static/doc-images/cards/girl.jpg" height="300px" slot="activator"></v-card>
+    <v-menu open-on-hover>
+      <v-btn primary light slot="activator">Dropdown</v-btn>
       <v-list>
         <v-list-item v-for="item in items" :key="item">
           <v-list-tile>
@@ -17,9 +17,6 @@
   export default {
     data () {
       return {
-        showMenu: false,
-        x: 0,
-        y: 0,
         items: [
           {
             title: 'Click Me'
@@ -35,19 +32,6 @@
           }
         ]
       }
-    },
-    methods: {
-      show (e) {
-        e.preventDefault()
-        this.showMenu = true
-        this.x = e.clientX
-        this.y = e.clientY
-      }
     }
   }
 </script>
-
-<style lang="stylus">
-  .portrait.card
-    width: 600px
-</style>
