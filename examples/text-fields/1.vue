@@ -11,6 +11,8 @@
               name="input-1"
               label="Label Text"
               id="testing"
+              prepend-icon="list"
+              counter
             ></v-text-field>
           </v-flex>
         </v-layout>

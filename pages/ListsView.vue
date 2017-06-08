@@ -109,7 +109,6 @@
           functional: {
             'v-list': {
               params: [
-                ['v-list-item', 'list__item'],
                 ['v-list-tile-action', 'list__tile__action--stack'],
                 ['v-list-tile-action-text', 'list__tile__action-text'],
                 ['v-list-tile-avatar', 'list__tile__avatar'],
@@ -121,9 +120,6 @@
           },
           slots: {
             'v-list': {
-              shared: ['default']
-            },
-            'v-list-item': {
               shared: ['default']
             },
             'v-list-tile': {

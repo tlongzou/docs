@@ -104,16 +104,15 @@
             v-for="browser in browsers"
             v-bind:key="browser"
           ).px-0
-            v-list-item
-              v-list-tile(avatar tag="ul")
-                v-list-tile-avatar
-                  v-icon(fa light).primary {{ browser.icon }}
-                v-list-tile-content
-                  v-list-tile-title {{ browser.title }}
-                  v-list-tile-sub-title {{ browser.supported ? 'Supported' : 'Not supported' }}
-                v-list-tile-action
-                  v-icon(v-if="!browser.supported").error--text clear
-                  v-icon(v-else).success--text check
+            v-list-tile(avatar tag="ul")
+              v-list-tile-avatar
+                v-icon(fa light).primary {{ browser.icon }}
+              v-list-tile-content
+                v-list-tile-title {{ browser.title }}
+                v-list-tile-sub-title {{ browser.supported ? 'Supported' : 'Not supported' }}
+              v-list-tile-action
+                v-icon(v-if="!browser.supported").error--text clear
+                v-icon(v-else).success--text check
 
     section
       section-header Internet Explorer 11 Support

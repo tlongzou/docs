@@ -7,37 +7,36 @@
     enable-resize-watcher
   )
     v-list.pa-0.vuetify
-      v-list-item
-        v-list-tile(avatar tag="div")
-          v-list-tile-avatar
-            router-link(to="/")
-              img(src="/static/v.png" v-bind:style="filter")
-          v-list-tile-content.show-overflow
-            v-menu(transition="v-scale-transition" origin="top")
-              v-list-tile-title(slot="activator")
-                span Vuetify
-                v-icon(light) arrow_drop_down
-              v-list(class="grey darken-2" dark)
-                v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa light) github
-                  v-list-tile-title Github
-                v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa light) comments-o
-                  v-list-tile-title Chat
-                v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa light) twitter
-                  v-list-tile-title Twitter
-                v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
-                  v-list-tile-action
-                    v-icon(fa light) facebook
-                  v-list-tile-title Facebook
-          v-spacer
-          v-list-tile-action
-            v-btn(icon dark v-on:click.native.stop="mini = !mini")
-              v-icon chevron_left
+      v-list-tile(avatar tag="div")
+        v-list-tile-avatar
+          router-link(to="/")
+            img(src="/static/v.png" v-bind:style="filter")
+        v-list-tile-content.show-overflow
+          v-menu(transition="v-scale-transition" origin="top")
+            v-list-tile-title(slot="activator")
+              span Vuetify
+              v-icon(light) arrow_drop_down
+            v-list(class="grey darken-2" dark)
+              v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
+                v-list-tile-action
+                  v-icon(fa light) github
+                v-list-tile-title Github
+              v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
+                v-list-tile-action
+                  v-icon(fa light) comments-o
+                v-list-tile-title Chat
+              v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
+                v-list-tile-action
+                  v-icon(fa light) twitter
+                v-list-tile-title Twitter
+              v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
+                v-list-tile-action
+                  v-icon(fa light) facebook
+                v-list-tile-title Facebook
+        v-spacer
+        v-list-tile-action
+          v-btn(icon dark v-on:click.native.stop="mini = !mini")
+            v-icon chevron_left
     v-divider
     v-list(dense)
       template(v-for="item in items")
@@ -49,28 +48,27 @@
               v-list-tile-title {{ item.title }}
             v-list-tile-action
               v-icon(light) keyboard_arrow_down
-          v-list-item(v-for="subItem in item.items" v-bind:key="subItem")
-            v-list-tile(
-              :href="subItem.href"
-              v-bind:router="!subItem.target"
-              ripple
-              v-bind:disabled="subItem.disabled"
-              v-bind:target="subItem.target"
-            )
-              v-list-tile-content
-                v-list-tile-title {{ subItem.title }}
-              v-list-tile-action(v-if="subItem.action")
-                v-icon(light class="success--text") {{ subItem.action }}
+          v-list-tile(
+            v-for="subItem in item.items" v-bind:key="subItem"
+            :href="subItem.href"
+            v-bind:router="!subItem.target"
+            ripple
+            v-bind:disabled="subItem.disabled"
+            v-bind:target="subItem.target"
+          )
+            v-list-tile-content
+              v-list-tile-title {{ subItem.title }}
+            v-list-tile-action(v-if="subItem.action")
+              v-icon(light class="success--text") {{ subItem.action }}
         v-subheader(v-else-if="item.header" light) {{ item.header }}
         v-divider(v-else-if="item.divider")
-        v-list-item(v-else)
-          v-list-tile(:href="item.href" router ripple v-bind:disabled="item.disabled")
-            v-list-tile-action
-              v-icon(light) {{ item.action }}
-            v-list-tile-content
-              v-list-tile-title {{ item.title }}
-            v-list-tile-action(v-if="item.subAction")
-              v-icon(light class="success--text") {{ item.subAction }}
+        v-list-tile(:href="item.href" router ripple v-bind:disabled="item.disabled" v-else)
+          v-list-tile-action
+            v-icon(light) {{ item.action }}
+          v-list-tile-content
+            v-list-tile-title {{ item.title }}
+          v-list-tile-action(v-if="item.subAction")
+            v-icon(light class="success--text") {{ item.subAction }}
 </template>
 
 <script>
