@@ -13,20 +13,18 @@
           </v-btn>
         </v-toolbar>
         <v-list two-line>
-          <v-list-item v-for="(item, index) in items" v-bind:key="item.title">
-            <v-list-tile avatar ripple>
-              <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                <v-list-tile-sub-title class="grey--text text--darken-4">{{ item.headline }}</v-list-tile-sub-title>
-                <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-              <v-list-tile-action>
-                <v-list-tile-action-text>{{ item.action }}</v-list-tile-action-text>
-                <v-icon class="grey--text text--lighten-1">star_border</v-icon>
-              </v-list-tile-action>
-            </v-list-tile>
+          <v-list-tile avatar ripple v-for="(item, index) in items" v-bind:key="item.title">
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              <v-list-tile-sub-title class="grey--text text--darken-4">{{ item.headline }}</v-list-tile-sub-title>
+              <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
+            </v-list-tile-content>
+            <v-list-tile-action>
+              <v-list-tile-action-text>{{ item.action }}</v-list-tile-action-text>
+              <v-icon class="grey--text text--lighten-1">star_border</v-icon>
+            </v-list-tile-action>
             <v-divider v-if="index + 1 &lt; items.length"></v-divider>
-          </v-list-item>
+          </v-list-tile>
         </v-list>
       </v-card>
     </v-flex>

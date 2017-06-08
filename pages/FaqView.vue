@@ -6,10 +6,18 @@
           dt(slot="title") Frequently asked questions
           dd(slot="desc") Stuck on a particular problem? Check some of these common gotchas before creating a ticket. If you still cannot find what you are looking for, submit an <a href="https://github.com/vuetifyjs/vuetify/issues/new" target="_blank">issue</a> on github.
       ad
+    section
+      v-list
+        v-list-tile
+          v-list-tile-avatar
+            v-icon fiber_manual_record
+          v-list-tile-title(v-text="faq.title")
 </template>
 
 <script>
   export default {
-    //
+    data: () => ({
+      faq: []
+    })
   }
 </script>

@@ -13,16 +13,14 @@
           <template v-for="item in items">
             <v-divider v-if="item.divider"></v-divider>
             <v-subheader v-else-if="item.header" v-text="item.header"></v-subheader>
-            <v-list-item v-else>
-              <v-list-tile slot="item">
-                <v-list-tile-action>
-                  <v-icon light>{{ item.action }}</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list-item>
+            <v-list-tile slot="item" v-else>
+              <v-list-tile-action>
+                <v-icon light>{{ item.action }}</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
           </template>
         </v-list>
       </v-card>

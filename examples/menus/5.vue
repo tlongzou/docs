@@ -5,11 +5,9 @@
     </v-layout>
     <v-menu offset-y v-model="showMenu" :position-absolutely="true" :position-x="x" :position-y="y">
       <v-list>
-        <v-list-item v-for="item in items" :key="item">
-          <v-list-tile>
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-          </v-list-tile>
-        </v-list-item>
+        <v-list-tile v-for="item in items" :key="item">
+          <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+        </v-list-tile>
       </v-list>
     </v-menu>
   </div>

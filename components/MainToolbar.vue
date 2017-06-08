@@ -16,22 +16,20 @@
       v-btn(flat slot="activator" dark) Version: {{ release || 'Latest' }}
         v-icon arrow_drop_down
       v-list
-        v-list-item(
+        v-list-tile(
+          router
+          to="/"
+          v-if="i === 0"
           v-for="(release, i) in releases"
           v-bind:key="release"
         )
-          v-list-tile(
-            router
-            to="/"
-            v-if="i === 0"
-          )
-            v-list-tile-title {{ release }}
-          v-list-tile(
-            tag="a"
-            v-else
-            :href="`/releases/${release}`"
-          )
-            v-list-tile-title {{ release }}
+          v-list-tile-title {{ release }}
+        v-list-tile(
+          tag="a"
+          v-else
+          :href="`/releases/${release}`"
+        )
+          v-list-tile-title {{ release }}
 </template>
 
 <script>

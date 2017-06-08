@@ -34,21 +34,19 @@
             class="my-4"
             :key="i"
           ></v-divider>
-          <v-list-item
+          <v-list-tile
             :key="i"
             v-else
           >
-            <v-list-tile>
-              <v-list-tile-action>
-                <v-icon>{{ item.icon }}</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>
-                  {{ item.text }}
-                </v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list-item>
+            <v-list-tile-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title>
+                {{ item.text }}
+              </v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
         </template>
       </v-list>
     </v-navigation-drawer>

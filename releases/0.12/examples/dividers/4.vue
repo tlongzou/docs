@@ -15,40 +15,36 @@
         </v-toolbar>
         <v-list two-line subheader>
           <v-subheader inset>Folders</v-subheader>
-          <v-list-item v-for="item in items" v-bind:key="item.title">
-            <v-list-tile avatar>
-              <v-list-tile-avatar>
-                <v-icon v-bind:class="[item.iconClass]">{{ item.icon }}</v-icon>
-              </v-list-tile-avatar>
-              <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-              <v-list-tile-action>
-                <v-btn icon>
-                  <v-icon class="grey--text text--lighten-1">info</v-icon>
-                </v-btn>
-              </v-list-tile-action>
-            </v-list-tile>
-          </v-list-item>
+          <v-list-tile avatar v-for="item in items" v-bind:key="item.title">
+            <v-list-tile-avatar>
+              <v-icon v-bind:class="[item.iconClass]">{{ item.icon }}</v-icon>
+            </v-list-tile-avatar>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
+            </v-list-tile-content>
+            <v-list-tile-action>
+              <v-btn icon>
+                <v-icon class="grey--text text--lighten-1">info</v-icon>
+              </v-btn>
+            </v-list-tile-action>
+          </v-list-tile>
           <v-divider inset></v-divider>
           <v-subheader inset>Files</v-subheader>
-          <v-list-item v-for="item in items2" v-bind:key="item.title">
-            <v-list-tile>
-              <v-list-tile-avatar>
-                <v-icon v-bind:class="[item.iconClass]">{{ item.icon }}</v-icon>
-              </v-list-tile-avatar>
-              <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
-              </v-list-tile-content>
-              <v-list-tile-action>
-                <v-btn icon>
-                  <v-icon class="grey--text text--lighten-1">info</v-icon>
-                </v-btn>
-              </v-list-tile-action>
-            </v-list-tile>
-          </v-list-item>
+          <v-list-tile v-for="item in items2" v-bind:key="item.title">
+            <v-list-tile-avatar>
+              <v-icon v-bind:class="[item.iconClass]">{{ item.icon }}</v-icon>
+            </v-list-tile-avatar>
+            <v-list-tile-content>
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+              <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
+            </v-list-tile-content>
+            <v-list-tile-action>
+              <v-btn icon>
+                <v-icon class="grey--text text--lighten-1">info</v-icon>
+              </v-btn>
+            </v-list-tile-action>
+          </v-list-tile>
         </v-list>
       </v-card>
     </v-flex>

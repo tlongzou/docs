@@ -9,16 +9,12 @@
             <v-icon>more_vert</v-icon>
           </v-btn>
           <v-list>
-            <v-list-item>
-              <v-list-tile>
-                <v-list-tile-title>Remove Card</v-list-tile-title>
-              </v-list-tile>
-            </v-list-item>
-            <v-list-item>
-              <v-list-tile>
-                <v-list-tile-title>Send Feedback</v-list-tile-title>
-              </v-list-tile>
-            </v-list-item>
+            <v-list-tile>
+              <v-list-tile-title>Remove Card</v-list-tile-title>
+            </v-list-tile>
+            <v-list-tile>
+              <v-list-tile-title>Send Feedback</v-list-tile-title>
+            </v-list-tile>
           </v-list>
         </v-menu>
       </v-card-title>
