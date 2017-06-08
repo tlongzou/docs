@@ -29,7 +29,7 @@
               ).grey.lighten-2
                 v-icon(fa left medium) github
                 span Github
-              v-btn(light large router href="/vuetify/quick-start").green.lighten-2
+              v-btn(dark large router href="/vuetify/quick-start").green.lighten-2
                 span Get Started
                 v-icon(right light) chevron_right
 

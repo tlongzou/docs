@@ -1,13 +1,13 @@
 <template>
-  <v-toolbar class="red" light>
-    <v-toolbar-side-icon light></v-toolbar-side-icon>
+  <v-toolbar class="red" dark>
+    <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title>Toolbar</v-toolbar-title>
     <v-toolbar-items>
-      <v-btn light icon>
+      <v-btn dark icon>
         <v-icon>list</v-icon>
       </v-btn>
       <v-menu left top origin="bottom right" transition="v-scale-transition">
-        <v-btn light icon slot="activator">
+        <v-btn dark icon slot="activator">
           <v-icon>more_vert</v-icon>
         </v-btn>
         <v-list>
