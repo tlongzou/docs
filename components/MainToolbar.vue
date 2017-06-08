@@ -1,6 +1,6 @@
 <template lang="pug">
   v-toolbar(:class="[color]" fixed dark)#main-toolbar
-    v-toolbar-side-icon( light
+    v-toolbar-side-icon(
       v-on:click.native.stop="$store.commit('vuetify/SIDEBAR', !$store.state.sidebar)"
     )
 

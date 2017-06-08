@@ -1,7 +1,6 @@
 <template>
-  <v-card height="30vh">
+  <v-card height="30vh" style="overflow: hidden;">
     <v-app id="example-4">
-      <!-- z-index is specifically for displaying this in the documentation -->
       <v-navigation-drawer 
         permanent
         absolute
