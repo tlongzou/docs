@@ -14,7 +14,8 @@
           desc: `The <code>v-data-table</code> component is used for displaying tabular data. Features include sorting, searching, pagination, inline-editing, header tooltips, and row selection.`,
           examples: [
             { header: 'Standard', file: 'tables/1', desc: 'The standard data-table contains data with no additional functionality. You can opt out of displaying table actions that allow you to control the pagination of information with the <code>hide-actions</code> prop.' },
-            { header: 'Slots', file: 'tables/7', desc: 'The <code>items</code> slot can accept both a collection of <kbd>td</kbd> tags, or if you want control of the entire row, a <kbd>tr</kbd> tag.' },
+            { header: 'Slots: items and headers', file: 'tables/7', desc: 'The <code>items</code> and <code>headers</code> slots can accept either a collection of <kbd>td/th</kbd> tags, or if you want control of the entire row, a <kbd>tr</kbd> tag.' },
+            { header: 'Slots: headerCell', file: 'tables/8', desc: 'If you only want to apply some common markup or effect on each of the header cells, you can use the slot <code>headerCell</code>. In this example is has been used to apply a tooltip to each header.' },
             { header: 'Selectable rows', file: 'tables/2', desc: 'Selectable rows allow you to perform an action on specific and all rows.' },
             { header: 'Search with custom page text', file: 'tables/3', desc: 'The data table exposes a <code>search</code> prop that allows you to filter your data.' },
             { header: 'External pagination', file: 'tables/4', desc: 'Pagination can be controlled externally by using the <code>pagination</code> prop. Remember that you must apply the <code>.sync</code> modifier.' },
@@ -180,12 +181,16 @@
             'v-data-table': {
               params: [
                 [
+                  'scope[headerCell]',
+                  'The scoped slot for each individual header cell. The available prop is <code>header</code> which is the current header. Can be used to apply some markup or effect to each cell, such as a tooltip.'
+                ],
+                [
                   'scope[headers]',
-                  'The scoped slot for modifying headers.'
+                  'The scoped slot for templating the headers. The available prop is <code>headers</code>. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all headers.'
                 ],
                 [
                   'scope[items]',
-                  'The scoped slot for templating the row display. Available props are the currently iterated <code>item</code> and its <code>index</code>.'
+                  'The scoped slot for templating the row display. Available props are the currently iterated <code>item</code> and a boolean property <code>selected</code> which indicates if the item is currently selected or not. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all columns.'
                 ],
                 [
                   'scope[pageText]',

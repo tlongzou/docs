@@ -2,14 +2,30 @@
   <v-data-table
       v-model="selected"
       v-bind:headers="headers"
-      :items="items"
-      hide-actions
-      class="elevation-1"
+      v-bind:items="items"
+      v-bind:select-all="true"
+      v-bind:pagination.sync="pagination"
       selected-key="name"
-      :select-all="true"
+      class="elevation-1"
     >
     <template slot="headers" scope="props">
-      <span>{{ props.item.text }}</span>
+      <tr>
+        <th>
+          <v-checkbox
+            primary
+            hide-details
+            @click.native="toggleAll"
+            :input-value="selected.length === items.length"
+          ></v-checkbox>
+        </th>
+        <th v-for="header in props.headers" :key="header"
+          :class="['column sortable', pagination.descending ? 'desc' : 'asc', header.value === pagination.sortBy ? 'active' : '']"
+          @click="changeSort(header.value)"
+        >
+          <v-icon>arrow_upward</v-icon>
+          {{ header.text }}
+        </th>
+      </tr>
     </template>
     <template slot="items" scope="props">
       <tr :active="props.selected" @click="props.selected = !props.selected">
@@ -37,12 +53,14 @@
   export default {
     data () {
       return {
+        pagination: {
+          sortBy: 'name'
+        },
         selected: [],
         headers: [
           {
             text: 'Dessert (100g serving)',
             left: true,
-            sortable: false,
             value: 'name'
           },
           { text: 'Calories', value: 'calories' },
@@ -165,6 +183,20 @@
             iron: '6%'
           }
         ]
+      }
+    },
+    methods: {
+      toggleAll () {
+        if (this.selected.length) this.selected = []
+        else this.selected = this.items.slice()
+      },
+      changeSort (column) {
+        if (this.pagination.sortBy === column) {
+          this.pagination.descending = !this.pagination.descending
+        } else {
+          this.pagination.sortBy = column
+          this.pagination.descending = false
+        }
       }
     }
   }

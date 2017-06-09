@@ -7,9 +7,9 @@
       v-bind:pagination.sync="pagination"
       class="elevation-1"
     >
-      <template slot="headers" scope="props">
-        <span v-tooltip:bottom="{ 'html': props.item.text }">
-          {{ props.item.text }}
+      <template slot="headerCell" scope="props">
+        <span v-tooltip:bottom="{ 'html': props.header.text }">
+          {{ props.header.text }}
         </span>
       </template>
       <template slot="items" scope="props">

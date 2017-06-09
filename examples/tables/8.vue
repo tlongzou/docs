@@ -1,42 +1,31 @@
 <template>
-  <div>
-    <v-data-table
+  <v-data-table
       v-bind:headers="headers"
-      v-bind:items="items"
-      v-bind:search="search"
-      v-bind:pagination.sync="pagination"
-      :total-items="totalItems"
-      :loading="loading"
+      :items="items"
       class="elevation-1"
     >
-      <template slot="headerCell" scope="props">
-        <span v-tooltip:bottom="{ 'html': props.header.text }">
-          {{ props.header.text }}
-        </span>
-      </template>
-      <template slot="items" scope="props">
-        <td>{{ props.item.name }}</td>
-        <td  class="text-xs-right">{{ props.item.calories }}</td>
-        <td  class="text-xs-right">{{ props.item.fat }}</td>
-        <td  class="text-xs-right">{{ props.item.carbs }}</td>
-        <td  class="text-xs-right">{{ props.item.protein }}</td>
-        <td  class="text-xs-right">{{ props.item.sodium }}</td>
-        <td  class="text-xs-right">{{ props.item.calcium }}</td>
-        <td  class="text-xs-right">{{ props.item.iron }}</td>
-      </template>
-    </v-data-table>
-  </div>
+    <template slot="headerCell" scope="props">
+      <span v-tooltip:bottom="{ 'html': props.header.text }">
+        {{ props.header.text }}
+      </span>
+    </template>
+    <template slot="items" scope="props">
+      <td>{{ props.item.name }}</td>
+      <td class="text-xs-right">{{ props.item.calories }}</td>
+      <td class="text-xs-right">{{ props.item.fat }}</td>
+      <td class="text-xs-right">{{ props.item.carbs }}</td>
+      <td class="text-xs-right">{{ props.item.protein }}</td>
+      <td class="text-xs-right">{{ props.item.sodium }}</td>
+      <td class="text-xs-right">{{ props.item.calcium }}</td>
+      <td class="text-xs-right">{{ props.item.iron }}</td>
+    </template>
+  </v-data-table>
 </template>
 
 <script>
   export default {
     data () {
       return {
-        search: '',
-        totalItems: 0,
-        items: [],
-        loading: true,
-        pagination: {},
         headers: [
           {
             text: 'Dessert (100g serving)',
@@ -51,69 +40,8 @@
           { text: 'Sodium (mg)', value: 'sodium' },
           { text: 'Calcium (%)', value: 'calcium' },
           { text: 'Iron (%)', value: 'iron' }
-        ]
-      }
-    },
-    watch: {
-      pagination: {
-        handler () {
-          this.getDataFromApi()
-            .then(data => {
-              this.items = data.items
-              this.totalItems = data.total
-            })
-        },
-        deep: true
-      }
-    },
-    mounted () {
-      this.getDataFromApi()
-        .then(data => {
-          this.items = data.items
-          this.totalItems = data.total
-        })
-    },
-    methods: {
-      getDataFromApi () {
-        this.loading = true
-        return new Promise((resolve, reject) => {
-          const { sortBy, descending, page, rowsPerPage } = this.pagination
-
-          let items = this.getUsers()
-          const total = items.length
-
-          if (this.pagination.sortBy) {
-            items = items.sort((a, b) => {
-              const sortA = a[sortBy]
-              const sortB = b[sortBy]
-
-              if (descending) {
-                if (sortA < sortB) return 1
-                if (sortA > sortB) return -1
-                return 0
-              } else {
-                if (sortA < sortB) return -1
-                if (sortA > sortB) return 1
-                return 0
-              }
-            })
-          }
-
-          if (rowsPerPage > 0) {
-            items = items.slice((page - 1) * rowsPerPage, page * rowsPerPage)
-          }
-
-          setTimeout(() => {
-            this.loading = false
-            resolve({
-              items,
-              total
-            })
-          }, 1000)
-        })
-      },
-      getUsers () {
-        return [
+        ],
+        items: [
           {
             value: false,
             name: 'Frozen Yogurt',
