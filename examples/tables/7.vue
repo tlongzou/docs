@@ -1,34 +1,34 @@
 <template>
   <v-data-table
-    v-bind:headers="headers"
-    v-bind:items="items"
-    v-bind:search="search"
-    v-model="selected"
-    selected-key="name"
-    :select-all="true"
-    class="elevation-1"
-  >
+      v-model="selected"
+      v-bind:headers="headers"
+      :items="items"
+      hide-actions
+      class="elevation-1"
+      selected-key="name"
+      :select-all="true"
+    >
     <template slot="headers" scope="props">
-      <span v-tooltip:bottom="{ 'html': props.item.text }">
-        {{ props.item.text }}
-      </span>
+      <span>{{ props.item.text }}</span>
     </template>
     <template slot="items" scope="props">
-      <td>
-        <v-checkbox
-          primary
-          hide-details
-          v-model="props.selected"
-        ></v-checkbox>
-      </td>
-      <td>{{ props.item.name }}</td>
-      <td  class="text-xs-right">{{ props.item.calories }}</td>
-      <td  class="text-xs-right">{{ props.item.fat }}</td>
-      <td  class="text-xs-right">{{ props.item.carbs }}</td>
-      <td  class="text-xs-right">{{ props.item.protein }}</td>
-      <td  class="text-xs-right">{{ props.item.sodium }}</td>
-      <td  class="text-xs-right">{{ props.item.calcium }}</td>
-      <td  class="text-xs-right">{{ props.item.iron }}</td>
+      <tr :active="props.selected" @click="props.selected = !props.selected">
+        <td>
+          <v-checkbox
+            primary
+            hide-details
+            :input-value="props.selected"
+          ></v-checkbox>
+        </td>
+        <td>{{ props.item.name }}</td>
+        <td class="text-xs-right">{{ props.item.calories }}</td>
+        <td class="text-xs-right">{{ props.item.fat }}</td>
+        <td class="text-xs-right">{{ props.item.carbs }}</td>
+        <td class="text-xs-right">{{ props.item.protein }}</td>
+        <td class="text-xs-right">{{ props.item.sodium }}</td>
+        <td class="text-xs-right">{{ props.item.calcium }}</td>
+        <td class="text-xs-right">{{ props.item.iron }}</td>
+      </tr>
     </template>
   </v-data-table>
 </template>
@@ -37,7 +37,6 @@
   export default {
     data () {
       return {
-        search: '',
         selected: [],
         headers: [
           {
