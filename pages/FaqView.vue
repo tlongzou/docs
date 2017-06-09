@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class="doc")
+  doc-view
     v-layout(column-xs row-sm)
       v-flex(xs12 sm8 md12)
         section-def

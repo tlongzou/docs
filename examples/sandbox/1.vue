@@ -6,23 +6,49 @@
   >
     <v-navigation-drawer
       v-model="primaryDrawer.model"
-      :permanent="primaryDrawer.permanent"
-      :persistent="primaryDrawer.persistent"
-      :temporary="primaryDrawer.temporary"
+      :permanent="primaryDrawer.type === 'permanent'"
+      :persistent="primaryDrawer.type === 'persistent'"
+      :temporary="primaryDrawer.type === 'temporary'"
       :clipped="primaryDrawer.clipped"
+      :floating="primaryDrawer.floating"
+      :mini-variant="primaryDrawer.mini"
       absolute
+      overflow
     ></v-navigation-drawer>
     <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native.stop="primaryDrawer.model = !primaryDrawer.model"></v-toolbar-side-icon>
       <v-toolbar-title>Vuetify</v-toolbar-title>
     </v-toolbar>
     <main>
       <v-container fluid>
         <v-layout align-center justify-center>
-          <v-flex xs8>
+          <v-flex xs10>
             <v-card>
-              <v-card-text style="height: 300px;">
-                <v-switch primary label="Dark" v-model="dark"></v-switch>
+              <v-card-text>
+                <v-layout row wrap>
+                  <v-flex md4>
+                    <span>Scheme</span>
+                    <v-switch primary label="Dark" v-model="dark"></v-switch>
+                  </v-flex>
+                  <v-flex md4>
+                    <span>Drawer</span>
+                    <v-radio
+                      primary
+                      :label="drawer"
+                      v-model="primaryDrawer.type"
+                      :value="drawer.toLowerCase()"
+                      v-for="drawer in drawers"
+                      :key="drawer"
+                    ></v-radio>
+                    <v-switch label="Clipped" v-model="primaryDrawer.clipped" primary></v-switch>
+                    <v-switch label="Floating" v-model="primaryDrawer.floating" primary></v-switch>
+                    <v-switch label="Mini" v-model="primaryDrawer.mini" primary></v-switch>
+                  </v-flex>
+                  <v-flex md4>
+                    <span>Footer</span>
+                    <v-switch label="Fixed" v-model="footer.fixed" primary></v-switch>
+                  </v-flex>
+                </v-layout>
               </v-card-text>
               <v-card-row actions>
                 <v-btn flat>Cancel</v-btn>
@@ -33,7 +59,7 @@
         </v-layout>
       </v-container>
     </main>
-    <v-footer>
+    <v-footer :absolute="footer.fixed">
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
@@ -43,12 +69,16 @@
   export default {
     data: () => ({
       dark: true,
+      drawers: ['Permanent', 'Persistent', 'Temporary'],
       primaryDrawer: {
         model: true,
-        permanent: false,
-        persistent: true,
-        temporary: false,
-        clipped: false
+        type: 'persistent',
+        clipped: false,
+        floating: false,
+        mini: false
+      },
+      footer: {
+        fixed: false
       }
     })
   }
