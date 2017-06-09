@@ -65,6 +65,12 @@
                   'Removes floating label'
                 ],
                 [
+                  'auto',
+                  'Boolean',
+                  'False',
+                  'Centers list on selected element',
+                ],
+                [
                   'light',
                   'Boolean',
                   'True',
