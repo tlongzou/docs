@@ -41,7 +41,8 @@
           default: this.makeSlot(),
           theme: this.makeTheme(),
           input: this.makeInput(),
-          overlay: this.makeOverlay()
+          overlay: this.makeOverlay(),
+          detachable: this.makeDetach()
         }
       }
     },
@@ -79,6 +80,11 @@
             desc: d[3]
           }
         })
+      },
+      makeDetach () {
+        return [[
+          'content-class', 'String', '-', 'Applies a custom class to the detached element. This is useful because the content is moved to the end of the app and is not targettable by classes passed directly on the component.'
+        ]]
       },
       makeSlot () {
         return [[

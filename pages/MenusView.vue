@@ -22,6 +22,7 @@
           ],
           props: {
             'v-menu': {
+              shared: ['detachable'],
               params: [
                 [
                   'top',

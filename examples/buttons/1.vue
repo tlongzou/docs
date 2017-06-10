@@ -23,7 +23,7 @@
               <v-btn flat dark>Normal</v-btn>
             </div>
             <div>
-              <v-btn flat primary>Primary</v-btn>
+              <v-btn flat dark primary>Primary</v-btn>
             </div>
             <div>
               <v-btn flat dark disabled>Disabled</v-btn>

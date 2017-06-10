@@ -19,10 +19,12 @@
             { header: 'Modal', file: 'dialogs/2', desc: `Similar to a Simple Dialog, except that it's not dismissed when touching outside.` },
             { header: 'Fullscreen', file: 'dialogs/3', desc: `Due to limited space, full-screen dialogs may be more appropriate for mobile devices than dialogs used on devices with larger screens.` },
             { header: 'Form', file: 'dialogs/4', desc: `Just a simple example of a form in a dialog.` },
-            { header: 'Scrollable', file: 'dialogs/5', desc: `Example of a dialog with scrollable content.` }
+            { header: 'Scrollable', file: 'dialogs/5', desc: `Example of a dialog with scrollable content.` },
+            { header: 'Overflowed', file: 'dialogs/6', desc: `Modals that do not fit within the available window space will scroll the container.` },
           ],
           props: {
             'v-dialog': {
+              shared: ['overlay', 'detachable'],
               params: [
                 [
                   'persistent',
@@ -41,12 +43,6 @@
                   'Boolean',
                   'False',
                   'Lazily load dialog contents'
-                ],
-                [
-                  'hide-overlay',
-                  'Boolean',
-                  'False',
-                  'Hide the display of the overlay',
                 ],
                 [
                   'transition',

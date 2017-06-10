@@ -20,8 +20,7 @@
           examples: [
             { header: "Flat", file: "buttons/1", desc: ``},
             { header: "Raised", file: "buttons/2", desc: ``},
-            { header: "Button Dropdown", file: "buttons/3", desc: `Button dropdowns are similar to selects, but come with different style options and are made to work with the <code>v-app-bar</code> component.`},
-            { header: "Button Dropdown Variants", file: "buttons/4", desc: ``},
+            { header: "Button Dropdown Variants", file: "buttons/4", desc: `Button dropdowns are regular selects with additional styling.` },
             { header: "Button Toggle", file: "buttons/5", desc: `Toggle buttons are essentially styled radio or checkboxes, depending on the properties selected. This component is compatible with the <code>v-app-bar</code> component.`},
             { header: "Icon", file: "buttons/6", desc: `Icons can be used for the primary content of a button.`},
             { header: "App Bar", file: "buttons/7", desc: `The application bar is useful for mimicing the design of a native application.`},
@@ -114,63 +113,6 @@
                 ]
               ]
             },
-            'v-btn-dropdown': {
-              model: {
-                types: ['String', 'Object'],
-                default: '-',
-                description: 'Sets selected value'
-              },
-              params: [
-                [
-                  'light',
-                  'Boolean',
-                  'True',
-                  'Applies the light theme'
-                ],
-                [
-                  'dark',
-                  'Boolean',
-                  'False',
-                  'Applies the dark theme'
-                ],
-                [
-                  'editable',
-                  'Boolean',
-                  'False',
-                  'Makes the value editable'
-                ],
-                [
-                  'options',
-                  'Array',
-                  '[]',
-                  'Option Props: [text, icon]'
-                ],
-                [
-                  'max-height',
-                  'String, Number',
-                  '200',
-                  'Designate the maximum height of the dropdown'
-                ],
-                [
-                  'overflow',
-                  'Boolean',
-                  'False',
-                  'Designates the dropdown as an overflow btn'
-                ],
-                [
-                  'label',
-                  'String',
-                  'Select',
-                  'Sets placeholder text if no model value present'
-                ],
-                [
-                  'segmented',
-                  'Boolean',
-                  'False',
-                  'Designates the dropdown as a segmented btn'
-                ]
-              ]
-            },
             'v-btn-toggle': {
               params: [
                 [
@@ -205,11 +147,6 @@
             }
           },
           events: {
-            'v-btn-dropdown': {
-              params: [
-                ['input', 'String, Number', 'Selected value']
-              ]
-            },
             'v-btn-toggle': {
               params: [
                 ['input', 'String, Number', 'Selected button(s)']
