@@ -16,8 +16,8 @@
             <v-btn-toggle v-bind:options="toggle_options" v-model="toggle_none"></v-btn-toggle>
           </v-flex>
           <v-flex xs12 sm12 md6 class="py-2">
-            <p>One Option Selected</p>
-            <v-btn-toggle v-bind:options="toggle_options_multiple" multiple v-model="toggle_one"> </v-btn-toggle>
+            <p>Mandatory</p>
+            <v-btn-toggle v-bind:options="toggle_options_multiple" mandatory v-model="toggle_one"> </v-btn-toggle>
           </v-flex>
           <v-flex xs12 sm12 md6 class="py-2">
             <p>Text Options</p>
@@ -40,7 +40,7 @@
         text: 4,
         icon: null,
         toggle_none: null,
-        toggle_one: [2],
+        toggle_one: null,
         toggle_exclusive: 2,
         toggle_multiple: [1, 2, 3],
         toggle_text_icon: [
