@@ -1,15 +1,35 @@
 <template>
-  <v-layout justify-space-around>
-    <v-icon large class="green--text text--darken-2">business</v-icon>
+  <div class="text-xs-center">
+    <v-btn class="primary white--text">Accept
+      <v-icon light right>check_circle</v-icon>
+    </v-btn>
 
-    <v-icon large class="blue--text text--darken-2">chat</v-icon>
+    <v-btn class="red white--text">Decline
+      <v-icon light right>block</v-icon>
+    </v-btn>
 
-    <v-icon large class="purple--text text--darken-2">dialpad</v-icon>
+    <v-btn dark>
+      <v-icon light left>remove_circle</v-icon>Cancel
+    </v-btn>
 
-    <v-icon large class="teal--text text--darken-2">email</v-icon>
+    <v-btn class="orange darken-2 white--text">
+      <v-icon light left>arrow_back</v-icon>Back
+    </v-btn>
 
-    <v-icon large class="blue-grey--text text--darken-2">call_split</v-icon>
+    <v-btn class="purple white--text">
+      <v-icon light>build</v-icon>
+    </v-btn>
 
-    <v-icon large class="orange--text text--darken-2">present_to_all</v-icon>
-  </v-layout>
+    <v-btn class="indigo white--text">
+      <v-icon light>backup</v-icon>
+    </v-btn>
+
+    <v-btn icon>
+      <v-icon class="blue--text text--lighten-2">thumb_up</v-icon>
+    </v-btn>
+
+    <v-btn icon>
+      <v-icon class="red--text text--lighten-2">thumb_down</v-icon>
+    </v-btn>
+  </div>
 </template>

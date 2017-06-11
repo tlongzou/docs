@@ -130,10 +130,12 @@
 
 <style lang="stylus">
   @import './stylus/main'
-  
+
   [data-app] > main > .container
     min-height: calc(100vh - 156px)
 
   #app
-    transition: .3s ease-in-out  
+    transition: .3s ease-in-out
 </style>
+
+<style src="../node_modules/mdi/css/materialdesignicons.css"></style>

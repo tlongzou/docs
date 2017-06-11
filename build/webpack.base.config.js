@@ -53,10 +53,10 @@ module.exports = {
       },
       {
         test: /\.styl$/,
-        loader: ['style', 'css', 'stylus']
+        loader: ['style-loader', 'css-loader', 'stylus-loader']
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)(\?.*)?$/,
         loader: 'url-loader',
         query: {
           limit: 10000,
