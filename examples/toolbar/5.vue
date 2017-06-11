@@ -1,33 +1,34 @@
 <template>
-  <div id="toolbar-image">
-    <v-toolbar class="transparent elevation-0" dark>
-      <v-toolbar-title class="hidden-sm-and-down">Toolbar</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
-        <v-toolbar-item v-for="item in items" :key="item">
-          {{ item.title }}
-        </v-toolbar-item>
-      </v-toolbar-items>
+  <v-card class="grey lighten-5" flat>
+    <v-toolbar class="primary elevation-0" extended>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
     </v-toolbar>
-  </div>
+    <v-layout row>
+      <v-flex xs8 offset-xs2>
+        <v-card class="card--flex-toolbar">
+          <v-toolbar card class="white">
+            <v-toolbar-title class="body-2 grey--text">Title</v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-btn icon>
+              <v-icon>search</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon>apps</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon>more_vert</v-icon>
+            </v-btn>
+          </v-toolbar>
+          <v-divider></v-divider>
+          <v-card-text style="height: 200px;"></v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-card>
 </template>
 
-<script>
-  export default {
-    data () {
-      return {
-        items: [
-          { title: 'Send Feedback' },
-          { title: 'Request Help' },
-          { title: 'Contact Developer' }
-        ]
-      }
-    }
-  }
-</script>
-
 <style>
-  #toolbar-image {
-    background: url('/static/doc-images/hero_bg.png');
+  .card--flex-toolbar {
+    margin-top: -64px;
   }
 </style>

@@ -13,11 +13,11 @@
           edit: 'ToolbarsView',
           desc: 'The <code>v-toolbar</code> component is pivotol to any gui, as it generally is the primary source of site navigation. The toolbar component works great in cojunction with a sidebar for hiding links and presenting an activator to open the sidebar on mobile.',
           examples: [
-            { header: 'With icons', file: 'toolbar/1', desc: 'You can use icons for your applications various actions.' },
-            { header: 'With items', file: 'toolbar/2', desc: 'Toolbar items implement the <code>router-link</code> mixin and have access to <strong>router-link</strong> and <strong>nuxt-link</strong> props.' },
-            { header: 'With dropdown', file: 'toolbar/3', desc: 'Menu dropdowns can be used within a toolbar to provide more space for actionable items.' },
-            { header: 'With dropdown', file: 'toolbar/4', desc: 'You can control the display of the menu to best suite your application.' },
-            { header: 'Transparent', file: 'toolbar/5', desc: 'Using css helper classes, you can make a toolbar transparent' },
+            { header: 'Default', file: 'toolbar/1', desc: 'A toolbar is a flexible container that can be utilized in a number of ways.' },
+            { header: 'App bar', file: 'toolbar/2', desc: 'An App bar is the primary toolbar of your application. It can contain icons, menus and more.' },
+            { header: 'App bar with extension', file: 'toolbar/3', desc: 'Menu dropdowns can be used within a toolbar to provide more space for actionable items.' },
+            { header: 'Column width with hierarchy', file: 'toolbar/4', desc: 'Toolbars and be placed anywhere and can represent different sets of actions.' },
+            { header: 'Flexible toolbar and card toolbar', file: 'toolbar/5', desc: 'With a few custom styles, you can easily create your own custom interfaces.' },
             { header: 'With search', file: 'toolbar/6', desc: 'Add a text-field to a toolbar to provide a search.' }
           ],
           props: {

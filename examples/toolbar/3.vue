@@ -1,27 +1,19 @@
 <template>
-  <v-toolbar class="red" dark>
+  <v-toolbar class="primary" extended>
     <v-toolbar-side-icon></v-toolbar-side-icon>
-    <v-toolbar-title>Toolbar</v-toolbar-title>
-    <v-toolbar-items>
-      <v-btn dark icon>
-        <v-icon>list</v-icon>
-      </v-btn>
-      <v-menu left top origin="bottom right" transition="v-scale-transition">
-        <v-btn dark icon slot="activator">
-          <v-icon>more_vert</v-icon>
-        </v-btn>
-        <v-list>
-          <v-list-tile>
-            <v-list-tile-title>Change Account</v-list-tile-title>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-title>Invite Friends</v-list-tile-title>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-title>Log Out</v-list-tile-title>
-          </v-list-tile>
-        </v-list>
-      </v-menu>
-    </v-toolbar-items>
+    <v-toolbar-title class="white--text" slot="extension">Title</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-btn icon>
+      <v-icon>search</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon>apps</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon>refresh</v-icon>
+    </v-btn>
+    <v-btn icon>
+      <v-icon>more_vert</v-icon>
+    </v-btn>
   </v-toolbar>
 </template>

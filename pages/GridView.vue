@@ -85,24 +85,6 @@
                     'Reverses the currently selected direction (column, row).'
                   ],
                   [
-                    'column[-size]',
-                    'Boolean',
-                    'False',
-                    'Applies the .column class align elements vertical. Available for all breakpoints xs => xl.'
-                  ],
-                  [
-                    'child-flex[-size]',
-                    'Boolean',
-                    'False',
-                    'Applies the .flex class (flex: 1) to the first child of layout. Available for all breakpoints xs => xl. Hint: You can use class="flex" on specific child element.'
-                  ],
-                  [
-                    'flex[-size]',
-                    'Class',
-                    'False',
-                    'Applies the .flex class (flex: 1). Available for all breakpoints xs => xl."'
-                  ],
-                  [
                     'justify-space-around',
                     'Boolean',
                     'False',

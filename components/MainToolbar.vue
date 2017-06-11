@@ -13,7 +13,7 @@
       )
     v-spacer
     v-menu
-      v-btn(flat slot="activator" dark) Version: {{ release || 'Latest' }}
+      v-btn(flat slot="activator" dark class="hidden-sm-and-down") Version: {{ release || 'Latest' }}
         v-icon arrow_drop_down
       v-list
         v-list-tile(
