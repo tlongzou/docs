@@ -2,18 +2,17 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="teal white--text" light>
-          <v-toolbar-side-icon light></v-toolbar-side-icon>
+        <v-toolbar class="teal white--text" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Manage</v-toolbar-title>
-          <v-btn icon light>
+          <v-spacer></v-spacer>
+          <v-btn icon>
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-toolbar>
         <v-list class="teal">
           <template v-for="item in items">
-            <v-divider v-if="item.divider" dark></v-divider>
-            <v-subheader v-else-if="item.header" v-text="item.header" class="grey--text text--lighten-4"></v-subheader>
-            <v-list-tile slot="item" light v-else>
+            <v-list-tile v-if="item.action" v-bind:key="item">
               <v-list-tile-action>
                 <v-icon light>{{ item.action }}</v-icon>
               </v-list-tile-action>
@@ -21,6 +20,8 @@
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
+            <v-divider v-else-if="item.divider" dark></v-divider>
+            <v-subheader v-else-if="item.header" v-text="item.header" class="grey--text text--lighten-4"></v-subheader>
           </template>
         </v-list>
       </v-card>

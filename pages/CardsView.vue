@@ -96,8 +96,8 @@
                   '.card__text'
                 ],
                 [
-                  'v-card-col',
-                  '.card__col'
+                  'v-card-column',
+                  '.card__column'
                 ]
               ]
             }

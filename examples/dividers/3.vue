@@ -2,10 +2,11 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="cyan" light>
-          <v-toolbar-side-icon light></v-toolbar-side-icon>
+        <v-toolbar class="cyan" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Inbox</v-toolbar-title>
-          <v-btn light icon>
+          <v-spacer></v-spacer>
+          <v-btn icon>
             <v-icon>search</v-icon>
           </v-btn>
         </v-toolbar>
