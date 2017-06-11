@@ -116,22 +116,34 @@
             'v-btn-toggle': {
               params: [
                 [
-                  'options',
+                  'items',
                   'Array',
                   '[]',
-                  'Option Props: [text, icon, value]'
+                  'Item Props: [text, icon, value]'
                 ],
                 [
                   'multiple',
                   'Boolean',
                   'False',
                   'Designates the toggle accepts and returns an array'
+                ],
+                [
+                  'mandatory',
+                  'Boolean',
+                  'False',
+                  'Makes it so that at least one button must be toggle on'
+                ],
+                [
+                  'input-value',
+                  '',
+                  '-',
+                  'Custom prop for v-model instead of <code>value</code>'
                 ]
               ],
               model: {
                 types: ['String'],
                 default: '-',
-                description: 'Sets mode: toggle_exclusive, toggle_multiple, toggle_none, toggle_one, text, icon'
+                description: 'Holds the value(s) for toggled buttons. '
               }
             }
           },
@@ -149,7 +161,7 @@
           events: {
             'v-btn-toggle': {
               params: [
-                ['input', 'String, Number', 'Selected button(s)']
+                ['change', 'Array, String, Number', 'Selected button(s)']
               ]
             },
           }
