@@ -1,8 +1,13 @@
 <template>
-  <v-toolbar class="secondary" dark>
-      <v-toolbar-side-icon</v-toolbar-side-icon>
-      <v-toolbar-title class="hidden-sm-and-down">Toolbar</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-text-field prepend-icon="search" label="Search..." hide-details single-line dark></v-text-field>
-  </v-toolbar>
+  <v-card img="http://oobrien.com/wordpress/wp-content/uploads/2016/07/googlemaps_july2016.jpg" flat height="300px">
+    <v-toolbar class="white" floating dense>
+        <v-text-field prepend-icon="search" hide-details single-line></v-text-field>
+        <v-btn icon>
+          <v-icon>my_location</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>more_vert</v-icon>
+        </v-btn>
+    </v-toolbar>
+  </v-card>
 </template>
