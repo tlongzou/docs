@@ -4,16 +4,19 @@
       img(src="/static/v.png" height="38px")
       v-spacer
       v-toolbar-items
-        v-toolbar-item(
-          to="/vuetify/quick-start"
-          router
-        )
-          span.subheading Documentation
-        v-toolbar-item(
-          href="https://github.com/vuetifyjs/vuetify/releases"
-          target="_blank"
-        ) 
-          span.subheading Updates
+        v-btn(flat dark) Documentation
+        v-btn(flat dark) Updates
+      //- v-toolbar-items
+      //-   v-toolbar-item(
+      //-     to="/vuetify/quick-start"
+      //-     router
+      //-   )
+      //-     span.subheading Documentation
+      //-   v-toolbar-item(
+      //-     href="https://github.com/vuetifyjs/vuetify/releases"
+      //-     target="_blank"
+      //-   ) 
+      //-     span.subheading Updates
 
     section#hero.elevation-12
       v-parallax(src="/static/doc-images/vbanner.jpg" height="400")
