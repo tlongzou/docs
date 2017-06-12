@@ -34,6 +34,7 @@
       <v-navigation-drawer
         temporary
         v-model="left"
+        overflow
       ></v-navigation-drawer>
       <v-container fluid>
         <!--v-router-->
@@ -42,6 +43,7 @@
         right
         temporary
         v-model="right"
+        overflow
       ></v-navigation-drawer>
     </main>
     <v-footer class="indigo">
