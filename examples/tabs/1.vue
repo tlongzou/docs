@@ -6,7 +6,18 @@
     v-model="active"
     light
   >
-    <v-tabs-bar slot="activators">
+    <v-toolbar class="cyan" dark>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-item
         v-for="i in 3"
         :key="i"
@@ -15,7 +26,7 @@
       >
         Item {{ i }}
       </v-tabs-item>
-      <v-tabs-slider></v-tabs-slider>
+      <v-tabs-slider class="yellow"></v-tabs-slider>
     </v-tabs-bar>
     <v-tabs-content
       v-for="i in 3"
