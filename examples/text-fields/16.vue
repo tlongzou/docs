@@ -27,7 +27,7 @@
               value="Input text"
               class="input-group--focused"
               required
-              :errors="['I cannot be empty', 'Must be more than 2 characters']"
+              :error-messages="['I cannot be empty', 'Must be more than 2 characters']"
             ></v-text-field>
           </v-flex>
         </v-layout>
