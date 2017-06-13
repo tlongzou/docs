@@ -64,7 +64,7 @@
 
     methods: {
       parseComponent (c) {
-        let params = c.params || []
+        let params = (c.params || []).slice()
 
         c.shared && c.shared.forEach(s => {
           params = params.concat(this.shared[s])
