@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-7" centered light>
+  <v-tabs id="mobile-tabs-7" centered dark>
     <v-card class="primary white--text">
       <v-card-text>
         <v-card-row>
@@ -17,7 +17,7 @@
       </v-card-text>
     </v-card>
     <v-tabs-bar slot="activators">
-      <v-tabs-slider></v-tabs-slider>
+      <v-tabs-slider class="white"></v-tabs-slider>
       <v-tabs-item
         v-for="i in 3"
         :key="i"

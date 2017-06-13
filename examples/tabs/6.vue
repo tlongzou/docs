@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-5" grow light>
+  <v-tabs id="mobile-tabs-5" fixed light>
     <v-toolbar class="grey lighten-4" light>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Page title</v-toolbar-title>

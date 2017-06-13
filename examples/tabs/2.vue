@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-2" grow dark>
+  <v-tabs id="mobile-tabs-2" fixed dark>
     <v-toolbar extended class="cyan" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-spacer></v-spacer>

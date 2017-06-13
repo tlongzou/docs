@@ -1,7 +1,7 @@
 <template>
   <v-tabs
     id="mobile-tabs-1"
-    grow
+    fixed
     scroll-bars
     v-model="active"
     dark
