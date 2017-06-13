@@ -1,41 +1,38 @@
 <template>
-  <v-tabs id="mobile-tabs-6" scroll-bars light>
-    <v-card class="primary white--text">
-      <v-card-text>
-        <v-card-row>
-          <v-btn icon light>
-            <v-icon>menu</v-icon>
-          </v-btn>
-          <v-card-title>Page Title</v-card-title>
-          <v-btn icon light>
-            <v-icon>search</v-icon>
-          </v-btn>
-          <v-btn icon light>
-            <v-icon>more_vert</v-icon>
-          </v-btn>
-        </v-card-row>
-      </v-card-text>
-    </v-card>
-    <v-tabs-bar slot="activators">
-      <v-tabs-slider></v-tabs-slider>
-      <v-tabs-item
-        v-for="i in 13"
-        :key="i"
-        :href="'#mobile-tabs-6-' + i"
-      >
-        Item {{ i }}
+  <v-tabs id="mobile-tabs-5" grow light>
+    <v-toolbar class="grey lighten-4" light>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <v-tabs-bar slot="activators" class="grey lighten-4">
+      <v-tabs-slider class="primary"></v-tabs-slider>
+      <v-tabs-item href="#mobile-tabs-5-1" class="primary--text">
+        <v-icon>phone</v-icon>
+      </v-tabs-item>
+      <v-tabs-item href="#mobile-tabs-5-2" class="primary--text">
+        <v-icon>favorite</v-icon>
+      </v-tabs-item>
+      <v-tabs-item href="#mobile-tabs-5-3" class="primary--text">
+        <v-icon>account_box</v-icon>
       </v-tabs-item>
     </v-tabs-bar>
     <v-tabs-content
-      v-for="i in 13"
+      v-for="i in 3"
       :key="i"
-      :id="'mobile-tabs-6-' + i"
+      :id="'mobile-tabs-5-' + i"
     >
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
       </v-card>
     </v-tabs-content>
-</v-tabs>
+  </v-tabs>
 </template>
 
 <script>

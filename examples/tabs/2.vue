@@ -1,26 +1,18 @@
 <template>
-  <v-tabs id="mobile-tabs-2" grow light>
-    <v-card class="primary white--text">
-      <div>
-        <v-card-row>
-          <v-btn icon light>
-            <v-icon>menu</v-icon>
-          </v-btn>
-          <v-spacer></v-spacer>
-          <v-btn icon light>
-            <v-icon>search</v-icon>
-          </v-btn>
-          <v-btn icon light>
-            <v-icon>more_vert</v-icon>
-          </v-btn>
-        </v-card-row>
-        <v-card-row>
-          <v-card-title>Page Title</v-card-title>
-        </v-card-row>
-      </div>
-    </v-card>
-    <v-tabs-bar slot="activators">
-      <v-tabs-slider></v-tabs-slider>
+  <v-tabs id="mobile-tabs-2" grow dark>
+    <v-toolbar extended class="cyan" dark>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
+      <v-toolbar-title slot="extension" class="display-2">Page title</v-toolbar-title>
+    </v-toolbar>
+    <v-tabs-bar slot="activators" class="cyan">
+      <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="i in 3"
         :key="i"

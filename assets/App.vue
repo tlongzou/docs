@@ -137,5 +137,3 @@
   #app
     transition: .3s ease-in-out
 </style>
-
-<style src="../node_modules/mdi/css/materialdesignicons.css"></style>

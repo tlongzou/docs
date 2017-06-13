@@ -4,7 +4,7 @@
     grow
     scroll-bars
     v-model="active"
-    light
+    dark
   >
     <v-toolbar class="cyan" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>

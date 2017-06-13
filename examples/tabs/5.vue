@@ -1,15 +1,29 @@
 <template>
-  <v-tabs id="mobile-tabs-5" grow light>
-    <v-tabs-bar slot="activators">
-      <v-tabs-slider></v-tabs-slider>
+  <v-tabs id="mobile-tabs-5" grow dark icons>
+    <v-toolbar class="cyan" dark>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>search</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <v-tabs-bar slot="activators" class="cyan">
+      <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item href="#mobile-tabs-5-1">
         <v-icon>phone</v-icon>
+        Recents
       </v-tabs-item>
       <v-tabs-item href="#mobile-tabs-5-2">
         <v-icon>favorite</v-icon>
+        Favorites
       </v-tabs-item>
       <v-tabs-item href="#mobile-tabs-5-3">
         <v-icon>account_box</v-icon>
+        Nearby
       </v-tabs-item>
     </v-tabs-bar>
     <v-tabs-content

@@ -4,8 +4,8 @@
       img(src="/static/v.png" height="38px")
       v-spacer
       v-toolbar-items
-        v-btn(flat dark router to="/vuetify/quick-start") Documentation
-        v-btn(flat dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank") Updates
+        v-btn(flat column dark router to="/vuetify/quick-start") Documentation
+        v-btn(flat column dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank") Updates
 
     section#hero.elevation-12
       v-parallax(src="/static/doc-images/vbanner.jpg" height="400")
