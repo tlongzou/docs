@@ -24,9 +24,8 @@
       v-bind:items="table"
       hide-actions
     )
-      template(slot="items" scope="props")
-        template(v-for="prop in props")
-          td(v-for="opt in prop" v-bind:key="opt" v-html="opt")
+      template(slot="items" scope="{ item }")
+          td(v-for="opt in item" v-bind:key="opt" v-html="opt")
 </template>
 
 <script>
