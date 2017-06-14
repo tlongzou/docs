@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-3" fixed dark>
+  <v-tabs id="mobile-tabs-3" fixed dark centered>
     <v-toolbar class="cyan">
       <v-text-field
         solo

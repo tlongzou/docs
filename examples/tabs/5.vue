@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-5" fixed dark icons>
+  <v-tabs id="mobile-tabs-5" fixed dark icons centered>
     <v-toolbar class="cyan" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Page title</v-toolbar-title>

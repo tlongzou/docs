@@ -1,10 +1,5 @@
 <template>
-  <v-tabs
-    id="mobile-tabs-1"
-    scroll-bars
-    v-model="active"
-    dark
-  >
+  <v-tabs id="mobile-tabs-7" dark scrollable>
     <v-toolbar class="cyan" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Page title</v-toolbar-title>
@@ -17,20 +12,28 @@
       </v-btn>
     </v-toolbar>
     <v-tabs-bar slot="activators" class="cyan">
+      <v-tabs-slider class="white"></v-tabs-slider>
       <v-tabs-item
-        v-for="i in 3"
+        v-for="i in 15"
         :key="i"
-        :href="'#mobile-tabs-1-' + i"
-        ripple
+        :href="'#mobile-tabs-7-' + i"
       >
         Item {{ i }}
       </v-tabs-item>
-      <v-tabs-slider class="yellow"></v-tabs-slider>
+      <v-menu>
+        <v-tabs-item slot="activator">
+          Menu
+          <v-icon>arrow_drop_down</v-icon>
+        </v-tabs-item>
+        <v-list v-for="n in 4" v-bind:key="n">
+          <v-list-tile href="javascript:;">Item {{ n }}</v-list-tile>
+        </v-list>
+      </v-menu>
     </v-tabs-bar>
     <v-tabs-content
-      v-for="i in 3"
+      v-for="i in 15"
       :key="i"
-      :id="'mobile-tabs-1-' + i"
+      :id="'mobile-tabs-7-' + i"
     >
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
@@ -43,7 +46,9 @@
   export default {
     data () {
       return {
-        active: null,
+        items: [
+          'web', 'shopping', 'videos', 'images', 'news'
+        ],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
       }
     }

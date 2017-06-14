@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-3" fixed dark>
+  <v-tabs id="mobile-tabs-3" fixed dark centered>
     <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
