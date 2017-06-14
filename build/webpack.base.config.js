@@ -49,6 +49,9 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        options: {
+          presets: ['es2015']
+        },
         exclude: /node_modules/
       },
       {
@@ -71,9 +74,7 @@ module.exports = {
   },
   plugins: isProd
     ? [
-        new webpack.optimize.UglifyJsPlugin({
-          compress: { warnings: false }
-        }),
+        new webpack.optimize.UglifyJsPlugin(),
         new ExtractTextPlugin({
           filename: 'common.[chunkhash].css'
         })
