@@ -1,10 +1,18 @@
 <template>
   <v-layout>
-    <v-flex xs12 sm12 md6 offset-md3>
+    <v-flex xs12 sm12 md5 offset-md3>
       <v-card>
-        <v-card-text>
-          <div>{{ card_text }}</div>
-        </v-card-text>
+        <v-card-media height="200px">
+          <img src="http://www.defenders.org/sites/default/files/desert-julia-chen-dpc.jpg" alt="">
+        </v-card-media>
+        <v-card-title primary>
+          <div class="headline">Kangaroo Valley Safari</div>
+          <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+        </v-card-title>
+        <v-card-actions>
+          <v-btn flat class="orange--text">Share</v-btn>
+          <v-btn flat class="orange--text">Explore</v-btn>
+        </v-card-actions>
       </v-card>
     </v-flex>
   </v-layout>
