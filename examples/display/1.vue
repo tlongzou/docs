@@ -1,8 +1,9 @@
 <template>
   <v-toolbar light>
-    <v-toolbar-logo>Logo</v-toolbar-logo>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-toolbar-item v-for="item in items" :key="item">{{ item.text }}</v-toolbar-item>
+    <v-toolbar-title>Title</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-sm-and-down" v-for="item in items" :key="item">
+      <v-btn flat>{{ item.text }}</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -13,13 +14,13 @@
       return {
         items: [
           {
-            text: 'Link'
+            text: 'Link One'
           },
           {
-            text: 'Link'
+            text: 'Link Two'
           },
           {
-            text: 'Link'
+            text: 'Link Three'
           }
         ]
       }

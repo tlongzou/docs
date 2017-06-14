@@ -15,7 +15,7 @@
             <v-list-tile-title>John Leider</v-list-tile-title>
           </v-list-tile-content>
           <v-list-tile-action>
-            <v-btn icon light @click.native.stop="mini = !mini">
+            <v-btn icon @click.native.stop="mini = !mini">
               <v-icon>chevron_left</v-icon>
             </v-btn>
           </v-list-tile-action>
@@ -25,7 +25,7 @@
         <v-divider light></v-divider>
         <v-list-tile v-for="item in items" :key="item">
           <v-list-tile-action>
-            <v-icon light>{{ item.icon }}</v-icon>
+            <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -34,7 +34,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed dark>
-      <v-toolbar-side-icon light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>

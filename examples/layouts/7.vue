@@ -29,7 +29,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar fixed class="deep-orange" dark>
-      <v-toolbar-side-icon light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
