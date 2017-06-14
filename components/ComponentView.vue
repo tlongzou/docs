@@ -52,7 +52,7 @@
     slot
     template(v-if="doc.props")
       section-header.mt-5(id="api") API
-      v-tabs(v-model="tabs" dark).elevation-1
+      v-tabs(v-model="tabs" dark).elevation-1.pl-0
         v-tabs-bar(slot="activators" v-bind:class="[currentColor]")
           v-tabs-slider(v-bind:class="[currentColor]").lighten-4
           v-tabs-item(
