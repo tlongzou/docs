@@ -2,7 +2,7 @@
   div.component-example
     v-card
       v-card-title(v-bind:class="[currentColor]")
-        span.white--text(v-text="header")
+        span.headline.white--text(v-text="header")
         v-spacer
         v-btn(
           dark
