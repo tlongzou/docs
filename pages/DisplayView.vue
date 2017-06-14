@@ -35,9 +35,3 @@
     name: 'display-view'
   }
 </script>
-
-<style lang="stylus">
-  #display-view
-    .toolbar
-      height: 64px
-</style>

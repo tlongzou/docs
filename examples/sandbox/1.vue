@@ -16,7 +16,7 @@
       overflow
     ></v-navigation-drawer>
     <v-toolbar>
-      <v-toolbar-side-icon @click.native.stop="primaryDrawer.model = !primaryDrawer.model"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native.stop="primaryDrawer.model = !primaryDrawer.model" v-if="primaryDrawer.type !== 'permanent'"></v-toolbar-side-icon>
       <v-toolbar-title>Vuetify</v-toolbar-title>
     </v-toolbar>
     <main>
@@ -26,11 +26,11 @@
             <v-card>
               <v-card-text>
                 <v-layout row wrap>
-                  <v-flex md4>
+                  <v-flex xs12 md4>
                     <span>Scheme</span>
                     <v-switch primary label="Dark" v-model="dark"></v-switch>
                   </v-flex>
-                  <v-flex md4>
+                  <v-flex xs12 md4>
                     <span>Drawer</span>
                     <v-radio
                       primary
@@ -44,7 +44,7 @@
                     <v-switch label="Floating" v-model="primaryDrawer.floating" primary></v-switch>
                     <v-switch label="Mini" v-model="primaryDrawer.mini" primary></v-switch>
                   </v-flex>
-                  <v-flex md4>
+                  <v-flex xs12 md4>
                     <span>Footer</span>
                     <v-switch label="Fixed" v-model="footer.fixed" primary></v-switch>
                   </v-flex>

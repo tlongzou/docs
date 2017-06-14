@@ -25,10 +25,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="indigo" dark>
-      <v-toolbar-side-icon light @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title>Toolbar</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-side-icon light @click.native.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.native.stop="drawerRight = !drawerRight"></v-toolbar-side-icon>
     </v-toolbar>
     <main>
       <v-navigation-drawer
@@ -47,7 +47,7 @@
       ></v-navigation-drawer>
     </main>
     <v-footer class="indigo">
-      <span>&copy; 2017</span>
+      <span class="white--text">&copy; 2017</span>
     </v-footer>
   </v-app>
 </template>
