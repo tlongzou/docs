@@ -138,6 +138,7 @@
               { href: '/components/dividers', title: 'Dividers' },
               { href: '/components/expansion-panels', title: 'Expansion panels' },
               { href: '/components/footer', title: 'Footer' },
+              { href: '/components/grid-lists', title: 'Grid Lists' },
               { href: '/components/icons', title: 'Icons' },
               { href: '/components/lists', title: 'Lists' },
               { href: '/components/menus', title: 'Menus' },
