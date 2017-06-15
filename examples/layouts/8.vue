@@ -1,6 +1,6 @@
 <template>
   <v-app id="example-8" dark>
-    <v-navigation-drawer temporary v-model="drawer" :mini-variant="mini" dark>
+    <v-navigation-drawer temporary v-model="drawer" :mini-variant="mini" dark overflow>
       <v-list class="pa-0">
         <v-list-tile v-if="mini" @click.native.stop="mini = !mini">
           <v-list-tile-action>

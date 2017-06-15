@@ -1,6 +1,12 @@
 <template>
   <v-app id="example-1">
-    <v-navigation-drawer persistent v-model="drawer" light enable-resize-watcher>
+    <v-navigation-drawer
+      persistent
+      v-model="drawer"
+      light
+      enable-resize-watcher
+      overflow
+    >
       <v-list dense>
         <v-list-tile @click.native.stop="left = !left">
           <v-list-tile-action>
@@ -12,7 +18,14 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-navigation-drawer persistent v-model="drawerRight" light right light enable-resize-watcher>
+    <v-navigation-drawer
+      persistent
+      v-model="drawerRight"
+      light
+      right
+      enable-resize-watcher
+      overflow
+    >
       <v-list dense>
         <v-list-tile @click.native.stop="right = !right">
           <v-list-tile-action>

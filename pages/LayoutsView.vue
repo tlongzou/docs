@@ -15,6 +15,7 @@
           |   &lt;/main&gt;
           |   &lt;v-footer&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
+        section-text Keep in mind that for the purposes of the documentation, the <code>v-navigation-drawer</code>'s have had their overflow removed.
 </template>
 
 <script>

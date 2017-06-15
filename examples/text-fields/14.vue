@@ -8,6 +8,7 @@
               <v-icon>arrow_back</v-icon>
             </v-btn>
             <v-toolbar-title>Application</v-toolbar-title>
+            <v-spacer></v-spacer>
             <v-btn icon light>
               <v-icon>more_vert</v-icon>
             </v-btn>
