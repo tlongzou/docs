@@ -24,10 +24,11 @@
             <small>*indicates required field</small>
           </v-card-text>
         </v-card-row>
-        <v-card-row actions>
+        <v-card-actions>
+          <v-spacer></v-spacer>
           <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Close</v-btn>
           <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Save</v-btn>
-        </v-card-row>
+        </v-card-actions>
       </v-card>
     </v-dialog>
   </v-layout>
