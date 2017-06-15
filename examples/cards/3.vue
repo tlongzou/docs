@@ -1,44 +1,63 @@
 <template>
-  <v-card>
-    <v-card-row class="blue-grey darken-1">
-      <v-card-title>
-        <span class="white--text">Visit Space</span>
-        <v-spacer></v-spacer>
-        <v-menu id="space" bottom left origin="top right" transition="v-scale-transition">
-          <v-btn icon="icon" slot="activator" class="white--text">
-            <v-icon>more_vert</v-icon>
-          </v-btn>
-          <v-list>
-            <v-list-tile>
-              <v-list-tile-title>Remove Card</v-list-tile-title>
-            </v-list-tile>
-            <v-list-tile>
-              <v-list-tile-title>Send Feedback</v-list-tile-title>
-            </v-list-tile>
-          </v-list>
-        </v-menu>
-      </v-card-title>
-    </v-card-row>
-    <v-card-row img="/static/doc-images/cards/space.jpg" height="300px"></v-card-row>
-    <v-card-text class="blue-grey darken-3 white--text">
-      <div v-text="card_text"></div>
-    </v-card-text>
-    <v-card-row actions class="blue-grey darken-1 mt-0">
-      <v-btn flat class="white--text">Get Started</v-btn>
+  <v-app id="e3" style="max-width: 400px; min-height: 0; margin: auto;">
+    <v-toolbar class="pink">
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title class="white--text">My Music</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon class="white--text">explore</v-icon>
+        <v-icon>search</v-icon>
       </v-btn>
-    </v-card-row>
-  </v-card>
+    </v-toolbar>
+    <main>
+      <v-container fluid style="min-height: 0;">
+        <v-layout column>
+          <v-flex xs12>
+            <v-card class="blue-grey darken-2 white--text mb-3">
+              <v-card-title primary-title>
+                <div class="headline">Unlimited music now</div>
+                <div>Listen to your favorite artists and albums whenenver and wherever, online and offline.</div>
+              </v-card-title>
+              <v-card-actions>
+                <v-btn flat dark>Listen now</v-btn>
+              </v-card-actions>
+            </v-card>
+            <v-card class="cyan darken-2 white--text mb-3">
+              <v-layout row>
+                <v-flex xs7>
+                  <v-card-title primary-title>
+                    <div>
+                      <div class="headline">Supermodel</div>
+                      <div>Foster the People</div>
+                    </div>
+                  </v-card-title>
+                </v-flex>
+                <v-flex xs5>
+                  <v-card-media>
+                    <img src="https://consequenceofsound.files.wordpress.com/2014/01/foster-the-people-e28093-supermodel.png" alt="" width="100%">
+                  </v-card-media>
+                </v-flex>
+              </v-layout>
+            </v-card>
+            <v-card class="purple darken-2 white--text">
+              <v-layout row>
+                <v-flex xs7>
+                  <v-card-title primary-title>
+                    <div>
+                      <div class="headline">Halycon Days</div>
+                      <div>Ellie Goulding</div>
+                    </div>
+                  </v-card-title>
+                </v-flex>
+                <v-flex xs5>
+                  <v-card-media>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/HalcyonDaysCover.png" alt="" width="100%">
+                  </v-card-media>
+                </v-flex>
+              </v-layout>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </main>
+  </v-app>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.'
-      }
-    }
-  }
-</script>

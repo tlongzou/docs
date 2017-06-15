@@ -127,11 +127,12 @@
       section-text With a &lt;cell&gt; helper component, this would succeed:
 
       markup(lang="html")
-        | &lt;template slot="items" scope="props"&gt;
+        |&lt;template slot="items" scope="props"&gt;
         |   &lt;cell&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/cell&gt;
+        |&lt;/template&gt;
 
       markup(lang="js")
-        | Vue.component('cell',{ template: '&lt;td&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/td&gt;'});
+        | Vue.component('cell', { template: '&lt;td&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/td&gt;' });
 
 </template>
 

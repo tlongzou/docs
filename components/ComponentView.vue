@@ -6,7 +6,7 @@
           dt(slot="title" v-text="doc.title")
           dd(slot="desc" v-html="doc.desc")
           v-divider
-          v-card-row(actions)
+          v-card-actions
             div.do-not-remove-this
               v-btn(
                 tag="a"

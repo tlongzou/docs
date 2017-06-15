@@ -7,7 +7,7 @@
         v-bind:class="{ 'xs6': next.route }"
       ).primary.pa-0
         v-list(v-bind:class="[previous.color]" dark).py-0
-          v-list-tile(router :to="previous.route" ripple).pl-5
+          v-list-tile(router :to="previous.route" ripple)
             v-icon(light).mr-5.hidden-xs-only arrow_back
             v-list-tile-content
               v-list-tile-sub-title Previous
@@ -18,7 +18,7 @@
         v-bind:class="{ 'xs6': previous.route }"
       ).pa-0
         v-list(v-bind:class="[next.color]" dark).py-0
-          v-list-tile(router :to="next.route" ripple).pr-5
+          v-list-tile(router :to="next.route" ripple)
             v-list-tile-content
               v-list-tile-sub-title.text-xs-right Next
               v-list-tile-title.text-xs-right(v-text="next.name")
