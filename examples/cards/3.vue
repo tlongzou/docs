@@ -32,9 +32,9 @@
                   </v-card-title>
                 </v-flex>
                 <v-flex xs5>
-                  <v-card-media>
-                    <img src="https://consequenceofsound.files.wordpress.com/2014/01/foster-the-people-e28093-supermodel.png" alt="" width="100%">
-                  </v-card-media>
+                  <v-card-text>
+                    <v-card-media src="https://consequenceofsound.files.wordpress.com/2014/01/foster-the-people-e28093-supermodel.png" height="100px"></v-card-media>
+                  </v-card-text>
                 </v-flex>
               </v-layout>
             </v-card>
@@ -49,9 +49,9 @@
                   </v-card-title>
                 </v-flex>
                 <v-flex xs5>
-                  <v-card-media>
-                    <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/HalcyonDaysCover.png" alt="" width="100%">
-                  </v-card-media>
+                  <v-card-text>
+                     <v-card-media src="https://upload.wikimedia.org/wikipedia/en/f/f1/HalcyonDaysCover.png" height="100px"></v-card-media>
+                  </v-card-text>
                 </v-flex>
               </v-layout>
             </v-card>
