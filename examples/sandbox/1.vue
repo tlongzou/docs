@@ -50,10 +50,11 @@
                   </v-flex>
                 </v-layout>
               </v-card-text>
-              <v-card-row actions>
+              <v-card-actions>
+                <v-spacer></v-spacer>
                 <v-btn flat>Cancel</v-btn>
                 <v-btn flat primary>Submit</v-btn>
-              </v-card-row>
+              </v-card-actions>
             </v-card>
           </v-flex>
         </v-layout>
