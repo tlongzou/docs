@@ -2,20 +2,14 @@
   <v-layout>
     <v-flex xs12 sm5 offset-sm3 md5 offset-md3>
       <v-card>
-        <v-card-media>
-          <img
-            src="http://www.defenders.org/sites/default/files/desert-julia-chen-dpc.jpg"
-            alt=""
-            height="200px"
-          >
+        <v-card-media src="http://www.defenders.org/sites/default/files/desert-julia-chen-dpc.jpg" height="200px">
         </v-card-media>
         <v-card-title primary-title>
           <div>
-            <h3 class="headline">Kangaroo Valley Safari</h3>
+            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
             <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
           </div>
         </v-card-title>
-        <v-divider></v-divider>
         <v-card-actions>
           <v-btn flat class="orange--text">Share</v-btn>
           <v-btn flat class="orange--text">Explore</v-btn>

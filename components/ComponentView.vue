@@ -7,18 +7,17 @@
           dd(slot="desc" v-html="doc.desc")
           v-divider
           v-card-actions
-            div.do-not-remove-this
-              v-btn(
-                tag="a"
-                v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
-                target="_blank"
-                icon
-                light
-                v-tooltip:right="{ html: 'View component' }"
-                v-if="doc.component"
-                v-bind:class="[`${currentColor}--text`]"
-              )
-                v-icon widgets
+            v-btn(
+              tag="a"
+              v-bind:href="'https://github.com/vuetifyjs/vuetify/tree/master/src/components/'+doc.component"
+              target="_blank"
+              icon
+              light
+              v-tooltip:right="{ html: 'View component' }"
+              v-if="doc.component"
+              v-bind:class="[`${currentColor}--text`]"
+            )
+              v-icon widgets
             v-btn(
               tag="a"
               v-bind:href="'https://github.com/vuetifyjs/docs/tree/master/pages/'+doc.edit+'.vue'"
