@@ -1,27 +1,27 @@
 <template>
   <div class="text-xs-center">
     <v-btn class="primary white--text">Accept
-      <v-icon light right>check_circle</v-icon>
+      <v-icon dark right>check_circle</v-icon>
     </v-btn>
 
     <v-btn class="red white--text">Decline
-      <v-icon light right>block</v-icon>
+      <v-icon dark right>block</v-icon>
     </v-btn>
 
     <v-btn dark>
-      <v-icon light left>remove_circle</v-icon>Cancel
+      <v-icon dark left>remove_circle</v-icon>Cancel
     </v-btn>
 
     <v-btn class="orange darken-2 white--text">
-      <v-icon light left>arrow_back</v-icon>Back
+      <v-icon dark left>arrow_back</v-icon>Back
     </v-btn>
 
     <v-btn class="purple white--text">
-      <v-icon light>build</v-icon>
+      <v-icon dark>build</v-icon>
     </v-btn>
 
     <v-btn class="indigo white--text">
-      <v-icon light>backup</v-icon>
+      <v-icon dark>backup</v-icon>
     </v-btn>
 
     <v-btn icon>

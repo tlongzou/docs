@@ -23,7 +23,7 @@
                 span Github
               v-btn(dark large router href="/vuetify/quick-start").green.lighten-2
                 span Get Started
-                v-icon(right light) chevron_right
+                v-icon(right dark) chevron_right
 
     section#development.text-xs-center.pa-5
       v-container(fluid)
@@ -137,7 +137,7 @@
 
 <style lang="stylus">
   @import '../node_modules/vuetify/src/stylus/settings/_colors'
-  
+
   #home-view
     .toolbar--home
       background: #132563
@@ -149,10 +149,10 @@
     #hero
       .btn
         width: 190px
-    
+
     div.grey--text
       line-height: 2
-        
+
   #features
     .card__column.transparent
       height: 150px !important

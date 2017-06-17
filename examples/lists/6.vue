@@ -2,8 +2,8 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="teal" light>
-          <v-toolbar-side-icon light></v-toolbar-side-icon>
+        <v-toolbar class="teal" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Settings</v-toolbar-title>
         </v-toolbar>
         <v-list two-line subheader>

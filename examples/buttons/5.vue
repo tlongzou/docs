@@ -3,27 +3,27 @@
     <v-card-text>
       <v-container fluid class="pa-0">
         <v-layout row wrap>
-          <v-flex xs12 sm12 md6 class="py-2">
+          <v-flex xs12 sm6 class="py-2">
             <p>Exclusive</p>
             <v-btn-toggle v-bind:items="toggle_options" v-model="toggle_exclusive"></v-btn-toggle>
           </v-flex>
-          <v-flex xs12 sm12 md6 class="py-2">
+          <v-flex xs12 sm6 class="py-2">
             <p>Multiple</p>
             <v-btn-toggle v-bind:items="toggle_options_multiple" multiple v-model="toggle_multiple"></v-btn-toggle>
           </v-flex>
-          <v-flex xs12 sm12 md6 class="py-2">
+          <v-flex xs12 sm6 class="py-2">
             <p>No Options Selected</p>
             <v-btn-toggle v-bind:items="toggle_options" v-model="toggle_none"></v-btn-toggle>
           </v-flex>
-          <v-flex xs12 sm12 md6 class="py-2">
+          <v-flex xs12 sm6 class="py-2">
             <p>Mandatory</p>
             <v-btn-toggle v-bind:items="toggle_options_multiple" mandatory v-model="toggle_one"> </v-btn-toggle>
           </v-flex>
-          <v-flex xs12 sm12 md6 class="py-2">
+          <v-flex xs12 sm6 class="py-2">
             <p>Text Options</p>
             <v-btn-toggle v-bind:items="toggle_text" v-model="text"></v-btn-toggle>
           </v-flex>
-          <v-flex xs12 sm12 md6 class="py-2">
+          <v-flex xs12 sm6 class="py-2">
             <p>Text &amp; Icon Options</p>
             <v-btn-toggle v-bind:items="toggle_text_icon" v-model="icon"></v-btn-toggle>
           </v-flex>

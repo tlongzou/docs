@@ -2,13 +2,13 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="white--text indigo" light>
-          <v-toolbar-side-icon light></v-toolbar-side-icon>
+        <v-toolbar class="white--text indigo" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>Inbox</v-toolbar-title>
-          <v-btn light icon>
+          <v-btn icon>
              <v-icon>search</v-icon>
           </v-btn>
-          <v-btn light icon>
+          <v-btn icon>
             <v-icon>more_vert</v-icon>
           </v-btn>
         </v-toolbar>

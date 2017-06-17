@@ -36,7 +36,7 @@
       </v-flex>
       <v-flex xs12 md6>
         <v-subheader>Dark</v-subheader>
-        <v-card class="secondary elevation-0">
+        <v-card dark class="secondary elevation-0">
           <v-card-text>
             <v-container fluid>
               <v-layout row wrap class="light--text">

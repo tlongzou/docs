@@ -2,10 +2,11 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="teal" light>
-          <v-toolbar-side-icon light></v-toolbar-side-icon>
+        <v-toolbar class="teal" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title class="text-xs-center">New Chat</v-toolbar-title>
-          <v-btn light icon>
+          <v-spacer></v-spacer>
+          <v-btn icon>
             <v-icon>search</v-icon>
           </v-btn>
         </v-toolbar>

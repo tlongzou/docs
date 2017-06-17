@@ -8,7 +8,7 @@
       ).primary.pa-0
         v-list(v-bind:class="[previous.color]" dark).py-0
           v-list-tile(router :to="previous.route" ripple)
-            v-icon(light).mr-5.hidden-xs-only arrow_back
+            v-icon(dark).mr-5.hidden-xs-only arrow_back
             v-list-tile-content
               v-list-tile-sub-title Previous
               v-list-tile-title(v-text="previous.name")
@@ -22,7 +22,7 @@
             v-list-tile-content
               v-list-tile-sub-title.text-xs-right Next
               v-list-tile-title.text-xs-right(v-text="next.name")
-            v-icon(light).ml-5.hidden-xs-only arrow_forward
+            v-icon(dark).ml-5.hidden-xs-only arrow_forward
 </template>
 
 <script>

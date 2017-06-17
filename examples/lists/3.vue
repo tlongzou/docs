@@ -2,14 +2,14 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
-        <v-toolbar class="light-blue" light>
-          <v-toolbar-side-icon light></v-toolbar-side-icon>
+        <v-toolbar class="light-blue" dark>
+          <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title>My files</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn light icon>
+          <v-btn icon>
             <v-icon>search</v-icon>
           </v-btn>
-          <v-btn light icon>
+          <v-btn icon>
             <v-icon>view_module</v-icon>
           </v-btn>
         </v-toolbar>

@@ -23,14 +23,14 @@
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="dark--text">
-                <v-flex xs6>on disabled</v-flex>
-                <v-flex xs6>off disabled</v-flex>
+                <v-flex xs4>on disabled</v-flex>
+                <v-flex xs4>off disabled</v-flex>
               </v-layout>
               <v-layout row wrap>
-                <v-flex xs6>
+                <v-flex xs4>
                   <v-checkbox input-value="true" value disabled></v-checkbox>
                 </v-flex>
-                <v-flex xs6>
+                <v-flex xs4>
                   <v-checkbox value disabled></v-checkbox>
                 </v-flex>
               </v-layout>
@@ -40,7 +40,7 @@
       </v-flex>
       <v-flex xs12 md6>
         <v-subheader>Dark</v-subheader>
-        <v-card class="secondary elevation-0">
+        <v-card dark class="secondary elevation-0">
           <v-card-text>
             <v-container fluid>
               <v-layout row wrap class="light--text">
@@ -60,14 +60,14 @@
                 </v-flex>
               </v-layout>
               <v-layout row wrap class="light--text">
-                <v-flex xs6>on disabled</v-flex>
-                <v-flex xs6>off disabled</v-flex>
+                <v-flex xs4>on disabled</v-flex>
+                <v-flex xs4>off disabled</v-flex>
               </v-layout>
               <v-layout row wrap>
-                <v-flex xs6>
+                <v-flex xs4>
                   <v-checkbox input-value="true" value dark disabled></v-checkbox>
                 </v-flex>
-                <v-flex xs6>
+                <v-flex xs4>
                   <v-checkbox value dark disabled></v-checkbox>
                 </v-flex>
               </v-layout>
