@@ -35,10 +35,10 @@
           ></v-text-field>
           <v-time-picker v-model="e6" actions>
             <template scope="{ save, cancel }">
-              <v-card-row actions>
+              <v-card-actions>
                 <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
                 <v-btn flat primary @click.native="save()">Save</v-btn>
-              </v-card-row>
+              </v-card-actions>
             </template>
           </v-time-picker>
         </v-dialog>

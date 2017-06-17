@@ -2,7 +2,9 @@
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card height="200px">
-        <v-card-row class="blue white--text">
+        <v-card-title class="blue white--text">
+          <span class="headline">Menu</span>
+          <v-spacer></v-spacer>
           <v-menu bottom right>
             <v-btn icon slot="activator" dark>
               <v-icon>more_vert</v-icon>
@@ -13,8 +15,7 @@
               </v-list-tile>
             </v-list>
           </v-menu>
-          <v-card-title>Menu</v-card-title>
-        </v-card-row>
+        </v-card-title>
         <v-card-text>Lorem Ipsum</v-card-text>
       </v-card>
     </v-flex>

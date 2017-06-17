@@ -1,6 +1,6 @@
 <template>
   <v-card class="grey lighten-5" flat>
-    <v-toolbar class="primary elevation-0" extended>
+    <v-toolbar dark class="primary elevation-0" extended>
       <v-toolbar-side-icon></v-toolbar-side-icon>
     </v-toolbar>
     <v-layout row>

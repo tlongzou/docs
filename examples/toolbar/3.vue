@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar class="primary" extended>
+  <v-toolbar dark class="primary" extended>
     <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title class="white--text" slot="extension">Title</v-toolbar-title>
     <v-spacer></v-spacer>

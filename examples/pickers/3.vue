@@ -19,10 +19,10 @@
           ></v-text-field>
           <v-date-picker v-model="e3" no-title scrollable actions>
             <template scope="{ save, cancel }">
-              <v-card-row actions>
+              <v-card-actions>
                 <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
                 <v-btn flat primary @click.native="save()">Save</v-btn>
-              </v-card-row>
+              </v-card-actions>
             </template>
           </v-date-picker>
         </v-menu>
@@ -42,10 +42,10 @@
           ></v-text-field>
           <v-date-picker v-model="e3" scrollable>
             <template scope="{ save, cancel }">
-              <v-card-row actions>
+              <v-card-actions>
                 <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
                 <v-btn flat primary @click.native="save()">Save</v-btn>
-              </v-card-row>
+              </v-card-actions>
             </template>
           </v-date-picker>
         </v-dialog>

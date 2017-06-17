@@ -15,7 +15,7 @@
       <v-btn primary @click.native="e6 = 3">Continue</v-btn>
       <v-btn flat>Cancel</v-btn>
     </v-stepper-content>
-    <v-stepper-step step="3">Select an ad format and name ad unit</v-stepper-step>
+    <v-stepper-step step="3" v-bind:complete="e6 > 3">Select an ad format and name ad unit</v-stepper-step>
     <v-stepper-content step="3">
       <v-card class="grey lighten-1 z-depth-1 mb-5" height="200px"></v-card>
       <v-btn primary @click.native="e6 = 4">Continue</v-btn>

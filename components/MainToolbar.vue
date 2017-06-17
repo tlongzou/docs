@@ -13,14 +13,14 @@
       )
     v-spacer
     v-menu
-      v-btn(flat slot="activator" dark class="hidden-sm-and-down") Version: {{ release || 'Latest' }}
+      v-btn(flat slot="activator" dark class="hidden-sm-and-down") Version: {{ release === releases[0] ? `Latest (${release})` : release }}
         v-icon arrow_drop_down
       v-list
         v-list-tile(
           router
           to="/"
-          v-if="i === 0"
           v-for="(release, i) in releases"
+          v-if="i === 0"
           v-bind:key="release"
         )
           v-list-tile-title {{ release }}
@@ -38,13 +38,10 @@
   export default {
     name: 'toolbar',
 
-    data: () => ({
-      release: process.env.RELEASE
-    }),
-
     computed: {
       ...mapState([
-        'releases'
+        'releases',
+        'release'
       ]),
       color () {
         return this.$store.state.currentColor

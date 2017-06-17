@@ -3,27 +3,25 @@
     <v-dialog v-model="dialog">
       <v-btn primary dark slot="activator">Open Dialog</v-btn>
       <v-card>
-        <v-card-row>
-          <v-card-title>User Profile</v-card-title>
-        </v-card-row>
-        <v-card-row>
-          <v-card-text>
-            <v-text-field label="Email" required></v-text-field>
-            <v-text-field label="Password" type="password" required></v-text-field>
-            <v-text-field label="Legal first name" required></v-text-field>
-            <v-text-field label="Legal middle name" hint="example of helper text only on focus"></v-text-field>
-            <v-text-field label="Legal last name" hint="example of persistent helper text"
-              persistent-hint
-              required
-            ></v-text-field>
-            <v-select
-              label="Age"
-              required
-              :items="['0-17', '18-29', '30-54', '54+']"
-            ></v-select>
-            <small>*indicates required field</small>
-          </v-card-text>
-        </v-card-row>
+        <v-card-title>
+          <span class="headline">User Profile</span>
+        </v-card-title>
+        <v-card-text>
+          <v-text-field label="Email" required></v-text-field>
+          <v-text-field label="Password" type="password" required></v-text-field>
+          <v-text-field label="Legal first name" required></v-text-field>
+          <v-text-field label="Legal middle name" hint="example of helper text only on focus"></v-text-field>
+          <v-text-field label="Legal last name" hint="example of persistent helper text"
+            persistent-hint
+            required
+          ></v-text-field>
+          <v-select
+            label="Age"
+            required
+            :items="['0-17', '18-29', '30-54', '54+']"
+          ></v-select>
+          <small>*indicates required field</small>
+        </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn class="blue--text darken-1" flat @click.native="dialog = false">Close</v-btn>

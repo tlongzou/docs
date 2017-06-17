@@ -123,6 +123,7 @@
       markup(lang="html")
         | &lt;template slot="items" scope="props"&gt;
         |   &lt;td&gt;{&zwnj;{ props.item.name }&zwnj;}&lt;/td&gt;
+        |&lt;/template&gt;
 
       section-text With a &lt;cell&gt; helper component, this would succeed:
 
