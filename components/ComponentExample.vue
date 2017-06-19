@@ -163,4 +163,7 @@
 
     nav.toolbar
       z-index: 0
+      
+    [data-app]
+      min-height: 300px
 </style>
