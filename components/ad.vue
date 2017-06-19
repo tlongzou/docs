@@ -6,7 +6,8 @@
 <script>
   export default {
     data: () => ({
-      blocked: false
+      blocked: false,
+      duckout: null
     }),
 
     mounted () {
@@ -17,11 +18,15 @@
 
       this.$el.appendChild(script)
 
-      requestAnimationFrame(() => {
+      this.duckout = setTimeout(() => {
         if (!document.getElementById('carbonads')) {
           this.blocked = true
         }
-      })
+      }, 1000)
+    },
+
+    beforeDestroy () {
+      clearTimeout(this.duckout)
     }
   }
 </script>

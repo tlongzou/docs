@@ -5,7 +5,7 @@
         <v-menu :nudge-width="100">
           <v-toolbar-title slot="activator">
             <span>All</span>
-            <v-icon>arrow_drop_down</v-icon>
+            <v-icon dark>arrow_drop_down</v-icon>
           </v-toolbar-title>
           <v-list>
             <v-list-tile v-for="item in items" :key="item">

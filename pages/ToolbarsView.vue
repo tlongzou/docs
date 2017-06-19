@@ -15,8 +15,8 @@
           examples: [
             { header: 'Default', file: 'toolbar/1', desc: 'A toolbar is a flexible container that can be utilized in a number of ways. By default, the toolbar is 64px high on desktop, 56px high on mobile portrait and 48px high on mobile landscape. These can be overwritten using the <code>dense</code> and <code>prominent</code> props.' },
             { header: 'App bar', file: 'toolbar/2', desc: 'An App bar is the primary toolbar of your application. It can contain icons, menus and more.' },
-            { header: 'App bar with extension', file: 'toolbar/3', desc: 'Menu dropdowns can be used within a toolbar to provide more space for actionable items.' },
-            { header: 'Column width with hierarchy', file: 'toolbar/4', desc: 'Toolbars and be placed anywhere and can represent different sets of actions.' },
+            { header: 'App bar with extension', file: 'toolbar/3', desc: 'An extension can be used that creates a much more prominent bar. If a title is placed within the extension, it will automatically be shifted to the right to match the normal locationit would be at in the main bar.' },
+            { header: 'Column width with hierarchy', file: 'toolbar/4', desc: 'Toolbars come in 2 variants, light and dark. Light toolbars have dark tinted buttons and dark text whereas Dark toolbars have white tinted buttons and white text.' },
             { header: 'Flexible toolbar and card toolbar', file: 'toolbar/5', desc: 'With a few custom styles, you can easily create your own custom interfaces.' },
             { header: 'Floating with search', file: 'toolbar/6', desc: 'A floating toolbar can be placed over the content that it references.' },
             { header: 'Detached toolbar pallete', file: 'toolbar/7', desc: 'Create unique customized interfaces combining multiple components.' },
