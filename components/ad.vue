@@ -1,9 +1,14 @@
 <template lang="pug">
   v-flex(xs12 sm4).ads
+    img(src="/static/duck.png" v-if="blocked")#duck
 </template>
 
 <script>
   export default {
+    data: () => ({
+      blocked: false
+    }),
+
     mounted () {
       const script = document.createElement('script')
       script.type = 'text/javascript'
@@ -11,12 +16,24 @@
       script.id = '_carbonads_js'
 
       this.$el.appendChild(script)
+
+      requestAnimationFrame(() => {
+        if (!document.getElementById('carbonads')) {
+          this.blocked = true
+        }
+      })
     }
   }
 </script>
 
 <style lang="stylus">
   @import '~assets/stylus/settings/_variables.styl'
+  
+  #duck
+    bottom: 124px
+    position: fixed
+    right: 24px
+    z-index: 3
 
   #carbonads
     display: flex
@@ -46,15 +63,17 @@
         margin-bottom: .5em
 
   .ads
+    text-align: center
+
     @media $display-breakpoints.lg-and-up
       padding: 0 !important
       flex-basis: 0 !important
     
     @media $display-breakpoints.md-and-down
-      #carbonads
+      #carbonads, #duck
         position: initial
         
     @media $display-breakpoints.xs-only
-      #carbonads
+      #carbonads, #duck
         margin-bottom: 50px
 </style>
