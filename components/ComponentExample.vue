@@ -23,7 +23,7 @@
       v-expansion-panel.elevation-0.component-example__panel
         v-expansion-panel-content(v-model="panel")
           v-tabs(ref="tabs" dark)
-            v-tabs-bar(slot="activators" v-bind:class="[currentColor]" class="darken-4")
+            v-tabs-bar(slot="activators" v-bind:class="[currentColor]" class="darken-4 pl-0")
               v-tabs-slider(class="lighten-4" v-bind:class="[currentColor]")
               v-tabs-item(
                 v-for="tab in tabs"

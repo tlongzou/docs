@@ -18,7 +18,7 @@
           </v-card-text>
           <v-card-text style="height: 100px; position: relative">
             <v-fab absolute top right :hidden="hidden">
-              <v-btn class="pink" floating dark>
+              <v-btn class="pink" dark>
                 <v-icon>add</v-icon>
               </v-btn>
             </v-fab>

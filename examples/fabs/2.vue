@@ -6,7 +6,7 @@
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title slot="extension" class="white--text">My files</v-toolbar-title>
           <v-fab slot="extension" bottom left absolute @click.native.stop="dialog = !dialog">
-            <v-btn floating small class="cyan accent-2">
+            <v-btn small class="cyan accent-2">
               <v-icon>add</v-icon>
             </v-btn>
           </v-fab>
