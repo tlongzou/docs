@@ -1,10 +1,10 @@
 <template>
-  <v-app-bar>
-    <v-btn-dropdown v-bind:options="dropdown_font" max-height="auto" overflow></v-btn-dropdown>
-    <v-btn-dropdown v-bind:options="dropdown_edit" max-height="auto" overflow editable></v-btn-dropdown>
-    <v-btn-toggle v-bind:options="toggle_options_multiple" v-model="toggle_multiple" multiple class="hidden-md-and-down"></v-btn-toggle>
-    <v-btn-toggle v-bind:options="toggle_options" v-model="toggle_exclusive" class="hidden-sm-and-down"></v-btn-toggle>
-  </v-app-bar>
+  <v-toolbar>
+    <v-select v-bind:items="dropdown_font" overflow label="Select font" hide-details></v-select>
+    <v-select v-bind:items="dropdown_edit" overflow label="Select size" hide-details editable></v-select>
+    <v-btn-toggle v-bind:items="toggle_options_multiple" v-model="toggle_multiple" multiple></v-btn-toggle>
+    <v-btn-toggle v-bind:items="toggle_options" v-model="toggle_exclusive"></v-btn-toggle>
+  </v-toolbar>
 </template>
 
 <script>
