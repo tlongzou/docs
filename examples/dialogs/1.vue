@@ -1,6 +1,6 @@
 <template>
   <v-layout row justify-center>
-    <v-dialog v-model="dialog" lazy v-if="test">
+    <v-dialog v-model="dialog" lazy>
       <v-btn primary dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-title>
@@ -23,14 +23,6 @@
       return {
         dialog: false,
         test: true
-      }
-    },
-
-    watch: {
-      dialog (val) {
-        setTimeout(() => {
-          val && (this.test = false)
-        }, 2000)
       }
     }
   }
