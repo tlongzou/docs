@@ -38,7 +38,7 @@
             )
               markup(:lang="getLang(tab)" v-if="parsed[tab]").ma-0
                 div(v-html="parsed[tab]")
-      v-card-text.subheading
+      v-card-text.subheading.justify
         slot(name="desc")
       v-card-text.pa-3
         div(v-bind:id="'example-'+uid")
@@ -161,9 +161,12 @@
       > li
         border: none
 
+    .justify
+      text-align: justify
+
     nav.toolbar
       z-index: 0
-      
+
     [data-app]
       min-height: 300px
 </style>
