@@ -60,7 +60,7 @@
         headers: [
           {
             text: 'Dessert (100g serving)',
-            left: true,
+            align: 'left',
             value: 'name'
           },
           { text: 'Calories', value: 'calories' },
