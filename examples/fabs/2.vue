@@ -5,11 +5,18 @@
         <v-toolbar class="light-blue" light extended>
           <v-toolbar-side-icon></v-toolbar-side-icon>
           <v-toolbar-title slot="extension" class="white--text">My files</v-toolbar-title>
-          <v-fab slot="extension" bottom left absolute @click.native.stop="dialog = !dialog">
-            <v-btn small class="cyan accent-2">
-              <v-icon>add</v-icon>
-            </v-btn>
-          </v-fab>
+          <v-btn
+            fab
+            small
+            class="cyan accent-2"
+            slot="extension"
+            bottom
+            left
+            absolute
+            @click.native.stop="dialog = !dialog"
+          >
+            <v-icon>add</v-icon>
+          </v-btn>
           <v-spacer></v-spacer>
           <v-btn icon>
             <v-icon>search</v-icon>

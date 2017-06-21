@@ -5,11 +5,18 @@
         <v-card>
           <v-toolbar class="white" extended>
             <v-toolbar-side-icon></v-toolbar-side-icon>
-            <v-fab absolute bottom left :hidden="hidden" slot="extension">
-              <v-btn class="pink" floating dark small>
-                <v-icon>add</v-icon>
-              </v-btn>
-            </v-fab>
+            <v-btn
+              class="pink"
+              fab
+              dark
+              small
+              absolute
+              bottom
+              left
+              :hidden="hidden"
+            >
+              <v-icon>add</v-icon>
+            </v-btn>
           </v-toolbar>
           <v-card-text style="height: 300px;" class="grey lighten-5 text-xs-center">
             <v-btn primary @click.native="hidden = !hidden">
@@ -17,11 +24,17 @@
             </v-btn>
           </v-card-text>
           <v-card-text style="height: 100px; position: relative">
-            <v-fab absolute top right :hidden="hidden">
-              <v-btn class="pink" dark>
-                <v-icon>add</v-icon>
-              </v-btn>
-            </v-fab>
+            <v-btn
+              class="pink"
+              dark
+              absolute
+              top
+              right
+              fab
+              :hidden="hidden"
+            >
+              <v-icon>add</v-icon>
+            </v-btn>
           </v-card-text>
         </v-card>
       </v-flex>

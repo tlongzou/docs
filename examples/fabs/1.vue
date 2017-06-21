@@ -8,11 +8,16 @@
           </v-toolbar>
           <v-card-text style="height: 300px;" class="grey lighten-5"></v-card-text>
           <v-card-text style="height: 100px; position: relative">
-            <v-fab absolute top right>
-              <v-btn class="pink" dark>
-                <v-icon>add</v-icon>
-              </v-btn>
-            </v-fab>
+            <v-btn
+              absolute
+              dark
+              fab
+              top
+              right
+              class="pink"
+            >
+              <v-icon>add</v-icon>
+            </v-btn>
           </v-card-text>
         </v-card>
       </v-flex>
@@ -20,11 +25,17 @@
         <v-card>
           <v-toolbar class="white" extended>
             <v-toolbar-side-icon></v-toolbar-side-icon>
-            <v-fab absolute bottom left>
-              <v-btn class="pink" dark small>
-                <v-icon>add</v-icon>
-              </v-btn>
-            </v-fab>
+            <v-btn
+              class="pink"
+              dark
+              small
+              absolute
+              bottom
+              left
+              fab
+            >
+              <v-icon>add</v-icon>
+            </v-btn>
           </v-toolbar>
           <v-card-text style="height: 228px;" class="grey lighten-5"></v-card-text>
           <v-card-text style="height: 100px; position: relative">

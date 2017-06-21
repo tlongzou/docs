@@ -18,12 +18,19 @@
         <v-tabs-item href="#three">Item Three</v-tabs-item>
         <v-tabs-slider></v-tabs-slider>
       </v-tabs-bar>
-      <v-tabs-content v-for="content in ['one', 'two', 'three']" :key="content" :id="content">
-        <v-card height="200px" flat>
-        </v-card>
+      <v-tabs-content 
+        v-for="content in ['one', 'two', 'three']"
+        :key="content"
+        :id="content"
+      >
+        <v-card height="200px" flat></v-card>
       </v-tabs-content>
     </v-tabs>
-    <v-fab bottom right hover>
+    <v-fab
+      bottom
+      right
+      hover
+    >
       <v-btn
         slot="activator"
         :class="[activeFab.class]"
