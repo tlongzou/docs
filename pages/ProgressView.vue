@@ -22,6 +22,7 @@
             { header: 'Buffer', file: 'progress-linear/3', desc: 'A buffer state represents two values simultaneously. The primary value is controled by the model, whereas the buffer is controlled by the <code>buffer-value</code> prop.'},
             { header: 'Query Indeterminate and Determinate', file: 'progress-linear/4', desc: 'To query state is controlled by the truthiness of indeterminate with the query prop set to true.'},
             { header: 'Custom height and contextual colors', file: 'progress-linear/5', desc: 'A custom height or contextual color can be applied to a progress bar. The bars primary color is your applications primary color.'},
+            { header: 'Custom colors', file: 'progress-linear/6', desc: 'You can also set the color using the props <code>color-front</code> and <code>color-back</code>.'},
           ],
           props: {
             'v-progress-circular': {
