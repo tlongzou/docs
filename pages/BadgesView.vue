@@ -20,7 +20,8 @@
           examples: [
             { header: 'Character', file: 'badges/1', desc: 'Any character can be placed with a badge.' },
             { header: 'Icon', file: 'badges/2', desc: 'The icon badge type only supports Material Design icons.' },
-            { header: 'Inline', file: 'badges/3', desc: 'Badges can also be placed inline with text.' }
+            { header: 'Inline', file: 'badges/3', desc: 'Badges can also be placed inline with text.' },
+            { header: 'Visibility', file: 'badges/4', desc: 'The visibility of badges can be controlled either by setting the object property <code>visible</code> to <code>false</code>, or setting the entire object to either <code>false</code> or <code>null</code>.' }
           ],
           props: {
             'v-badge': {
