@@ -5,18 +5,23 @@
         <v-card>
           <v-toolbar class="white" extended>
             <v-toolbar-side-icon></v-toolbar-side-icon>
-            <v-btn
-              class="pink"
-              fab
-              dark
-              small
-              absolute
-              bottom
-              left
-              :hidden="hidden"
+            <v-scale-transition 
+              mode="out-in"
+              origin="center center"
             >
-              <v-icon>add</v-icon>
-            </v-btn>
+              <v-btn
+                class="pink"
+                fab
+                dark
+                small
+                absolute
+                bottom
+                left
+                v-show="!hidden"
+              >
+                <v-icon>add</v-icon>
+              </v-btn>
+            </v-scale-transition>
           </v-toolbar>
           <v-card-text style="height: 300px;" class="grey lighten-5 text-xs-center">
             <v-btn primary @click.native="hidden = !hidden">

@@ -28,17 +28,24 @@
     </v-tabs>
 
     <v-speed-dial v-model="fab" fling bottom right direction="top" hover>
-      <v-btn
-        :class="[activeFab.class]"
-        dark
-        fab
-        hover
-        v-model="fab"
+      <v-scale-transition
+        mode="out-in"
+        origin="center center"
         slot="activator"
       >
-        <v-icon>{{ activeFab.icon }}</v-icon>
-        <v-icon>edit</v-icon>
-      </v-btn>
+        <v-btn
+          :class="[activeFab.class]"
+          dark
+          fab
+          hover
+          v-model="fab"
+          
+          :key="activeFab.icon"
+        >
+          <v-icon>{{ activeFab.icon }}</v-icon>
+          <v-icon>edit</v-icon>
+        </v-btn>
+      </v-scale-transition>
       <v-btn
         fab
         dark
@@ -56,8 +63,7 @@
 <script>
   export default {
     data: () => ({
-      fab: true,
-      hidden: false,
+      fab: false,
       tabs: null
     }),
 
