@@ -26,31 +26,37 @@
         <v-card height="200px" flat></v-card>
       </v-tabs-content>
     </v-tabs>
-    <v-fab
-      bottom
-      right
-      hover
-    >
+
+    <v-speed-dial v-model="fab" fling bottom right direction="top" hover>
       <v-btn
-        slot="activator"
         :class="[activeFab.class]"
         dark
+        fab
+        hover
+        v-model="fab"
+        slot="activator"
       >
         <v-icon>{{ activeFab.icon }}</v-icon>
+        <v-icon>edit</v-icon>
       </v-btn>
-      <v-btn class="green" small dark>
-        <v-icon>add</v-icon>
+      <v-btn
+        fab
+        dark
+        small
+        class="green"
+        v-for="n in 3"
+        :key="n"
+      >
+        <v-icon>list</v-icon>
       </v-btn>
-      <v-btn class="red" small dark>
-        <v-icon>add</v-icon>
-      </v-btn>
-    </v-fab>
+    </v-speed-dial>
   </v-app>
 </template>
 
 <script>
   export default {
     data: () => ({
+      fab: true,
       hidden: false,
       tabs: null
     }),
@@ -58,7 +64,7 @@
     computed: {
       activeFab () {
         switch (this.tabs) {
-          case 'one': return { 'class': 'indigo', icon: 'add' }
+          case 'one': return { 'class': 'indigo', icon: 'account_circle' }
           case 'two': return { 'class': 'red', icon: 'edit' }
           case 'three': return { 'class': 'green', icon: 'keyboard_arrow_up' }
           default: return {}
@@ -70,7 +76,7 @@
 
 <style>
   /* This is for documentation purposes and will not be needed in your application */
-  #inspire .fab {
+  #inspire .speed-dial {
     position: absolute;
   }
 </style>

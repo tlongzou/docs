@@ -36,7 +36,7 @@
               <v-list-tile-sub-title>{{ item.subtitle }}</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-action>
-              <v-btn icon ripple>
+              <v-btn icon>
                 <v-icon class="grey--text text--lighten-1">info</v-icon>
               </v-btn>
             </v-list-tile-action>
