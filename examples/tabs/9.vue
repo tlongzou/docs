@@ -1,6 +1,6 @@
 <template>
-  <v-tabs dark>
-    <v-tabs-bar slot="activators" class="cyan" :scrollable="false">
+  <v-tabs dark :scrollable="false">
+    <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="i in 5"
