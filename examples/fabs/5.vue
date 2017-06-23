@@ -1,11 +1,10 @@
 <template>
   <v-card id="create">
     <v-container fluid grid-list-md>
-      <v-layout justify-center child-flex wrap>
+      <v-layout child-flex wrap>
         <v-flex xs12 sm6 md4>
           <v-subheader>Options</v-subheader>
           <v-checkbox v-model="hover" label="Open on hover" hide-details></v-checkbox>
-          <v-checkbox v-model="fling" label="Fling speed-dial" hide-details></v-checkbox>
         </v-flex>
         <v-flex xs12 sm6 md4>
           <v-subheader>FAB location</v-subheader>
