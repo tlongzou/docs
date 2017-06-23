@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-3" fixed dark centered>
+  <v-tabs dark fixed centered>
     <v-toolbar class="cyan">
       <v-text-field
         solo
@@ -13,7 +13,7 @@
       <v-tabs-item
         v-for="i in 3"
         :key="i"
-        :href="'#mobile-tabs-3-' + i"
+        :href="'#tab-' + i"
       >
         Item {{ i }}
       </v-tabs-item>
@@ -21,7 +21,7 @@
     <v-tabs-content
       v-for="i in 3"
       :key="i"
-      :id="'mobile-tabs-3-' + i"
+      :id="'tab-' + i"
     >
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
