@@ -1,5 +1,6 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
+    v-alert(info value) For more information on all the options available for the <code>v-btn</code> component, please navigate to the <router-link to="/components/buttons" class="white--text">Button documentation</router-link>.
 </template>
 
 <script>
@@ -26,9 +27,22 @@
           ],
           props: {
             'speed-dial': {
+              shared: ['positionable'],
               model: {
-                types: ['Boolean']
-              }
+                type: ['Boolean'],
+                default: 'False',
+                description: 'Used to link the speed-dial state to a button (fab).'
+              },
+              params: [
+                ['direction', `String ['top', 'right', 'bottom', 'left']`, 'top', 'Controls the direction that the speed dial list will open.'],
+                ['hover', 'Boolean', 'False', 'Open the speed dial when the button is hovered over.'],
+                ['transition', 'String', 'scale-transition', 'The default transition to be used for the list animation.']
+              ]
+            }
+          },
+          slots: {
+            'speed-dial': {
+              shared: ['default']
             }
           }
         }

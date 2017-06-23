@@ -41,7 +41,8 @@
           theme: this.makeTheme(),
           input: this.makeInput(),
           overlay: this.makeOverlay(),
-          detachable: this.makeDetach()
+          detachable: this.makeDetach(),
+          positionable: this.makePosition()
         }
       }
     },
@@ -84,6 +85,16 @@
         return [[
           'content-class', 'String', '-', 'Applies a custom class to the detached element. This is useful because the content is moved to the end of the app and is not targettable by classes passed directly on the component.'
         ]]
+      },
+      makePosition () {
+        return [
+          ['absolute', 'Boolean', 'False', 'Position the component absolutely.'],
+          ['bottom', 'Boolean', 'False', 'Align the component towards the bottom.'],
+          ['fixed', 'Boolean', 'False', 'Position the component fixed.'],
+          ['right', 'Boolean', 'False', 'Align the component towards the right.'],
+          ['left', 'Boolean', 'False', 'Align the component towards the left.'],
+          ['top', 'Boolean', 'False', 'Align the component towards the top.'],
+        ]
       },
       makeSlot () {
         return [[

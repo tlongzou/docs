@@ -102,7 +102,7 @@
     methods: {
       getLang (tab) {
         if (tab === 'script') return 'js'
-        if (tab === 'style') return 'stylus'
+        if (tab === 'style') return 'css'
         return 'html'
       },
       parseTemplate (target, template) {
