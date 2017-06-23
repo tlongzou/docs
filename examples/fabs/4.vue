@@ -23,28 +23,21 @@
         </v-card>
       </v-tabs-content>
     </v-tabs>
-    <v-speed-dial v-model="fab" bottom right direction="left">
+    <v-fab-transition>
       <v-btn
         :class="[activeFab.class]"
+        :key="activeFab.icon"
         dark
         fab
-        slot="activator"
+        fixed
+        bottom
+        left
         v-model="fab"
       >
         <v-icon>{{ activeFab.icon }}</v-icon>
         <v-icon>close</v-icon>
       </v-btn>
-      <v-btn
-        fab
-        dark
-        small
-        class="green"
-        v-for="n in 3"
-        :key="n"
-      >
-        <v-icon>list</v-icon>
-      </v-btn>
-    </v-speed-dial>
+    </v-fab-transition>
   </v-app>
 </template>
 
@@ -71,7 +64,7 @@
 
 <style>
   /* This is for documentation purposes and will not be needed in your application */
-  #inspire .speed-dial {
+  #inspire .speed-dial, #inspire .btn--floating {
     position: absolute;
   }
 </style>
