@@ -33,7 +33,7 @@
           ],
           props: {
             'v-btn': {
-              shared: ['theme', 'contextual', 'router'],
+              shared: ['theme', 'contextual', 'router', 'positionable'],
               model: {
                 types: ['Boolean'],
                 default: 'False'
@@ -104,12 +104,6 @@
                   'Boolean',
                   'True',
                   'Applies the raised style'
-                ],
-                [
-                  'ripple',
-                  'Boolean',
-                  'True',
-                  'Applies the ripple directive',
                 ]
               ]
             },
