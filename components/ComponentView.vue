@@ -84,22 +84,22 @@
         },
         headers: {
           props: [
-            { text: 'Option', value: 'prop', left: true },
-            { text: 'Type(s)', value: 'type', left: true },
-            { text: 'Default', value: 'default', left: true },
-            { text: 'Description', value: 'desc', left: true }
+            { text: 'Option', value: 'prop', align: 'left' },
+            { text: 'Type(s)', value: 'type', align: 'left' },
+            { text: 'Default', value: 'default', align: 'left' },
+            { text: 'Description', value: 'desc', align: 'left' }
           ],
           slots: [
-            { text: 'Name', value: 'name', left: true },
-            { text: 'Description', value: 'description', left: true }
+            { text: 'Name', value: 'name', align: 'left' },
+            { text: 'Description', value: 'description', align: 'left' }
           ],
           events: [
-            { text: 'Name', value: 'name', left: true },
-            { text: 'Description', value: 'description', left: true }
+            { text: 'Name', value: 'name', align: 'left' },
+            { text: 'Description', value: 'description', align: 'left' }
           ],
           functional: [
-            { text: 'Name', value: 'name', left: true },
-            { text: 'Description', value: 'description', left: true }
+            { text: 'Name', value: 'name', align: 'left' },
+            { text: 'Description', value: 'description', align: 'left' }
           ]
         },
         tabs: null
