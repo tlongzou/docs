@@ -1,24 +1,13 @@
 <template>
-  <v-tabs dark grow>
-    <v-toolbar class="cyan" dark>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>Page title</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>more_vert</v-icon>
-      </v-btn>
-    </v-toolbar>
+  <v-tabs dark :scrollable="false">
     <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
-        v-for="(item, i) in items"
-        :key="item"
-        :href="'#tab-' + (i + 1)"
+        v-for="i in 5"
+        :key="i"
+        :href="'#tab-' + i"
       >
-        {{ item }}
+        Item {{ i }}
       </v-tabs-item>
       <v-menu>
         <v-tabs-item slot="activator">
@@ -46,9 +35,6 @@
   export default {
     data () {
       return {
-        items: [
-          'web', 'shopping', 'videos', 'images', 'news'
-        ],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
       }
     }

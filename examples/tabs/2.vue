@@ -1,30 +1,19 @@
 <template>
-  <v-tabs id="mobile-tabs-2" fixed dark centered>
-    <v-toolbar extended class="cyan" dark>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>more_vert</v-icon>
-      </v-btn>
-      <v-toolbar-title slot="extension" class="display-2">Page title</v-toolbar-title>
-    </v-toolbar>
+  <v-tabs dark fixed centered>
     <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
-        v-for="i in 3"
+        v-for="i in items"
         :key="i"
-        :href="'#mobile-tabs-2-' + i"
+        :href="'#tab-' + i"
       >
-        Item {{ i }}
+        {{ i }}
       </v-tabs-item>
     </v-tabs-bar>
     <v-tabs-content
-      v-for="i in 3"
+      v-for="i in items"
       :key="i"
-      :id="'mobile-tabs-2-' + i"
+      :id="'tab-' + i"
     >
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
@@ -37,6 +26,7 @@
   export default {
     data () {
       return {
+        items: ['Item One', 'Item Seventeen', 'Item Five'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
       }
     }
