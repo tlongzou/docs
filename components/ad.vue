@@ -11,6 +11,8 @@
     }),
 
     mounted () {
+      if (process.env.NODE_ENV === 'development') return
+
       const script = document.createElement('script')
       script.type = 'text/javascript'
       script.src = '//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuetifyjscom'

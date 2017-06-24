@@ -49,6 +49,7 @@ export function createRouter () {
       route('/components/dividers', 'Divider'),
       route('/components/expansion-panels', 'ExpansionPanel'),
       route('/components/footer', 'Footer'),
+      route('/components/grid-lists', 'GridList'),
       route('/components/icons', 'Icon'),
       route('/components/lists', 'Lists'),
       route('/components/menus', 'Menus'),
@@ -76,7 +77,7 @@ export function createRouter () {
   })
 
   router.beforeEach((to, from, next) => {
-    if (typeof ga !== 'undefined') {
+    if (typeof ga !== 'undefined' && process.env.NODE_ENV !== 'development') {
       ga('set', 'page', to.path)
       ga('send', 'pageview')
     }

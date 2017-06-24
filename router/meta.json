@@ -167,6 +167,12 @@
     "description": "Footer component for Vuetify Framework",
     "keywords": "footer"
   },
+  "/components/grid-lists": {
+    "h1": "Grid lists",
+    "title": "Grid List Component",
+    "description": "Grid list component for Vuetify Framework",
+    "keywords": "grid lists, grid"
+  },
   "/components/icons": {
     "h1": "Icons",
     "title": "Icon Component",

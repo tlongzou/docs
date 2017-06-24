@@ -58,6 +58,12 @@
                   'Boolean',
                   'False',
                   'Specifies a 0 elevation',
+                ],
+                [
+                  'tile',
+                  'Boolean',
+                  'False',
+                  'Turn the card into a tile by removing the border radius',
                 ]
               ]
             },

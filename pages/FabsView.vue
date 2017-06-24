@@ -13,11 +13,7 @@
           component: 'buttons',
           edit: 'FabsView',
           title: 'Buttons: Floating Action Button',
-          desc: `
-            <p>
-              The <code>v-btn</code> component replaces the standard html button with a material design theme and a multitude of options. Any color helper class can be used to alter the background or text color. Remember that all event captures must be done using the <strong>.native</strong> modifier.
-            </p>
-          `,
+          desc: `The <code>v-btn</code> component can be used as a Floating action button. This provides an application a main point of action. Combined with the <code>v-speed-dial</code> component, you can create a diverse set of functions available for your users.`,
           examples: [
             { header: "Promoted action", file: "fabs/1", desc: `Floating action buttons can be attached to material to signify a promoted action in your application. The default size will be used in most cases, whereas the <code>small</code> variant can be used to maintain continuity with similar sized elements.` },
             { header: "Small variant", file: "fabs/2", desc: `For better visual appeal, we use a small button to match our list avatars.` },

@@ -15,7 +15,7 @@
           desc: 'The <code>v-alert</code> component is used to convey information to the user. Designed to stand out, the alerts come in four contextual styles, success, info, warning, and error.',
           examples: [
             { header: 'Contextual', file: 'alerts/1', desc: `The <code>v-alert</code> component comes in 4 variations, <strong>success</strong>, <strong>info</strong>, <strong>warning</strong> and <strong>error</strong>. These have default icons assigned which can be changed and represent different actions.` },
-            { header: 'Closable', file: 'alerts/2', desc: `Using <code>v-model</code> you can control the state of the Alert. If you don't want to assign a v-model and just display the alert, you can simply do <code>:value="true"</code>.` },
+            { header: 'Closable', file: 'alerts/2', desc: `Using <code>v-model</code> you can control the state of the Alert. If you don't want to assign a v-model and just display the alert, you can simply assign the prop <code>value</code>.` },
             { header: 'Custom Icon / No Icon', file: 'alerts/3', desc: `You can easily assign a custom icon or remove it all together.` }
           ],
           props: {
