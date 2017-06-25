@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const meta = require('./meta.json')
-const release = process.env.RELEASE
+const release = (process.env.RELEASE).toString()
 
 // Route helper function for lazy loading
 function route (path, view) {
