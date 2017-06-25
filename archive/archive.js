@@ -1,6 +1,6 @@
 import 'event-source-polyfill'
 import Vue from 'vue'
-import App from './App.vue'
+import App from 'assets//App.vue'
 import Vuetify from 'vuetify'
 import Components from 'components/_index'
 

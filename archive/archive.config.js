@@ -1,7 +1,7 @@
 // Config and utils
 const path = require('path')
 const webpack = require('webpack')
-const vueConfig = require('./vue-loader.config')
+const vueConfig = require('../build/vue-loader.config')
 
 // Plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -12,7 +12,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 // Helpers
 const resolve = (file) => path.resolve(__dirname, file)
 const isProd = process.env.NODE_ENV === 'production'
-const release = process.env.RELEASE
+const release = (process.env.RELEASE).toString()
 const rimraf = require('rimraf')
 const copyTo = `releases/${release}/`
 
@@ -20,11 +20,11 @@ const copyTo = `releases/${release}/`
 rimraf(resolve(`../releases/${release}`), err => err && console.log(err))
 
 module.exports = {
-  entry: resolve('../assets/archive.js'),
+  entry: resolve('./archive.js'),
   output: {
     path: resolve(`../releases/${release}/public`),
     publicPath: `/releases/${release}/public/`,
-    filename: 'build.js'
+    filename: '[name].[hash].js'
   },
   resolve: {
     extensions: ['*', '.js', '.json', '.vue'],
@@ -55,6 +55,9 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        options: {
+          presets: ['es2015']
+        },
         exclude: /node_modules/
       },
       {
@@ -62,7 +65,7 @@ module.exports = {
         loader: ['style', 'css', 'stylus']
       },
       {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)(\?.*)?$/,
         loader: 'url-loader',
         query: {
           limit: 10000,
@@ -88,12 +91,12 @@ module.exports = {
           !/\.css$/.test(module.request)
         )
       }
-    })
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false }
     }),
     new ExtractTextPlugin({
-      filename: 'build.css'
+      filename: '[name].[hash].css'
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"',
@@ -102,7 +105,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: '../index.html',
-      template: 'assets/archive.template.html',
+      template: 'archive/archive.template.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
