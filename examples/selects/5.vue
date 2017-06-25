@@ -4,44 +4,15 @@
       <v-container fluid>
         <v-layout row wrap>
           <v-flex xs12 sm6>
-            <v-subheader v-text="'Slots'"></v-subheader>
+            <v-subheader v-text="'Autocomplete'"></v-subheader>
           </v-flex>
           <v-flex xs12 sm6>
             <v-select
+              v-bind:items="states"
+              v-model="a1"
               label="Select"
-              v-bind:items="people"
-              v-model="e11"
-              item-text="name"
-              item-value="name"
-              multiple
-              chips
-              max-height="auto"
               autocomplete
-            >
-              <template slot="selection" scope="data">
-                <v-chip
-                  close
-                  @input="data.parent.selectItem(data.item)"
-                  @click.native.stop
-                  class="chip--select-multi"
-                  :key="data.item"
-                >
-                  <v-avatar>
-                    <img :src="data.item.avatar">
-                  </v-avatar>
-                  {{ data.item.name }}
-                </v-chip>
-              </template>
-              <template slot="item" scope="data">
-                <v-list-tile-avatar>
-                  <img v-bind:src="data.item.avatar"/>
-                </v-list-tile-avatar>
-                <v-list-tile-content>
-                  <v-list-tile-title v-html="data.item.name"></v-list-tile-title>
-                  <v-list-tile-sub-title v-html="data.item.group"></v-list-tile-sub-title>
-                </v-list-tile-content>
-              </template>
-            </v-select>
+            ></v-select>
           </v-flex>
         </v-layout>
       </v-container>
@@ -52,28 +23,23 @@
 <script>
   export default {
     data () {
-      let srcs = {
-        1: '/static/doc-images/lists/1.jpg',
-        2: '/static/doc-images/lists/2.jpg',
-        3: '/static/doc-images/lists/3.jpg',
-        4: '/static/doc-images/lists/4.jpg',
-        5: '/static/doc-images/lists/5.jpg'
-      }
-
       return {
-        e11: [],
-        people: [
-          { header: 'Group 1'},
-          { name: 'Sandra Adams', group: 'Group 1', avatar: srcs[1] },
-          { name: 'Ali Connors', group: 'Group 1', avatar: srcs[2] },
-          { name: 'Trevor Hansen', group: 'Group 1', avatar: srcs[3] },
-          { name: 'Tucker Smith', group: 'Group 1', avatar: srcs[2] },
-          { divider: true },
-          { header: 'Group 2'},
-          { name: 'Britta Holt', group: 'Group 2', avatar: srcs[4] },
-          { name: 'Jane Smith ', group: 'Group 2', avatar: srcs[5] },
-          { name: 'John Smith', group: 'Group 2', avatar: srcs[1] },
-          { name: 'Sandra Williams', group: 'Group 2', avatar: srcs[3] }
+        a1: null,
+        states: [
+          'Alabama','Alaska','American Samoa','Arizona',
+          'Arkansas','California','Colorado','Connecticut',
+          'Delaware','District of Columbia','Federated States of Micronesia',
+          'Florida','Georgia','Guam','Hawaii','Idaho',
+          'Illinois','Indiana','Iowa','Kansas','Kentucky',
+          'Louisiana','Maine','Marshall Islands','Maryland',
+          'Massachusetts','Michigan','Minnesota','Mississippi',
+          'Missouri','Montana','Nebraska','Nevada',
+          'New Hampshire','New Jersey','New Mexico','New York',
+          'North Carolina','North Dakota','Northern Mariana Islands','Ohio',
+          'Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico',
+          'Rhode Island','South Carolina','South Dakota','Tennessee',
+          'Texas','Utah','Vermont','Virgin Island','Virginia',
+          'Washington','West Virginia','Wisconsin','Wyoming'
         ]
       }
     }
