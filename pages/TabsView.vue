@@ -21,8 +21,9 @@
             { header: 'With search', file: 'tabs/4' },
             { header: '', file: 'tabs/5' },
             { header: 'Desktop tabs', file: 'tabs/6' },
-            { header: '', file: 'tabs/7' },
-            { header: '', file: 'tabs/8' }
+            { header: 'Grow', file: 'tabs/7', desc: 'The <code>grow</code> prop will make the tab items take up all available space.' },
+            { header: 'Pagination', file: 'tabs/8', desc: 'If the tab items overflow their container, pagination controls will appear.' },
+            { header: 'Disabled scroll', file: 'tabs/9', desc: 'You can disable the pagination controls by setting the <code>scrollable</code> prop to <code>false</code>. This also has the effect of removing the margins around the tab item container.' }
           ],
           props: {
             'v-tabs': {

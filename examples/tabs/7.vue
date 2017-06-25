@@ -20,13 +20,19 @@
       >
         {{ item }}
       </v-tabs-item>
-      <v-menu>
+      <v-menu :nudge-width="100" left bottom>
         <v-tabs-item slot="activator">
           Menu
           <v-icon>arrow_drop_down</v-icon>
         </v-tabs-item>
-        <v-list v-for="n in 4" v-bind:key="n">
-          <v-list-tile href="javascript:;">Item {{ n }}</v-list-tile>
+        <v-list class="grey lighten-3">
+          <v-list-tile
+            tag="a"
+            v-for="n in 4"
+            :key="n"
+          >
+            Item {{ n }}
+          </v-list-tile>
         </v-list>
       </v-menu>
     </v-tabs-bar>

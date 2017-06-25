@@ -42,7 +42,8 @@
           input: this.makeInput(),
           overlay: this.makeOverlay(),
           detachable: this.makeDetach(),
-          positionable: this.makePosition()
+          positionable: this.makePosition(),
+          transitionable: this.makeTransition()
         }
       }
     },
@@ -101,6 +102,13 @@
           'default',
           'Default Vue slot'
         ]]
+      },
+      makeTransition () {
+        return [
+          ['mode', 'String', '-', 'Sets the transition mode (does not apply to transition-group)'],
+          ['origin', 'String', '-', 'Sets the transition origin'],
+          ['transition', 'String', '-', 'Sets the component transition. Can be one of the built in transitions or your own.']
+        ]
       },
       makeModel (model) {
         if (!model) return false
