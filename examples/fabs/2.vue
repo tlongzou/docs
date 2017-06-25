@@ -4,7 +4,6 @@
       <v-card>
         <v-toolbar class="light-blue" light extended>
           <v-toolbar-side-icon></v-toolbar-side-icon>
-          <v-toolbar-title slot="extension" class="white--text">My files</v-toolbar-title>
           <v-btn
             fab
             small
@@ -17,6 +16,7 @@
           >
             <v-icon>add</v-icon>
           </v-btn>
+          <v-toolbar-title slot="extension" class="white--text">My files</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn icon>
             <v-icon>search</v-icon>
