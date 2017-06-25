@@ -1,33 +1,38 @@
 <template>
-  <div>
-    <v-card horizontal>
-      <v-card-row img="/static/doc-images/cards/hotel.jpg" height="130px"></v-card-row>
-      <v-card-column>
-        <v-card-row height="75px" class="brown white--text">
-          <v-card-text>
-            <strong>Reservation at Lazy Bear</strong>
-            <div>Feb 23, 7:00pm</div>
-          </v-card-text>
-        </v-card-row>
-        <v-card-row actions class="brown darken-2">
-          <v-btn flat class="white--text">
-            <v-icon left light>directions</v-icon>Directions
-          </v-btn>
-        </v-card-row>
-      </v-card-column>
-    </v-card>
-
-    <v-card horizontal class="mt-3">
-      <v-card-column class="amber white--text">
-        <v-card-row>
+  <v-layout row>
+    <v-flex xs12 sm6 offset-sm3>
+      <v-card>
+        <v-card-media
+          src="https://cdn.pixabay.com/photo/2016/04/12/14/49/sunshine-1324481_960_720.jpg"
+          height="200px"
+        >
+        </v-card-media>
+        <v-card-title primary-title>
+          <div class="headline">Top western road trips</div>
+          <span class="grey--text">1,000 miles of wonder</span>
+        </v-card-title>
+        <v-card-actions>
+          <v-btn flat>Share</v-btn>
+          <v-btn flat class="purple--text">Explore</v-btn>
           <v-spacer></v-spacer>
-          <v-card-text class="text-xs-right">
-            <strong>Car Rental with Hertz</strong>
-            <div>Mar 5, 8:00pm</div>
+          <v-btn icon @click.native="show = !show">
+            <v-icon>{{ show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
+          </v-btn>
+        </v-card-actions>
+        <v-slide-y-transition>
+          <v-card-text v-show="show">
+            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
           </v-card-text>
-        </v-card-row>
-      </v-card-column>
-      <v-card-row img="/static/doc-images/cards/store.jpg" height="125px"></v-card-row>
-    </v-card>
-  </div>
+        </v-slide-y-transition>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
+
+<script>
+  export default {
+    data: () => ({
+      show: false
+    })
+  }
+</script>

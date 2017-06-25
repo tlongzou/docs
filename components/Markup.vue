@@ -4,7 +4,7 @@
       code(v-bind:class="lang" ref="markup")
         slot
     div(class="markup__copy")
-      v-icon(v-on:click="copyMarkup" dark) content_copy
+      v-icon(v-on:click="copyMarkup") content_copy
     v-slide-x-transition
       span(class="component-example-copied" v-if="copied") Copied
     textarea(
@@ -134,6 +134,7 @@
       word-break: break-word
       flex-wrap: wrap
       align-items: center
+      vertical-align: middle
       
       > div
         width: 100%

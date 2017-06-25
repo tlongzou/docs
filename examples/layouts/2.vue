@@ -1,7 +1,7 @@
 <template>
   <v-app id="example-2">
     <v-navigation-drawer permanent light>
-      <v-list class="pa-0">
+      <v-list class="pb-0">
         <v-list-tile avatar tag="ul"></v-list-tile>
       </v-list>
       <v-divider></v-divider>

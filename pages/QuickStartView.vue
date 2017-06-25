@@ -1,6 +1,6 @@
 <template lang="pug">
   doc-view(id="quick-start-view")
-    v-layout(column-xs row-sm)
+    v-layout(column-xs row-sm wrap)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Getting Started
@@ -24,7 +24,7 @@
     section
       section-header New applications
       section-text Vuetify has 5 pre-made Vue CLI templates, 3 which are forked from <a href="https://github.com/vuejs-templates" target="_blank">official Vue.js templates</a>. They contain small modifications to help you get started with Vuetify even faster. These packages require <code>vue-cli</code>. For more information on vue-cli, visit the official <a href="https://github.com/vuejs/vue-cli" target="_blank">Github</a> repository.
-      v-tabs(class="elevation-1 mb-5" grow icons dark)
+      v-tabs(class="elevation-1 mb-5" grow icons dark :scrollable="false")
         v-tabs-bar(slot="activators")
           v-tabs-slider
           v-tabs-item(ripple href="#simple") Simple HTML
@@ -106,7 +106,7 @@
           ).px-0
             v-list-tile(avatar tag="ul")
               v-list-tile-avatar
-                v-icon(fa light).primary {{ browser.icon }}
+                v-icon(fa dark).primary {{ browser.icon }}
               v-list-tile-content
                 v-list-tile-title {{ browser.title }}
                 v-list-tile-sub-title {{ browser.supported ? 'Supported' : 'Not supported' }}
@@ -147,7 +147,7 @@
           { icon: 'edge', title: 'Edge', supported: true },
           { icon: 'chrome', title: 'Chrome', supported: true },
           { icon: 'firefox', title: 'Firefox', supported: true },
-          { icon: 'safari', title: 'Safari', supported: true },
+          { icon: 'safari', title: 'Safari 9+', supported: true },
         ]
       }
     }
