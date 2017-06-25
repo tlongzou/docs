@@ -1,27 +1,16 @@
 <template>
-  <v-tabs id="mobile-tabs-5" fixed dark icons centered>
-    <v-toolbar class="cyan" dark>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title>Page title</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-      <v-btn icon>
-        <v-icon>more_vert</v-icon>
-      </v-btn>
-    </v-toolbar>
+  <v-tabs dark fixed icons centered>
     <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
-      <v-tabs-item href="#mobile-tabs-5-1">
+      <v-tabs-item href="#tab-1">
         <v-icon>phone</v-icon>
         Recents
       </v-tabs-item>
-      <v-tabs-item href="#mobile-tabs-5-2">
+      <v-tabs-item href="#tab-2">
         <v-icon>favorite</v-icon>
         Favorites
       </v-tabs-item>
-      <v-tabs-item href="#mobile-tabs-5-3">
+      <v-tabs-item href="#tab-3">
         <v-icon>account_box</v-icon>
         Nearby
       </v-tabs-item>
@@ -29,7 +18,7 @@
     <v-tabs-content
       v-for="i in 3"
       :key="i"
-      :id="'mobile-tabs-5-' + i"
+      :id="'tab-' + i"
     >
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>

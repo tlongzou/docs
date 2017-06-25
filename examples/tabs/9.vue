@@ -1,17 +1,26 @@
 <template>
-  <v-tabs dark fixed centered>
+  <v-tabs dark :scrollable="false">
     <v-tabs-bar slot="activators" class="cyan">
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
-        v-for="i in items"
+        v-for="i in 5"
         :key="i"
         :href="'#tab-' + i"
       >
-        {{ i }}
+        Item {{ i }}
       </v-tabs-item>
+      <v-menu>
+        <v-tabs-item slot="activator">
+          Menu
+          <v-icon>arrow_drop_down</v-icon>
+        </v-tabs-item>
+        <v-list v-for="n in 4" v-bind:key="n">
+          <v-list-tile href="javascript:;">Item {{ n }}</v-list-tile>
+        </v-list>
+      </v-menu>
     </v-tabs-bar>
     <v-tabs-content
-      v-for="i in items"
+      v-for="i in 5"
       :key="i"
       :id="'tab-' + i"
     >
@@ -26,7 +35,6 @@
   export default {
     data () {
       return {
-        items: ['Item One', 'Item Seventeen', 'Item Five'],
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
       }
     }

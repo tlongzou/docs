@@ -1,5 +1,5 @@
 <template>
-  <v-tabs id="mobile-tabs-7" dark>
+  <v-tabs dark grow>
     <v-toolbar class="cyan" dark>
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Page title</v-toolbar-title>
@@ -12,11 +12,11 @@
       </v-btn>
     </v-toolbar>
     <v-tabs-bar slot="activators" class="cyan">
-      <v-tabs-slider class="white"></v-tabs-slider>
+      <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="(item, i) in items"
         :key="item"
-        :href="'#mobile-tabs-7-' + (i + 1)"
+        :href="'#tab-' + (i + 1)"
       >
         {{ item }}
       </v-tabs-item>
@@ -39,7 +39,7 @@
     <v-tabs-content
       v-for="i in 5"
       :key="i"
-      :id="'mobile-tabs-7-' + i"
+      :id="'tab-' + i"
     >
       <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
