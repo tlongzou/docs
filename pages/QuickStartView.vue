@@ -24,7 +24,7 @@
     section
       section-header New applications
       section-text Vuetify has 5 pre-made Vue CLI templates, 3 which are forked from <a href="https://github.com/vuejs-templates" target="_blank">official Vue.js templates</a>. They contain small modifications to help you get started with Vuetify even faster. These packages require <code>vue-cli</code>. For more information on vue-cli, visit the official <a href="https://github.com/vuejs/vue-cli" target="_blank">Github</a> repository.
-      v-tabs(class="elevation-1 mb-5" grow icons dark :scrollable="false")
+      v-tabs(class="elevation-1 mb-5" grow icons dark)
         v-tabs-bar(slot="activators")
           v-tabs-slider
           v-tabs-item(ripple href="#simple") Simple HTML
