@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" standalone>
     <v-tabs grow v-model="tabs">
       <v-toolbar class="grey lighten-4" light>
         <v-toolbar-side-icon></v-toolbar-side-icon>

@@ -3,13 +3,16 @@
     height="415px"
     dark
     id="e3"
+    standalone
   >
     <v-navigation-drawer
       class="pb-0"
-      permanent
+      persistent
       absolute
       height="100%"
       clipped
+      enable-resize-watcher
+      v-model="drawer"
     >
       <v-list dense>
         <v-list-tile v-for="item in items" :key="item">
@@ -47,7 +50,7 @@
     </v-navigation-drawer>
     <v-toolbar class="red">
       <v-toolbar-title>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
+        <v-toolbar-side-icon @click.native.stop="drawer = !drawer"></v-toolbar-side-icon>
         <v-icon fa fa-fw class="ml-3">youtube</v-icon>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -74,6 +77,7 @@
 <script>
   export default {
     data: () => ({
+      drawer: true,
       items: [
         { icon: 'trending_up', text: 'Most Popular' },
         { icon: 'subscriptions', text: 'Subscriptions' },

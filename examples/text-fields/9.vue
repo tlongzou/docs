@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex sm12 md6 class="my-3">
         <v-card>
-          <v-app top-toolbar id="example-9-1" style="min-height: 0;">
+          <v-app top-toolbar id="example-9-1" style="min-height: 0;" standalone>
             <v-toolbar class="primary">
               <v-btn icon>
                 <v-icon class="white--text">arrow_back</v-icon>

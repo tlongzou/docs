@@ -1,6 +1,6 @@
 <template>
   <v-card height="30vh" style="overflow: hidden;">
-    <v-app id="example-4">
+    <v-app id="example-4" standalone>
       <v-navigation-drawer 
         permanent
         absolute

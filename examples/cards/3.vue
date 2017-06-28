@@ -1,5 +1,5 @@
 <template>
-  <v-app id="e3" style="max-width: 400px; margin: auto;">
+  <v-app id="e3" style="max-width: 400px; margin: auto;" standalone>
     <v-toolbar class="pink">
       <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title class="white--text">My Music</v-toolbar-title>

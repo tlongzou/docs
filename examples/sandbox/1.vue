@@ -3,6 +3,7 @@
     id="sandbox"
     :dark="dark"
     :light="!dark"
+    standalone
   >
     <v-navigation-drawer
       v-model="primaryDrawer.model"

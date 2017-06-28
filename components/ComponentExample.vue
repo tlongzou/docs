@@ -169,4 +169,7 @@
 
     [data-app]
       min-height: 300px
+      
+    .card
+      z-index: 0
 </style>
