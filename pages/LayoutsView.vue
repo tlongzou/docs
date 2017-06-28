@@ -15,7 +15,8 @@
           |   &lt;/main&gt;
           |   &lt;v-footer&gt;&lt;/v-footer&gt;
           |&lt;/v-app&gt;
-        section-text Keep in mind that for the purposes of the documentation, the <code>v-navigation-drawer</code>'s have had their overflow removed.
+        v-alert(info value="true") Keep in mind that for the purposes of these docs, the <code>v-navigation-drawer</code>'s have had their overflow removed and set to absolute positioning. In your application, you can choose to omit these properties.
+    v-alert(error value="true") In order for your application to work properly, you <strong>must</strong> wrap it in a <code>v-app</code> component. If you absolutely cannot wrap your application, you must add corresponding class for your chosen theme. <strong>"application--light"</strong> or <strong>"application--dark"</strong>.
 </template>
 
 <script>
@@ -68,7 +69,15 @@
               file: 'layouts/8',
               desc: `Vuetify also supports the dark application theme. This will not override components that have default themes so in some cases it will be necessary to manually set the dark theme accents.`
             }
-          ]
+          ],
+          props: {
+            'v-app': {
+              shared: ['theme'],
+              params: [
+
+              ]
+            }
+          }
         }
       }
     }

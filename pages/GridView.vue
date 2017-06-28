@@ -1,6 +1,7 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
-    v-card(slot="top").mb-5
+    v-alert(info value="true" slot="top") If you are looking for <strong>Grid lists</strong>, please navigate <router-link class="white--text" to="/components/grid-lists">here</router-link>.
+    v-card(slot="top").my-5
       v-table-overflow
         table.table
           caption.mt-3
@@ -51,7 +52,7 @@
           title: 'Grid',
           component: 'grid',
           edit: 'GridView',
-          desc: 'Vuetify.js uses a 12 point grid system. The grid is used to layout an application\'s content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.',
+          desc: `Vuetify.js uses a 12 point grid system. The grid is used to layout an application\'s content and contains 5 types of media breakpoints. The 5 ranges of breakpoints are used for targeting specific screen sizes or orientations.`,
           examples: [
             { header: 'Grid', file: 'grid/1', desc: `The <code>v-container</code> can be used for a center focused page, or given the <code>fluid</code> prop to extend its full width. <code>v-layout</code> is used for separating sections and contains the <code>v-flex</code>. The structure of your layout will be as follows, <strong>v-layout</strong> &raquo; <strong>v-flex</strong>.` },
             { header: 'Offset', file: 'grid/2', desc: `Offsets are useful for compensating for elements that may not be visible yet, or to control the position of content. Just as with breakpoints, you can set an offset for any available sizes.` },

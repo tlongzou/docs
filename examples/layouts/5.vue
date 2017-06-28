@@ -1,5 +1,5 @@
 <template>
-  <v-app id="example-3">
+  <v-app id="example-3" standalone>
     <v-navigation-drawer permanent floating light class="transparent">
       <v-card class="ma-3">
         <v-list dense class="py-0">

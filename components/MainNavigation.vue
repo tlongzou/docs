@@ -59,7 +59,7 @@
             v-list-tile-content
               v-list-tile-title {{ subItem.title }}
             v-list-tile-action(v-if="subItem.action")
-              v-icon(dark class="success--text") {{ subItem.action }}
+              v-icon(dark :class="[subItem.actionClass || 'success--text']") {{ subItem.action }}
         v-subheader(v-else-if="item.header" dark) {{ item.header }}
         v-divider(v-else-if="item.divider")
         v-list-tile(:href="item.href" router ripple v-bind:disabled="item.disabled" v-else)
@@ -89,11 +89,16 @@
             ]
           },
           {
-            title: 'Motion',
-            action: 'slow_motion_video',
-            group: 'motion',
+            title: 'Layout',
+            action: 'devices',
+            group: 'layout',
             items: [
-              { href: '/motion/transitions', title: 'Transitions' }
+              { href: '/layout/pre-defined', title: 'Pre-defined', action: 'star', actionClass: 'white--text' },
+              { href: '/layout/grid', title: 'Grid' },
+              { href: '/layout/spacing', title: 'Spacing' },
+              { href: '/layout/alignment', title: 'Alignment' },
+              { href: '/layout/display', title: 'Display' },
+              { href: '/layout/elevation', title: 'Elevation' }
             ]
           },
           {
@@ -108,16 +113,11 @@
             ]
           },
           {
-            title: 'Layout',
-            action: 'devices',
-            group: 'layout',
+            title: 'Motion',
+            action: 'slow_motion_video',
+            group: 'motion',
             items: [
-              { href: '/layout/pre-defined', title: 'Pre-defined' },
-              { href: '/layout/grid', title: 'Grid' },
-              { href: '/layout/spacing', title: 'Spacing' },
-              { href: '/layout/alignment', title: 'Alignment' },
-              { href: '/layout/display', title: 'Display' },
-              { href: '/layout/elevation', title: 'Elevation' }
+              { href: '/motion/transitions', title: 'Transitions' }
             ]
           },
           {

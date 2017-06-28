@@ -1,5 +1,5 @@
 <template>
-  <v-app id="example-2">
+  <v-app id="example-2" standalone>
     <v-navigation-drawer permanent light>
       <v-list class="pb-0">
         <v-list-tile avatar tag="ul"></v-list-tile>

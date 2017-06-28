@@ -1,11 +1,12 @@
 <template>
-  <v-app id="example-1">
+  <v-app id="example-1" standalone>
     <v-navigation-drawer
       persistent
       v-model="drawer"
       light
       enable-resize-watcher
       overflow
+      absolute
     >
       <v-list dense>
         <v-list-tile @click.native.stop="left = !left">
@@ -25,6 +26,7 @@
       right
       enable-resize-watcher
       overflow
+      absolute
     >
       <v-list dense>
         <v-list-tile @click.native.stop="right = !right">
@@ -48,6 +50,7 @@
         temporary
         v-model="left"
         overflow
+        absolute
       ></v-navigation-drawer>
       <v-container fluid>
         <!--v-router-->
@@ -57,6 +60,7 @@
         temporary
         v-model="right"
         overflow
+        absolute
       ></v-navigation-drawer>
     </main>
     <v-footer class="indigo">

@@ -1,5 +1,5 @@
 <template>
-  <v-app id="example-3">
+  <v-app id="example-3" standalone>
     <v-navigation-drawer permanent clipped light>
       <v-list dense class="pt-0">
         <v-list-tile v-for="item in items" :key="item">

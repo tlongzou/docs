@@ -25,7 +25,7 @@
                 span Get Started
                 v-icon(right dark) chevron_right
 
-    section#development.text-xs-center.pa-5
+    section#development.text-xs-center.py-5
       v-container(fluid)
         v-layout(row)
           v-flex(xs12)

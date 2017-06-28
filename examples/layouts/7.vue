@@ -1,6 +1,13 @@
 <template>
-  <v-app id="example-2">
-    <v-navigation-drawer temporary v-model="drawer" :mini-variant.sync="mini" light overflow>
+  <v-app id="example-2" standalone>
+    <v-navigation-drawer
+      temporary
+      v-model="drawer" 
+      :mini-variant.sync="mini" 
+      light 
+      overflow
+      absolute
+    >
       <v-list class="pa-0">
         <v-list-tile avatar tag="div">
           <v-list-tile-avatar>
