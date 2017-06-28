@@ -83,9 +83,9 @@
       section-header Existing applications
       section-text If you are wanting to use Vuetify in an existing project, you can install by using npm or yarn. Keep in mind, you will still need to <strong><em>include</em></strong> Vuetify, Roboto font library, and Material icon library css files as they are <strong>not</strong> part of the javascript import.
       markup(lang="cli")
-        |$  npm install vuetify --save-dev
+        |$  npm install vuetify
         |&nbsp;
-        |$  yarn add vuetify --dev
+        |$  yarn add vuetify
       section-text In your index.js, import Vuetify and apply the plugin to Vue.
       markup(lang="js")
         |import Vue from 'vue'
