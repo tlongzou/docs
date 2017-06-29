@@ -17,18 +17,18 @@
             { header: "Checkboxes - Boolean", file: "selection-controls/1", desc: '' },
             { header: "Checkboxes - Array", file: "selection-controls/2", desc: '' },
             { header: "Checkboxes - States", file: "selection-controls/3", desc: '' },
-            { header: "Checkboxes - Contextual", file: "selection-controls/4", desc: '' },
+            { header: "Checkboxes - Colors", file: "selection-controls/4", desc: 'Checkboxes can be colored by using any of the builtin colors and contextual names using the color prop.' },
             { header: "Radios - Default", file: "selection-controls/5", desc: '' },
             { header: "Radios - States", file: "selection-controls/6", desc: '' },
-            { header: "Radios - Contextual", file: "selection-controls/7", desc: '' },
+            { header: "Radios - Colors", file: "selection-controls/7", desc: 'Radios can be colored by using any of the builtin colors and contextual names using the color prop.' },
             { header: "Switches - Boolean", file: "selection-controls/8", desc: '' },
             { header: "Switches - Array", file: "selection-controls/9", desc: '' },
             { header: "Switches - States", file: "selection-controls/10", desc: '' },
-            { header: "Switches - Contextual", file: "selection-controls/11", desc: '' },
+            { header: "Switches - Colors", file: "selection-controls/11", desc: 'Switches can be colored by using any of the builtin colors and contextual names using the color prop.' },
           ],
           props: {
             'v-checkbox': {
-              shared: ['contextual', 'input'],
+              shared: ['colorable', 'input'],
               params: [
                 [
                   'input-value',
@@ -62,7 +62,7 @@
               }
             },
             'v-radio': {
-              shared: ['contextual', 'input'],
+              shared: ['colorable', 'input'],
               params: [
                 [
                   'input-value',
@@ -78,7 +78,7 @@
               }
             },
             'v-switch': {
-              shared: ['contextual', 'input'],
+              shared: ['colorable', 'input'],
               params: [
                 [
                   'input-value',
