@@ -17,7 +17,7 @@
             prepend-icon="access_time"
             readonly
           ></v-text-field>
-          <v-time-picker v-model="e6"></v-time-picker>
+          <v-time-picker v-model="e6" autosave></v-time-picker>
         </v-menu>
       </v-flex>
       <v-flex xs12 sm6>

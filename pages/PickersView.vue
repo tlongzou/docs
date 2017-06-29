@@ -1,5 +1,6 @@
 <template lang="pug">
   component-view(v-bind:doc="doc")
+    v-alert(info value="true" slot="top").mb-5 Date/Time pickers store internally the current value of your model and only change once saved. This can be accomplished by using the <code>actions</code> prop in conjunction with a scopedSlot to define your buttons, or by using the <code>autosave</code> prop.
 </template>
 
 <script>
@@ -37,6 +38,12 @@
                   'Boolean',
                   'True',
                   'Use this when using actions inside the picker'
+                ],
+                [
+                  'autosave',
+                  'Boolean',
+                  'True',
+                  'Automatically save the selected value. This updates the internal previous value so if cancel is clicked, it will not revert the user changes'
                 ],
                 [
                   'dark',
@@ -130,6 +137,12 @@
                   'Boolean',
                   'True',
                   'Use this when using actions inside the picker'
+                ],
+                [
+                  'autosave',
+                  'Boolean',
+                  'True',
+                  'Automatically save the selected value. This updates the internal previous value so if cancel is clicked, it will not revert the user changes'
                 ],
                 [
                   'dark',

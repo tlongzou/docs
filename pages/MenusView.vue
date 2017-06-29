@@ -25,6 +25,18 @@
               shared: ['detachable'],
               params: [
                 [
+                  'full-width',
+                  'Boolean',
+                  'False',
+                  'Changes the menu display to block, useful for filling available width in forms'
+                ],
+                [
+                  'max-width',
+                  '[Number, String]',
+                  'null',
+                  `Set's the maximum width for the menu content`
+                ],
+                [
                   'top',
                   'Boolean',
                   'False',

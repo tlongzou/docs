@@ -8,7 +8,9 @@
           v-model="menu"
           transition="v-scale-transition"
           offset-y
+          full-width
           :nudge-left="40"
+          max-width="290px"
         >
           <v-text-field
             slot="activator"
@@ -32,6 +34,7 @@
           persistent
           v-model="modal"
           lazy
+          full-width
         >
           <v-text-field
             slot="activator"
@@ -40,7 +43,7 @@
             prepend-icon="event"
             readonly
           ></v-text-field>
-          <v-date-picker v-model="e3" scrollable>
+          <v-date-picker v-model="e3" scrollable >
             <template scope="{ save, cancel }">
               <v-card-actions>
                 <v-btn flat primary @click.native="cancel()">Cancel</v-btn>
