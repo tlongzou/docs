@@ -3,23 +3,80 @@
     <v-card-text>
       <v-container fluid>
         <v-layout row wrap>
-          <v-flex xs12 sm4 md2>
-            <v-checkbox label="Primary" v-model="ex7" value="primary" primary hide-details></v-checkbox>
+          <v-flex xs12 sm4 md4>
+            <v-checkbox label="red" 
+                        v-model="ex4" 
+                        color="red" 
+                        value="red" 
+                        hide-details></v-checkbox>
+            <v-checkbox label="red darken-3" 
+                        v-model="ex4" 
+                        color="red darken-3" 
+                        value="red darken-3" 
+                        hide-details></v-checkbox>
           </v-flex>
-          <v-flex xs12 sm4 md2>
-            <v-checkbox label="Secondary" v-model="ex7" value="secondary" secondary hide-details></v-checkbox>
+          <v-flex xs12 sm4 md4>
+            <v-checkbox label="indigo"
+                        v-model="ex4"
+                        color="indigo"
+                        value="indigo"
+                        hide-details></v-checkbox>
+            <v-checkbox label="indigo darken-3"
+                        v-model="ex4"
+                        color="indigo darken-3"
+                        value="indigo darken-3"
+                        hide-details></v-checkbox>
           </v-flex>
-          <v-flex xs12 sm4 md2>
-            <v-checkbox label="Success" v-model="ex7" value="success" success hide-details></v-checkbox>
+          <v-flex xs12 sm4 md4>
+            <v-checkbox label="orange"
+                        v-model="ex4"
+                        color="orange"
+                        value="orange"
+                        hide-details></v-checkbox>
+            <v-checkbox label="orange darken-3" 
+                        v-model="ex4"
+                        color="orange darken-3"
+                        value="orange darken-3"
+                        hide-details></v-checkbox>
           </v-flex>
-          <v-flex xs12 sm4 md2>
-            <v-checkbox label="Info" v-model="ex7" value="info" info hide-details></v-checkbox>
+        </v-layout>
+
+        <v-layout row wrap class="mt-5">
+          <v-flex xs12 sm4 md4>
+            <v-checkbox label="primary" 
+                        v-model="ex4"
+                        color="primary"
+                        value="primary"
+                        hide-details></v-checkbox>
+            <v-checkbox label="secondary" 
+                        v-model="ex4"
+                        color="secondary"
+                        value="secondary"
+                        hide-details></v-checkbox>
           </v-flex>
-          <v-flex xs12 sm4 md2>
-            <v-checkbox label="Warning" v-model="ex7" value="warning" warning hide-details></v-checkbox>
+          <v-flex xs12 sm4 md4>
+            <v-checkbox label="success" 
+                        v-model="ex4"
+                        color="success"
+                        value="success"
+                        hide-details></v-checkbox>
+            <v-checkbox label="info"
+                        v-model="ex4"
+                        color="info"
+                        value="info"
+                        hide-details></v-checkbox>
           </v-flex>
-          <v-flex xs12 sm4 md2>
-            <v-checkbox label="Error" v-model="ex7" value="error" error hide-details></v-checkbox>
+          <v-flex xs12 sm4 md4>
+            <v-checkbox label="warning"
+                        v-model="ex4"
+                        color="warning"
+                        value="warning"
+                        hide-details></v-checkbox>
+            <v-checkbox label="error"
+                        v-model="ex4"
+                        color="error"
+                        value="error"
+                        hide-details></v-checkbox>
           </v-flex>
         </v-layout>
       </v-container>
@@ -31,7 +88,8 @@
   export default {
     data () {
       return {
-        ex7: ['primary', 'secondary', 'success', 'info', 'warning', 'error'],
+        ex4: ['red', 'indigo', 'orange', 'primary', 'secondary', 'success', 'info', 'warning', 'error',
+              'red darken-3', 'indigo darken-3', 'orange darken-3'],
       }
     }
   }

@@ -43,7 +43,8 @@
           overlay: this.makeOverlay(),
           detachable: this.makeDetach(),
           positionable: this.makePosition(),
-          transitionable: this.makeTransition()
+          transitionable: this.makeTransition(),
+          colorable: this.makeColorable()
         }
       }
     },
@@ -324,6 +325,16 @@
             'Boolean',
             'False',
             'Hide the display of the overlay'
+          ]
+        ]
+      },
+      makeColorable () {
+        return [
+          [
+            'color',
+            'String',
+            '-',
+            'Applies specified color to the control'
           ]
         ]
       }
