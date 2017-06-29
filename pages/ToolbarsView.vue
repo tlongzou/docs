@@ -17,7 +17,7 @@
             { header: 'App bar', file: 'toolbar/2', desc: 'An App bar is the primary toolbar of your application. It can contain icons, menus and more.' },
             { header: 'App bar with extension', file: 'toolbar/3', desc: 'An extension can be used that creates a much more prominent bar. If a title is placed within the extension, it will automatically be shifted to the right to match the normal locationit would be at in the main bar.' },
             { header: 'Column width with hierarchy', file: 'toolbar/4', desc: 'Toolbars come in 2 variants, light and dark. Light toolbars have dark tinted buttons and dark text whereas Dark toolbars have white tinted buttons and white text.' },
-            { header: 'Flexible toolbar and card toolbar', file: 'toolbar/5', desc: 'With a few custom styles, you can easily create your own custom interfaces.' },
+            { header: 'Flexible toolbar and card toolbar', file: 'toolbar/5', desc: 'With a few custom styles, you can easily create your amazing user interfaces.' },
             { header: 'Floating with search', file: 'toolbar/6', desc: 'A floating toolbar can be placed over the content that it references.' },
             { header: 'Detached toolbar pallete', file: 'toolbar/7', desc: 'Create unique customized interfaces combining multiple components.' },
             { header: 'Variations', file: 'toolbar/8', desc: 'An app-bar has multiple variations that can be applied with themes and helper classes. These range from light and dark themes, colored and transparent.' },
@@ -31,23 +31,85 @@
             'v-toolbar': {
               params: [
                 [
+                  'card',
+                  'Boolean',
+                  'False',
+                  'Inherits border radius when used within a <code>v-card</code>'
+                ],
+                [
+                  'extended',
+                  'Boolean',
+                  'False',
+                  'Force the toolbar to generate the extension without using the slot'
+                ],
+                [
+                  'dense',
+                  'Boolean',
+                  'False',
+                  'Reduces the height of the toolbar content and extension'
+                ],
+                [
                   'fixed',
                   'Boolean',
-                  'false',
-                  'Fixes the toolbar to the top'
+                  'False',
+                  'Sets the position of the toolbar to fixed'
+                ],
+                [
+                  'flat',
+                  'Boolean',
+                  'False',
+                  'Removes the toolbar box-shadow'
+                ],
+                [
+                  'absolute',
+                  'Boolean',
+                  'False',
+                  'Sets the position of the toolbar to absolute'
+                ],
+                [
+                  'floating',
+                  'Boolean',
+                  'False',
+                  'Makes the toolbar inline'
+                ],
+                [
+                  'prominent',
+                  'Boolean',
+                  'False',
+                  'Increases the height of the toolbar content and extension'
                 ]
               ]
             },
-            'v-toolbar-item': {
-              shared: ['router'],
+            'v-system-bar': {
+              shared: ['theme'],
               params: [
                 [
-                  'activeClass',
-                  'String',
-                  'toolbar__item--active',
-                  'Class to apply for the active toolbar item'
+                  'lights-out',
+                  'Boolean',
+                  'False',
+                  'Reduces the system bar opacity'
+                ],
+                [
+                  'status',
+                  'Boolean',
+                  'False',
+                  'Reduces the system bar height'
+                ],
+                [
+                  'window',
+                  'Boolean',
+                  'False',
+                  'Increases the system bar height'
                 ]
               ]
+            }
+          },
+          slots: {
+            'v-toolbar': {
+              default: true
+            },
+            'v-system-bar': {
+              default: true
             }
           },
           functional: {
@@ -56,10 +118,6 @@
                 [
                   'v-toolbar-items',
                   '.toolbar__items'
-                ],
-                [
-                  'v-toolbar-logo',
-                  '.toolbar__logo'
                 ],
                 [
                   'v-toolbar-title',

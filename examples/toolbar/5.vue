@@ -2,6 +2,7 @@
   <v-card class="grey lighten-5" flat>
     <v-toolbar dark class="primary elevation-0" extended>
       <v-toolbar-side-icon></v-toolbar-side-icon>
+      
     </v-toolbar>
     <v-layout row>
       <v-flex xs8 offset-xs2>

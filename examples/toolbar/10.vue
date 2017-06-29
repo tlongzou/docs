@@ -13,7 +13,6 @@
         <v-btn icon>
           <v-icon>more_vert</v-icon>
         </v-btn>
-        <div slot="extension"></div>
       </v-toolbar>
     </v-card>
 </template>
