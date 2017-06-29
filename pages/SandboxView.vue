@@ -4,7 +4,7 @@
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Sandbox
-          dd(slot="desc") This page will allow you to configure and play around with the different settings and themes available to you with the Vuetify framework.
+          dd(slot="desc") This page will allow you to configure the various settings available to you when setting up a layout with Vuetify.
       ad
     section
       v-layout

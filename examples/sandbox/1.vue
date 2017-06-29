@@ -15,6 +15,7 @@
       :mini-variant="primaryDrawer.mini"
       absolute
       overflow
+      enable-resize-watcher
     ></v-navigation-drawer>
     <v-toolbar>
       <v-toolbar-side-icon @click.native.stop="primaryDrawer.model = !primaryDrawer.model" v-if="primaryDrawer.type !== 'permanent'"></v-toolbar-side-icon>
@@ -27,11 +28,11 @@
             <v-card>
               <v-card-text>
                 <v-layout row wrap>
-                  <v-flex xs12 md4>
+                  <v-flex xs12 md6>
                     <span>Scheme</span>
                     <v-switch primary label="Dark" v-model="dark"></v-switch>
                   </v-flex>
-                  <v-flex xs12 md4>
+                  <v-flex xs12 md6>
                     <span>Drawer</span>
                     <v-radio
                       primary
@@ -45,7 +46,7 @@
                     <v-switch label="Floating" v-model="primaryDrawer.floating" primary></v-switch>
                     <v-switch label="Mini" v-model="primaryDrawer.mini" primary></v-switch>
                   </v-flex>
-                  <v-flex xs12 md4>
+                  <v-flex xs12 md6>
                     <span>Footer</span>
                     <v-switch label="Fixed" v-model="footer.fixed" primary></v-switch>
                   </v-flex>
