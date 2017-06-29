@@ -104,3 +104,9 @@
     }
   }
 </script>
+
+<style lang="stylus">
+  #navigation-drawer-view
+    .navigation-drawer
+      z-index: 0 !important
+</style>
