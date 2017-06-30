@@ -45,7 +45,7 @@
         |   - package.json
         |   - server.js
       section-text 
-        p The <strong>Build</strong> folder contains all of the webpack specific build configurations for your project. <strong>Src</strong> is where all the development project files reside. Notice that the Webpack-SSR template is out-of-the-box configured to use <a href="https://router.vuejs.org/en/" target="_blank">Vue Router</a>, <a href="https://vuex.vuejs.org/en/intro.html" target="_blank">Vuex</a>, and the <a href="https://vuejs.org/v2/guide/ssr.html" target="_blank">Vue Server Renderer</a>. This will allow you to make simple or complex applications that are not only fast/efficient, but <strong>SEO</strong> friendly.
+        p The <strong>Build</strong> folder contains all of the webpack specific build configurations for your project. <strong>Src</strong> is where all the development project files reside. Notice that the Webpack-SSR template is out-of-the-box configured to use <a href="https://router.vuejs.org/en/" target="_blank" rel="noopener">Vue Router</a>, <a href="https://vuex.vuejs.org/en/intro.html" target="_blank" rel="noopener">Vuex</a>, and the <a href="https://vuejs.org/v2/guide/ssr.html" target="_blank" rel="noopener">Vue Server Renderer</a>. This will allow you to make simple or complex applications that are not only fast/efficient, but <strong>SEO</strong> friendly.
       h3 Application
       section-text
         p Navigate to the <strong>src</strong> folder and open up <code>App.vue</code>. Vuetify is a semantic-focused framework. The code you write should be easy to remember, and easy to manage. To do this, one of the main components of Vuetify is <code>v-app</code>. This component allows you to define your application layout. This is used in conjunction with <code>v-toolbar</code>, <code>v-sidebar</code>, <code>v-content</code> and <code>v-footer</code>.
@@ -74,7 +74,7 @@
         |   { path: '/about', component: AboutView }
         |]
       section-text
-        p These routes can be accessed by creating a link to the specified path, or by using Vue Router's <code>&lt;router-link&gt;</code> component. For more information, review the official Vue Router <a href="https://router.vuejs.org/en/" target="_blank">documentation</a>.
+        p These routes can be accessed by creating a link to the specified path, or by using Vue Router's <code>&lt;router-link&gt;</code> component. For more information, review the official Vue Router <a href="https://router.vuejs.org/en/" target="_blank" rel="noopener">documentation</a>.
       h3 State Control
       section-text
         p State control is managed by the official Vuex library. This Vue plugin follows Facebooks' Reflux design pattern. Navigate to <code>/src/store/index.js</code>. By default, Vuex is setup to prefetch data for the store before your page is initially rendered. To hook into this functionality, create a <code>preFetch</code> method on your view component.
@@ -84,9 +84,9 @@
         |}
       section-text
         p This is useful for bootstrapping your application so that any necessary data is available before the initial render.
-        p For more information on State Control and Vuex, view the official <a href="https://vuex.vuejs.org/en/intro.html" target="_blank">documentation</a>.
+        p For more information on State Control and Vuex, view the official <a href="https://vuex.vuejs.org/en/intro.html" target="_blank" rel="noopener">documentation</a>.
       section-text
-        p Vuetify integrates into Vuex to allow for easy debugging and access to stored properties. You can also use watchers to hook into store states and react when they change. More information can be found <a href="https://vuejs.org/v2/guide/reactivity.html" target="_blank">here</a>.
+        p Vuetify integrates into Vuex to allow for easy debugging and access to stored properties. You can also use watchers to hook into store states and react when they change. More information can be found <a href="https://vuejs.org/v2/guide/reactivity.html" target="_blank" rel="noopener">here</a>.
       h3 Meta Data
       section-text In order to ensure that page specific meta data is viewable when your pages are crawled, you can return an object containing <code>title</code>, <code>description</code> and <code>keywords</code>.
       markup(lang="js")
@@ -138,7 +138,7 @@
 
     section
       section-header Web App Support
-      section-text Vuetify SSR has support for native Web Applications on smart phones. Also known as progressive web apps, your websites can be saved on the homescreen of a device, allowing it to be usable offline and receive push notifications. For more information on Web App Manifest's, navigate to the <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank">Mozilla Developer Network</a>. To see a live example, add the Vuetify documentation on your mobile device's homescreen.
+      section-text Vuetify SSR has support for native Web Applications on smart phones. Also known as progressive web apps, your websites can be saved on the homescreen of a device, allowing it to be usable offline and receive push notifications. For more information on Web App Manifest's, navigate to the <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" target="_blank" rel="noopener">Mozilla Developer Network</a>. To see a live example, add the Vuetify documentation on your mobile device's homescreen.
 </template>
 
 <script>

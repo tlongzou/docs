@@ -23,7 +23,7 @@
 
     section
       section-header New applications
-      section-text Vuetify has 5 pre-made Vue CLI templates, 3 which are forked from <a href="https://github.com/vuejs-templates" target="_blank">official Vue.js templates</a>. They contain small modifications to help you get started with Vuetify even faster. These packages require <code>vue-cli</code>. For more information on vue-cli, visit the official <a href="https://github.com/vuejs/vue-cli" target="_blank">Github</a> repository.
+      section-text Vuetify has 5 pre-made Vue CLI templates, 3 which are forked from <a href="https://github.com/vuejs-templates" target="_blank" rel="noopener">official Vue.js templates</a>. They contain small modifications to help you get started with Vuetify even faster. These packages require <code>vue-cli</code>. For more information on vue-cli, visit the official <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener">Github</a> repository.
       v-tabs(class="elevation-1 mb-5" grow icons dark)
         v-tabs-bar(slot="activators")
           v-tabs-slider
@@ -63,7 +63,7 @@
           v-card(flat)
             v-card-text
               h4 Webpack SSR Quick Start
-              section-text This template is for advanced users looking to utilize the new Vue SSR (server-side rendering). Based off of the structure in the Vue.js 2 <a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank">Hackernews</a> repository. The Vuetify.js SSR template provides next generation functionality for advanced Vue applications.
+              section-text This template is for advanced users looking to utilize the new Vue SSR (server-side rendering). Based off of the structure in the Vue.js 2 <a href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="noopener">Hackernews</a> repository. The Vuetify.js SSR template provides next generation functionality for advanced Vue applications.
               markup(lang="cli")
                 |$  vue init vuetifyjs/webpack-ssr
         v-tabs-content(id="nuxt")
@@ -75,9 +75,9 @@
                 |$  vue init vuetifyjs/nuxt
     section
       section-header NPM Install
-      section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's recently released <a href="https://yarnpkg.com/" target="_blank">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
+      section-text After the vue-cli installation finishes, <kbd>cd</kbd> into your project directory and type <kbd>npm install</kbd>. Alternatively, if you are using Facebook's recently released <a href="https://yarnpkg.com/" target="_blank" rel="noopener">yarn package manager</a>, you can simply type <kbd>yarn</kbd>.
 
-      section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> in your browser.
+      section-text Once the package installation is complete, type <kbd>npm run dev</kbd> into your console. This will start a <a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a> server locally which can be accessed by navigating to <a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> in your browser.
 
     section
       section-header Existing applications
@@ -116,7 +116,7 @@
 
     section
       section-header Internet Explorer 11 Support
-      section-text To use Vuetify.js with Internet Explorer, you must include a polyfill in your project. Vuetify.js can work with either <a href="https://polyfill.io/v2/docs/" target="_blank">polyfill.io</a> or <a href="https://babeljs.io/docs/usage/polyfill/#installation" target="_blank">babel-polyfill</a>. The polyfill must be loaded before your project source code. Other polyfills may be needed to use specific features in your project.
+      section-text To use Vuetify.js with Internet Explorer, you must include a polyfill in your project. Vuetify.js can work with either <a href="https://polyfill.io/v2/docs/" target="_blank" rel="noopener">polyfill.io</a> or <a href="https://babeljs.io/docs/usage/polyfill/#installation" target="_blank" rel="noopener">babel-polyfill</a>. The polyfill must be loaded before your project source code. Other polyfills may be needed to use specific features in your project.
 
       section-text Due to Internet Explorer's limited support for &lt;template&gt; tags, you must take care to send fully compiled dom elements to the browser. This can be done by either building your Vue code in advance or by creating helper components to replace the dom elements. For instance, if sent directly to IE, this will fail:
 

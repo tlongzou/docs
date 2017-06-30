@@ -5,7 +5,7 @@
       v-spacer
       v-toolbar-items
         v-btn(flat column dark router to="/vuetify/quick-start") Documentation
-        v-btn(flat column dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank") Updates
+        v-btn(flat column dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener") Updates
 
     section#hero.elevation-12
       v-parallax(src="/static/doc-images/vbanner.jpg" height="400")
@@ -94,14 +94,14 @@
           v-flex(xs12 sm6).mb-3
             a(
               href="https://www.patreon.com/vuetify"
-              target="_blank"
+              target="_blank" rel="noopener"
             ).black--text
               div.display-1.mb-2 Patreon
               img(src="/static/doc-images/patreon.png" width="125px")
           v-flex(xs12 sm6).mb-3
             a(
               href="https://paypal.me/vuetify"
-              target="_blank"
+              target="_blank" rel="noopener"
             ).black--text
               div.display-1.mb-2 Paypal
               img(src="/static/doc-images/paypal.png" width="125px")
