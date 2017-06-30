@@ -5,7 +5,7 @@
         <v-card-media
           class="white--text"
           height="200px"
-          src="https://odis.homeaway.com/odis/listing/ee6e5f12-57bc-4b14-b436-45b95ec0133e.c10.jpg"
+          src="/static/doc-images/cards/docks.jpg"
         >
           <v-container fill-height fluid>
             <v-layout fill-height>

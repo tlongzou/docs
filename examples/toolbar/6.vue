@@ -1,5 +1,5 @@
 <template>
-  <v-card img="http://oobrien.com/wordpress/wp-content/uploads/2016/07/googlemaps_july2016.jpg" flat height="300px">
+  <v-card img="/static/doc-images/toolbar/map.jpg" flat height="300px">
     <v-toolbar class="white" floating dense>
         <v-text-field prepend-icon="search" hide-details single-line></v-text-field>
         <v-btn icon>

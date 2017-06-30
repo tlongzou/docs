@@ -60,9 +60,9 @@
   export default {
     data: () => ({
       cards: [
-        { title: 'Pre-fab homes', src: 'https://s-media-cache-ak0.pinimg.com/736x/10/d7/e2/10d7e21a36b7f0641b178220d2d9c8ad.jpg', flex: 12 },
-        { title: 'Favorite road trips', src: 'http://az616578.vo.msecnd.net/files/2016/05/30/636001685998824916478671336_o-ROAD-TRIP-facebook.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://images.trvl-media.com/media/content/expus/graphics/launch/flight1320x742.jpg', flex: 6 }
+        { title: 'Pre-fab homes', src: '/static/doc-images/cards/house.jpg', flex: 12 },
+        { title: 'Favorite road trips', src: '/static/doc-images/cards/road.jpg', flex: 6 },
+        { title: 'Best airlines', src: '/static/doc-images/cards/plane.jpg', flex: 6 }
       ]
     })
   }

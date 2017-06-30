@@ -3,7 +3,7 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-card-media
-          src="https://cdn.pixabay.com/photo/2016/04/12/14/49/sunshine-1324481_960_720.jpg"
+          src="/static/doc-images/cards/sunshine.jpg"
           height="200px"
         >
         </v-card-media>

@@ -38,7 +38,7 @@
                   </v-flex>
                   <v-flex xs5>
                     <v-card-media
-                      src="https://consequenceofsound.files.wordpress.com/2014/01/foster-the-people-e28093-supermodel.png"
+                      src="/static/doc-images/cards/foster.jpg"
                       height="125px"
                       contain
                     ></v-card-media>
@@ -59,7 +59,7 @@
                   </v-flex>
                   <v-flex xs5>
                      <v-card-media
-                        src="https://upload.wikimedia.org/wikipedia/en/f/f1/HalcyonDaysCover.png"
+                        src="/static/doc-images/cards/halcyon.png"
                         height="125px"
                         contain
                       ></v-card-media>
