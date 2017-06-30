@@ -1,6 +1,6 @@
 <template>
   <v-layout row justify-center>
-    <v-dialog v-model="dialog">
+    <v-dialog v-model="dialog" persistent>
       <v-btn primary dark slot="activator">Open Dialog</v-btn>
       <v-card>
         <v-card-title>
@@ -20,6 +20,12 @@
             required
             :items="['0-17', '18-29', '30-54', '54+']"
           ></v-select>
+          <v-select
+            label="Interests"
+            multiple
+            autocomplete
+            chips
+            :items="['Skiing', 'Ice hockey', 'Soccer', 'Basketball', 'Hockey', 'Reading', 'Writing', 'Coding', 'Basejump']"
           <small>*indicates required field</small>
         </v-card-text>
         <v-card-actions>
