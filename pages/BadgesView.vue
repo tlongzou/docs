@@ -43,6 +43,24 @@
                   'Boolean',
                   'False',
                   'Overlaps badge on element'
+                ],
+                [
+                  'v-badge:arg.left',
+                  'Boolean',
+                  'False',
+                  'Positions the badge to the right of the element'
+                ],
+                [
+                  'v-badge:arg.bottom',
+                  'Boolean',
+                  'False',
+                  'Positions the badge to the bottom of the element'
+                ],
+                [
+                  'visible',
+                  'Boolean',
+                  'False',
+                  'Badge object property for determining visibility, see example #4'
                 ]
               ]
             }
