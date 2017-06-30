@@ -67,18 +67,18 @@
                   'fluid',
                   'Boolean',
                   'False',
-                  'Applies the .container--fluid class'
+                  'Removes viewport size breakpoints'
+                ],
+                [
+                  'grid-list-{xs through xl}',
+                  'Boolean',
+                  'False',
+                  'Sets the gutter between grid list items ranging from 1px to 24px'
                 ]
               ]
             },
             'v-layout': {
                 params: [
-                  [
-                    'row[-size]',
-                    'Boolean',
-                    'False',
-                    'Applies the .row class align elements horizontal. Available for all breakpoints xs => xl.'
-                  ],
                   [
                     'reverse',
                     'Boolean',
@@ -173,6 +173,17 @@
                   ]
                 ]
               }
+          },
+          slots: {
+            'v-container': {
+              default: true
+            },
+            'v-layout': {
+              default: true
+            },
+            'v-flex': {
+              default: true
+            }
           },
           functional: {
             'grid': {
