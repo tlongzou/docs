@@ -16,7 +16,7 @@
       class="blue-grey white--text"
     >
       Upload
-      <v-icon right>cloud_upload</v-icon>
+      <v-icon right dark>cloud_upload</v-icon>
     </v-btn>
 
     <v-btn
