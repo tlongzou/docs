@@ -8,7 +8,6 @@
             fab
             small
             class="cyan accent-2"
-            slot="extension"
             bottom
             left
             absolute
