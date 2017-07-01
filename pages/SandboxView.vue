@@ -20,3 +20,8 @@
     //
   }
 </script>
+
+<style lang="stylus">
+  #sandbox-view .application
+    z-index: 0
+</style>

@@ -14,7 +14,7 @@
         style="min-height: 0;"
         grid-list-lg
       >
-        <v-layout column>
+        <v-layout row wrap>
           <v-flex xs12>
             <v-card class="blue-grey darken-2 white--text">
               <v-card-title primary-title>
