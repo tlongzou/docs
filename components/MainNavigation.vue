@@ -6,33 +6,34 @@
     dark
     enable-resize-watcher
   )
-    v-list.pa-0.vuetify
-      v-list-tile(avatar tag="div")
-        v-list-tile-avatar
-          router-link(to="/")
-            img(src="/static/v.png" v-bind:style="filter")
-        v-list-tile-content.show-overflow
-          v-menu(transition="v-scale-transition" origin="top")
-            v-list-tile-title(slot="activator")
-              span Vuetify
-              v-icon(dark) arrow_drop_down
-            v-list(class="grey darken-2" dark)
-              v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
-                v-list-tile-action
-                  v-icon(fa dark) github
-                v-list-tile-title Github
-              v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
-                v-list-tile-action
-                  v-icon(fa dark) comments-o
-                v-list-tile-title Chat
-              v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
-                v-list-tile-action
-                  v-icon(fa dark) twitter
-                v-list-tile-title Twitter
-              v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
-                v-list-tile-action
-                  v-icon(fa dark) facebook
-                v-list-tile-title Facebook
+    v-toolbar(flat).transparent
+      v-list.pa-0.vuetify
+        v-list-tile(avatar tag="div")
+          v-list-tile-avatar
+            router-link(to="/")
+              img(src="/static/v.png" v-bind:style="filter")
+          v-list-tile-content.show-overflow
+            v-menu(transition="v-scale-transition" origin="top")
+              v-list-tile-title(slot="activator")
+                span Vuetify
+                v-icon(dark) arrow_drop_down
+              v-list(class="grey darken-2" dark)
+                v-list-tile(href="https://github.com/vuetifyjs/vuetify" target="_blank")
+                  v-list-tile-action
+                    v-icon(fa dark) github
+                  v-list-tile-title Github
+                v-list-tile(href="https://gitter.im/vuetifyjs/Lobby/~chat#" target="_blank")
+                  v-list-tile-action
+                    v-icon(fa dark) comments-o
+                  v-list-tile-title Chat
+                v-list-tile(href="https://twitter.com/vuetifyjs" target="_blank")
+                  v-list-tile-action
+                    v-icon(fa dark) twitter
+                  v-list-tile-title Twitter
+                v-list-tile(href="https://www.facebook.com/vuetifyjs" target="_blank")
+                  v-list-tile-action
+                    v-icon(fa dark) facebook
+                  v-list-tile-title Facebook
         v-spacer
         v-list-tile-action
           v-btn(icon dark v-on:click.native.stop="mini = !mini")
