@@ -11,11 +11,38 @@
         v-bind:key="title"
         class="flexbox"
       )
+
+    v-menu
+      v-btn(flat slot="activator" light class="hidden-sm-and-down") Version: {{ release === releases[0] ? `Latest (${release})` : release }}
+        v-icon(light) arrow_drop_down
+      v-list
+        v-list-tile(
+          router
+          to="/"
+          v-for="(release, i) in releases"
+          v-if="i === 0"
+          v-bind:key="release"
+        )
+          v-list-tile-title {{ release }}
+        v-list-tile(
+          tag="a"
+          v-else
+          :href="`/releases/${release}`"
+        )
+          v-list-tile-title {{ release }}
 </template>
 
 <script>
+  import { mapState } from 'vuex'
+
   export default {
+    name: 'toolbar',
+
     computed: {
+      ...mapState([
+        'releases',
+        'release'
+      ]),
       color () {
         return this.$store.state.currentColor
       },

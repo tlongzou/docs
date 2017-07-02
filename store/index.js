@@ -4,6 +4,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export function createStore () {
+  const releases = require('../router/releases.json')
+
   return new Vuex.Store({
     state: {
       h1: null,
@@ -18,7 +20,9 @@ export function createStore () {
         name: 'Breadcrumbs',
         color: 'green',
         route: '/components/breadcrumbs'
-      }
+      },
+      releases,
+      release: '0.12'
     },
 
     actions: {},
