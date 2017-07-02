@@ -66,6 +66,7 @@ app.use('/public', serve('./public', true))
 app.use('/examples', serve('./examples', true))
 app.use('/static/manifest.json', serve('./manifest.json', true))
 app.use('/static/robots.txt', serve('./robots.txt'))
+app.use('/releases', serve('./releases'))
 
 app.get('/sitemap.xml', (req, res) => {
   res.setHeader("Content-Type", "text/xml")

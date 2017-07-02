@@ -17,7 +17,6 @@
         v-icon(light) arrow_drop_down
       v-list
         v-list-tile(
-          router
           to="/"
           v-for="(release, i) in releases"
           v-if="i === 0"
