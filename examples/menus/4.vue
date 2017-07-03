@@ -1,6 +1,6 @@
 <template>
   <div class="text-xs-center">
-    <v-menu offset-y v-model="showMenu" :position-absolutely="true">
+    <v-menu offset-y v-model="showMenu" :position-absolutely="true" full-width>
       <v-card class="portrait" img="/static/doc-images/cards/girl.jpg" height="300px" slot="activator"></v-card>
       <v-list>
         <v-list-tile v-for="item in items" :key="item">
@@ -47,5 +47,7 @@
 
 <style lang="stylus">
   .portrait.card
-    width: 600px
+    margin: 0 auto
+    max-width: 600px
+    width: 100%
 </style>

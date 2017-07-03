@@ -3,7 +3,6 @@
 </template>
 
 <script>
-
   export default {
     data () {
       return {
@@ -200,3 +199,9 @@
     }
   }
 </script>
+
+<style>
+  #menus-view {
+    padding-top: 50vh;
+  }
+</style>
