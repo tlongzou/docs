@@ -22,7 +22,7 @@
           ],
           props: {
             'v-select': {
-              shared: ['input'],
+              shared: ['input', 'filterable'],
               params: [
                 [
                   'chips',

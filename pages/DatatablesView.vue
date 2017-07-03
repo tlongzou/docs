@@ -24,6 +24,7 @@
           ],
           props: {
             'v-data-table': {
+              shared: ['filterable'],
               params: [
                 [
                   'headers',
@@ -48,12 +49,6 @@
                   'Array',
                   '[]',
                   'The array of table rows'
-                ],
-                [
-                  'no-data-text',
-                  'String',
-                  'No data available in table',
-                  'Display text when there is no table data.'
                 ],
                 [
                   'no-results-text',

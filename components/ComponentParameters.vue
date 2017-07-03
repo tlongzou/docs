@@ -44,7 +44,8 @@
           detachable: this.makeDetach(),
           positionable: this.makePosition(),
           transitionable: this.makeTransition(),
-          colorable: this.makeColorable()
+          colorable: this.makeColorable(),
+          filterable: this.makeFilter()
         }
       }
     },
@@ -82,6 +83,16 @@
             desc: d[3]
           }
         })
+      },
+      makeFilter () {
+        return [
+          [
+            'no-data-text',
+            'String',
+            'No data available',
+            'Display text when there is no data'
+          ]
+        ]
       },
       makeDetach () {
         return [[
