@@ -38,7 +38,10 @@
           },
           slots: {
             'speed-dial': {
-              shared: ['default']
+              shared: ['default'],
+              params: [
+                ['activator', 'The element that will activate the menu']
+              ]
             }
           }
         }

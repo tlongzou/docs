@@ -72,7 +72,7 @@
                   'select-all',
                   '[Boolean, String]',
                   'False',
-                  'Adds header row select all checkbox. Can either be a String which specifies which color is applied to the button (primary, secondary, success, info, warning, error) or a Boolean (which uses the primary color).'
+                  'Adds header row select all checkbox. Can either be a String which specifies which color is applied to the button, or a Boolean (which uses the default color).'
                 ],
                 [
                   'selected-key',
@@ -123,6 +123,7 @@
                   'pagination.sync',
                   'Object',
                   `{
+                    sortBy: 'column',
                     page: 1,
                     rowsPerPage: 5,
                     descending: false,
@@ -181,7 +182,7 @@
                 ],
                 [
                   'scope[headers]',
-                  `The scoped slot for templating the headers. The available prop is <code>headers</code>. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all headers. Scope properties <strong>['headers', 'indeterminate', 'all']</strong>.`
+                  `The scoped slot for templating the headers. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all headers. Scope properties <code>headers</code>, <code>indeterminate</code>, and <code>all</code>.`
                 ],
                 [
                   'scope[items]',
