@@ -25,7 +25,7 @@
       </template>
     </v-data-table>
     <div class="text-xs-center pt-2">
-      <v-pagination v-model="pagination.page" :length="Math.ceil(pagination.totalItems / pagination.rowsPerPage)"></v-pagination>
+      <v-pagination v-model="pagination.page" :length="Math.ceil(this.items.length / pagination.rowsPerPage)"></v-pagination>
     </div>
   </div>
 </template>
