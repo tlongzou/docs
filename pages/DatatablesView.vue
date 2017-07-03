@@ -181,7 +181,7 @@
                 ],
                 [
                   'scope[headers]',
-                  'The scoped slot for templating the headers. The available prop is <code>headers</code>. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all headers.'
+                  `The scoped slot for templating the headers. The available prop is <code>headers</code>. Provide either a <kbd>tr</kbd> tag or <kbd>th</kbd> tags for all headers. Scope properties <strong>['headers', 'indeterminate', 'all']</strong>.`
                 ],
                 [
                   'scope[items]',

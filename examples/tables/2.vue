@@ -5,7 +5,7 @@
     v-bind:search="search"
     v-model="selected"
     selected-key="name"
-    :select-all="true"
+    select-all
     class="elevation-1"
   >
     <template slot="headerCell" scope="props">

@@ -3,7 +3,7 @@
       v-model="selected"
       v-bind:headers="headers"
       v-bind:items="items"
-      v-bind:select-all="true"
+      select-all
       v-bind:pagination.sync="pagination"
       selected-key="name"
       class="elevation-1"
@@ -15,7 +15,8 @@
             primary
             hide-details
             @click.native="toggleAll"
-            :input-value="selected.length === items.length"
+            :input-value="props.all"
+            :indeterminate="props.indeterminate"
           ></v-checkbox>
         </th>
         <th v-for="header in props.headers" :key="header"
