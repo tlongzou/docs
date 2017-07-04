@@ -40,3 +40,20 @@
     </v-layout>
   </v-container>
 </template>
+
+<style lang="stylus">
+  @import '../../node_modules/vuetify/src/stylus/settings/_colors'
+  @import '../../node_modules/vuetify/src/stylus/settings/_variables'
+
+  .btn--light-flat-focused:after
+    background-color: $button-light-overlay
+
+  .btn--light-flat-pressed:after
+    background-color: rgba(#fff, .3)
+
+  .btn--dark-flat-focused:after
+    background-color: $button-dark-overlay
+
+  .btn--dark-flat-pressed:after
+    background-color: rgba(#000, .3)
+</style>

@@ -75,6 +75,9 @@
 </script>
 
 <style lang="stylus">
+  @import '../node_modules/vuetify/src/stylus/settings/_colors'
+  @import '../node_modules/vuetify/src/stylus/tools/_elevations'
+
   #layouts-view
     .component-example
       position: relative

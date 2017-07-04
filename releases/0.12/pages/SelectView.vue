@@ -16,8 +16,7 @@
             { header: 'Dark theme', file: 'selects/2', desc: 'Selects also support themeing, dark and light.' },
             { header: 'Icons', file: 'selects/3', desc: 'Use a custom prepended or appended icon.' },
             { header: 'Multiple', file: 'selects/4', desc: `A multi-select can utilize v-chip as the display for selected items.` },
-            { header: 'Scoped slots', file: 'selects/5', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` },
-            { header: 'Customized item text and value', file: 'selects/6', desc: `You can specify the specific properties within your items array correspond to the text and value fields. By default, this is <strong>text</strong> and <strong>value</strong>. In this example we also use the <code>return-object</code> prop which will return the entire object of the selected item on selection.` }
+            { header: 'Scoped slots', file: 'selects/5', desc: `With the power of scoped slots, you can customize the visual output of the select. In this example we add a profile picture for both the chips and list items.` }
           ],
           props: {
             'v-select': {
@@ -32,19 +31,7 @@
                   'items',
                   'Array',
                   '[]',
-                  'Can be an array of objects or array of strings. When using objects, will look for a <strong>text</strong> and <strong>value</strong> field. This can be changed using the <code>item-text</code> and <code>item-value</code> props.'
-                ],
-                [
-                  'item-text',
-                  'String',
-                  'text',
-                  'Set property of <code>items</code> will be displayed on option'
-                ],
-                [
-                  'item-value',
-                  'String',
-                  'value',
-                  'Set property of <code>items</code> define option\'s value'
+                  'The array of items. Item object is required to have a <code>text</code> property'
                 ],
                 [
                   'max-height',
