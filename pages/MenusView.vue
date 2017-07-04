@@ -199,9 +199,3 @@
     }
   }
 </script>
-
-<style>
-  #menus-view {
-    padding-top: 50vh;
-  }
-</style>
