@@ -51,8 +51,7 @@
             <v-text-field
               slot="input"
               label="Edit"
-              v-bind:value="props.item.iron"
-              v-on:blur="val => props.item.iron = val"
+              v-model="props.item.iron"
               single-line
               counter
               autofocus
