@@ -22,7 +22,7 @@
             { header: 'Dark theme multi-line', file: 'text-fields/8', desc: 'Multi-line text-fields can be set to autogrow allowing the field to scale with the input.' },
             { header: 'Character counter', file: 'text-fields/9', desc: 'Use a counter to inform a user of the maximum or minium character limit.' },
             { header: 'Password input', file: 'text-fields/10', desc: 'A password input can be used with an appended icon and callback to control the visibility.' },
-            { header: 'Multi-line with character counter', file: 'text-fields/11', desc: `The rules prop accepts an array of callbacks. While validating rules, the current v-model value will be passed to the callback. This callback should return either <code>true</code> or a <code>String</code>, the error message.` },
+            { header: 'Validation', file: 'text-fields/11', desc: `Vuetify includes simple validation through the <code>rules</code> prop. The prop accepts an array of callbacks. While validating rules, the current v-model value will be passed to the callback. This callback should return either <code>true</code> or a <code>String</code>, the error message.` },
             { header: 'Full-width text field with character counter', file: 'text-fields/12', desc: 'Light theme' },
             { header: 'Required fields', file: 'text-fields/13', desc: 'Light theme' },
             { header: 'Hint text', file: 'text-fields/14', desc: 'Light theme' },
@@ -163,7 +163,7 @@
 <style lang="stylus">
   #text-fields-view
     main
-      
+
     .container
       min-height: 0
 </style>
