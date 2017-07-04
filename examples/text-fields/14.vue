@@ -14,7 +14,7 @@
             </v-btn>
           </v-toolbar>
           <v-card-text>
-            <h1 class="title">Search for new keywords using a prhase, website or category</h1>
+            <h1 class="title">Search for new keywords using a phrase, website or category</h1>
             <h2 class="subheading mb-5">Enter one or more of the following</h2>
             <v-text-field
               label="Your product or service"
