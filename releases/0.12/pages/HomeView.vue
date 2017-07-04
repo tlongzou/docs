@@ -90,9 +90,8 @@
         v-layout(row)
           v-flex(xs10 offset-xs1).text-xs-center
             h4.headline.text-xs-center.mb-5 Vuetify.js is proudly sponsored by
-            div(v-for="sponsor in sponsors").mb-5
-              a(:href="sponsor.href" target="_blank" :title="sponsor.title")
-                img(:src="sponsor.src")
+            a(href="https://www.browserstack.com/")
+              img(width="300px" height="50px" src="/static/doc-images/browser-stack.svg")
 
     section#support.py-5.grey.lighten-4.mb-0
       v-container(fluid)
@@ -127,10 +126,6 @@
   export default {
     data () {
       return {
-        sponsors: [
-          { title: 'BrowserStack', href: 'https://www.browserstack.com/', src: '/static/doc-images/browser-stack.svg' },
-          { title: 'Cloudflare', href: 'https://www.cloudflare.com/', src: '/static/doc-images/cloudflare.svg' }
-        ],
         toolbar: false
       }
     },
@@ -162,9 +157,6 @@
     #hero
       .btn
         width: 190px
-        
-    #sponsors img
-      max-height: 60px
     
     div.grey--text
       line-height: 2
