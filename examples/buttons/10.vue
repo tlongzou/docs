@@ -23,18 +23,18 @@
           <v-card class="elevation-0">
             <v-card-text>
               <div>
-                <v-btn primary fab small>
-                  <v-icon dark>edit</v-icon>
+                <v-btn primary fab small dark>
+                  <v-icon>edit</v-icon>
                 </v-btn>
               </div>
               <div>
-                <v-btn warning fab>
-                  <v-icon dark>account_circle</v-icon>
+                <v-btn warning fab dark>
+                  <v-icon>account_circle</v-icon>
                 </v-btn>
               </div>
               <div>
-                <v-btn error fab large>
-                  <v-icon dark>alarm</v-icon>
+                <v-btn error fab large dark>
+                  <v-icon>alarm</v-icon>
                 </v-btn>
               </div>
             </v-card-text>
