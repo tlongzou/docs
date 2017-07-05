@@ -14,7 +14,7 @@
           examples: [
            { header: 'Components', file: 'cards/1', desc: `A card has 4 basic components, <code>v-card-media</code>, <code>v-card-title</code>, <code>v-card-text</code> and <code>v-card-actions</code>.` },
            { header: 'Media with text', file: 'cards/2', desc: 'Using the layout system, we can add custom text anywhere within the background.' },
-           { header: 'Horizontal cards', file: 'cards/3', desc: 'Using the <code>contain</code> property, you can create customized horizontal cards.' },
+           { header: 'Horizontal cards', file: 'cards/3', desc: 'Using <code>v-flex</code>, you can create customized horizontal cards. Use the to the <code>contain</code> property to shrink the <code>v-card-media</code> to fit inside the container, instead of covering.' },
            { header: 'Grids', file: 'cards/4', desc: 'Using grid lists, you can create beautiful layouts.' },
            { header: 'Custom actions', file: 'cards/5', desc: 'With a simple conditional, you can easily add supplementary text that is hidden until opened.' },
            // { header: 'Colored', file: 'cards/6', desc: 'You can use any color in the Material design pallete as a background of a card.' },
