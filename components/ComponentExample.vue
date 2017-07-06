@@ -40,7 +40,7 @@
                 div(v-html="parsed[tab]")
       v-card-text.subheading.justify
         slot(name="desc")
-      v-card-text.pa-3
+      v-card-text
         div(v-bind:id="'example-'+uid")
     v-divider.my-5
 </template>
