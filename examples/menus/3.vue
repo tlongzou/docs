@@ -2,7 +2,7 @@
   <div class="text-xs-center">
     <v-menu
       origin="center center"
-      transition="v-scale-transition"
+      transition="scale-transition"
       bottom
     >
       <v-btn primary dark slot="activator">
@@ -16,7 +16,7 @@
     </v-menu>
 
     <v-menu
-      transition="v-slide-x-transition"
+      transition="slide-x-transition"
       bottom
       right
     >
@@ -31,7 +31,7 @@
     </v-menu>
 
     <v-menu
-      transition="v-slide-y-transition"
+      transition="slide-y-transition"
       bottom
     >
       <v-btn primary dark slot="activator" class="purple">

@@ -6,7 +6,7 @@
           lazy
           :close-on-content-click="false"
           v-model="menu"
-          transition="v-scale-transition"
+          transition="scale-transition"
           offset-y
           full-width
           :nudge-left="40"
