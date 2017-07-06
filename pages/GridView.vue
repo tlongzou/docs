@@ -80,6 +80,30 @@
             'v-layout': {
                 params: [
                   [
+                    'row[-size]',
+                    'Boolean',
+                    'False',
+                    'Sets flex direction to row for the designated breakpoints. Available for all breakpoints xs => xl.'
+                  ],
+                  [
+                    'column[-size]',
+                    'Boolean',
+                    'False',
+                    'Sets flex direction to column for designated breakpoints. Available for all breakpoints xs => xl.'
+                  ],
+                  [
+                    'child-flex',
+                    'Boolean',
+                    'False',
+                    'Apply flex: 1 to all direct children'
+                  ],
+                  [
+                    'child-flex[-size]',
+                    'Boolean',
+                    'False',
+                    'Apply flex: 1 to all direct children for designated breakpoints. Available for all breakpoints xs => xl'
+                  ],
+                  [
                     'reverse',
                     'Boolean',
                     'False',
