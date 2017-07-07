@@ -35,4 +35,7 @@
     .component-example__container
       > div
         width: 100%
+      
+    footer
+      max-height: 36px
 </style>
