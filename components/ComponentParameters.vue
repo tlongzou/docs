@@ -210,12 +210,6 @@
             'Applies ripple effect'
           ],
           [
-            'router',
-            'Boolean',
-            'False',
-            'Designates whether the list tiles will be a router-link'
-          ],
-          [
             'tag',
             'String',
             'a',
