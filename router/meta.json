@@ -23,6 +23,12 @@
     "description": "Stuck on a problem? Check these frequently asked questions.",
     "keywords": "frequently asked questions, faq"
   },
+  "/vuetify/sponsors-and-backers": {
+    "h1": "Sponsors and backers",
+    "title": "Sponsors and backers",
+    "description": "Help support Vuetify.js by backing the development of new features",
+    "keywords": "sponsor, backer, donations"
+  },
   "/motion/transitions": {
     "h1": "Transitions",
     "title": "Transitions",
