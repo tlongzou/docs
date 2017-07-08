@@ -27,7 +27,8 @@
             { header: 'Required fields', file: 'text-fields/13', desc: 'Light theme' },
             { header: 'Hint text', file: 'text-fields/14', desc: 'Light theme' },
             { header: 'Prefixes & suffixes', file: 'text-fields/15', desc: 'Light theme' },
-            { header: 'Custom validation', file: 'text-fields/16', desc: 'If you want to skip the built in validation and use your own or a plugin such as <a href="https://github.com/monterail/vuelidate" target="_blank" rel="noopener">vuelidate</a> or <a href="https://github.com/logaretm/vee-validate" target="_blank" rel="noopener">vee-validation</a>, you can use the <strong>error-messages</strong> or <strong>error</strong> props. Errors accepts a string or array and error simply places the field in an error state.' }
+            { header: 'Custom validation', file: 'text-fields/16', desc: 'If you want to skip the built in validation and use your own or a plugin such as <a href="https://github.com/monterail/vuelidate" target="_blank" rel="noopener">vuelidate</a> or <a href="https://github.com/logaretm/vee-validate" target="_blank" rel="noopener">vee-validation</a>, you can use the <strong>error-messages</strong> or <strong>error</strong> props. Errors accepts a string or array and error simply places the field in an error state.' },
+            { header: 'Custom prepended and appended icons', file: 'text-fields/17', desc: '...' }
           ],
           props: {
             'v-text-field': {
