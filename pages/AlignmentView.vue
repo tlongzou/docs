@@ -1,6 +1,6 @@
 <template lang="pug">
   div(class="view" id="spacing-view")
-    v-layout(column-xs row-sm)
+    v-layout(row wrap)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Alignment

@@ -1,6 +1,6 @@
 <template lang="pug">
   doc-view
-    v-layout(column-xs row-sm wrap)
+    v-layout(row wrap)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Frequently asked questions

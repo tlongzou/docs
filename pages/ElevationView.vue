@@ -1,6 +1,6 @@
 <template lang="pug">
   .view(id="elevation-view")
-    v-layout(column-xs row-sm)
+    v-layout(row)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Elevation
