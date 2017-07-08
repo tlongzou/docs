@@ -1,1 +1,0 @@
-webpackJsonp([237],{1252:function(n,t){n.exports={render:function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("v-toolbar",[e("v-toolbar-items",n._l(5,function(t){return e("v-btn",{key:t,attrs:{flat:"",ripple:""}},[n._v("Link "+n._s(t))])}))],1)},staticRenderFns:[]}},601:function(n,t,e){var r=e(10)(null,e(1252),null,null,null);n.exports=r.exports}});

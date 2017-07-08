@@ -4538,9 +4538,9 @@ vue@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.3.tgz#d1eaa8fde5240735a4563e74f2c7fead9cbb064c"
 
-vuetify@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.13.0.tgz#fd3c7e581dc082d9539f75b911b01b5982cb7a2d"
+vuetify@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.13.1.tgz#12f016053bed932dbf20fae43267636c3871fa2b"
   dependencies:
     vue "^2.3.3"
 

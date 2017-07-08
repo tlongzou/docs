@@ -1,1 +1,0 @@
-webpackJsonp([276],{1222:function(t,n){t.exports={render:function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",{staticClass:"text-xs-center"},[e("v-btn",{attrs:{round:"",primary:"",dark:""}},[t._v("Rounded Button")])],1)},staticRenderFns:[]}},477:function(t,n,e){var r=e(10)(null,e(1222),null,null,null);t.exports=r.exports}});

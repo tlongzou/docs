@@ -1,1 +1,0 @@
-webpackJsonp([210],{1040:function(n,t){n.exports={render:function(){var n=this,t=n.$createElement;return(n._self._c||t)("v-parallax",{attrs:{src:"http://oxygennacdn3.oxygenna.com/wp-content/uploads/2015/11/18.jpg",height:"300"}})},staticRenderFns:[]}},554:function(n,t,e){var r=e(9)(null,e(1040),null,null,null);n.exports=r.exports}});
