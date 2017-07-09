@@ -103,6 +103,12 @@
                   'Boolean',
                   'False',
                   'Configures the application to have a fixed toolbar'
+                ],
+                [
+                  'fill-height',
+                  'Boolean',
+                  'False',
+                  'Container will fill all available height and center its contents vertically'
                 ]
               ]
             }
@@ -127,7 +133,6 @@
       [data-app]
         border: 1px solid rgba(#000, .1)
         overflow: hidden
-        height: 400px
         min-height: 0
         elevation(2)
 

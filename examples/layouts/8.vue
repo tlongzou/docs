@@ -45,8 +45,12 @@
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
-      <v-container fluid>
-        <v-card height="200px"></v-card>
+      <v-container fluid fill-height>
+        <v-layout>
+          <v-flex xs6 offset-xs3>
+            <v-card height="200px"></v-card>
+          </v-flex>
+        </v-layout>
         <!--v-router-->
       </v-container>
     </main>
