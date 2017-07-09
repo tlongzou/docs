@@ -142,6 +142,6 @@
         main .container
           min-height: calc(400px - 36px) !important
 
-        .navigation-drawer
-          height: 400px !important
+        .footer
+          height: 36px
 </style>
