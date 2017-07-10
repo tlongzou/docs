@@ -136,7 +136,7 @@
         min-height: 0
         elevation(2)
 
-        .navigation-drawer, .toolbar, .overlay
+        .navigation-drawer, .toolbar:not(.elevation-0), .overlay
           position: absolute
 
         main .container
