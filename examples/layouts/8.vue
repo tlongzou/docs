@@ -30,7 +30,7 @@
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider light></v-divider>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>

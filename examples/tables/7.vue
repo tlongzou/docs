@@ -19,7 +19,7 @@
             :indeterminate="props.indeterminate"
           ></v-checkbox>
         </th>
-        <th v-for="header in props.headers" :key="header"
+        <th v-for="header in props.headers" :key="header.text"
           :class="['column sortable', pagination.descending ? 'desc' : 'asc', header.value === pagination.sortBy ? 'active' : '']"
           @click="changeSort(header.value)"
         >

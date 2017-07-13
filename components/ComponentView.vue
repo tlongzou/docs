@@ -43,7 +43,7 @@
     section-header Examples
     component-example(
       v-for="(example, i) in doc.examples"
-      v-bind:key="example"
+      v-bind:key="i"
       v-bind:header="`#${i + 1} ${example.header}`"
       v-bind:file="example.file"
     )
@@ -55,16 +55,16 @@
         v-tabs-bar(slot="activators" v-bind:class="[currentColor]")
           v-tabs-slider(v-bind:class="[currentColor]").lighten-4
           v-tabs-item(
-            v-for="p in ['props', 'slots', 'events', 'functional']"
+            v-for="(p, i) in ['props', 'slots', 'events', 'functional']"
             v-show="doc[p]"
             v-bind:href="`#${p}`"
-            v-bind:key="p"
+            v-bind:key="i"
           ) {{ p }}
         v-tabs-content(
-          v-for="p in ['props', 'slots', 'events', 'functional']"
+          v-for="(p, i) in ['props', 'slots', 'events', 'functional']"
           v-if="doc[p]"
           v-bind:id="p"
-          v-bind:key="p"
+          v-bind:key="i"
         )
           component-parameters(
             v-bind:headers="headers[p]"

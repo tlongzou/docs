@@ -12,7 +12,7 @@
         </v-toolbar>
         <v-list class="teal darken-4">
           <template v-for="item in items">
-            <v-list-tile v-if="item.action" v-bind:key="item">
+            <v-list-tile v-if="item.action" v-bind:key="item.title">
               <v-list-tile-action>
                 <v-icon dark>{{ item.action }}</v-icon>
               </v-list-tile-action>

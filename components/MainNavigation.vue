@@ -50,7 +50,7 @@
             v-list-tile-action
               v-icon(dark) keyboard_arrow_down
           v-list-tile(
-            v-for="subItem in item.items" v-bind:key="subItem"
+            v-for="subItem in item.items" v-bind:key="subItem.title"
             v-bind="{ \
               to: !subItem.target ? subItem.href : null, \
               href: subItem.target && subItem.href \
