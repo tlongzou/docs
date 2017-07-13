@@ -10,7 +10,7 @@
       v-divider
       v-container(fluid grid-list-xl).mb-5
         v-layout(row wrap)
-          v-flex(xs12 sm6 md4 lg3 flexbox align-center v-for="sponsor in sponsors" v-bind:key="sponsor").text-xs-center
+          v-flex(xs12 sm6 md4 lg3 flexbox align-center v-for="sponsor in sponsors" v-bind:key="sponsor.title").text-xs-center
             a(:href="sponsor.href" target="_blank" :title="sponsor.title")
               img(:src="sponsor.src" alt="sponsor.title")
 
@@ -24,7 +24,7 @@
           v-list-tile-title Gold ($50/mo)
       v-container(fluid grid-list-md).mb-5
         v-layout(row wrap)
-          v-flex(xs12 sm6 md4 lg3 flexbox align-center v-for="backer in backers" v-bind:key="backer").text-xs-center
+          v-flex(xs12 sm6 md4 lg3 flexbox align-center v-for="backer in backers" v-bind:key="backer.title").text-xs-center
             a(:href="backer.href" target="_blank" :title="backer.title")
               img(:src="backer.src" :alt="backer.title")
 </template>

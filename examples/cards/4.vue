@@ -21,7 +21,7 @@
           <v-flex
             v-bind="{ [`xs${card.flex}`]: true }"
             v-for="card in cards"
-            :key="card"
+            :key="card.title"
           >
             <v-card>
               <v-card-media

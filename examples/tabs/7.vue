@@ -15,7 +15,7 @@
       <v-tabs-slider class="yellow"></v-tabs-slider>
       <v-tabs-item
         v-for="(item, i) in items"
-        :key="item"
+        :key="i"
         :href="'#tab-' + (i + 1)"
       >
         {{ item }}

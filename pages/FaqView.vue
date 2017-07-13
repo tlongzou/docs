@@ -8,7 +8,7 @@
       ad
     section
       v-expansion-panel
-        v-expansion-panel-content(v-for="faq in faqs" v-bind:key="faq")
+        v-expansion-panel-content(v-for="(faq, i) in faqs" v-bind:key="i")
           div(slot="header")
             strong Question: &nbsp;
             span(v-html="faq.q") 

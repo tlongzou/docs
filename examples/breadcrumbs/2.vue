@@ -2,7 +2,7 @@
   <div>
     <v-breadcrumbs icons divider="forward">
       <v-breadcrumbs-item 
-        v-for="item in items" :key="item"
+        v-for="item in items" :key="item.text"
         :disabled="item.disabled"
       >
         {{ item.text }}
@@ -11,7 +11,7 @@
 
     <v-breadcrumbs icons divider="chevron_right">
       <v-breadcrumbs-item 
-        v-for="item in items" :key="item"
+        v-for="item in items" :key="item.text"
         :disabled="item.disabled"
       >
         {{ item.text }}

@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs12 sm12 md6 class="my-3" v-for="bar in bars" :key="bar">
+    <v-flex xs12 sm12 md6 class="my-3" v-for="(bar, i) in bars" :key="i">
       <v-card class="grey lighten-4" flat height="200px">
         <v-toolbar :class="bar.class" :dark="bar.dark">
           <v-toolbar-side-icon></v-toolbar-side-icon>
