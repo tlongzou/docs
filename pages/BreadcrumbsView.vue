@@ -29,10 +29,10 @@
                   'Specifies the dividing character'
                 ],
                 [
-                  'icon',
+                  'icons',
                   'Boolean',
                   'False',
-                  'Specifies that the divider is an icon'
+                  'Specifies that the dividers are icons'
                 ]
               ]
             },
