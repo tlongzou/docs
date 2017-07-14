@@ -80,6 +80,10 @@
                 [
                   'v-card-text',
                   '.card__text'
+                ],
+                [
+                  'v-card-actions',
+                  '.card__actions'
                 ]
               ]
             }
