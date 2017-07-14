@@ -19,7 +19,7 @@
                 tag="a"
                 href="https://github.com/vuetifyjs/vuetify"
               ).grey.lighten-2
-                v-icon(fa left medium) github
+                v-icon(left medium) fa-github
                 span Github
               v-btn(dark large to="/vuetify/quick-start").green.lighten-2
                 span Get Started
@@ -156,7 +156,7 @@
     #hero
       .btn
         width: 190px
-        
+
     #sponsors img
       max-height: 60px
 
