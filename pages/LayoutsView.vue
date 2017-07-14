@@ -117,6 +117,16 @@
             'v-app': {
               shared: ['default']
             }
+          },
+          functional: {
+            'v-app': {
+              params: [
+                [
+                 'v-spacer',
+                 'Spacer for flexbox grids'
+                ]
+              ]
+            }
           }
         }
       }
