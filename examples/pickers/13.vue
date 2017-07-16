@@ -1,21 +1,27 @@
 <template>
-  <v-container fluid>
-    <v-layout justify-space-between>
-      <v-date-picker
-        :first-day-of-week="0"
-        locale="zh-cn"
-        v-model="picker"
-      ></v-date-picker>
-      <v-date-picker
-        :first-day-of-week="1"
-        locale="sv-se"
-        v-model="picker"
-      ></v-date-picker>
-      <v-date-picker
-        :first-day-of-week="1"
-        locale="es-sp"
-        v-model="picker"
-      ></v-date-picker>
+  <v-container fluid grid-list-xl>
+    <v-layout justify-space-between wrap>
+      <v-flex xs12 sm6 md4>
+        <v-date-picker
+          :first-day-of-week="0"
+          locale="zh-cn"
+          v-model="picker"
+        ></v-date-picker>
+      </v-flex>
+      <v-flex xs12 sm6 md4>
+        <v-date-picker
+          :first-day-of-week="1"
+          locale="sv-se"
+          v-model="picker"
+        ></v-date-picker>
+      </v-flex>
+      <v-flex xs12 sm6 md4>
+        <v-date-picker
+          :first-day-of-week="1"
+          locale="es-sp"
+          v-model="picker"
+        ></v-date-picker>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>

@@ -12,7 +12,7 @@
           v-list-tile-avatar
             router-link(to="/")
               img(src="/static/v.png" v-bind:style="filter")
-          v-list-tile-content.show-overflow
+          v-list-tile-content
             v-menu(transition="v-scale-transition" origin="top")
               v-list-tile-title(slot="activator")
                 span Vuetify
@@ -34,10 +34,9 @@
                   v-list-tile-action
                     v-icon(fa dark) facebook
                   v-list-tile-title Facebook
-        v-spacer
-        v-list-tile-action
-          v-btn(icon dark v-on:click.native.stop="mini = !mini")
-            v-icon chevron_left
+          v-list-tile-action
+            v-btn(icon dark v-on:click.native.stop="mini = !mini")
+              v-icon chevron_left
     v-divider
     v-list(dense)
       template(v-for="item in items")
@@ -88,8 +87,8 @@
             items: [
               { href: '/vuetify/quick-start', title: 'Quick start' },
               { href: '/vuetify/sandbox', title: 'Sandbox' },
-              { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
-              { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' }
+              { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' }
+              // { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' }
             ]
           },
           {
