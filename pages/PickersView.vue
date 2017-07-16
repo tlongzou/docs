@@ -76,18 +76,6 @@
                   'This is the formatted value.'
                 ],
                 [
-                  'days',
-                  'Array',
-                  '[Sunday -> Saturday]',
-                  'Used to change the day text. Does NOT support changing the order'
-                ],
-                [
-                  'months',
-                  'Array',
-                  '[January -> December]',
-                  'Used to change the month text. Does NOT support changing the order'
-                ],
-                [
                   'scrollable',
                   'Boolean',
                   'False',
@@ -100,28 +88,28 @@
                   'Restricts which dates can be selected'
                 ],
                 [
-                  'first-day-of-week',
+                  'locale',
                   'String',
-                  'Sunday',
-                  'Sets the first day of the week'
+                  'en-US',
+                  'Sets the locale. Accepts a string with a BCP 47 language tag.'
                 ],
                 [
-                  'short-days',
-                  '[Function, Array]',
-                  '(day) => day.substr(0, 1)',
-                  'Allows you to customize the shorthand for each weekday as it appears in the calendar. Accepts either a function that receives each day, or an array with every shorthand day'
+                  'first-day-of-week',
+                  '[Number, String]',
+                  'Sunday',
+                  'Sets the first day of the week, starting with 0 for Sunday.'
                 ],
                 [
                   'title-date-format',
-                  'Function',
-                  '({ day, dayName, month, monthName, landscape }) => `${dayName.substr(0, 3)},${landscape ? \'<br>\' : \'\'} ${monthName.substr(0, 3)} ${day}`',
-                  'Allows you to customize the format of the date string that appears in the title of the date picker'
+                  'Object',
+                  '{ weekday: \'short\', month: \'short\', day: \'numeric\' }',
+                  'Allows you to customize the format of the date string that appears in the title of the date picker. The format is equal to the options argument of the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function.'
                 ],
                 [
                   'header-date-format',
-                  'Function',
-                  '({ month, monthName, year }) => `${monthName} ${year}`',
-                  'Allows you to customize the format of the month string that appears in the header of the calendar.'
+                  'Object',
+                  '{ month: \'long\', year: \'numeric\' }',
+                  'Allows you to customize the format of the month string that appears in the header of the calendar. The format is equal to the options argument of the <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString">Date.toLocaleString</a> function.'
                 ]
               ]
             },
