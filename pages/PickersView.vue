@@ -96,7 +96,7 @@
                 [
                   'first-day-of-week',
                   '[Number, String]',
-                  'Sunday',
+                  '0',
                   'Sets the first day of the week, starting with 0 for Sunday.'
                 ],
                 [
