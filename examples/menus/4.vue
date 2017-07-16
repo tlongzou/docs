@@ -3,7 +3,7 @@
     <v-menu offset-y v-model="showMenu" :position-absolutely="true" full-width>
       <v-card class="portrait" img="/static/doc-images/cards/girl.jpg" height="300px" slot="activator"></v-card>
       <v-list>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>
         </v-list-tile>
       </v-list>

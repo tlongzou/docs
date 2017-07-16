@@ -1,1 +1,0 @@
-webpackJsonp([245],{1140:function(t,e){t.exports={render:function(){var t=this,e=t.$createElement;return(t._self._c||e)("v-parallax",{attrs:{src:"/static/doc-images/parallax/material2.jpg",height:"300"}})},staticRenderFns:[]}},574:function(t,e,a){var n=a(10)(null,a(1140),null,null,null);t.exports=n.exports}});

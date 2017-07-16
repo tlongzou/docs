@@ -25,7 +25,7 @@
       hide-actions
     )
       template(slot="items" scope="{ item }")
-          td(v-for="opt in item" v-bind:key="opt" v-html="opt")
+          td(v-for="(opt, i) in item" v-bind:key="i" v-html="opt")
 </template>
 
 <script>
@@ -208,12 +208,6 @@
             'Boolean',
             'False',
             'Applies ripple effect'
-          ],
-          [
-            'router',
-            'Boolean',
-            'False',
-            'Designates whether the list tiles will be a router-link'
           ],
           [
             'tag',

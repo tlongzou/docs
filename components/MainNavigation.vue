@@ -50,9 +50,11 @@
             v-list-tile-action
               v-icon(dark) keyboard_arrow_down
           v-list-tile(
-            v-for="subItem in item.items" v-bind:key="subItem"
-            :href="subItem.href"
-            v-bind:router="!subItem.target"
+            v-for="subItem in item.items" v-bind:key="subItem.title"
+            v-bind="{ \
+              to: !subItem.target ? subItem.href : null, \
+              href: subItem.target && subItem.href \
+            }"
             ripple
             v-bind:disabled="subItem.disabled"
             v-bind:target="subItem.target"
@@ -63,7 +65,7 @@
               v-icon(dark :class="[subItem.actionClass || 'success--text']") {{ subItem.action }}
         v-subheader(v-else-if="item.header" dark) {{ item.header }}
         v-divider(v-else-if="item.divider")
-        v-list-tile(:href="item.href" router ripple v-bind:disabled="item.disabled" v-else)
+        v-list-tile(:to="item.href" ripple v-bind:disabled="item.disabled" v-else)
           v-list-tile-action
             v-icon(dark) {{ item.action }}
           v-list-tile-content
@@ -86,7 +88,8 @@
             items: [
               { href: '/vuetify/quick-start', title: 'Quick start' },
               { href: '/vuetify/sandbox', title: 'Sandbox' },
-              { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' }
+              { href: '/vuetify/frequently-asked-questions', title: 'Frequently asked questions' },
+              { href: '/vuetify/sponsors-and-backers', title: 'Sponsors and backers' }
             ]
           },
           {

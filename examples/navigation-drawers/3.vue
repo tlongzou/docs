@@ -15,7 +15,7 @@
       v-model="drawer"
     >
       <v-list dense>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.text">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -27,7 +27,7 @@
         </v-list-tile>
         <v-subheader class="mt-3 grey--text text--darken-1">SUBSCRIPTIONS</v-subheader>
         <v-list>
-          <v-list-tile v-for="item in items2" :key="item" avatar>
+          <v-list-tile v-for="item in items2" :key="item.text" avatar>
             <v-list-tile-avatar>
               <img :src="`https://randomuser.me/api/portraits/men/${item.picture}.jpg`" alt="">
             </v-list-tile-avatar>

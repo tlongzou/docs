@@ -1,14 +1,14 @@
 <template lang="pug">
   doc-view
-    v-layout(column-xs row-sm wrap)
+    v-layout(row wrap)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Frequently asked questions
-          dd(slot="desc") Stuck on a particular problem? Check some of these common gotchas before creating a ticket. If you still cannot find what you are looking for, submit an <a href="https://github.com/vuetifyjs/vuetify/issues/new" target="_blank" rel="noopener">issue</a> on github.
+          dd(slot="desc") Stuck on a particular problem? Check some of these common gotchas before creating a ticket. If you still cannot find what you are looking for, submit an <a href="https://github.com/vuetifyjs/vuetify/issues/new" target="_blank" rel="noopener">issue</a> on github or ask the community in <a href="https://gitter.im/vuetifyjs/Lobby" target="_blank" rel="noopener">gitter</a>.
       ad
     section
       v-expansion-panel
-        v-expansion-panel-content(v-for="faq in faqs" v-bind:key="faq")
+        v-expansion-panel-content(v-for="(faq, i) in faqs" v-bind:key="i")
           div(slot="header")
             strong Question: &nbsp;
             span(v-html="faq.q") 

@@ -2,21 +2,21 @@
   <div class="text-xs-center">
     <v-menu
       origin="center center"
-      transition="v-scale-transition"
+      transition="scale-transition"
       bottom
     >
       <v-btn primary dark slot="activator">
         Scale Transition
       </v-btn>
       <v-list>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>
         </v-list-tile>
       </v-list>
     </v-menu>
 
     <v-menu
-      transition="v-slide-x-transition"
+      transition="slide-x-transition"
       bottom
       right
     >
@@ -24,21 +24,21 @@
         Slide X Transition
       </v-btn>
       <v-list>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>
         </v-list-tile>
       </v-list>
     </v-menu>
 
     <v-menu
-      transition="v-slide-y-transition"
+      transition="slide-y-transition"
       bottom
     >
       <v-btn primary dark slot="activator" class="purple">
         Slide Y Transition
       </v-btn>
       <v-list>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-title>{{ item.title }}</v-list-tile-title>
         </v-list-tile>
       </v-list>

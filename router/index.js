@@ -25,6 +25,7 @@ export function createRouter () {
       route('/vuetify/quick-start', 'QuickStart'),
       route('/vuetify/sandbox', 'Sandbox'),
       route('/vuetify/frequently-asked-questions', 'Faq'),
+      route('/vuetify/sponsors-and-backers', 'Sponsors'),
       route('/layout/pre-defined', 'Layouts'),
       route('/layout/grid', 'Grid'),
       route('/layout/spacing', 'Spacing'),

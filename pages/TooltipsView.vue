@@ -33,12 +33,19 @@
                   'String',
                   'Required',
                   'The content for the tooltip',
+                ],
+                [
+                  'visible',
+                  'Boolean',
+                  'False',
+                  'Tooltip object property for determining visibility, see example #2'
                 ]
               ]
             }
           },
           examples: [
-            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> psuedo element' }
+            { header: 'Default', file: 'tooltips/1', desc: 'Tooltips can be applied to any element that does not use the <code>:before</code> psuedo element' },
+            { header: 'Visibility', file: 'tooltips/2', desc: 'Tooltips can be disabled using the <code>visible</code> property value in the tooltip object.' }
           ]
         }
       }

@@ -3,7 +3,7 @@
     <v-navigation-drawer permanent floating light class="transparent">
       <v-card class="ma-3">
         <v-list dense class="py-0">
-          <v-list-tile v-for="item in items" :key="item">
+          <v-list-tile v-for="item in items" :key="item.title">
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>

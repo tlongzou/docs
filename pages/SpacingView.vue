@@ -1,6 +1,6 @@
 <template lang="pug">
   doc-view(id="spacing-view")
-    v-layout(column-xs row-sm)
+    v-layout(row)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Spacing

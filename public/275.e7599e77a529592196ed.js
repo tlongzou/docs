@@ -1,1 +1,0 @@
-webpackJsonp([275],{1221:function(n,t){n.exports={render:function(){var n=this,t=n.$createElement;return(n._self._c||t)("v-btn",{attrs:{block:"",secondary:"",dark:""}},[n._v("Block Button")])},staticRenderFns:[]}},478:function(n,t,e){var r=e(10)(null,e(1221),null,null,null);n.exports=r.exports}});

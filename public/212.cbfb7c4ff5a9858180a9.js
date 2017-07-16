@@ -1,1 +1,0 @@
-webpackJsonp([212],{1038:function(n,t){n.exports={render:function(){var n=this,t=n.$createElement;return(n._self._c||t)("v-parallax",{attrs:{src:"https://drivenlocal.com/wp-content/uploads/2015/10/Material-design.jpg"}})},staticRenderFns:[]}},552:function(n,t,e){var l=e(9)(null,e(1038),null,null,null);n.exports=l.exports}});

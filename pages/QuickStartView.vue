@@ -1,6 +1,6 @@
 <template lang="pug">
   doc-view(id="quick-start-view")
-    v-layout(column-xs row-sm wrap)
+    v-layout(row wrap)
       v-flex(xs12 sm8 md12)
         section-def
           dt(slot="title") Getting Started
@@ -102,7 +102,7 @@
           v-flex(
             xs12 sm6 md4
             v-for="browser in browsers"
-            v-bind:key="browser"
+            v-bind:key="browser.title"
           ).px-0
             v-list-tile(avatar tag="ul")
               v-list-tile-avatar

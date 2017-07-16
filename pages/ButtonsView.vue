@@ -21,7 +21,7 @@
             { header: "Flat", file: "buttons/1", desc: ``},
             { header: "Raised", file: "buttons/2", desc: ``},
             { header: "Button Dropdown Variants", file: "buttons/4", desc: `Button dropdowns are regular selects with additional styling.` },
-            { header: "Button Toggle", file: "buttons/5", desc: `Toggle buttons are essentially styled radio or checkboxes, depending on the properties selected. This component is compatible with the <code>v-app-bar</code> component.`},
+            { header: "Button Toggle", file: "buttons/5", desc: `Toggle buttons are essentially styled radio or checkboxes, depending on the properties selected. This component is compatible with the <code>v-toolbar</code> component.`},
             { header: "Icon", file: "buttons/6", desc: `Icons can be used for the primary content of a button.`},
             // { header: "App Bar", file: "buttons/7", desc: `The application bar is useful for mimicing the design of a native application.`},
             { header: "Floating", file: "buttons/8", desc: `Floating buttons are round and usually contain an icon.`},

@@ -85,6 +85,30 @@
                   'Boolean',
                   'False',
                   'This property is primarily for allowing to display examples properly in the documentation. This property will move the application theme classes from the body to the actual <code>v-app</code> component'
+                ],
+                [
+                  'footer',
+                  'Boolean',
+                  'False',
+                  'Configures the application to have a footer'
+                ],
+                [
+                  'fixed-footer',
+                  'Boolean',
+                  'False',
+                  'Configures the application to have a fixed footer'
+                ],
+                [
+                  'toolbar',
+                  'Boolean',
+                  'False',
+                  'Configures the application to have a fixed toolbar'
+                ],
+                [
+                  'fill-height',
+                  'Boolean',
+                  'False',
+                  'Container will fill all available height and center its contents vertically'
                 ]
               ]
             }
@@ -92,6 +116,16 @@
           slots: {
             'v-app': {
               shared: ['default']
+            }
+          },
+          functional: {
+            'v-app': {
+              params: [
+                [
+                 'v-spacer',
+                 'Spacer for flexbox grids'
+                ]
+              ]
             }
           }
         }
@@ -109,16 +143,15 @@
       [data-app]
         border: 1px solid rgba(#000, .1)
         overflow: hidden
-        height: 400px
         min-height: 0
         elevation(2)
 
-        .navigation-drawer, .toolbar, .overlay
+        .navigation-drawer, .toolbar:not(.elevation-0), .overlay
           position: absolute
 
         main .container
           min-height: calc(400px - 36px) !important
 
-        .navigation-drawer
-          height: 400px !important
+        .footer
+          height: 36px
 </style>

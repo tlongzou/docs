@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-app
+  v-app(toolbar footer)
     main-navigation
     main-toolbar
     main

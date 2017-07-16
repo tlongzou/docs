@@ -30,7 +30,7 @@
       </v-list>
       <v-list class="pt-0" dense>
         <v-divider light></v-divider>
-        <v-list-tile v-for="item in items" :key="item">
+        <v-list-tile v-for="item in items" :key="item.title">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -45,8 +45,12 @@
       <v-toolbar-title>Toolbar</v-toolbar-title>
     </v-toolbar>
     <main>
-      <v-container fluid>
-        <v-card height="200px"></v-card>
+      <v-container fluid fill-height>
+        <v-layout>
+          <v-flex xs6 offset-xs3>
+            <v-card height="200px"></v-card>
+          </v-flex>
+        </v-layout>
         <!--v-router-->
       </v-container>
     </main>

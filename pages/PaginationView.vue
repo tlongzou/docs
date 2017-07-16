@@ -54,6 +54,16 @@
                   'input',
                   'Number',
                   'Current page'
+                ],
+                [
+                  'next',
+                  '-',
+                  'Emits when the next button is clicked'
+                ],
+                [
+                  'previous',
+                  '-',
+                  'Emits when the previous button is clicked'
                 ]
               ]
             }

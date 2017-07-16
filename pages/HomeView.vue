@@ -4,7 +4,7 @@
       img(src="/static/v.png" height="38px")
       v-spacer
       v-toolbar-items
-        v-btn(flat column dark router to="/vuetify/quick-start") Documentation
+        v-btn(flat column dark to="/vuetify/quick-start") Documentation
         v-btn(flat column dark tag="a" href="https://github.com/vuetifyjs/vuetify/releases" target="_blank" rel="noopener") Updates
 
     section#hero.elevation-12
@@ -21,7 +21,7 @@
               ).grey.lighten-2
                 v-icon(fa left medium) github
                 span Github
-              v-btn(dark large router href="/vuetify/quick-start").green.lighten-2
+              v-btn(dark large to="/vuetify/quick-start").green.lighten-2
                 span Get Started
                 v-icon(right dark) chevron_right
 
@@ -79,12 +79,14 @@
 
     section#sponsors.py-5.mb-0
       v-container( fluid)
-        v-layout(row)
+        v-layout(row wrap)
           v-flex(xs10 offset-xs1).text-xs-center
             h4.headline.text-xs-center.mb-5 Vuetify.js is proudly sponsored by
             div(v-for="sponsor in sponsors").mb-5
               a(:href="sponsor.href" target="_blank" :title="sponsor.title")
                 img(:src="sponsor.src")
+          v-flex(xs12).text-xs-center
+            v-btn(outline success round to="/vuetify/sponsors-and-backers") Become a backer
 
     section#support.py-5.grey.lighten-4.mb-0
       v-container(fluid)
@@ -107,10 +109,10 @@
               div.display-1.mb-2 Paypal
               img(src="/static/doc-images/paypal.png" width="125px")
 
-    v-footer.secondary.white--text
+    v-footer(style="height: 36px;").secondary.white--text
       v-layout(row flex)
         v-flex(xs6)
-          span © {{ new Date().getFullYear() }} John Leider
+          span &copy; {{ new Date().getFullYear() }} Vuetify LLC
         v-flex(xs6).text-xs-right
           span MIT License
 </template>

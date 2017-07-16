@@ -10,7 +10,7 @@
               <v-icon>more_vert</v-icon>
             </v-btn>
             <v-list>
-              <v-list-tile v-for="item in items" :key="item">
+              <v-list-tile v-for="item in items" :key="item.title">
                 <v-list-tile-title>{{ item.title }}</v-list-tile-title>
               </v-list-tile>
             </v-list>
