@@ -58,18 +58,6 @@
                   'Boolean',
                   'False',
                   'Applies the light theme (default dark)'
-                ],
-                [
-                  'fa',
-                  'Boolean',
-                  'False',
-                  'Switches icons to Font Awesome'
-                ],
-                [
-                  'mdi',
-                  'Boolean',
-                  'False',
-                  'Switches icons to Material Design Icons'
                 ]
               ]
             }
