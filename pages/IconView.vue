@@ -15,8 +15,8 @@
           desc: 'The <code>v-icon</code> component provides a large set of glyphs to provide context to various aspects of your application. Vuetify icons utilize Google\'s Material Icons font library. For a list of all available icons, visit the official <a href="https://material.io/icons/" target="_blank" rel="noopener">Material Icons</a> page.',
           examples: [
             { header: 'Standard', file: 'icons/1', desc: 'Icons come in two themes (light and dark), and four different sizes (standard, medium, large, and x-large).' },
-            { header: 'Font Awesome', file: 'icons/2', desc: '<a href="http://fontawesome.io/icons/">Font Awesome</a> is also supported with the use of the <code>fa</code> prop. All text will be prefixed with <em>fa-</em> so that you can write your icons the same way as Material icons. Please note that you still need to include the Font Awesome icons in your project.' },
-            { header: 'Material Design Icons', file: 'icons/3', desc: '<a href="https://materialdesignicons.com/">Material Design Icons</a> is also supported with the use of the <code>mdi</code> prop. All text will be prefixed with <em>mdi-</em> so that you can write your icons the same way as Material icons. Please note that you still need to include the MDI icons in your project.' },
+            { header: 'Font Awesome', file: 'icons/2', desc: '<a href="http://fontawesome.io/icons/">Font Awesome</a> is also supported. Simply use the <code>fa-</code> prefixed icon name. Please note that you still need to include the Font Awesome icons in your project.' },
+            { header: 'Material Design Icons', file: 'icons/3', desc: '<a href="https://materialdesignicons.com/">Material Design Icons</a> is also supported. Simply use the <code>mdi-</code> prefixed icon name. Please note that you still need to include the MDI icons in your project.' },
             { header: 'Color', file: 'icons/4', desc: 'Using color helpers you can change the color of an icon from the standard dark and light themes.' },
             { header: 'Buttons', file: 'icons/5', desc: 'Icons can be used inside of buttons to add emphasis to the action.' }
           ],
