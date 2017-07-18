@@ -1,33 +1,30 @@
 <template>
-  <v-container fluid>
-    <v-layout row wrap>
-      <v-flex xs12>
-        <v-btn
-          :primary="allowedTimes === everyOtherValue"
-          :class="{ 'white--text': allowedTimes === everyOtherValue }"
-          @click.native="allowedTimes = everyOtherValue"
-        >Function</v-btn>
-        <v-btn
-          :primary="allowedTimes === randomValues"
-          :class="{ 'white--text': allowedTimes === randomValues }"
-          @click.native="allowedTimes = randomValues"
-        >Array</v-btn>
-        <v-btn
-          :primary="allowedTimes === minMaxValues"
-          :class="{ 'white--text': allowedTimes === minMaxValues }"
-          @click.native="allowedTimes = minMaxValues"
-        >Object</v-btn>
-        <v-time-picker
-          class="mt-3"
-          landscape
-          scrollable
-          v-model="date"
-          :allowed-hours="allowedTimes.hours"
-          :allowed-minutes="allowedTimes.minutes"
-        ></v-time-picker>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <v-layout row wrap>
+    <v-flex xs12>
+      <v-btn
+        :primary="allowedTimes === everyOtherValue"
+        :class="{ 'white--text': allowedTimes === everyOtherValue }"
+        @click.native="allowedTimes = everyOtherValue"
+      >Function</v-btn>
+      <v-btn
+        :primary="allowedTimes === randomValues"
+        :class="{ 'white--text': allowedTimes === randomValues }"
+        @click.native="allowedTimes = randomValues"
+      >Array</v-btn>
+      <v-btn
+        :primary="allowedTimes === minMaxValues"
+        :class="{ 'white--text': allowedTimes === minMaxValues }"
+        @click.native="allowedTimes = minMaxValues"
+      >Object</v-btn>
+      <v-time-picker
+        class="mt-3"
+        scrollable
+        v-model="date"
+        :allowed-hours="allowedTimes.hours"
+        :allowed-minutes="allowedTimes.minutes"
+      ></v-time-picker>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>

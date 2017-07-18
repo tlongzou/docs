@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap>
-    <v-flex md12 lg4 class="ma-3">
+    <v-flex md12 lg4>
       <table class="table text-xs-left" style="width: 300px;">
         <tbody>
           <tr>
@@ -18,7 +18,7 @@
         </tbody>
       </table>
     </v-flex>
-    <v-flex md12 lg4 class="ma-3">
+    <v-flex md12 lg4>
       <v-date-picker
         v-model="picker"
         :date-format="date => new Date(date).toDateString()"
