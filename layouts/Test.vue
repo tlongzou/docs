@@ -3,10 +3,13 @@
     v-navigation-drawer
     main
       v-toolbar
-      v-container(fluid)
-        v-layout
-          v-flex(xs12)
-            v-toolbar
-            v-card(height="200vh")
-              v-card-text Hello
+      v-content
+        v-container
+          v-layout
+            v-flex(xs12)
+              v-card(height="200vh")
+                v-toolbar(flat)
+                v-card-text Hello
+        v-divider
+        v-footer
 </template>
