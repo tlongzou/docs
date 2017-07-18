@@ -13,7 +13,8 @@
 
     components: {
       default: require('layouts/Default'),
-      home: require('layouts/Home')
+      home: require('layouts/Home'),
+      test: require('layouts/Test'),
     },
 
     data () {
@@ -44,7 +45,7 @@
 
     computed: {
       component () {
-        return this.$route.path === '/' ? 'home' : 'default'
+        return this.$route.path === '/' ? 'test' : 'default'
       }
     },
 
@@ -130,12 +131,6 @@
 
 <style lang="stylus">
   @import './stylus/main'
-
-  [data-app] > main > .container
-    min-height: calc(100vh - 156px)
-
-  #app
-    transition: .3s ease-in-out
 </style>
 
 <style src="../node_modules/mdi/css/materialdesignicons.css"></style>
