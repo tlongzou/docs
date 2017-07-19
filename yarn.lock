@@ -4593,9 +4593,9 @@ vue@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.4.1.tgz#76e0b8eee614613532216b7bfe784e0b5695b160"
 
-vuetify@0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.14.0.tgz#c56b71f668df72e534088998f108a63a89531228"
+vuetify@^0.14.2:
+  version "0.14.2"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-0.14.2.tgz#791d1f5d5a177585e6abd74d49c7143489313d61"
   dependencies:
     uglifyjs-webpack-plugin "^0.4.6"
     vue "^2.4.1"
