@@ -1,24 +1,17 @@
 <template lang="pug">
-  v-app
-    v-navigation-drawer(v-model="drawer")
-    main
-      v-toolbar
-        v-toolbar-side-icon(@click="drawer = !drawer")
-      v-content
-        v-container(fluid fill-height)
-          v-layout(align-center justify-center)
-            v-flex(xs12)
-              v-card(height="200px")
-                v-toolbar(flat)
-                v-card-text Hello
-        v-divider
-        v-footer
+  component(:is="component")
 </template>
 
 <script>
+  import one from './one'
+  import two from './two'
   export default {
+    components: {
+      one,
+      two
+    },
     data: () => ({
-      drawer: true
+      component: 'two'
     })
   }
 </script>

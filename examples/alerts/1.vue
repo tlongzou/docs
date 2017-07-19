@@ -1,19 +1,24 @@
 <template>
-  <div>
-    <v-alert success value="true">
-      This is a success alert.
-    </v-alert>
-
-    <v-alert info value="true">
-      This is a info alert.
-    </v-alert>
-
-    <v-alert warning value="true">
-      This is a warning alert.
-    </v-alert>
-
-    <v-alert error value="true">
-      This is a error alert.
-    </v-alert>
-  </div>
+<div id="app">
+  <v-app id="inspire">
+    <v-select :items="items" 
+              v-model="selectedItems" 
+              multiple 
+              label="Select">
+    </v-select>
+    {{ selectedItems }}
+  </v-app>
+</div>
 </template>
+<script>
+  export default {
+    data: () => ({
+      items: [
+        { text: 'Item 1', value: { foo: 'item', bar: 2 } },
+        { text: 'Item 2', value: { foo: 'test', bar: 42 } },
+        { text: 'Item 3', value: { foo: 'foobar', bar: 4 } }
+      ],
+      selectedItems: []
+    })
+  }
+</script>
